@@ -1,16 +1,10 @@
-package com.rsww.clientcommand.entity;
+package com.rsww.clientquery;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name="user", schema = "public")
 public class UserEntity {
 

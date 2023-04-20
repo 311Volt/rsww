@@ -1,0 +1,10 @@
+package com.rsww.clientquery.repository;
+
+import com.rsww.clientquery.UserEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface UserRepository extends JpaRepository<UserEntity, String> {
+    List<UserEntity> findUserEntityByEmail(String email);
+}
