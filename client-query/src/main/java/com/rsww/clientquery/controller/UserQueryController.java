@@ -1,6 +1,6 @@
 package com.rsww.clientquery.controller;
 
-import com.rsww.clientquery.UserEntity;
+import com.rsww.clientquery.entity.UserEntity;
 import com.rsww.clientquery.repository.UserRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

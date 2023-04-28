@@ -3,10 +3,7 @@ package com.rsww.clientcommand.controller;
 import com.rsww.clientcommand.dto.UserInput;
 import com.rsww.clientcommand.entity.UserEntity;
 import com.rsww.clientcommand.service.UserService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -20,6 +17,7 @@ public class UserCommandController {
         this.userService = userService;
     }
 
+    @CrossOrigin
     @PostMapping("/new")
     public UserEntity createUser(@RequestBody UserInput userInput){
         UserEntity userCreated = new UserEntity(UUID.randomUUID().toString(), userInput.getEmail(), userInput.getPassword());

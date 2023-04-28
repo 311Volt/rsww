@@ -1,4 +1,4 @@
-package com.rsww.clientquery;
+package com.rsww.clientquery.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
