@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
-import {Subject} from "rxjs";
+import {Subject, tap} from "rxjs";
 import {User} from "./user.model";
 
 @Injectable({providedIn: 'root'})
@@ -16,9 +16,8 @@ export class AuthService {
     console.log(email);
     this.http.post<any>('http://localhost:8082/user/new', {email: email, password: password})
       .subscribe(
-        response =>{
-          this.user.next(new User(email, password))
-          console.log(response);
+        response => {
+          this.user.next(new User(response.email, response.password))
           this.router.navigate(['travel']);
         },
         error => {
@@ -28,6 +27,20 @@ export class AuthService {
   }
 
   login(email: string, password: string) {
+    this.http.get<User>('http://localhost:8083/user/' + email)
+      .subscribe(response => {
+          if (password === response.password) {
+            this.user.next(new User(response.email, response.password));
+            this.router.navigate(['travel']);
+          }
+        },
+        error => {
+          console.log(error)
+        })
+  }
 
+  logout() {
+    this.user.next(null);
+    this.router.navigate(['/auth']);
   }
 }

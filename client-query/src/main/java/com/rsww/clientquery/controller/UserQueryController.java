@@ -2,10 +2,7 @@ package com.rsww.clientquery.controller;
 
 import com.rsww.clientquery.entity.UserEntity;
 import com.rsww.clientquery.repository.UserRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,8 +21,9 @@ public class UserQueryController {
         return userRepository.findAll();
     }
 
+    @CrossOrigin
     @GetMapping("{email}")
-    List<UserEntity> getUserByEmail(@PathVariable String email) {
+    UserEntity getUserByEmail(@PathVariable String email) {
         return userRepository.findUserEntityByEmail(email);
     }
 

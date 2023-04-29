@@ -4,9 +4,9 @@
 
     <div class="collapse navbar-collapse">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/auth" style="cursor: pointer;">Authenticate</a>
-        <a class="nav-item nav-link" (click)="onLogout()" style="cursor: pointer;">Logout</a>
-        <a class="nav-item nav-link" (click)="onFetchData()" style="cursor: pointer;">Fetch data</a>
+        <a class="nav-item nav-link" routerLink="/auth" style="cursor: pointer;" *ngIf="!isAuthenticated">Authenticate</a>
+        <a class="nav-item nav-link" (click)="onLogout()" style="cursor: pointer;" *ngIf="isAuthenticated">Logout</a>
+        <a class="nav-item nav-link" (click)="onFetchData()" style="cursor: pointer;" *ngIf="isAuthenticated">Fetch data</a>
       </div>
     </div>
   </div>
