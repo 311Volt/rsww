@@ -1,0 +1,48 @@
+SHIT TO BE SCRAPPED:
+
+	HOTEL:
+		hotel code
+		standard
+		# of single rooms
+		# of double rooms
+		# of triple rooms
+		# of quad rooms
+		features
+
+	TRIP:
+		trip id
+		hotel id
+
+	FLIGHT AIRPORT PAIR:
+		departure airport
+		arrival airport
+
+	AIRPORT:
+		list of reachable hotels
+
+
+
+
+SHIT TO BE GENERATED:
+
+	FLIGHT: [event-sourced]
+		trip id
+		departure datetime
+		departure airport
+		arrival datetime
+		arrival airport
+		# of available seats
+
+
+	HOTEL AVAILABILITY [event-sourced]:
+		hotel id
+		# of available single rooms
+		# of available double rooms
+		# of available triple rooms
+		# of available quad rooms
+
+	TRIP:
+		trip flight id
+		return flight id
+		list of birthdates
+
