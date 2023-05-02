@@ -1,0 +1,2902 @@
+[
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "SMI",
+        "name": "Samos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "MJT",
+        "name": "Mytilene",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PFO",
+        "name": "Pafos",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "MJT",
+        "name": "Mytilene",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TFS",
+        "name": "Teneryfa",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "SMI",
+        "name": "Samos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PFO",
+        "name": "Pafos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "DLM",
+        "name": "Dalaman",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CTA",
+        "name": "Catania",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "GPA",
+        "name": "Araxos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "VAR",
+        "name": "Warna",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "RZE",
+        "name": "Rzesz\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "RZE",
+        "name": "Rzesz\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "TGD",
+        "name": "Podgorica",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CHQ",
+        "name": "Chania",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "LPA",
+        "name": "Gran Canaria",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "DBV",
+        "name": "Dubrownik",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CHQ",
+        "name": "Chania",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "TGD",
+        "name": "Podgorica",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "CDG",
+        "name": "Pary\u00c5\u00bc",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "GPA",
+        "name": "Araxos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CTA",
+        "name": "Catania",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "MAH",
+        "name": "Minorka",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VAR",
+        "name": "Warna",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "GPA",
+        "name": "Araxos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "GPA",
+        "name": "Araxos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "MJT",
+        "name": "Mytilene",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "VAR",
+        "name": "Warna",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "MAD",
+        "name": "Madryt",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "SMI",
+        "name": "Samos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "RZE",
+        "name": "Rzesz\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VCE",
+        "name": "Wenecja-Marco Polo",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "LCA",
+        "name": "Larnaca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ACE",
+        "name": "Lanzarote",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "DBV",
+        "name": "Dubrownik",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "NCE",
+        "name": "Nicea",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PFO",
+        "name": "Pafos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CHQ",
+        "name": "Chania",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "MJT",
+        "name": "Mytilene",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "ACE",
+        "name": "Lanzarote",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "MAD",
+        "name": "Madryt",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VAR",
+        "name": "Warna",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "BCN",
+        "name": "Barcelona",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "RZE",
+        "name": "Rzesz\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AGP",
+        "name": "Costa del Sol",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "SSH",
+        "name": "Sharm El Sheikh",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BJV",
+        "name": "Milas-Bodrum",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "LCA",
+        "name": "Larnaca",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "SPU",
+        "name": "Split",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "DBV",
+        "name": "Dubrownik",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "BOJ",
+        "name": "Burgas",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "DBV",
+        "name": "Dubrownik",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "NCE",
+        "name": "Nicea",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CHQ",
+        "name": "Chania",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CHQ",
+        "name": "Chania",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "RMF",
+        "name": "Marsa Alam",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "FNC",
+        "name": "Funchal",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "MAD",
+        "name": "Madryt",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "CDG",
+        "name": "Pary\u00c5\u00bc",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "BCN",
+        "name": "Barcelona",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "TIA",
+        "name": "Tirana",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PFO",
+        "name": "Pafos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VAR",
+        "name": "Warna",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BER",
+        "name": "BER",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BER",
+        "name": "BER",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VIE",
+        "name": "Wiede\u00c5\u201e",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "BUD",
+        "name": "BUD",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "MAD",
+        "name": "Madryt",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BER",
+        "name": "BER",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "IST",
+        "name": "Istambu\u00c5\u201a",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "LCA",
+        "name": "Larnaca",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WRO",
+        "name": "Wroc\u00c5\u201aaw",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HER",
+        "name": "Heraklion",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "NCE",
+        "name": "Nicea",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "HRG",
+        "name": "Hurghada",
+        "forDeparture": false
+    },
+    {
+        "code": "KRK",
+        "name": "Krak\u00c3\u00b3w",
+        "forDeparture": true
+    },
+    {
+        "code": "VCE",
+        "name": "Wenecja-Marco Polo",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "ZTH",
+        "name": "Zakynthos",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "NCE",
+        "name": "Nicea",
+        "forDeparture": false
+    },
+    {
+        "code": "GDN",
+        "name": "Gda\u00c5\u201esk",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "PMI",
+        "name": "Palma de Mallorca",
+        "forDeparture": false
+    },
+    {
+        "code": "POZ",
+        "name": "Pozna\u00c5\u201e",
+        "forDeparture": true
+    },
+    {
+        "code": "BER",
+        "name": "BER",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "RHO",
+        "name": "Rodos",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "ADB",
+        "name": "Izmir",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "NBE",
+        "name": "Enfidha",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "KGS",
+        "name": "Kos",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "VAR",
+        "name": "Warna",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "LPA",
+        "name": "Gran Canaria",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "MJT",
+        "name": "Mytilene",
+        "forDeparture": false
+    },
+    {
+        "code": "RDO",
+        "name": "Warszawa-Radom",
+        "forDeparture": true
+    },
+    {
+        "code": "FCO",
+        "name": "Rzym-Fiumicino",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "AYT",
+        "name": "Antalya",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CFU",
+        "name": "Korfu",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "CHQ",
+        "name": "Chania",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "BUD",
+        "name": "BUD",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "PRG",
+        "name": "Praga",
+        "forDeparture": false
+    },
+    {
+        "code": "WAW",
+        "name": "Warszawa-Chopina",
+        "forDeparture": true
+    },
+    {
+        "code": "LCA",
+        "name": "Larnaca",
+        "forDeparture": false
+    },
+    {
+        "code": "KTW",
+        "name": "Katowice",
+        "forDeparture": true
+    },
+    {
+        "code": "DJE",
+        "name": "Djerba",
+        "forDeparture": false
+    }
+]

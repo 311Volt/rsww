@@ -1,0 +1,16 @@
+
+tour operator responsibilities:
+    - must be able to create offers on the fly - this includes:
+        - picking a hotel
+        - picking a date range
+        - finding viable flights for that date range
+        - checking available seats & rooms
+    - must provide info about an offer to the agency:
+        - is it still available? (might be sold out, including by other travel agents)
+
+
+
+agency service responsibilities:
+    - queries the tour operator
+    - gets updates from TO on sold out offers
+    - that's it?

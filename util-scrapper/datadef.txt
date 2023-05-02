@@ -1,4 +1,4 @@
-SHIT TO BE SCRAPPED:
+THINGS TO BE SCRAPPED:
 
 	HOTEL:
 		hotel code
@@ -23,7 +23,7 @@ SHIT TO BE SCRAPPED:
 
 
 
-SHIT TO BE GENERATED:
+STUFF TO BE GENERATED:
 
 	FLIGHT: [event-sourced]
 		trip id
