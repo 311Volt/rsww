@@ -47,22 +47,22 @@ def create_hotels(offers):
 
 
 def create_airports(offers):
-    out_airports = []
+    out_airports = dict()
     for offer in offers:
         flight = offer["departureFlight"]
         departure = flight["departure"]
         arrival = flight["arrival"]
-        out_airports.append({
+        out_airports[departure["airportCode"]] = {
             "code": departure["airportCode"],
             "name": departure["airportName"],
             "forDeparture": True
-        })
-        out_airports.append({
+        }
+        out_airports[arrival["airportCode"]] = {
             "code": arrival["airportCode"],
             "name": arrival["airportName"],
             "forDeparture": False
-        })
-    return out_airports
+        }
+    return list(out_airports.values())
 
 
 def create_flights(airports, year):
