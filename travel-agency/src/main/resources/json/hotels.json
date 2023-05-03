@@ -1,0 +1,7252 @@
+{
+    "HER41014": {
+        "code": "HER41014",
+        "name": "Pela Maria Hotel",
+        "standard": 3.0,
+        "latitude": 35.312658,
+        "longitude": 25.397243,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 24,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 234.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 210.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 117.0
+        }
+    },
+    "SMI41044": {
+        "code": "SMI41044",
+        "name": "Glicorisa Beach",
+        "standard": 2.0,
+        "latitude": 37.6948,
+        "longitude": 26.963,
+        "airportCode": "SMI",
+        "country": "Grecja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 13,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 112.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 246.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 124.0
+        }
+    },
+    "MJT10000": {
+        "code": "MJT10000",
+        "name": "Amfitriti",
+        "standard": 3.0,
+        "latitude": 39.365522,
+        "longitude": 26.17604,
+        "airportCode": "MJT",
+        "country": "Grecja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 24,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 129.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 207.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 144.0
+        }
+    },
+    "HER21028": {
+        "code": "HER21028",
+        "name": "Triton Garden",
+        "standard": 3.0,
+        "latitude": 35.288341,
+        "longitude": 25.472126,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 16,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 60.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 348.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 153.0
+        }
+    },
+    "AYT42029": {
+        "code": "AYT42029",
+        "name": "Dream Family Club",
+        "standard": 4.0,
+        "latitude": 36.800331,
+        "longitude": 31.367471,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 11,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 100.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 452.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 228.0
+        }
+    },
+    "BOJ11225": {
+        "code": "BOJ11225",
+        "name": "Asteria Family Sunny Beach",
+        "standard": 4.0,
+        "latitude": 42.696042,
+        "longitude": 27.712892,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 18,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 52.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 252.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 260.0
+        }
+    },
+    "ZTH19001": {
+        "code": "ZTH19001",
+        "name": "Majestic Hotel Spa",
+        "standard": 3.0,
+        "latitude": 37.72775,
+        "longitude": 20.8638,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 23,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 210.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 366.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 252.0
+        }
+    },
+    "AYT13043": {
+        "code": "AYT13043",
+        "name": "AQI HYDROS CLUB",
+        "standard": 5.0,
+        "latitude": 36.607345,
+        "longitude": 30.562494,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 15,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 100.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 625.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 395.0
+        }
+    },
+    "AYT43018": {
+        "code": "AYT43018",
+        "name": "Dream World Resort & Spa",
+        "standard": 4.0,
+        "latitude": 36.808909,
+        "longitude": 31.350724,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 16,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 272.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 492.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 272.0
+        }
+    },
+    "PFO10218": {
+        "code": "PFO10218",
+        "name": "Theo Sunset Bay Holiday Village",
+        "standard": 4.0,
+        "latitude": 34.828871,
+        "longitude": 32.391872,
+        "airportCode": "PFO",
+        "country": "Cypr",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 15,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 348.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 248.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 228.0
+        }
+    },
+    "PMI68022": {
+        "code": "PMI68022",
+        "name": "Hipotels Cala Bona Club",
+        "standard": 4.0,
+        "latitude": 39.619652,
+        "longitude": 3.39131,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 17,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 288.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 292.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 244.0
+        }
+    },
+    "RHO13096": {
+        "code": "RHO13096",
+        "name": "Evita Resort",
+        "standard": 4.0,
+        "latitude": 36.32748,
+        "longitude": 28.207279,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 24,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 284.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 324.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 352.0
+        }
+    },
+    "DJE23009": {
+        "code": "DJE23009",
+        "name": "Eden Star",
+        "standard": 4.0,
+        "latitude": 33.588887,
+        "longitude": 11.079443,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 24,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 276.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 232.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 216.0
+        }
+    },
+    "BJV21021": {
+        "code": "BJV21021",
+        "name": "Kassandra",
+        "standard": 3.0,
+        "latitude": 37.026299,
+        "longitude": 27.384093,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 20,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 51.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 189.0
+        }
+    },
+    "TIA15027": {
+        "code": "TIA15027",
+        "name": "Marbella Beach ",
+        "standard": 4.0,
+        "latitude": 41.25294,
+        "longitude": 19.52097,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 16,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 188.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 508.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 140.0
+        }
+    },
+    "NBE16094": {
+        "code": "NBE16094",
+        "name": "Vincci Nozha Beach",
+        "standard": 4.0,
+        "latitude": 36.400405,
+        "longitude": 10.631974,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 22,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 80.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 464.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 236.0
+        }
+    },
+    "ADB11038": {
+        "code": "ADB11038",
+        "name": "Ephesia Hotel",
+        "standard": 4.0,
+        "latitude": 37.809423,
+        "longitude": 27.270587,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 13,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 172.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 484.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 304.0
+        }
+    },
+    "RHO11079": {
+        "code": "RHO11079",
+        "name": "Aquamare City & Beach Hotel",
+        "standard": 4.0,
+        "latitude": 36.45361,
+        "longitude": 28.22137,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 16,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 48.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 440.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 148.0
+        }
+    },
+    "TIA10028": {
+        "code": "TIA10028",
+        "name": "Vila Mare",
+        "standard": 3.5,
+        "latitude": 41.309095,
+        "longitude": 19.486593,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 18,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 227.5
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 196.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 143.5
+        }
+    },
+    "MJT10004": {
+        "code": "MJT10004",
+        "name": "Delfinia",
+        "standard": 3.0,
+        "latitude": 39.357974,
+        "longitude": 26.176632,
+        "airportCode": "MJT",
+        "country": "Grecja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 15,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 18.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 330.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 243.0
+        }
+    },
+    "TIA34005": {
+        "code": "TIA34005",
+        "name": "Merar",
+        "standard": 4.0,
+        "latitude": 41.220029,
+        "longitude": 19.507329,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 21,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 44.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 376.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 316.0
+        }
+    },
+    "KGS15020": {
+        "code": "KGS15020",
+        "name": "Lagas Aegean Village",
+        "standard": 4.0,
+        "latitude": 36.771163,
+        "longitude": 27.128723,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 24,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 108.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 400.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 356.0
+        }
+    },
+    "BOJ11048": {
+        "code": "BOJ11048",
+        "name": "Baikal",
+        "standard": 3.0,
+        "latitude": 42.686109,
+        "longitude": 27.707996,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 13,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 243.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 372.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 165.0
+        }
+    },
+    "TFS11009": {
+        "code": "TFS11009",
+        "name": "Globales Acuario",
+        "standard": 2.0,
+        "latitude": 28.404693,
+        "longitude": -16.551981,
+        "airportCode": "TFS",
+        "country": "Wyspy Kanaryjskie",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 13,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 50.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 222.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 150.0
+        }
+    },
+    "KGS23007": {
+        "code": "KGS23007",
+        "name": "Esperia",
+        "standard": 3.0,
+        "latitude": 36.875723,
+        "longitude": 27.148111,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 16,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 183.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 360.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 198.0
+        }
+    },
+    "KGS24022": {
+        "code": "KGS24022",
+        "name": "Frosini",
+        "standard": 4.0,
+        "latitude": 36.906378,
+        "longitude": 27.282403,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 21,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 16.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 420.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 232.0
+        }
+    },
+    "CFU30003": {
+        "code": "CFU30003",
+        "name": "Potamaki",
+        "standard": 3.0,
+        "latitude": 39.54415,
+        "longitude": 19.91428,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 23,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 84.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 195.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 189.0
+        }
+    },
+    "PMI31016": {
+        "code": "PMI31016",
+        "name": "Globales Playa Santa Ponsa",
+        "standard": 3.0,
+        "latitude": 39.516177,
+        "longitude": 2.483107,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 13,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 0.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 270.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 219.0
+        }
+    },
+    "AYT41030": {
+        "code": "AYT41030",
+        "name": "Hotel S\u00c3\u00bcral",
+        "standard": 5.0,
+        "latitude": 36.819558,
+        "longitude": 31.305757,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 11,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 80.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 565.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 340.0
+        }
+    },
+    "TIA15041": {
+        "code": "TIA15041",
+        "name": "Diamma Resort & Spa",
+        "standard": 5.0,
+        "latitude": 41.266827,
+        "longitude": 19.519457,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 24,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 335.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 455.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 440.0
+        }
+    },
+    "SMI41023": {
+        "code": "SMI41023",
+        "name": "Method",
+        "standard": 3.0,
+        "latitude": 37.688722,
+        "longitude": 26.94215,
+        "airportCode": "SMI",
+        "country": "Grecja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 15,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 120.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 306.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 222.0
+        }
+    },
+    "NBE16013": {
+        "code": "NBE16013",
+        "name": "SplashWorld Venus Beach",
+        "standard": 3.0,
+        "latitude": 36.389226,
+        "longitude": 10.557116,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 16,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 201.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 192.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 129.0
+        }
+    },
+    "AYT55022": {
+        "code": "AYT55022",
+        "name": "AQI Pegasos Club ",
+        "standard": 4.0,
+        "latitude": 36.633215,
+        "longitude": 31.753688,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 19,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 64.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 412.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 168.0
+        }
+    },
+    "PFO10029": {
+        "code": "PFO10029",
+        "name": "Dionysos Central",
+        "standard": 3.0,
+        "latitude": 34.756875,
+        "longitude": 32.416631,
+        "airportCode": "PFO",
+        "country": "Cypr",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 16,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 213.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 234.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 120.0
+        }
+    },
+    "AYT48015": {
+        "code": "AYT48015",
+        "name": "Riolavitas SPA and Resort",
+        "standard": 5.0,
+        "latitude": 36.753658,
+        "longitude": 31.461132,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 18,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 20.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 415.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 240.0
+        }
+    },
+    "DLM10067": {
+        "code": "DLM10067",
+        "name": "Supreme Marmaris",
+        "standard": 3.0,
+        "latitude": 36.84975,
+        "longitude": 28.253686,
+        "airportCode": "DLM",
+        "country": "Turcja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 16,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 156.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 105.0
+        }
+    },
+    "PMI73034": {
+        "code": "PMI73034",
+        "name": "Club Hotel Cala Ratjada",
+        "standard": 3.0,
+        "latitude": 39.717173,
+        "longitude": 3.458955,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 24,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 6.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 276.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 135.0
+        }
+    },
+    "CTA16035": {
+        "code": "CTA16035",
+        "name": "Residence Villa Collina",
+        "standard": 1.0,
+        "latitude": 37.823659,
+        "longitude": 15.265895,
+        "airportCode": "CTA",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 15,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 86.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 84.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 87.0
+        }
+    },
+    "HER80035": {
+        "code": "HER80035",
+        "name": "Rethymno Village",
+        "standard": 3.0,
+        "latitude": 35.36968,
+        "longitude": 24.534404,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 17,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 87.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 339.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 237.0
+        }
+    },
+    "AYT17070": {
+        "code": "AYT17070",
+        "name": "Paloma Foresta",
+        "standard": 5.0,
+        "latitude": 36.709703,
+        "longitude": 30.568007,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 17,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 440.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 630.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 290.0
+        }
+    },
+    "AYT42053": {
+        "code": "AYT42053",
+        "name": "Side Royal Style",
+        "standard": 5.0,
+        "latitude": 36.808737,
+        "longitude": 31.348714,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 13,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 35.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 495.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 345.0
+        }
+    },
+    "BJV34011": {
+        "code": "BJV34011",
+        "name": "Club Muskebi - All Inclusive",
+        "standard": 4.0,
+        "latitude": 37.02272,
+        "longitude": 27.35337,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 10,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 344.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 296.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 228.0
+        }
+    },
+    "ADB11003": {
+        "code": "ADB11003",
+        "name": "Derici",
+        "standard": 4.0,
+        "latitude": 37.863106,
+        "longitude": 27.261565,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 22,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 48.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 368.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 320.0
+        }
+    },
+    "ZTH12008": {
+        "code": "ZTH12008",
+        "name": "Zante Royal Resort",
+        "standard": 4.0,
+        "latitude": 37.719293,
+        "longitude": 20.986545,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 20,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 252.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 480.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 348.0
+        }
+    },
+    "ADB11022": {
+        "code": "ADB11022",
+        "name": "Akbulut & Spa",
+        "standard": 4.0,
+        "latitude": 37.713944,
+        "longitude": 27.218333,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 23,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 228.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 324.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 172.0
+        }
+    },
+    "GPA13012": {
+        "code": "GPA13012",
+        "name": "Pavlina",
+        "standard": 4.0,
+        "latitude": 38.159476,
+        "longitude": 21.520383,
+        "airportCode": "GPA",
+        "country": "Grecja",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 13,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 332.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 516.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 300.0
+        }
+    },
+    "CFU21001": {
+        "code": "CFU21001",
+        "name": "Dassia Beach",
+        "standard": 2.5,
+        "latitude": 39.68225,
+        "longitude": 19.84117,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 10,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 40.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 190.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 172.5
+        }
+    },
+    "VAR21118": {
+        "code": "VAR21118",
+        "name": "Ibis Styles Golden Sands Roomer Hotel",
+        "standard": 3.0,
+        "latitude": 43.28457,
+        "longitude": 28.041133,
+        "airportCode": "VAR",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 21,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 186.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 279.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 162.0
+        }
+    },
+    "ADB11046": {
+        "code": "ADB11046",
+        "name": "City\u00e2\u20ac\u2122s Hill ",
+        "standard": 4.0,
+        "latitude": 37.877922,
+        "longitude": 27.270044,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 19,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 316.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 376.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 200.0
+        }
+    },
+    "CHQ23002": {
+        "code": "CHQ23002",
+        "name": "Lofos",
+        "standard": 2.0,
+        "latitude": 35.18941,
+        "longitude": 24.40046,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 17,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 130.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 160.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 98.0
+        }
+    },
+    "AYT61125": {
+        "code": "AYT61125",
+        "name": "Elysee Hotel",
+        "standard": 4.0,
+        "latitude": 36.542856,
+        "longitude": 32.018454,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 20,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 244.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 508.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 232.0
+        }
+    },
+    "BJV22070": {
+        "code": "BJV22070",
+        "name": "Royal Asarlik Beach",
+        "standard": 5.0,
+        "latitude": 37.0306,
+        "longitude": 27.398121,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 19,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 305.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 300.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 260.0
+        }
+    },
+    "TGD19601": {
+        "code": "TGD19601",
+        "name": "Hotel Danica",
+        "standard": 3.0,
+        "latitude": 42.207,
+        "longitude": 18.9398,
+        "airportCode": "TGD",
+        "country": "Czarnog\u00c3\u00b3ra",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 12,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 219.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 321.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 120.0
+        }
+    },
+    "BOJ13002": {
+        "code": "BOJ13002",
+        "name": "Perla Beach Club",
+        "standard": 4.0,
+        "latitude": 42.269279,
+        "longitude": 27.757932,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 11,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 252.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 428.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 148.0
+        }
+    },
+    "CHQ18005": {
+        "code": "CHQ18005",
+        "name": "Gerona Mare",
+        "standard": 3.0,
+        "latitude": 35.52113,
+        "longitude": 23.878387,
+        "airportCode": "CHQ",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 13,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 9.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 312.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 159.0
+        }
+    },
+    "AYT31100": {
+        "code": "AYT31100",
+        "name": "TUI MAGIC LIFE Masmavi",
+        "standard": 5.0,
+        "latitude": 36.859424,
+        "longitude": 31.01415,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 23,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 70.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 645.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 255.0
+        }
+    },
+    "PMI73050": {
+        "code": "PMI73050",
+        "name": "Guya Wave",
+        "standard": 3.0,
+        "latitude": 39.71478,
+        "longitude": 3.45985,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 10,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 225.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 231.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 240.0
+        }
+    },
+    "TIA10001": {
+        "code": "TIA10001",
+        "name": "Dyrrah",
+        "standard": 4.0,
+        "latitude": 41.30372,
+        "longitude": 19.494038,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 20,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 108.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 336.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 328.0
+        }
+    },
+    "HER80020": {
+        "code": "HER80020",
+        "name": "Golden Beach",
+        "standard": 3.0,
+        "latitude": 35.37243,
+        "longitude": 24.53773,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 19,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 93.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 279.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 123.0
+        }
+    },
+    "ZTH15115": {
+        "code": "ZTH15115",
+        "name": "Cavo D'Oro Hotel",
+        "standard": 3.0,
+        "latitude": 37.739959,
+        "longitude": 20.907294,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 24,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 246.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 267.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 264.0
+        }
+    },
+    "VIE10221": {
+        "code": "VIE10221",
+        "name": "ibis Wien Mariahilf",
+        "standard": 3.0,
+        "latitude": 48.1932,
+        "longitude": 16.3392,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 12,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 159.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 363.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 195.0
+        }
+    },
+    "KGS24010": {
+        "code": "KGS24010",
+        "name": "Cosmopolitan",
+        "standard": 3.0,
+        "latitude": 36.912302,
+        "longitude": 27.277926,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 11,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 180.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 204.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 129.0
+        }
+    },
+    "BOJ18059": {
+        "code": "BOJ18059",
+        "name": "Voya Beach Resort",
+        "standard": 5.0,
+        "latitude": 42.708991,
+        "longitude": 27.751772,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 12,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 120.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 570.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 305.0
+        }
+    },
+    "AYT61158": {
+        "code": "AYT61158",
+        "name": "Kleopatra Dreams Beach Hotel",
+        "standard": 4.0,
+        "latitude": 36.553384,
+        "longitude": 31.974681,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 23,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 148.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 348.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 156.0
+        }
+    },
+    "ADB11025": {
+        "code": "ADB11025",
+        "name": "Batihan Beach Resort",
+        "standard": 4.0,
+        "latitude": 37.809623,
+        "longitude": 27.271366,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 17,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 56.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 280.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 224.0
+        }
+    },
+    "NBE12070": {
+        "code": "NBE12070",
+        "name": "Riadh Palms",
+        "standard": 4.0,
+        "latitude": 35.841447,
+        "longitude": 10.629528,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 10,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 88.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 316.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 336.0
+        }
+    },
+    "PMI38005": {
+        "code": "PMI38005",
+        "name": "Zero Drach del Mar",
+        "standard": 4.0,
+        "latitude": 39.53688,
+        "longitude": 3.32916,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 10,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 68.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 284.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 344.0
+        }
+    },
+    "HER41082": {
+        "code": "HER41082",
+        "name": "Golden Beach Hersonissos",
+        "standard": 4.0,
+        "latitude": 35.312455,
+        "longitude": 25.399047,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 18,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 76.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 384.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 316.0
+        }
+    },
+    "DJE11015": {
+        "code": "DJE11015",
+        "name": "Jardins de Toumana",
+        "standard": 4.0,
+        "latitude": 33.849525,
+        "longitude": 10.987,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 18,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 20.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 328.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 232.0
+        }
+    },
+    "DJE19016": {
+        "code": "DJE19016",
+        "name": "Djerba Aqua Resort",
+        "standard": 4.0,
+        "latitude": 33.833036,
+        "longitude": 11.006501,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 14,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 328.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 340.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 348.0
+        }
+    },
+    "VIE10065": {
+        "code": "VIE10065",
+        "name": "Mercure Wien Westbahnhof",
+        "standard": 4.0,
+        "latitude": 48.198236,
+        "longitude": 16.337567,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 17,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 212.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 476.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 324.0
+        }
+    },
+    "LPA70007": {
+        "code": "LPA70007",
+        "name": "Servatur Green Beach",
+        "standard": 3.0,
+        "latitude": 27.769075,
+        "longitude": -15.688217,
+        "airportCode": "LPA",
+        "country": "Wyspy Kanaryjskie",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 22,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 69.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 270.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 192.0
+        }
+    },
+    "DBV11613": {
+        "code": "DBV11613",
+        "name": "Villa Valjalo",
+        "standard": 2.5,
+        "latitude": 42.6557,
+        "longitude": 18.0822,
+        "airportCode": "DBV",
+        "country": "Chorwacja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 12,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 37.5
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 200.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 97.5
+        }
+    },
+    "ROM15455": {
+        "code": "ROM15455",
+        "name": "Antico Acquedotto",
+        "standard": 3.0,
+        "latitude": 41.8853,
+        "longitude": 12.5308,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 10,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 222.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 135.0
+        }
+    },
+    "TIA15026": {
+        "code": "TIA15026",
+        "name": "Elesio",
+        "standard": 4.0,
+        "latitude": 41.239552,
+        "longitude": 19.516936,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 18,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 184.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 468.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 328.0
+        }
+    },
+    "NBE16063": {
+        "code": "NBE16063",
+        "name": "Lella Baya & Thalasso",
+        "standard": 4.0,
+        "latitude": 36.37109,
+        "longitude": 10.53991,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 19,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 152.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 492.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 224.0
+        }
+    },
+    "PRG10192": {
+        "code": "PRG10192",
+        "name": "Hotel Adler Praha",
+        "standard": 3.0,
+        "latitude": 50.0804,
+        "longitude": 14.418,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 18,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 237.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 285.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 141.0
+        }
+    },
+    "ZTH13015": {
+        "code": "ZTH13015",
+        "name": "Altura Hotel",
+        "standard": 3.0,
+        "latitude": 31.81054,
+        "longitude": 20.87086,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 22,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 258.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 237.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 156.0
+        }
+    },
+    "AYT61220": {
+        "code": "AYT61220",
+        "name": "Blue Diamond Alya",
+        "standard": 4.0,
+        "latitude": 36.535721,
+        "longitude": 32.034311,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 21,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 192.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 412.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 344.0
+        }
+    },
+    "ZTH11005": {
+        "code": "ZTH11005",
+        "name": "Captain\u00e2\u20ac\u2122s",
+        "standard": 3.0,
+        "latitude": 37.760909,
+        "longitude": 20.923775,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 12,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 120.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 309.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 192.0
+        }
+    },
+    "CHQ17001": {
+        "code": "CHQ17001",
+        "name": "Blue Beach",
+        "standard": 4.0,
+        "latitude": 35.592213,
+        "longitude": 24.083673,
+        "airportCode": "CHQ",
+        "country": "Grecja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 14,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 68.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 512.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 340.0
+        }
+    },
+    "TGD19111": {
+        "code": "TGD19111",
+        "name": "Rivijera",
+        "standard": 4.0,
+        "latitude": 42.204829,
+        "longitude": 18.944237,
+        "airportCode": "TGD",
+        "country": "Czarnog\u00c3\u00b3ra",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 16,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 36.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 420.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 220.0
+        }
+    },
+    "PRG10614": {
+        "code": "PRG10614",
+        "name": "Hotel Carol",
+        "standard": 3.0,
+        "latitude": 50.1054,
+        "longitude": 14.488,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 24,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 27.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 327.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 186.0
+        }
+    },
+    "PAR12689": {
+        "code": "PAR12689",
+        "name": "Comfort Hotel Paris Nation Pere Lachaise",
+        "standard": 3.0,
+        "latitude": 48.8537,
+        "longitude": 2.3881,
+        "airportCode": "CDG",
+        "country": "Francja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 10,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 24.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 291.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 198.0
+        }
+    },
+    "TIA15122": {
+        "code": "TIA15122",
+        "name": "Gloria Palace & SPA",
+        "standard": 5.0,
+        "latitude": 41.217695,
+        "longitude": 19.504888,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 21,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 405.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 455.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 225.0
+        }
+    },
+    "CFU38009": {
+        "code": "CFU38009",
+        "name": "Olympion Village",
+        "standard": 3.0,
+        "latitude": 39.386334,
+        "longitude": 20.108022,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 18,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 159.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 180.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 228.0
+        }
+    },
+    "ROM15258": {
+        "code": "ROM15258",
+        "name": "Athena",
+        "standard": 2.0,
+        "latitude": 41.9079,
+        "longitude": 12.5193,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 12,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 146.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 130.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 164.0
+        }
+    },
+    "PRG10146": {
+        "code": "PRG10146",
+        "name": "Hotel Trevi",
+        "standard": 4.0,
+        "latitude": 50.0739,
+        "longitude": 14.4385,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 22,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 132.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 308.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 244.0
+        }
+    },
+    "PRG10162": {
+        "code": "PRG10162",
+        "name": "Merkur",
+        "standard": 3.0,
+        "latitude": 50.0912,
+        "longitude": 14.4364,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 16,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 123.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 285.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 180.0
+        }
+    },
+    "ZTH12006": {
+        "code": "ZTH12006",
+        "name": "Koukis Beach",
+        "standard": 4.0,
+        "latitude": 37.726603,
+        "longitude": 20.988749,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 13,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 348.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 360.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 316.0
+        }
+    },
+    "BJV21012": {
+        "code": "BJV21012",
+        "name": "Okaliptus",
+        "standard": 4.0,
+        "latitude": 37.027827,
+        "longitude": 27.379086,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 16,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 212.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 436.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 196.0
+        }
+    },
+    "PRG10423": {
+        "code": "PRG10423",
+        "name": "Plaza Hotel Alta",
+        "standard": 4.0,
+        "latitude": 50.1077,
+        "longitude": 14.4501,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 23,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 140.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 308.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 252.0
+        }
+    },
+    "KGS21030": {
+        "code": "KGS21030",
+        "name": "Sunshine Hotel - Apartments",
+        "standard": 3.5,
+        "latitude": 36.884881,
+        "longitude": 27.183628,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 20,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 199.5
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 364.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 266.0
+        }
+    },
+    "BOJ11190": {
+        "code": "BOJ11190",
+        "name": "Cook's Club Sunny Beach",
+        "standard": 4.0,
+        "latitude": 42.669726,
+        "longitude": 27.708032,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 17,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 40.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 260.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 268.0
+        }
+    },
+    "HER40013": {
+        "code": "HER40013",
+        "name": "Club Lyda",
+        "standard": 3.0,
+        "latitude": 35.3269,
+        "longitude": 25.32164,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 18,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 39.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 369.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 267.0
+        }
+    },
+    "ADB11080": {
+        "code": "ADB11080",
+        "name": "Paloma Marina Suites",
+        "standard": 4.0,
+        "latitude": 37.868937,
+        "longitude": 27.264622,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 20,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 32.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 228.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 140.0
+        }
+    },
+    "VIE10041": {
+        "code": "VIE10041",
+        "name": "Baron am Schottentor",
+        "standard": 3.5,
+        "latitude": 48.2167,
+        "longitude": 16.36,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 13,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 231.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 304.5
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 122.5
+        }
+    },
+    "HER41145": {
+        "code": "HER41145",
+        "name": "Cook's Club Hersonissos",
+        "standard": 4.0,
+        "latitude": 35.314545,
+        "longitude": 25.394423,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 24,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 4.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 224.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 344.0
+        }
+    },
+    "GPA10010": {
+        "code": "GPA10010",
+        "name": "Appartements Helidonia",
+        "standard": 3.0,
+        "latitude": 37.857847,
+        "longitude": 21.130922,
+        "airportCode": "GPA",
+        "country": "Grecja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 20,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 207.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 282.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 204.0
+        }
+    },
+    "HER28026": {
+        "code": "HER28026",
+        "name": "Delfina Boutique",
+        "standard": 4.0,
+        "latitude": 35.35129,
+        "longitude": 24.295908,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 23,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 320.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 276.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 256.0
+        }
+    },
+    "BJV25030": {
+        "code": "BJV25030",
+        "name": "Bodrum Park Resort",
+        "standard": 5.0,
+        "latitude": 36.982278,
+        "longitude": 27.562958,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 19,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 335.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 410.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 275.0
+        }
+    },
+    "NBE16018": {
+        "code": "NBE16018",
+        "name": "Diar Lemdina",
+        "standard": 4.0,
+        "latitude": 36.366188,
+        "longitude": 10.532815,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 15,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 192.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 260.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 260.0
+        }
+    },
+    "ZTH19012": {
+        "code": "ZTH19012",
+        "name": "California Beach",
+        "standard": 3.0,
+        "latitude": 37.72643,
+        "longitude": 20.86883,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 11,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 45.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 216.0
+        }
+    },
+    "HER32032": {
+        "code": "HER32032",
+        "name": "Themis Beach",
+        "standard": 4.0,
+        "latitude": 35.331674,
+        "longitude": 25.261603,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 22,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 80.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 404.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 352.0
+        }
+    },
+    "BOJ11040": {
+        "code": "BOJ11040",
+        "name": "Helena Sands",
+        "standard": 5.0,
+        "latitude": 42.708751,
+        "longitude": 27.728294,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 19,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 295.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 495.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 330.0
+        }
+    },
+    "DJE23001": {
+        "code": "DJE23001",
+        "name": "Zita Beach Resort",
+        "standard": 4.0,
+        "latitude": 33.541323,
+        "longitude": 11.111416,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 21,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 256.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 440.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 152.0
+        }
+    },
+    "PMI83062": {
+        "code": "PMI83062",
+        "name": "TUI SUNEO Lagomonte",
+        "standard": 3.0,
+        "latitude": 39.834568,
+        "longitude": 3.106658,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 23,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 183.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 264.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 111.0
+        }
+    },
+    "CTA16038": {
+        "code": "CTA16038",
+        "name": "Villa Giardini",
+        "standard": 3.0,
+        "latitude": 37.823858,
+        "longitude": 15.267993,
+        "airportCode": "CTA",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 18,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 69.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 291.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 237.0
+        }
+    },
+    "ADB11050": {
+        "code": "ADB11050",
+        "name": "Ramada Resort Kusadasi",
+        "standard": 5.0,
+        "latitude": 37.882201,
+        "longitude": 27.269308,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 18,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 335.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 470.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 180.0
+        }
+    },
+    "VIE10222": {
+        "code": "VIE10222",
+        "name": "Mozart",
+        "standard": 3.0,
+        "latitude": 48.2261,
+        "longitude": 16.3623,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 18,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 33.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 327.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 183.0
+        }
+    },
+    "BOJ16016": {
+        "code": "BOJ16016",
+        "name": "Wave Resort ",
+        "standard": 4.0,
+        "latitude": 42.627247,
+        "longitude": 27.632629,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 11,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 204.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 472.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 244.0
+        }
+    },
+    "MAH32006": {
+        "code": "MAH32006",
+        "name": "Apartmentos los Lentiscos by Mij",
+        "standard": 2.0,
+        "latitude": 40.00171,
+        "longitude": 3.79874,
+        "airportCode": "MAH",
+        "country": "Hiszpania",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 20,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 24.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 122.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 164.0
+        }
+    },
+    "NBE16073": {
+        "code": "NBE16073",
+        "name": "Hammamet Beach ",
+        "standard": 3.5,
+        "latitude": 36.425536,
+        "longitude": 10.681261,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 23,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 94.5
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 266.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 164.5
+        }
+    },
+    "VIE10620": {
+        "code": "VIE10620",
+        "name": "A&O Wien Hauptbahnhof",
+        "standard": 2.0,
+        "latitude": 48.1829,
+        "longitude": 16.3786,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 16,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 36.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 218.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 76.0
+        }
+    },
+    "DJE11084": {
+        "code": "DJE11084",
+        "name": "El Mouradi Djerba Menzel",
+        "standard": 4.0,
+        "latitude": 33.780288,
+        "longitude": 11.057079,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 24,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 16.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 432.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 156.0
+        }
+    },
+    "VIE10116": {
+        "code": "VIE10116",
+        "name": "Carathotel Wien City Park",
+        "standard": 4.0,
+        "latitude": 48.1666,
+        "longitude": 16.3449,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 16,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 280.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 260.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 248.0
+        }
+    },
+    "HER41105": {
+        "code": "HER41105",
+        "name": "Pollis Hotel",
+        "standard": 4.0,
+        "latitude": 35.32067,
+        "longitude": 25.39031,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 11,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 212.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 296.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 296.0
+        }
+    },
+    "AYT41059": {
+        "code": "AYT41059",
+        "name": "Barut B Suites",
+        "standard": 4.0,
+        "latitude": 36.808675,
+        "longitude": 31.344092,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 21,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 224.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 420.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 200.0
+        }
+    },
+    "AYT51060": {
+        "code": "AYT51060",
+        "name": "Hotel Nena",
+        "standard": 5.0,
+        "latitude": 36.724643,
+        "longitude": 31.53761,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 19,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 270.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 580.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 305.0
+        }
+    },
+    "VAR41002": {
+        "code": "VAR41002",
+        "name": "Borjana",
+        "standard": 3.0,
+        "latitude": 43.361826,
+        "longitude": 28.079968,
+        "airportCode": "VAR",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 24,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 66.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 222.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 171.0
+        }
+    },
+    "GPA13010": {
+        "code": "GPA13010",
+        "name": "Niforeika Beach Hotel & Bungalows",
+        "standard": 3.0,
+        "latitude": 38.158703,
+        "longitude": 21.522778,
+        "airportCode": "GPA",
+        "country": "Grecja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 22,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 108.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 198.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 120.0
+        }
+    },
+    "GPA18020": {
+        "code": "GPA18020",
+        "name": "Brati Arcoudi",
+        "standard": 2.0,
+        "latitude": 37.848492,
+        "longitude": 21.11438,
+        "airportCode": "GPA",
+        "country": "Grecja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 10,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 126.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 120.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 70.0
+        }
+    },
+    "MJT10008": {
+        "code": "MJT10008",
+        "name": "Aphrodite",
+        "standard": 3.0,
+        "latitude": 39.375603,
+        "longitude": 26.183498,
+        "airportCode": "MJT",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 15,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 45.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 186.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 165.0
+        }
+    },
+    "VAR41018": {
+        "code": "VAR41018",
+        "name": "Nona",
+        "standard": 3.0,
+        "latitude": 43.361025,
+        "longitude": 28.079244,
+        "airportCode": "VAR",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 14,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 132.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 285.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 147.0
+        }
+    },
+    "HER25053": {
+        "code": "HER25053",
+        "name": "Marilena",
+        "standard": 4.0,
+        "latitude": 35.335369,
+        "longitude": 25.078296,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 13,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 264.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 324.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 328.0
+        }
+    },
+    "HER41021": {
+        "code": "HER41021",
+        "name": "Albatros Resort & Spa",
+        "standard": 5.0,
+        "latitude": 35.322127,
+        "longitude": 25.388202,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 19,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 115.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 445.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 260.0
+        }
+    },
+    "MAD00066": {
+        "code": "MAD00066",
+        "name": "MC Villa de Pinto",
+        "standard": 3.0,
+        "latitude": 40.2434,
+        "longitude": -3.6964,
+        "airportCode": "MAD",
+        "country": "Hiszpania",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 11,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 39.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 312.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 252.0
+        }
+    },
+    "BOJ13010": {
+        "code": "BOJ13010",
+        "name": "Perla Sun",
+        "standard": 4.0,
+        "latitude": 42.262829,
+        "longitude": 27.750757,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 19,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 84.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 288.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 304.0
+        }
+    },
+    "AYT41048": {
+        "code": "AYT41048",
+        "name": "Grand Seker",
+        "standard": 5.0,
+        "latitude": 36.810538,
+        "longitude": 31.33987,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 24,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 45.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 390.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 205.0
+        }
+    },
+    "PRG10409": {
+        "code": "PRG10409",
+        "name": "Central Hotel Prague",
+        "standard": 3.0,
+        "latitude": 50.0887,
+        "longitude": 14.4262,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 11,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 153.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 354.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 141.0
+        }
+    },
+    "PRG10105": {
+        "code": "PRG10105",
+        "name": "Comfort Hotel Prague City East",
+        "standard": 3.0,
+        "latitude": 50.0763,
+        "longitude": 14.4936,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 22,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 108.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 321.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 147.0
+        }
+    },
+    "SMI40030": {
+        "code": "SMI40030",
+        "name": "Arion",
+        "standard": 4.0,
+        "latitude": 37.779,
+        "longitude": 26.8775,
+        "airportCode": "SMI",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 12,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 4.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 296.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 144.0
+        }
+    },
+    "KGS13013": {
+        "code": "KGS13013",
+        "name": "Sun Palace Resort & Spa",
+        "standard": 4.0,
+        "latitude": 36.881954,
+        "longitude": 27.33738,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 23,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 116.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 396.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 300.0
+        }
+    },
+    "TIA15045": {
+        "code": "TIA15045",
+        "name": "Garden Palace Hotel",
+        "standard": 4.0,
+        "latitude": 41.26255,
+        "longitude": 19.521212,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 24,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 260.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 460.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 200.0
+        }
+    },
+    "HER41233": {
+        "code": "HER41233",
+        "name": "Ida Village I & II",
+        "standard": 3.0,
+        "latitude": 35.305413,
+        "longitude": 25.404741,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 12,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 231.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 246.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 153.0
+        }
+    },
+    "VCE12139": {
+        "code": "VCE12139",
+        "name": "Ducale",
+        "standard": 2.5,
+        "latitude": 45.5048,
+        "longitude": 12.2828,
+        "airportCode": "VCE",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 17,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 75.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 242.5
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 140.0
+        }
+    },
+    "ADB11110": {
+        "code": "ADB11110",
+        "name": "Marbel Hotel by Palm Wings",
+        "standard": 4.0,
+        "latitude": 37.848395,
+        "longitude": 27.261339,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 24,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 204.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 472.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 312.0
+        }
+    },
+    "KGS11028": {
+        "code": "KGS11028",
+        "name": "The Aeolos Beach Hotel",
+        "standard": 4.0,
+        "latitude": 36.897349,
+        "longitude": 27.245965,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 22,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 208.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 408.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 308.0
+        }
+    },
+    "RHO20030": {
+        "code": "RHO20030",
+        "name": "Blue Horizon Palm Beach",
+        "standard": 4.0,
+        "latitude": 36.422813,
+        "longitude": 28.154136,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 13,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 172.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 292.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 148.0
+        }
+    },
+    "BOJ11045": {
+        "code": "BOJ11045",
+        "name": "Helena Park",
+        "standard": 5.0,
+        "latitude": 42.70953,
+        "longitude": 27.728473,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 12,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 115.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 280.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 420.0
+        }
+    },
+    "DJE19010": {
+        "code": "DJE19010",
+        "name": "Baya Beach Aqua Park",
+        "standard": 3.0,
+        "latitude": 33.842647,
+        "longitude": 10.993018,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 14,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 147.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 252.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 147.0
+        }
+    },
+    "NBE16044": {
+        "code": "NBE16044",
+        "name": "Medina Belisaire & Thalasso",
+        "standard": 4.0,
+        "latitude": 36.359831,
+        "longitude": 10.527359,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 20,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 84.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 476.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 356.0
+        }
+    },
+    "LCA15086": {
+        "code": "LCA15086",
+        "name": "Andreotis Hotel Apartaments",
+        "standard": 3.0,
+        "latitude": 35.008786,
+        "longitude": 34.058413,
+        "airportCode": "LCA",
+        "country": "Cypr",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 15,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 12.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 303.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 186.0
+        }
+    },
+    "DJE11024": {
+        "code": "DJE11024",
+        "name": "Seabel Aladin",
+        "standard": 3.0,
+        "latitude": 33.763873,
+        "longitude": 11.021385,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 18,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 120.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 345.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 153.0
+        }
+    },
+    "ACE21060": {
+        "code": "ACE21060",
+        "name": "Apartamentos LIVVO Morromar",
+        "standard": 3.0,
+        "latitude": 28.935633,
+        "longitude": -13.622259,
+        "airportCode": "ACE",
+        "country": "Wyspy Kanaryjskie",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 17,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 204.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 336.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 114.0
+        }
+    },
+    "ZTH13010": {
+        "code": "ZTH13010",
+        "name": "Filoxenia",
+        "standard": 4.0,
+        "latitude": 37.804838,
+        "longitude": 20.873012,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 19,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 316.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 328.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 308.0
+        }
+    },
+    "BJV23019": {
+        "code": "BJV23019",
+        "name": "Charm Beach",
+        "standard": 4.0,
+        "latitude": 36.96449,
+        "longitude": 27.27093,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 10,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 276.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 424.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 148.0
+        }
+    },
+    "DBV12007": {
+        "code": "DBV12007",
+        "name": "Villa Samba",
+        "standard": 3.5,
+        "latitude": 42.6102,
+        "longitude": 18.2277,
+        "airportCode": "DBV",
+        "country": "Chorwacja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 16,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 0.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 238.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 210.0
+        }
+    },
+    "HER52010": {
+        "code": "HER52010",
+        "name": "Horizon Beach",
+        "standard": 4.0,
+        "latitude": 35.300778,
+        "longitude": 25.42217,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 17,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 268.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 276.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 324.0
+        }
+    },
+    "NCE16005": {
+        "code": "NCE16005",
+        "name": "Residhotel Les Coralynes",
+        "standard": 3.0,
+        "latitude": 43.5546,
+        "longitude": 7.0144,
+        "airportCode": "NCE",
+        "country": "Francja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 10,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 231.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 192.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 111.0
+        }
+    },
+    "HER41059": {
+        "code": "HER41059",
+        "name": "Heronissos Hotel",
+        "standard": 4.0,
+        "latitude": 35.321245,
+        "longitude": 25.390701,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 22,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 272.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 448.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 176.0
+        }
+    },
+    "HER41056": {
+        "code": "HER41056",
+        "name": "Ocean Heights View Hotel",
+        "standard": 4.0,
+        "latitude": 35.331786,
+        "longitude": 25.371545,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 22,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 328.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 496.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 220.0
+        }
+    },
+    "HER23020": {
+        "code": "HER23020",
+        "name": "Castello Village Resort",
+        "standard": 4.0,
+        "latitude": 35.309129,
+        "longitude": 25.522935,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 12,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 264.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 312.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 268.0
+        }
+    },
+    "PFO10214": {
+        "code": "PFO10214",
+        "name": "Avanti Holiday Village",
+        "standard": 4.0,
+        "latitude": 34.747595,
+        "longitude": 32.429752,
+        "airportCode": "PFO",
+        "country": "Cypr",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 23,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 84.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 296.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 340.0
+        }
+    },
+    "CHQ11010": {
+        "code": "CHQ11010",
+        "name": "Kastalia Village",
+        "standard": 3.5,
+        "latitude": 35.531075,
+        "longitude": 23.810065,
+        "airportCode": "CHQ",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 12,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 311.5
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 350.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 192.5
+        }
+    },
+    "AYT53016": {
+        "code": "AYT53016",
+        "name": "Gardenia Beach Hotel",
+        "standard": 4.0,
+        "latitude": 36.652748,
+        "longitude": 31.66923,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 24,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 72.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 316.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 216.0
+        }
+    },
+    "MJT12004": {
+        "code": "MJT12004",
+        "name": "Imerti Resort",
+        "standard": 3.0,
+        "latitude": 39.210553,
+        "longitude": 26.209023,
+        "airportCode": "MJT",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 14,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 204.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 294.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 234.0
+        }
+    },
+    "PMI73048": {
+        "code": "PMI73048",
+        "name": "THB Dos Playas",
+        "standard": 3.0,
+        "latitude": 39.7087,
+        "longitude": 3.45587,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 11,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 138.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 171.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 219.0
+        }
+    },
+    "PMI68009": {
+        "code": "PMI68009",
+        "name": "Hipotels Gran Coma",
+        "standard": 4.0,
+        "latitude": 39.57696,
+        "longitude": 3.37513,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 10,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 348.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 424.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 264.0
+        }
+    },
+    "HER52015": {
+        "code": "HER52015",
+        "name": "Ariadne",
+        "standard": 3.5,
+        "latitude": 35.291342,
+        "longitude": 25.442191,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 17,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 28.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 276.5
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 227.5
+        }
+    },
+    "DJE11050": {
+        "code": "DJE11050",
+        "name": "Cesar Thalasso Conventions",
+        "standard": 4.0,
+        "latitude": 33.832162,
+        "longitude": 11.006256,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 12,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 60.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 444.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 344.0
+        }
+    },
+    "AYT13052": {
+        "code": "AYT13052",
+        "name": "Fame Residence Kemer Spa",
+        "standard": 5.0,
+        "latitude": 36.602901,
+        "longitude": 30.566188,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 375.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 630.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 430.0
+        }
+    },
+    "AYT61104": {
+        "code": "AYT61104",
+        "name": "Monart City Hotel",
+        "standard": 4.0,
+        "latitude": 36.541614,
+        "longitude": 32.021472,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 204.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 272.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 164.0
+        }
+    },
+    "NBE12080": {
+        "code": "NBE12080",
+        "name": "Marhaba Salem",
+        "standard": 4.0,
+        "latitude": 35.859106,
+        "longitude": 10.617042,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 20,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 232.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 360.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 236.0
+        }
+    },
+    "ACE20009": {
+        "code": "ACE20009",
+        "name": "Aparthotel Costa Mar",
+        "standard": 3.0,
+        "latitude": 28.93035,
+        "longitude": -13.635567,
+        "airportCode": "ACE",
+        "country": "Wyspy Kanaryjskie",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 21,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 198.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 198.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 225.0
+        }
+    },
+    "NBE14028": {
+        "code": "NBE14028",
+        "name": "Vincci Rosa Beach",
+        "standard": 4.0,
+        "latitude": 35.768736,
+        "longitude": 10.764592,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 11,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 240.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 444.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 140.0
+        }
+    },
+    "MAD00068": {
+        "code": "MAD00068",
+        "name": "Posadas de Espana Pinto",
+        "standard": 3.0,
+        "latitude": 40.264,
+        "longitude": -3.6924,
+        "airportCode": "MAD",
+        "country": "Hiszpania",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 19,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 48.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 378.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 255.0
+        }
+    },
+    "NBE11040": {
+        "code": "NBE11040",
+        "name": "Hotel El Mouradi Palm Marina",
+        "standard": 4.5,
+        "latitude": 35.911243,
+        "longitude": 10.581535,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 18,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 27.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 306.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 288.0
+        }
+    },
+    "DJE23005": {
+        "code": "DJE23005",
+        "name": "Zephir & Spa",
+        "standard": 4.0,
+        "latitude": 33.53401,
+        "longitude": 11.112584,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 12,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 4.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 496.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 320.0
+        }
+    },
+    "ZTH19064": {
+        "code": "ZTH19064",
+        "name": "Margarita",
+        "standard": 4.0,
+        "latitude": 37.733582,
+        "longitude": 20.868347,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 22,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 324.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 312.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 252.0
+        }
+    },
+    "AYT42201": {
+        "code": "AYT42201",
+        "name": "Paloma Perissia ",
+        "standard": 5.0,
+        "latitude": 36.789817,
+        "longitude": 31.37389,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 15,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 180.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 295.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 405.0
+        }
+    },
+    "DJE11016": {
+        "code": "DJE11016",
+        "name": "Dar Jerba Narjess",
+        "standard": 4.0,
+        "latitude": 33.828628,
+        "longitude": 11.030767,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 18,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 56.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 472.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 316.0
+        }
+    },
+    "VIE10133": {
+        "code": "VIE10133",
+        "name": "Arthotel ANA Gala Vienna",
+        "standard": 4.0,
+        "latitude": 48.2307,
+        "longitude": 16.3552,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 17,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 160.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 372.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 308.0
+        }
+    },
+    "AYT14003": {
+        "code": "AYT14003",
+        "name": "Fame Residence G\u00c3\u00b6yn\u00c3\u00bck",
+        "standard": 4.0,
+        "latitude": 36.662697,
+        "longitude": 30.558173,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 14,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 256.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 424.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 232.0
+        }
+    },
+    "VAR42010": {
+        "code": "VAR42010",
+        "name": "Hotel Lighthouse Golf & Spa Resort",
+        "standard": 5.0,
+        "latitude": 43.409421,
+        "longitude": 28.208627,
+        "airportCode": "VAR",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 17,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 335.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 520.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 380.0
+        }
+    },
+    "ZTH13024": {
+        "code": "ZTH13024",
+        "name": "Zante Palace",
+        "standard": 3.0,
+        "latitude": 37.814468,
+        "longitude": 20.880341,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 24,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 183.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 210.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 207.0
+        }
+    },
+    "CFU21017": {
+        "code": "CFU21017",
+        "name": "Livadi Nafsika",
+        "standard": 3.0,
+        "latitude": 39.677739,
+        "longitude": 19.83699,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 13,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 183.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 180.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 231.0
+        }
+    },
+    "AYT21018": {
+        "code": "AYT21018",
+        "name": "Alp Pasa",
+        "standard": 4.0,
+        "latitude": 36.883829,
+        "longitude": 30.706821,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 20,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 96.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 256.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 284.0
+        }
+    },
+    "AYT40020": {
+        "code": "AYT40020",
+        "name": "Hotel Terrace Elite Resort",
+        "standard": 5.0,
+        "latitude": 36.824654,
+        "longitude": 31.285594,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 18,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 105.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 485.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 270.0
+        }
+    },
+    "PRG10212": {
+        "code": "PRG10212",
+        "name": "Metropolitan Old Town",
+        "standard": 3.0,
+        "latitude": 50.0912,
+        "longitude": 14.4257,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 15,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 63.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 300.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 153.0
+        }
+    },
+    "NBE16009": {
+        "code": "NBE16009",
+        "name": "Palm Beach Club Hammamet",
+        "standard": 4.0,
+        "latitude": 36.40472,
+        "longitude": 10.646222,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 24,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 220.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 412.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 352.0
+        }
+    },
+    "BCN10006": {
+        "code": "BCN10006",
+        "name": "Catalonia Aragon",
+        "standard": 3.0,
+        "latitude": 41.4077,
+        "longitude": 2.1853,
+        "airportCode": "BCN",
+        "country": "Hiszpania",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 10,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 126.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 225.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 117.0
+        }
+    },
+    "AYT42037": {
+        "code": "AYT42037",
+        "name": "Seaden Corolla Hotel",
+        "standard": 4.0,
+        "latitude": 36.794478,
+        "longitude": 31.37494,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 11,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 236.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 304.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 232.0
+        }
+    },
+    "PMI93011": {
+        "code": "PMI93011",
+        "name": "Mariant",
+        "standard": 3.0,
+        "latitude": 39.569312,
+        "longitude": 3.372663,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 22,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 228.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 291.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 144.0
+        }
+    },
+    "AYT57044": {
+        "code": "AYT57044",
+        "name": "SplashWorld Eftalia Splash Resort",
+        "standard": 4.0,
+        "latitude": 36.601464,
+        "longitude": 31.814443,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 12,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 284.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 408.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 200.0
+        }
+    },
+    "AYT40017": {
+        "code": "AYT40017",
+        "name": "Roma Beach Resort & Spa",
+        "standard": 5.0,
+        "latitude": 36.822647,
+        "longitude": 31.27762,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 22,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 205.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 525.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 360.0
+        }
+    },
+    "AGP50006": {
+        "code": "AGP50006",
+        "name": "Best Alcazar",
+        "standard": 4.0,
+        "latitude": 36.728388,
+        "longitude": -3.731193,
+        "airportCode": "AGP",
+        "country": "Hiszpania",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 13,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 188.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 448.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 300.0
+        }
+    },
+    "SSH13098": {
+        "code": "SSH13098",
+        "name": "Falcon Hills",
+        "standard": 3.0,
+        "latitude": 27.870294,
+        "longitude": 34.313668,
+        "airportCode": "SSH",
+        "country": "Egipt",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 14,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 216.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 360.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 153.0
+        }
+    },
+    "PMI82029": {
+        "code": "PMI82029",
+        "name": "Nordeste Playa",
+        "standard": 3.0,
+        "latitude": 39.766922,
+        "longitude": 3.152083,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 16,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 210.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 372.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 246.0
+        }
+    },
+    "CHQ23003": {
+        "code": "CHQ23003",
+        "name": "Horizon Beach",
+        "standard": 3.0,
+        "latitude": 35.19305,
+        "longitude": 24.38946,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 16,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 201.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 171.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 171.0
+        }
+    },
+    "AYT41009": {
+        "code": "AYT41009",
+        "name": "Hotel Royal Atlantis Beach",
+        "standard": 4.0,
+        "latitude": 36.819342,
+        "longitude": 31.288971,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 23,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 136.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 336.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 176.0
+        }
+    },
+    "AYT42080": {
+        "code": "AYT42080",
+        "name": "Paloma Oceana",
+        "standard": 5.0,
+        "latitude": 36.802447,
+        "longitude": 31.359117,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 14,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 105.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 430.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 290.0
+        }
+    },
+    "BJV26020": {
+        "code": "BJV26020",
+        "name": "Zeytinada",
+        "standard": 4.0,
+        "latitude": 37.079952,
+        "longitude": 27.456266,
+        "airportCode": "BJV",
+        "country": "Turcja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 20,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 204.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 220.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 192.0
+        }
+    },
+    "HER41044": {
+        "code": "HER41044",
+        "name": "TUI SUNEO Chrissi Amoudia",
+        "standard": 4.0,
+        "latitude": 35.33426,
+        "longitude": 25.37832,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 15,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 40.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 416.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 168.0
+        }
+    },
+    "AYT57079": {
+        "code": "AYT57079",
+        "name": "Hotel Eftalia Village",
+        "standard": 5.0,
+        "latitude": 36.596502,
+        "longitude": 31.815681,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 19,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 195.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 525.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 415.0
+        }
+    },
+    "LCA20034": {
+        "code": "LCA20034",
+        "name": "Evabelle Napa Hotel Apartaments",
+        "standard": 3.0,
+        "latitude": 34.988315,
+        "longitude": 33.989709,
+        "airportCode": "LCA",
+        "country": "Cypr",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 45.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 321.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 219.0
+        }
+    },
+    "PMI73081": {
+        "code": "PMI73081",
+        "name": "Prinsotel La Pineda",
+        "standard": 4.0,
+        "latitude": 39.714768,
+        "longitude": 3.457706,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 21,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 32.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 356.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 288.0
+        }
+    },
+    "SPU34011": {
+        "code": "SPU34011",
+        "name": "Bluesun Hotel Alga",
+        "standard": 4.0,
+        "latitude": 43.271425,
+        "longitude": 17.052963,
+        "airportCode": "SPU",
+        "country": "Chorwacja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 10,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 140.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 260.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 192.0
+        }
+    },
+    "DBV10021": {
+        "code": "DBV10021",
+        "name": "Bacan Serviced Apartments",
+        "standard": 3.0,
+        "latitude": 42.5786,
+        "longitude": 18.2212,
+        "airportCode": "DBV",
+        "country": "Chorwacja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 13,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 255.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 354.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 129.0
+        }
+    },
+    "RHO11010": {
+        "code": "RHO11010",
+        "name": "Arte Rhodes (ex. Agla)",
+        "standard": 4.0,
+        "latitude": 36.448613,
+        "longitude": 28.215504,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 19,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 8.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 476.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 332.0
+        }
+    },
+    "BOJ11135": {
+        "code": "BOJ11135",
+        "name": "Perla Sunny Beach",
+        "standard": 4.0,
+        "latitude": 42.699777,
+        "longitude": 27.71356,
+        "airportCode": "BOJ",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 20,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 216.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 228.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 208.0
+        }
+    },
+    "NBE11020": {
+        "code": "NBE11020",
+        "name": "Seabel Alhambra Beach Golf & Spa",
+        "standard": 4.0,
+        "latitude": 35.901937,
+        "longitude": 10.586358,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 160.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 488.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 248.0
+        }
+    },
+    "ZTH12028": {
+        "code": "ZTH12028",
+        "name": "Sea View Village",
+        "standard": 4.0,
+        "latitude": 37.738431,
+        "longitude": 20.948848,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 17,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 348.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 464.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 184.0
+        }
+    },
+    "DBV35023": {
+        "code": "DBV35023",
+        "name": "Vila Riva",
+        "standard": 4.0,
+        "latitude": 42.7857,
+        "longitude": 17.8892,
+        "airportCode": "DBV",
+        "country": "Chorwacja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 24,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 56.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 328.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 308.0
+        }
+    },
+    "RHO10020": {
+        "code": "RHO10020",
+        "name": "Meliton",
+        "standard": 3.0,
+        "latitude": 36.373705,
+        "longitude": 28.025061,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 22,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 264.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 210.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 120.0
+        }
+    },
+    "NCE13039": {
+        "code": "NCE13039",
+        "name": "Hipark Nice",
+        "standard": 4.0,
+        "latitude": 43.7052,
+        "longitude": 7.285,
+        "airportCode": "NCE",
+        "country": "Francja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 12,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 128.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 380.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 236.0
+        }
+    },
+    "CFU26004": {
+        "code": "CFU26004",
+        "name": "Michelangelo Resort",
+        "standard": 4.0,
+        "latitude": 38.78334,
+        "longitude": 19.942481,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 16,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 24.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 232.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 164.0
+        }
+    },
+    "HER41061": {
+        "code": "HER41061",
+        "name": "Mediterraneo",
+        "standard": 4.0,
+        "latitude": 35.304934,
+        "longitude": 25.411245,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 28,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 22,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 284.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 400.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 244.0
+        }
+    },
+    "VIE10627": {
+        "code": "VIE10627",
+        "name": "Austria Trend Hotel Ananas",
+        "standard": 4.0,
+        "latitude": 48.1916,
+        "longitude": 16.3545,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 11,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 348.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 356.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 200.0
+        }
+    },
+    "VIE10109": {
+        "code": "VIE10109",
+        "name": "Best Western Plus Amedia Hotel Wien",
+        "standard": 4.0,
+        "latitude": 48.1924,
+        "longitude": 16.3995,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 11,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 288.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 276.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 156.0
+        }
+    },
+    "NBE12009": {
+        "code": "NBE12009",
+        "name": "Marhaba",
+        "standard": 4.0,
+        "latitude": 35.84733,
+        "longitude": 10.621346,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 15,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 24.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 352.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 236.0
+        }
+    },
+    "DJE11004": {
+        "code": "DJE11004",
+        "name": "Djerba Resort",
+        "standard": 4.0,
+        "latitude": 33.840786,
+        "longitude": 10.993851,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 22,
+        "numTripleRooms": 14,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 124.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 440.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 232.0
+        }
+    },
+    "CHQ10056": {
+        "code": "CHQ10056",
+        "name": "Oscar Suites & Village",
+        "standard": 4.0,
+        "latitude": 35.51739,
+        "longitude": 23.91711,
+        "airportCode": "CHQ",
+        "country": "Grecja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 340.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 260.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 232.0
+        }
+    },
+    "PMI63042": {
+        "code": "PMI63042",
+        "name": "Millor Sol",
+        "standard": 3.0,
+        "latitude": 39.605944,
+        "longitude": 3.380746,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 13,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 9.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 321.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 165.0
+        }
+    },
+    "CHQ24030": {
+        "code": "CHQ24030",
+        "name": "Porto Kalamaki",
+        "standard": 2.0,
+        "latitude": 35.512479,
+        "longitude": 23.963796,
+        "airportCode": "CHQ",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 22,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 126.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 236.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 76.0
+        }
+    },
+    "RMF14031": {
+        "code": "RMF14031",
+        "name": "Life Resort Coral Hills Marsa Alam",
+        "standard": 4.0,
+        "latitude": 25.880248,
+        "longitude": 34.412596,
+        "airportCode": "RMF",
+        "country": "Egipt",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 12,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 236.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 224.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 232.0
+        }
+    },
+    "PRG10056": {
+        "code": "PRG10056",
+        "name": "Majestic Plaza Prague",
+        "standard": 4.5,
+        "latitude": 50.0786,
+        "longitude": 14.425,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 19,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 72.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 292.5
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 346.5
+        }
+    },
+    "FNC20663": {
+        "code": "FNC20663",
+        "name": "Dom Pedro Garajau",
+        "standard": 3.0,
+        "latitude": 32.643305,
+        "longitude": -16.851564,
+        "airportCode": "FNC",
+        "country": "Portugalia",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 15,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 78.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 264.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 132.0
+        }
+    },
+    "PRG10087": {
+        "code": "PRG10087",
+        "name": "Occidental Praha",
+        "standard": 4.0,
+        "latitude": 50.0435,
+        "longitude": 14.4394,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 24,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 96.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 300.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 272.0
+        }
+    },
+    "VIE10214": {
+        "code": "VIE10214",
+        "name": "Zeitgeist",
+        "standard": 4.0,
+        "latitude": 48.1824,
+        "longitude": 16.3782,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 15,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 112.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 344.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 140.0
+        }
+    },
+    "PRG10609": {
+        "code": "PRG10609",
+        "name": "987 Prague Hotel",
+        "standard": 4.0,
+        "latitude": 50.086015,
+        "longitude": 14.433886,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 23,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 144.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 316.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 336.0
+        }
+    },
+    "ROM15279": {
+        "code": "ROM15279",
+        "name": "Villa Rosa",
+        "standard": 3.0,
+        "latitude": 41.8731,
+        "longitude": 12.4629,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 20,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 45.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 291.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 267.0
+        }
+    },
+    "VIE10136": {
+        "code": "VIE10136",
+        "name": "Klimt",
+        "standard": 3.0,
+        "latitude": 48.1959,
+        "longitude": 16.2895,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 22,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 138.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 144.0
+        }
+    },
+    "RHO13034": {
+        "code": "RHO13034",
+        "name": "Stamos",
+        "standard": 3.0,
+        "latitude": 36.34772,
+        "longitude": 28.19864,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 18,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 261.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 237.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 231.0
+        }
+    },
+    "HER33003": {
+        "code": "HER33003",
+        "name": "Oasis Beach",
+        "standard": 3.0,
+        "latitude": 35.334133,
+        "longitude": 25.359336,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 22,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 210.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 207.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 168.0
+        }
+    },
+    "NBE16017": {
+        "code": "NBE16017",
+        "name": "Sindbad",
+        "standard": 5.0,
+        "latitude": 36.404404,
+        "longitude": 10.598186,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 12,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 175.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 600.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 260.0
+        }
+    },
+    "NBE12006": {
+        "code": "NBE12006",
+        "name": "Marhaba Royal Salem",
+        "standard": 4.0,
+        "latitude": 35.848152,
+        "longitude": 10.622789,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 264.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 268.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 180.0
+        }
+    },
+    "PRG10123": {
+        "code": "PRG10123",
+        "name": "Hotel Adria",
+        "standard": 4.0,
+        "latitude": 50.082546,
+        "longitude": 14.424868,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 19,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 336.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 500.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 248.0
+        }
+    },
+    "MAD11387": {
+        "code": "MAD11387",
+        "name": "El Bedel",
+        "standard": 3.0,
+        "latitude": 40.483,
+        "longitude": -3.3636,
+        "airportCode": "MAD",
+        "country": "Hiszpania",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 21,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 138.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 183.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 117.0
+        }
+    },
+    "PRG10070": {
+        "code": "PRG10070",
+        "name": "Exe City Park",
+        "standard": 3.0,
+        "latitude": 50.0841,
+        "longitude": 14.4327,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 16,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 93.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 165.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 171.0
+        }
+    },
+    "PMI83083": {
+        "code": "PMI83083",
+        "name": "Eix Lagotel",
+        "standard": 4.0,
+        "latitude": 39.811432,
+        "longitude": 3.105903,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 14,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 244.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 276.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 240.0
+        }
+    },
+    "NBE11090": {
+        "code": "NBE11090",
+        "name": "TUI Suneo Royal Kenz",
+        "standard": 4.0,
+        "latitude": 35.910652,
+        "longitude": 10.578928,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 23,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 40.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 268.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 344.0
+        }
+    },
+    "PAR12021": {
+        "code": "PAR12021",
+        "name": "Victoria",
+        "standard": 2.0,
+        "latitude": 48.8719,
+        "longitude": 2.3435,
+        "airportCode": "CDG",
+        "country": "Francja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 14,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 90.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 178.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 150.0
+        }
+    },
+    "BCN10265": {
+        "code": "BCN10265",
+        "name": "Porta de Gallecs",
+        "standard": 3.0,
+        "latitude": 41.5491,
+        "longitude": 2.2077,
+        "airportCode": "BCN",
+        "country": "Hiszpania",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 21,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 135.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 201.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 150.0
+        }
+    },
+    "PMI51032": {
+        "code": "PMI51032",
+        "name": "Universal Romantica",
+        "standard": 3.0,
+        "latitude": 39.322399,
+        "longitude": 2.985793,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 35,
+        "numTripleRooms": 15,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 15.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 273.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 132.0
+        }
+    },
+    "TIA10105": {
+        "code": "TIA10105",
+        "name": "Empire Hotel",
+        "standard": 4.0,
+        "latitude": 41.308276,
+        "longitude": 19.48891,
+        "airportCode": "TIA",
+        "country": "Albania",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 12,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 232.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 476.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 284.0
+        }
+    },
+    "ROM15621": {
+        "code": "ROM15621",
+        "name": "Ars",
+        "standard": 4.0,
+        "latitude": 41.937,
+        "longitude": 12.5331,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 12,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 116.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 372.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 276.0
+        }
+    },
+    "HER21006": {
+        "code": "HER21006",
+        "name": "Creta Verano",
+        "standard": 3.5,
+        "latitude": 35.28512,
+        "longitude": 25.46554,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 18,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 245.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 399.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 147.0
+        }
+    },
+    "PFO10032": {
+        "code": "PFO10032",
+        "name": "Aquamare Beach",
+        "standard": 4.0,
+        "latitude": 34.737038,
+        "longitude": 32.436169,
+        "airportCode": "PFO",
+        "country": "Cypr",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 18,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 136.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 312.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 336.0
+        }
+    },
+    "HER23061": {
+        "code": "HER23061",
+        "name": "Maritimo Beach Hotel",
+        "standard": 4.0,
+        "latitude": 35.308045,
+        "longitude": 25.516859,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 18,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 20,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 184.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 300.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 272.0
+        }
+    },
+    "ROM15413": {
+        "code": "ROM15413",
+        "name": "Romoli Hotel",
+        "standard": 3.0,
+        "latitude": 41.8697,
+        "longitude": 12.5147,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 15,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 198.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 285.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 138.0
+        }
+    },
+    "ROM15306": {
+        "code": "ROM15306",
+        "name": "Laura",
+        "standard": 3.0,
+        "latitude": 41.9143,
+        "longitude": 12.5207,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 17,
+        "numDoubleRooms": 34,
+        "numTripleRooms": 14,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 39.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 342.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 162.0
+        }
+    },
+    "PMI24018": {
+        "code": "PMI24018",
+        "name": "Globales Nova",
+        "standard": 3.0,
+        "latitude": 39.51449,
+        "longitude": 2.536575,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 12,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 225.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 201.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 108.0
+        }
+    },
+    "VAR21044": {
+        "code": "VAR21044",
+        "name": "MOKO Beach managed by GRIFID",
+        "standard": 4.0,
+        "latitude": 43.297521,
+        "longitude": 28.04706,
+        "airportCode": "VAR",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 21,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 100.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 428.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 272.0
+        }
+    },
+    "AYT53015": {
+        "code": "AYT53015",
+        "name": "OZ Hotels SUI Resort",
+        "standard": 5.0,
+        "latitude": 36.65089,
+        "longitude": 31.678379,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 18,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 430.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 495.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 220.0
+        }
+    },
+    "BER10226": {
+        "code": "BER10226",
+        "name": "Good Morning + Berlin City East",
+        "standard": 3.0,
+        "latitude": 52.5218,
+        "longitude": 13.4853,
+        "airportCode": "BER",
+        "country": "Niemcy",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 19,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 210.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 249.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 174.0
+        }
+    },
+    "AYT14082": {
+        "code": "AYT14082",
+        "name": "Ma Biche Kemer",
+        "standard": 5.0,
+        "latitude": 36.646549,
+        "longitude": 30.552169,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 11,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 275.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 550.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 375.0
+        }
+    },
+    "BER10215": {
+        "code": "BER10215",
+        "name": "Comfort Hotel Berlin Lichtenberg",
+        "standard": 3.0,
+        "latitude": 52.5334,
+        "longitude": 13.5176,
+        "airportCode": "BER",
+        "country": "Niemcy",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 13,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 159.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 228.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 186.0
+        }
+    },
+    "HER80009": {
+        "code": "HER80009",
+        "name": "Ideon",
+        "standard": 3.0,
+        "latitude": 35.371721,
+        "longitude": 24.474911,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 23,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 171.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 333.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 183.0
+        }
+    },
+    "AYT41012": {
+        "code": "AYT41012",
+        "name": "Hotel Orfeus Park",
+        "standard": 4.0,
+        "latitude": 36.820388,
+        "longitude": 31.304718,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 12,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 136.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 356.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 160.0
+        }
+    },
+    "PRG10419": {
+        "code": "PRG10419",
+        "name": "Holiday Inn Prague Congress Centre",
+        "standard": 4.0,
+        "latitude": 50.0611,
+        "longitude": 14.4273,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 18,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 288.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 352.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 260.0
+        }
+    },
+    "AYT42025": {
+        "code": "AYT42025",
+        "name": "TUI BLUE Xanthe",
+        "standard": 5.0,
+        "latitude": 36.805153,
+        "longitude": 31.351329,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 22,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 390.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 440.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 245.0
+        }
+    },
+    "KGS22007": {
+        "code": "KGS22007",
+        "name": "Eurovillage Achilleas",
+        "standard": 4.0,
+        "latitude": 36.839703,
+        "longitude": 27.065274,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 24,
+        "numTripleRooms": 15,
+        "numQuadRooms": 9,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 200.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 424.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 180.0
+        }
+    },
+    "VIE10670": {
+        "code": "VIE10670",
+        "name": "Fleming's Conference Wien",
+        "standard": 4.0,
+        "latitude": 48.1995,
+        "longitude": 16.3387,
+        "airportCode": "VIE",
+        "country": "Austria",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 22,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 144.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 500.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 320.0
+        }
+    },
+    "BUD21047": {
+        "code": "BUD21047",
+        "name": "Roombach Hotel Budapest Center",
+        "standard": 3.0,
+        "latitude": 47.4978,
+        "longitude": 19.0582,
+        "airportCode": "BUD",
+        "country": "W\u00c4\u2122gry",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 23,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 114.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 351.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 246.0
+        }
+    },
+    "MAD11343": {
+        "code": "MAD11343",
+        "name": "Hostal Inter Puerta del Sol",
+        "standard": 3.0,
+        "latitude": 40.4149,
+        "longitude": -3.7027,
+        "airportCode": "MAD",
+        "country": "Hiszpania",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 24,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 216.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 318.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 171.0
+        }
+    },
+    "BER10262": {
+        "code": "BER10262",
+        "name": "A&O Berlin Kolumbus",
+        "standard": 2.5,
+        "latitude": 52.5392,
+        "longitude": 13.4982,
+        "airportCode": "BER",
+        "country": "Niemcy",
+        "numSingleRooms": 26,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 14,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 55.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 185.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 182.5
+        }
+    },
+    "IST10250": {
+        "code": "IST10250",
+        "name": "New Sed Bosphorus Hotel",
+        "standard": 3.5,
+        "latitude": 41.0352,
+        "longitude": 28.9915,
+        "airportCode": "IST",
+        "country": "Turcja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 14,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 80.5
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 287.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 304.5
+        }
+    },
+    "ZTH13055": {
+        "code": "ZTH13055",
+        "name": "Karras Grande Resort",
+        "standard": 4.0,
+        "latitude": 37.81715,
+        "longitude": 20.86311,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 20,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 248.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 328.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 204.0
+        }
+    },
+    "AYT31014": {
+        "code": "AYT31014",
+        "name": "Spice Hotel & SPA",
+        "standard": 5.0,
+        "latitude": 36.850106,
+        "longitude": 31.064658,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 24,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 24,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 195.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 470.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 230.0
+        }
+    },
+    "LCA15014": {
+        "code": "LCA15014",
+        "name": "Anais Bay Hotel",
+        "standard": 3.0,
+        "latitude": 35.034417,
+        "longitude": 34.037783,
+        "airportCode": "LCA",
+        "country": "Cypr",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 18,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 78.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 165.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 180.0
+        }
+    },
+    "PMI63098": {
+        "code": "PMI63098",
+        "name": "Universal Hotel Bikini",
+        "standard": 3.0,
+        "latitude": 39.59837,
+        "longitude": 3.38455,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 15,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 198.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 216.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 132.0
+        }
+    },
+    "AYT61022": {
+        "code": "AYT61022",
+        "name": "Gardenia",
+        "standard": 4.0,
+        "latitude": 36.546485,
+        "longitude": 31.984908,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 23,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 16,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 200.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 332.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 188.0
+        }
+    },
+    "HER41022": {
+        "code": "HER41022",
+        "name": "Chersonissos Maris",
+        "standard": 4.0,
+        "latitude": 35.328443,
+        "longitude": 25.386212,
+        "airportCode": "HER",
+        "country": "Grecja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 23,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 276.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 372.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 192.0
+        }
+    },
+    "NCE16006": {
+        "code": "NCE16006",
+        "name": "P.L.M.",
+        "standard": 2.0,
+        "latitude": 43.5531,
+        "longitude": 7.0192,
+        "airportCode": "NCE",
+        "country": "Francja",
+        "numSingleRooms": 21,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 11,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 174.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 174.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 126.0
+        }
+    },
+    "HRG11032": {
+        "code": "HRG11032",
+        "name": "Minamark Beach Resort",
+        "standard": 4.0,
+        "latitude": 27.217951,
+        "longitude": 33.838305,
+        "airportCode": "HRG",
+        "country": "Egipt",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 26,
+        "numTripleRooms": 24,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 272.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 348.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 344.0
+        }
+    },
+    "VCE12229": {
+        "code": "VCE12229",
+        "name": "Hotel Vienna",
+        "standard": 3.0,
+        "latitude": 45.4784,
+        "longitude": 12.2279,
+        "airportCode": "VCE",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 15,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 19,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 144.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 165.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 159.0
+        }
+    },
+    "CFU23001": {
+        "code": "CFU23001",
+        "name": "Corfu Residence",
+        "standard": 3.0,
+        "latitude": 39.725743,
+        "longitude": 19.892211,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 10,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 141.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 273.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 219.0
+        }
+    },
+    "ZTH11003": {
+        "code": "ZTH11003",
+        "name": "Commodore",
+        "standard": 3.0,
+        "latitude": 37.760357,
+        "longitude": 20.923824,
+        "airportCode": "ZTH",
+        "country": "Grecja",
+        "numSingleRooms": 20,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 21,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 51.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 234.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 180.0
+        }
+    },
+    "PMI55033": {
+        "code": "PMI55033",
+        "name": "Inturotel Azul Garden",
+        "standard": 3.0,
+        "latitude": 39.378497,
+        "longitude": 3.236666,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 19,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 243.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 270.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 111.0
+        }
+    },
+    "NCE13127": {
+        "code": "NCE13127",
+        "name": "Villa Bougainville by HappyCulture",
+        "standard": 3.0,
+        "latitude": 43.7027,
+        "longitude": 7.2592,
+        "airportCode": "NCE",
+        "country": "Francja",
+        "numSingleRooms": 14,
+        "numDoubleRooms": 38,
+        "numTripleRooms": 10,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 90.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 267.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 198.0
+        }
+    },
+    "AYT42034": {
+        "code": "AYT42034",
+        "name": "Hotel The Sense Deluxe",
+        "standard": 5.0,
+        "latitude": 36.791309,
+        "longitude": 31.375864,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 28,
+        "numTripleRooms": 11,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 70.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 470.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 255.0
+        }
+    },
+    "PMI73074": {
+        "code": "PMI73074",
+        "name": "Na Taconera Sport & Relax",
+        "standard": 4.0,
+        "latitude": 39.686811,
+        "longitude": 3.450007,
+        "airportCode": "PMI",
+        "country": "Hiszpania",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 21,
+        "numTripleRooms": 15,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 224.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 452.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 208.0
+        }
+    },
+    "BER10126": {
+        "code": "BER10126",
+        "name": "A&O Berlin Friedrichshain",
+        "standard": 2.0,
+        "latitude": 52.5069,
+        "longitude": 13.469,
+        "airportCode": "BER",
+        "country": "Niemcy",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 21,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 172.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 128.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 154.0
+        }
+    },
+    "RHO14060": {
+        "code": "RHO14060",
+        "name": "Loutanis",
+        "standard": 3.0,
+        "latitude": 36.257268,
+        "longitude": 28.15876,
+        "airportCode": "RHO",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 32,
+        "numTripleRooms": 19,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 138.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 366.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 108.0
+        }
+    },
+    "ADB11028": {
+        "code": "ADB11028",
+        "name": "Ephesia Holiday Beach Club",
+        "standard": 4.0,
+        "latitude": 37.815548,
+        "longitude": 27.269436,
+        "airportCode": "ADB",
+        "country": "Turcja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 23,
+        "numQuadRooms": 8,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 240.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 232.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 284.0
+        }
+    },
+    "NBE16006": {
+        "code": "NBE16006",
+        "name": "Paradis Palace",
+        "standard": 4.0,
+        "latitude": 36.389735,
+        "longitude": 10.559577,
+        "airportCode": "NBE",
+        "country": "Tunezja",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 10,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 296.0
+        },
+        "ageRange1": {
+            "upperBound": 12,
+            "pricePerNight": 388.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 236.0
+        }
+    },
+    "KGS24011": {
+        "code": "KGS24011",
+        "name": "Gaia Garden",
+        "standard": 3.0,
+        "latitude": 36.905006,
+        "longitude": 27.276408,
+        "airportCode": "KGS",
+        "country": "Grecja",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 12,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 39.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 261.0
+        }
+    },
+    "VAR21017": {
+        "code": "VAR21017",
+        "name": "Grifid Club Hotel Arabella",
+        "standard": 4.0,
+        "latitude": 43.283098,
+        "longitude": 28.041995,
+        "airportCode": "VAR",
+        "country": "Bu\u00c5\u201agaria",
+        "numSingleRooms": 27,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 13,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 5,
+            "pricePerNight": 344.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 376.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 228.0
+        }
+    },
+    "LPA52014": {
+        "code": "LPA52014",
+        "name": "Apartamentos LIVVO Puerto de Mogan",
+        "standard": 3.0,
+        "latitude": 27.817197,
+        "longitude": -15.764428,
+        "airportCode": "LPA",
+        "country": "Wyspy Kanaryjskie",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 23,
+        "numTripleRooms": 17,
+        "numQuadRooms": 12,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 195.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 219.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 252.0
+        }
+    },
+    "MJT10009": {
+        "code": "MJT10009",
+        "name": "Viva Mare",
+        "standard": 4.0,
+        "latitude": 39.37314,
+        "longitude": 26.194738,
+        "airportCode": "MJT",
+        "country": "Grecja",
+        "numSingleRooms": 22,
+        "numDoubleRooms": 27,
+        "numTripleRooms": 14,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 100.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 396.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 216.0
+        }
+    },
+    "ROM15998": {
+        "code": "ROM15998",
+        "name": "Pyramid",
+        "standard": 2.0,
+        "latitude": 41.872,
+        "longitude": 12.4794,
+        "airportCode": "FCO",
+        "country": "W\u00c5\u201aochy",
+        "numSingleRooms": 16,
+        "numDoubleRooms": 37,
+        "numTripleRooms": 20,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 20.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 110.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 106.0
+        }
+    },
+    "AYT57046": {
+        "code": "AYT57046",
+        "name": "Eftalia Aqua Spa",
+        "standard": 5.0,
+        "latitude": 36.597202,
+        "longitude": 31.821082,
+        "airportCode": "AYT",
+        "country": "Turcja",
+        "numSingleRooms": 25,
+        "numDoubleRooms": 25,
+        "numTripleRooms": 20,
+        "numQuadRooms": 10,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 140.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 490.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 205.0
+        }
+    },
+    "CFU28001": {
+        "code": "CFU28001",
+        "name": "Andromaches Holiday apartments",
+        "standard": 3.0,
+        "latitude": 39.556934,
+        "longitude": 19.90984,
+        "airportCode": "CFU",
+        "country": "Grecja",
+        "numSingleRooms": 29,
+        "numDoubleRooms": 36,
+        "numTripleRooms": 15,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 135.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 339.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 252.0
+        }
+    },
+    "CHQ10052": {
+        "code": "CHQ10052",
+        "name": "Theo",
+        "standard": 4.0,
+        "latitude": 35.51418,
+        "longitude": 23.9393,
+        "airportCode": "CHQ",
+        "country": "Grecja",
+        "numSingleRooms": 11,
+        "numDoubleRooms": 31,
+        "numTripleRooms": 18,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 252.0
+        },
+        "ageRange1": {
+            "upperBound": 8,
+            "pricePerNight": 488.0
+        },
+        "ageRange2": {
+            "upperBound": 16,
+            "pricePerNight": 212.0
+        }
+    },
+    "BUD21102": {
+        "code": "BUD21102",
+        "name": "Marmara Design Hotel",
+        "standard": 4.0,
+        "latitude": 47.5107,
+        "longitude": 19.0531,
+        "airportCode": "BUD",
+        "country": "W\u00c4\u2122gry",
+        "numSingleRooms": 13,
+        "numDoubleRooms": 29,
+        "numTripleRooms": 12,
+        "numQuadRooms": 14,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 244.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 308.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 304.0
+        }
+    },
+    "DJE11056": {
+        "code": "DJE11056",
+        "name": "Dar Jerba Zahra",
+        "standard": 3.0,
+        "latitude": 33.828628,
+        "longitude": 11.030767,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 10,
+        "numDoubleRooms": 30,
+        "numTripleRooms": 16,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 135.0
+        },
+        "ageRange1": {
+            "upperBound": 9,
+            "pricePerNight": 333.0
+        },
+        "ageRange2": {
+            "upperBound": 17,
+            "pricePerNight": 228.0
+        }
+    },
+    "PRG10026": {
+        "code": "PRG10026",
+        "name": "Axa",
+        "standard": 3.0,
+        "latitude": 50.0901,
+        "longitude": 14.4356,
+        "airportCode": "PRG",
+        "country": "Czechy",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 39,
+        "numTripleRooms": 21,
+        "numQuadRooms": 7,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 246.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 168.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 135.0
+        }
+    },
+    "LCA20064": {
+        "code": "LCA20064",
+        "name": "Loutsiana Hotel Apts",
+        "standard": 3.0,
+        "latitude": 34.986752,
+        "longitude": 33.947699,
+        "airportCode": "LCA",
+        "country": "Cypr",
+        "numSingleRooms": 12,
+        "numDoubleRooms": 33,
+        "numTripleRooms": 11,
+        "numQuadRooms": 11,
+        "ageRange0": {
+            "upperBound": 3,
+            "pricePerNight": 6.0
+        },
+        "ageRange1": {
+            "upperBound": 10,
+            "pricePerNight": 285.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 267.0
+        }
+    },
+    "DJE11125": {
+        "code": "DJE11125",
+        "name": "Petit Palais & SPA",
+        "standard": 4.0,
+        "latitude": 33.855048,
+        "longitude": 10.983308,
+        "airportCode": "DJE",
+        "country": "Tunezja",
+        "numSingleRooms": 19,
+        "numDoubleRooms": 20,
+        "numTripleRooms": 12,
+        "numQuadRooms": 13,
+        "ageRange0": {
+            "upperBound": 4,
+            "pricePerNight": 16.0
+        },
+        "ageRange1": {
+            "upperBound": 11,
+            "pricePerNight": 316.0
+        },
+        "ageRange2": {
+            "upperBound": 18,
+            "pricePerNight": 144.0
+        }
+    }
+}

@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/client-command/pom.xml" />
         <option value="$PROJECT_DIR$/client-query/pom.xml" />
         <option value="$PROJECT_DIR$/client/pom.xml" />
+        <option value="$PROJECT_DIR$/travel-agency/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
