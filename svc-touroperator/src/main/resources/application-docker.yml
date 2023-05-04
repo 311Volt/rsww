@@ -1,0 +1,7 @@
+
+spring:
+  rabbitmq:
+    host: yetirswwrmq
+    port: 5672
+    username: testuser
+    password: testpassword

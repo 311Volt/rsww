@@ -1,10 +1,10 @@
-package com.yetistudios.rsww.rswwmsgbus;
+package com.yetistudios.rsww.rswwworld;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RswwMsgbusApplicationTests {
+class RswwWorldApplicationTests {
 
 	@Test
 	void contextLoads() {

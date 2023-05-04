@@ -1,0 +1,33 @@
+version: '2.1'
+services:
+
+  yetirswwrmq:
+    build: ./svc-rabbitmq
+    environment:
+      - RABBITMQ_USER=testuser
+      - RABBITMQ_PASSWORD=testpassword
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:15672" ]
+      interval: 2s
+      timeout: 10s
+      retries: 5
+    ports:
+      - "15672:15672"
+
+
+  yetirswwtouroperator:
+    build: ./svc-touroperator
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      yetirswwrmq:
+        condition: service_healthy
+
+  yetirswwworld:
+    build: ./svc-world
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      yetirswwrmq:
+        condition: service_healthy
+
