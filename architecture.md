@@ -10,9 +10,8 @@
  - 2.4 [Tour Operator (queries)](#24-tour-operator-queries)
  - 2.5 [World](#25-world)
  - 2.6 [Saga Orchestrator](#26-saga-orchestrator)
- - 2.7 [RabbitMQ Instance](#27-rabbitmq-instance)
 ## 3. [Saga descriptions](#3-saga-descriptions-1)
- - 3.1 [RabbitMQ Instance](#31-booking-an-offer)
+ - 3.1 [Booking an offer](#31-booking-an-offer)
 ## 4. [API overview](#4-api-overview-1)
 ## 5. [Messages overview](#5-message-overview-1)
  
@@ -65,18 +64,15 @@ TODO not sure if user service & agency should be merged into one
 ## 2.6. Saga Orchestrator
   - orchestrates Sagas. more in [3. Saga descriptions](#3-saga-descriptions-1)
 
-## 2.7. RabbitMQ Instance
-  - serves as the message broker
-
 # 3. Saga descriptions
 
 ## 3.1. Booking an offer
-  0. [Agency] Create `OfferBooking` and init status to "waiting" (rollback: don't delete, set status to "error")
-  1. [World] Try to book airplane seats
-  2. [World] Try to book hotel rooms
-  3. [Tour Operator] Acknowledge offer sale
-  4. [Agency] Update status to "booked" and wait 1 minute for payment confirmation
-  5. [Agency] Update status to "done"
+  1. [Agency] Create `OfferBooking` and init status to "waiting" (rollback: don't delete, set status to "error")
+  2. [World] Try to book airplane seats
+  3. [World] Try to book hotel rooms
+  4. [Tour Operator] Acknowledge offer sale
+  5. [Agency] Update status to "booked" and wait 1 minute for payment confirmation
+  6. [Agency] Update status to "done"
 
 no more sagas are necessary imo
 
