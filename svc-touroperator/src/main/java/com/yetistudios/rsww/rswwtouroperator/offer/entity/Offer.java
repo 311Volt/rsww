@@ -9,5 +9,8 @@ public class Offer {
     public final String returnFlightNumber;
     public final String hotelCode;
     public final String firstNightDate;
-    public int durationDays;
+    public final int numSingleRooms;
+    public final int numDoubleRooms;
+    public final int numTripleRooms;
+    public final int durationDays;
 }

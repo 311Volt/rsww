@@ -15,11 +15,6 @@ public class RswwTouroperatorApplication {
 		SpringApplication.run(RswwTouroperatorApplication.class, args);
 	}
 
-	@Bean
-	public Queue defaultQueue() {
-		return new Queue("testqueue", true);
-	}
-
 	@RabbitListener(queues = "testqueue")
 	public void listen(String msg) {
 		System.out.println("message read from [world]: " + msg);

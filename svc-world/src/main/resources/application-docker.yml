@@ -5,3 +5,9 @@ spring:
     port: 5672
     username: testuser
     password: testpassword
+  data:
+    mongo:
+      repositories:
+        enabled: true
+    mongodb:
+      uri: mongodb://yetirswwmongo:27017/yetirsww?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000

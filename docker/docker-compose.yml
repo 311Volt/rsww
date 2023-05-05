@@ -14,6 +14,12 @@ services:
     ports:
       - "15672:15672"
 
+  yetirswwmongo:
+    build: ./svc-mongo
+    environment:
+      - MONGO_INITDB_DATABASE=yetirsww
+    ports:
+      - "27017:27017"
 
   yetirswwtouroperator:
     build: ./svc-touroperator
@@ -30,4 +36,6 @@ services:
     depends_on:
       yetirswwrmq:
         condition: service_healthy
+    ports:
+      - "1439:1439"
 

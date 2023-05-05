@@ -1,20 +1,23 @@
 # RSWW Project Architecture
 
-# 0. Contents
-
-## 1. [Service list](#1-service-list-1)
-## 2. [Service responsibility overview](#2-service-responsibility-overview-1)
- - 2.1 [User service](#21-normal-mode)
- - 2.2 [Agency](#22-agency)
- - 2.3 [Tour Operator (commands)](#23-tour-operator-commands)
- - 2.4 [Tour Operator (queries)](#24-tour-operator-queries)
- - 2.5 [World](#25-world)
- - 2.6 [Saga Orchestrator](#26-saga-orchestrator)
-## 3. [Saga descriptions](#3-saga-descriptions-1)
- - 3.1 [Booking an offer](#31-booking-an-offer)
-## 4. [API overview](#4-api-overview-1)
-## 5. [Messages overview](#5-message-overview-1)
- 
+- [RSWW Project Architecture](#rsww-project-architecture)
+- [1. Service list](#1-service-list)
+- [2. Service responsibility overview](#2-service-responsibility-overview)
+  - [2.1. User service](#21-user-service)
+  - [2.2. Agency](#22-agency)
+  - [2.3. Tour Operator (commands)](#23-tour-operator-commands)
+  - [2.4. Tour Operator (queries)](#24-tour-operator-queries)
+  - [2.5. World](#25-world)
+  - [2.6. Saga Orchestrator](#26-saga-orchestrator)
+- [3. Saga descriptions](#3-saga-descriptions)
+  - [3.1. Booking an offer](#31-booking-an-offer)
+- [4. REST API overview](#4-rest-api-overview)
+  - [Endpoints](#endpoints)
+    - [POST `/api/offers/list`](#post-apiofferslist)
+    - [POST `/api/offers/{id}/book`](#post-apioffersidbook)
+    - [POST `/api/offer-purchases/{id}/pay`](#post-apioffer-purchasesidpay)
+- [5. Messages overview](#5-messages-overview)
+  - [5.1. Events](#51-events)
 
 # 1. Service list
  - API Gateway
@@ -76,13 +79,55 @@ TODO not sure if user service & agency should be merged into one
 
 no more sagas are necessary imo
 
-# 4. API overview
+# 4. REST API overview
 
 HTTP communication only happens between the frontend and the User service.
-All other services communicate with RabbitMQ.
+All other services communicate using the message broker.
 
-Endpoints: TODO
+## Endpoints
 
-## 5. Messages overview
+### POST `/api/offers/list`
+Request body:
+```json
+{
+  "filters": {
+    "maxPrice": 3300,
+    "countries": ["Grecja", "Bułgaria"],
+    "page": 1,
+    "offersPerPage": 20
+  }
+}
+```
 
-TODO
+Response body:
+```javascript
+{
+  "offers": [
+    {
+      "hotelCode": "DS3",
+      "hotelStandard": 1437.0,
+      /* ... */
+    }
+    /* etc... */
+  ]
+}
+```
+
+### POST `/api/offers/{id}/book`
+request body: empty  
+response body: 
+```
+{
+  "offerPurchaseId": "87cfh8q7nhr78a3bvcn90r3y"
+}
+```
+status: 200 (booked), 404 (no such offer) or 400 (offer unavailable)
+
+### POST `/api/offer-purchases/{id}/pay`
+request body: empty  
+response body: empty  
+status: 200 (payment confirmed), 404 (no such offer purchase)
+
+# 5. Messages overview
+
+## 5.1. Events

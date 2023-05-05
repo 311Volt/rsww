@@ -12,7 +12,7 @@ public class RabbitTest {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    @Scheduled(fixedDelay = 2000)
+    @Scheduled(fixedDelay = 20000)
     public void testsend() {
         System.err.println("testsend");
         rabbitTemplate.convertAndSend("testqueue", "yeti4ever");

@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, MongoAutoConfiguration.class})
+@SpringBootApplication(exclude = {MongoAutoConfiguration.class, DataSourceAutoConfiguration.class})
 @EnableScheduling
 public class RswwWorldApplication {
 
@@ -16,10 +16,5 @@ public class RswwWorldApplication {
 		SpringApplication.run(RswwWorldApplication.class, args);
 	}
 
-
-	@Bean
-	public Queue defaultQueue() {
-		return new Queue("testqueue", true);
-	}
 
 }
