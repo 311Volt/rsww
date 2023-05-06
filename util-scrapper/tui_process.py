@@ -18,6 +18,8 @@ def create_hotels(offers):
     out_hotels = dict()
     for offer in offers:
         if "hotelCode" in offer:
+            age0 = random.randrange(3, 6)
+            age1 = 18
             out_hotels[offer["hotelCode"]] = {
                 "code": offer["hotelCode"],
                 "name": offer["hotelName"],
@@ -31,15 +33,18 @@ def create_hotels(offers):
                 "numTripleRooms": random.randrange(10, 25),
                 "numQuadRooms": random.randrange(7, 15),
                 "ageRange0": {
-                    "upperBound": random.randrange(3, 6),
+                    "lowerBound": 0,
+                    "upperBound": age0,
                     "pricePerNight": random.randrange(0, 90) * offer["hotelStandard"]
                 },
                 "ageRange1": {
-                    "upperBound": random.randrange(8, 13),
+                    "lowerBound": age0,
+                    "upperBound": age1,
                     "pricePerNight": random.randrange(55, 130) * offer["hotelStandard"]
                 },
                 "ageRange2": {
-                    "upperBound": random.randrange(16, 19),
+                    "lowerBound": age1,
+                    "upperBound": 200,
                     "pricePerNight": random.randrange(35, 90) * offer["hotelStandard"]
                 }
             }
@@ -47,22 +52,22 @@ def create_hotels(offers):
 
 
 def create_airports(offers):
-    out_airports = []
+    out_airports = dict()
     for offer in offers:
         flight = offer["departureFlight"]
         departure = flight["departure"]
         arrival = flight["arrival"]
-        out_airports.append({
+        out_airports[departure["airportCode"]] = {
             "code": departure["airportCode"],
             "name": departure["airportName"],
             "forDeparture": True
-        })
-        out_airports.append({
+        }
+        out_airports[arrival["airportCode"]] = {
             "code": arrival["airportCode"],
             "name": arrival["airportName"],
             "forDeparture": False
-        })
-    return out_airports
+        }
+    return list(out_airports.values())
 
 
 def create_flights(airports, year):
@@ -86,6 +91,7 @@ def create_flights(airports, year):
 
             out_flights.append({
                 "flightNumber": flight_num_counter,
+                "numSeats": random.randrange(30, 300),
                 "departure": {
                     "airportCode": random.choice(dep_airports)["code"],
                     "date": start_time.date().isoformat(),
