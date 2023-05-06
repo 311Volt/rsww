@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.rswwworld.entity;
+package com.yetistudios.rsww.rswwworld.query.entity;
 
 public class FlightJuncture {
     public String airportCode;

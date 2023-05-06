@@ -1,6 +1,7 @@
-package com.yetistudios.rsww.rswwworld.repository;
+package com.yetistudios.rsww.rswwworld.query.repository;
 
-import com.yetistudios.rsww.rswwworld.entity.Hotel;
+
+import com.yetistudios.rsww.rswwworld.query.entity.Flight;
 import org.bson.types.ObjectId;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -8,5 +9,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Profile("!test")
-public interface HotelRepository extends MongoRepository<Hotel, ObjectId> {
+public interface FlightRepository extends MongoRepository<Flight, ObjectId> {
 }

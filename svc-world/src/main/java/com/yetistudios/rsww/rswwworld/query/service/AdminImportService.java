@@ -1,14 +1,13 @@
-package com.yetistudios.rsww.rswwworld.service;
+package com.yetistudios.rsww.rswwworld.query.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yetistudios.rsww.rswwworld.RswwWorldApplication;
-import com.yetistudios.rsww.rswwworld.entity.Airport;
-import com.yetistudios.rsww.rswwworld.entity.Flight;
-import com.yetistudios.rsww.rswwworld.entity.Hotel;
-import com.yetistudios.rsww.rswwworld.repository.AirportRepository;
-import com.yetistudios.rsww.rswwworld.repository.FlightRepository;
-import com.yetistudios.rsww.rswwworld.repository.HotelRepository;
+import com.yetistudios.rsww.rswwworld.query.entity.Airport;
+import com.yetistudios.rsww.rswwworld.query.entity.Flight;
+import com.yetistudios.rsww.rswwworld.query.entity.Hotel;
+import com.yetistudios.rsww.rswwworld.query.repository.AirportRepository;
+import com.yetistudios.rsww.rswwworld.query.repository.FlightRepository;
+import com.yetistudios.rsww.rswwworld.query.repository.HotelRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

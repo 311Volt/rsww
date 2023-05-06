@@ -1,6 +1,5 @@
 package com.yetistudios.rsww.rswwworld.test;
 
-import jakarta.annotation.PostConstruct;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -14,7 +13,6 @@ public class RabbitTest {
 
     @Scheduled(fixedDelay = 20000)
     public void testsend() {
-        System.err.println("testsend");
         rabbitTemplate.convertAndSend("testqueue", "yeti4ever");
     }
 }
