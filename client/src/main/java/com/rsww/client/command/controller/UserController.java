@@ -22,8 +22,8 @@ public class UserController {
     @PostMapping(value = "/create")
     public ResponseEntity<String> createUser(@RequestBody CreateUserRequest request) {
         try {
-            CompletableFuture<String> response = userCommandService.createUser(request);
-            return new ResponseEntity<>(response.get(), HttpStatus.CREATED);
+            this.userCommandService.createUser(request);
+            return new ResponseEntity<>(HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>("An error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
         }

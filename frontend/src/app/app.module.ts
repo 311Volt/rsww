@@ -8,13 +8,17 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
 import { TravelAgencyComponent } from './travel-agency/travel-agency.component';
 import {HttpClientModule} from "@angular/common/http";
+import { OfferDetailsComponent } from './travel-agency/offer-details/offer-details.component';
+import { OfferItemComponent } from './travel-agency/offer-item/offer-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AuthComponent,
-    TravelAgencyComponent
+    TravelAgencyComponent,
+    OfferDetailsComponent,
+    OfferItemComponent
   ],
   imports: [
     BrowserModule,

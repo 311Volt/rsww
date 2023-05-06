@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Offer} from "./offer.model";
+import {TravelAgencyService} from "./travel-agency.service";
 
 @Component({
   selector: 'app-travel-agency',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TravelAgencyComponent implements OnInit {
 
-  constructor() { }
+  offersList:Offer[] = []
+
+  constructor(private travelService:TravelAgencyService) {
+  }
 
   ngOnInit(): void {
+    this.offersList = this.travelService.getOffers()
   }
 
 }
