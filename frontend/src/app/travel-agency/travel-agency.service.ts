@@ -9,7 +9,7 @@ export class TravelAgencyService {
     "offer1": {
       "hotel": {
         "code": "LCA20064",
-        "name": "Loutsiana Hotel Apts",
+        "name": "Loutsiana Hotel Apts 0",
         "standard": 3.0,
         "latitude": 34.986752,
         "longitude": 33.947699,
@@ -62,7 +62,7 @@ export class TravelAgencyService {
     "offer2": {
       "hotel": {
         "code": "LCA20064",
-        "name": "Loutsiana Hotel Apts",
+        "name": "Loutsiana Hotel Apts 1",
         "standard": 3.0,
         "latitude": 34.986752,
         "longitude": 33.947699,
