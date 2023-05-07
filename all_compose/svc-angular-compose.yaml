@@ -1,0 +1,11 @@
+services:
+  web:
+    container_name: rsww_175651_angular
+    build:
+      context: ../frontend
+      target: builder
+    ports:
+      - 4200:4200
+    volumes:
+      - ../frontend:/project
+      - /project/node_modules
