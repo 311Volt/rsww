@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yetistudios.rsww</groupId>
-	<artifactId>rsww-world</artifactId>
+	<artifactId>rsww-hotel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rsww-world</name>
 	<description>RSWW world service</description>

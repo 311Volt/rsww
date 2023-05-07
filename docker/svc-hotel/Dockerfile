@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk-alpine
 RUN apk --no-cache add curl
 
-COPY world.jar .
+COPY hotel.jar .
 
-CMD java -jar world.jar
+CMD java -jar hotel.jar

@@ -29,8 +29,8 @@ services:
       yetirswwrmq:
         condition: service_healthy
 
-  yetirswwworld:
-    build: ./svc-world
+  yetirswwhotel:
+    build: ./svc-hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:

@@ -2,11 +2,7 @@ package com.yetistudios.rsww.rswwworld.query.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yetistudios.rsww.rswwworld.RswwWorldApplication;
-import com.yetistudios.rsww.rswwworld.query.entity.Airport;
-import com.yetistudios.rsww.rswwworld.query.entity.Flight;
 import com.yetistudios.rsww.rswwworld.query.entity.Hotel;
-import com.yetistudios.rsww.rswwworld.query.repository.AirportRepository;
-import com.yetistudios.rsww.rswwworld.query.repository.FlightRepository;
 import com.yetistudios.rsww.rswwworld.query.repository.HotelRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Map;
 
 @Service
@@ -27,21 +22,7 @@ public class AdminImportService {
     private ObjectMapper objectMapper;
 
     @Autowired
-    private AirportRepository airportRepository;
-
-    @Autowired
-    private FlightRepository flightRepository;
-
-    @Autowired
     private HotelRepository hotelRepository;
-
-    public void importAirports(List<Airport> airports) {
-        airportRepository.insert(airports);
-    }
-
-    public void importFlights(List<Flight> flights) {
-        flightRepository.insert(flights);
-    }
 
     public void importHotels(Map<String, Hotel> hotels) {
         hotelRepository.insert(hotels.values());
