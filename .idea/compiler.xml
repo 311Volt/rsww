@@ -30,6 +30,7 @@
       <module name="rsww-gateway" options="-parameters" />
       <module name="rsww-touroperator" options="-parameters" />
       <module name="rsww-world" options="-parameters" />
+      <module name="tour-operator" options="-parameters" />
       <module name="travel-agency" options="-parameters" />
     </option>
   </component>
