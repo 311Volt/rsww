@@ -6,7 +6,11 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 @Profile("!test")
 public interface HotelRepository extends MongoRepository<Hotel, ObjectId> {
+    public Optional<Hotel> findByCode(String code);
+    public boolean existsByCode(String code);
 }
