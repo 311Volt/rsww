@@ -23,7 +23,7 @@
     <modules>
         <module>svc-agency</module>
         <module>svc-gateway</module>
-        <module>svc-world</module>
+        <module>svc-hotel</module>
         <module>svc-touroperator</module>
     </modules>
 

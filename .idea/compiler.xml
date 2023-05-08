@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rsww-world" />
         <module name="client" />
         <module name="rsww-gateway" />
         <module name="rsww-agency" />
+        <module name="rsww-hotel" />
         <module name="travel-agency" />
         <module name="rsww-touroperator" />
       </profile>
@@ -28,6 +28,7 @@
       <module name="client-query" options="-parameters" />
       <module name="rsww-agency" options="-parameters" />
       <module name="rsww-gateway" options="-parameters" />
+      <module name="rsww-hotel" options="-parameters" />
       <module name="rsww-touroperator" options="-parameters" />
       <module name="rsww-world" options="-parameters" />
       <module name="tour-operator" options="-parameters" />
