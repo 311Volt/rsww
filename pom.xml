@@ -21,10 +21,10 @@
     </build>
 
     <modules>
-        <module>svc-agency</module>
-        <module>svc-gateway</module>
         <module>svc-hotel</module>
         <module>svc-touroperator</module>
+        <module>tour-operator</module>
+        <module>travel-agency</module>
     </modules>
 
 </project>
