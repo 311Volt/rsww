@@ -1,0 +1,56 @@
+<div style="background: rgba(0, 0, 0, 0.1)" class="p-3 my-3">
+
+  <h4>Hotel</h4>
+  <div class="row">
+    <div class="col-md-2">
+      <span class="list-group-item fw-bold">Name</span>
+      <span class="list-group-item fw-bold">Standard</span>
+      <span class="list-group-item fw-bold">Country</span>
+      <span class="list-group-item fw-bold">NumSingleRooms</span>
+      <span class="list-group-item fw-bold">NumDoubleRooms</span>
+      <span class="list-group-item fw-bold">NumTripleRooms</span>
+      <span class="list-group-item fw-bold">NumQuadRooms</span>
+      <span class="list-group-item fw-bold">Price</span>
+    </div>
+    <div class="col-md-10">
+      <span class="list-group-item">{{offer.hotel.name}}</span>
+      <span class="list-group-item">{{offer.hotel.standard}}</span>
+      <span class="list-group-item">{{offer.hotel.country}}</span>
+      <span class="list-group-item">{{offer.hotel.numSingleRooms}}</span>
+      <span class="list-group-item">{{offer.hotel.numDoubleRooms}}</span>
+      <span class="list-group-item">{{offer.hotel.numTripleRooms}}</span>
+      <span class="list-group-item">{{offer.hotel.numQuadRooms}}</span>
+      <span class="list-group-item">Up to {{offer.hotel.ageRange0.upperBound}}
+        years: {{offer.hotel.ageRange0.pricePerNight}}</span>
+      <span class="list-group-item">Up to {{offer.hotel.ageRange1.upperBound}}
+        years: {{offer.hotel.ageRange1.pricePerNight}}</span>
+      <span class="list-group-item">Up to {{offer.hotel.ageRange2.upperBound}}
+        years: {{offer.hotel.ageRange2.pricePerNight}}</span>
+    </div>
+  </div>
+  <h4>Flight to {{offer.hotel.country}}</h4>
+  <div class="row">
+    <div class="col-md-2">
+      <span class="list-group-item fw-bold">Departure</span>
+      <span class="list-group-item fw-bold">Arrival</span>
+    </div>
+    <div class="col-md-10">
+      <span class="list-group-item">{{offer.departure.departure.date}} {{offer.departure.departure.time}}</span>
+      <span class="list-group-item">{{offer.departure.arrival.date}} {{offer.departure.arrival.time}}</span>
+    </div>
+  </div>
+  <br>
+  <h4>Flight from {{offer.hotel.country}}</h4>
+  <div class="row">
+    <div class="col-md-2">
+      <span class="list-group-item fw-bold">Departure</span>
+      <span class="list-group-item fw-bold">Arrival</span>
+    </div>
+    <div class="col-md-10">
+      <span class="list-group-item">{{offer.arrival.departure.date}} {{offer.arrival.departure.time}}</span>
+      <span class="list-group-item">{{offer.arrival.arrival.date}} {{offer.arrival.arrival.time}}</span>
+    </div>
+  </div>
+
+  <button class="border-dark border-1 btn" style="margin-top: 16px;">Book and pay</button>
+</div>

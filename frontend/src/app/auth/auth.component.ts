@@ -10,6 +10,7 @@ import {AuthService} from "./auth.service";
 export class AuthComponent implements OnInit {
 
   isLoginMode = true;
+  successReg = false;
 
   constructor(private authService: AuthService) {
   }
@@ -22,6 +23,7 @@ export class AuthComponent implements OnInit {
   }
 
   onSubmit(authForm: NgForm) {
+    this.successReg = false;
     if (!authForm.valid) {
       return;
     }
@@ -31,6 +33,7 @@ export class AuthComponent implements OnInit {
       this.authService.login(email, password);
     } else {
       this.authService.signUp(email, password);
+      this.successReg = true;
     }
     authForm.reset();
   }

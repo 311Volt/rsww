@@ -16,12 +16,7 @@ export class AuthService {
     console.log(email);
     this.http.post<any>('http://localhost:8089/user/create', {email: email, password: password})
       .subscribe(
-        response => {
-          this.user.next(new User(response.email, response.password))
-          this.router.navigate(['travel']);
-        },
-        error => {
-          console.log(error);
+        () => {
         }
       )
   }
@@ -33,9 +28,6 @@ export class AuthService {
             this.user.next(new User(response.email, response.password));
             this.router.navigate(['travel']);
           }
-        },
-        error => {
-          console.log(error)
         })
   }
 

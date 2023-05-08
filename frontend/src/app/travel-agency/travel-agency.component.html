@@ -1,1 +1,6 @@
-<p>travel-agency works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <app-offer-item *ngFor="let offer of offersList; let i = index" [offer]="offer" [index]="i">
+    </app-offer-item>
+  </div>
+</div>
