@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="svc-client" />
         <module name="svc-gateway" />
         <module name="svc-agency" />
+        <module name="svc-travel-agency" />
         <module name="svc-hotel" />
+        <module name="svc-tour-operator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,9 +22,6 @@
       <module name="rsww-tour-operator" target="17" />
       <module name="rsww-touroperator" target="17" />
       <module name="rsww-travel-agency" target="17" />
-      <module name="svc-client" target="17" />
-      <module name="svc-tour-operator" target="17" />
-      <module name="svc-travel-agency" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
