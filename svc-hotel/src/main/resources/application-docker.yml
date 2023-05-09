@@ -10,4 +10,4 @@ spring:
       repositories:
         enabled: true
     mongodb:
-      uri: mongodb://yetirswwmongo:27017/yetirsww?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000
+      uri: mongodb://192.168.255.25:27017/rsww_175651_hotel?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000

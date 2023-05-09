@@ -1,5 +1,6 @@
 version: '2.1'
 
+
 services:
 
   # Daniils services / containers
@@ -22,14 +23,15 @@ services:
   postgresql-client:
     container_name: rsww_175651_postgres
     image: postgres
+    user: postgres
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_PASSWORD=password
       - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
       - POSTGRES_DB=client
     volumes:
-    - ../volumes/client/postgres/db:/var/lib/postgresql/data
+    - rsww_175651_vol_postgres:/var/lib/postgresql/data
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready" ]
       interval: 2s
@@ -38,6 +40,20 @@ services:
     networks:
       rsww_175651_default_network:
         ipv4_address: 192.168.255.20
+
+  # ------------------- mongo from dockerfile ---------------------------- #
+  mongodb:
+    build:
+      context: ../dockerfiles
+      dockerfile: Dockerfile-mongodb
+    container_name: rsww_175651_mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - rsww_175651_vol_mongo:/data/db
+    networks:
+      rsww_175651_default_network:
+        ipv4_address: 192.168.255.25
 
   # ------------------- PgAdmin from image ---------------------------- #
   pgadmin:
@@ -69,9 +85,30 @@ services:
     depends_on:
       postgresql-client:
         condition: service_healthy
-    
   # spytac o porty, voluminy lub inne ewentualne potrzebne konfiguracje
 
+
+  # ------------------- Hotel svc from dockerfile ---------------------------- #
+
+  hotel:
+    container_name: rsww_175651_svc_hotel
+    build:
+      context: ../dockerfiles
+      dockerfile: Dockerfile-svc-hotel
+    networks:
+      rsww_175651_default_network:
+        ipv4_address: 192.168.255.50
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    ports:
+      - "1439:1439"
+
+
+
+# ------------------- Define named volumes for databases ------------------------- #
+volumes:
+  rsww_175651_vol_mongo:
+  rsww_175651_vol_postgres:
 
 # ------------------- Define docker internal-network ---------------------------- #
 
