@@ -25,8 +25,8 @@
         <module>svc-client</module>
         <module>svc-gateway</module>
         <module>svc-hotel</module>
-        <module>svc-tourOperator</module>
-        <module>svc-travelAgency</module>
+        <module>svc-tour-operator</module>
+        <module>svc-travel-agency</module>
     </modules>
 
 </project>

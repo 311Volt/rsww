@@ -1,6 +1,0 @@
-FROM openjdk:17-jdk-alpine
-RUN apk --no-cache add curl
-
-COPY ../java-service/execs_for_docker/svc-tourOperator.jar .
-
-CMD java -jar svc-tourOpeartor.jar

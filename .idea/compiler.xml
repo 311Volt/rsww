@@ -2,37 +2,42 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client" />
-        <module name="rsww-gateway" />
-        <module name="rsww-agency" />
-        <module name="rsww-hotel" />
-        <module name="travel-agency" />
-        <module name="rsww-touroperator" />
+        <module name="svc-gateway" />
+        <module name="svc-agency" />
+        <module name="svc-hotel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="client-command" target="17" />
-      <module name="client-query" target="17" />
-      <module name="rsww-msgbus" target="17" />
+      <module name="rsww-agency" target="17" />
+      <module name="rsww-client" target="17" />
+      <module name="rsww-gateway" target="17" />
+      <module name="rsww-hotel" target="17" />
+      <module name="rsww-tour-operator" target="17" />
+      <module name="rsww-touroperator" target="17" />
+      <module name="rsww-travel-agency" target="17" />
+      <module name="svc-client" target="17" />
+      <module name="svc-tour-operator" target="17" />
+      <module name="svc-travel-agency" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="client" options="-parameters" />
-      <module name="client-command" options="-parameters" />
-      <module name="client-query" options="-parameters" />
       <module name="rsww-agency" options="-parameters" />
+      <module name="rsww-client" options="-parameters" />
       <module name="rsww-gateway" options="-parameters" />
       <module name="rsww-hotel" options="-parameters" />
-      <module name="rsww-touroperator" options="-parameters" />
-      <module name="rsww-world" options="-parameters" />
-      <module name="tour-operator" options="-parameters" />
-      <module name="travel-agency" options="-parameters" />
+      <module name="rsww-tour-operator" options="-parameters" />
+      <module name="rsww-travel-agency" options="-parameters" />
+      <module name="svc-agency" options="-parameters" />
+      <module name="svc-client" options="-parameters" />
+      <module name="svc-gateway" options="-parameters" />
+      <module name="svc-hotel" options="-parameters" />
+      <module name="svc-tour-operator" options="-parameters" />
+      <module name="svc-travel-agency" options="-parameters" />
     </option>
   </component>
 </project>

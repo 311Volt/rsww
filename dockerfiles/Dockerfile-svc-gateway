@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk-alpine
 RUN apk --no-cache add curl
 
-COPY ../java-service/execs_for_docker/svc-gateway.jar .
+COPY ./execs_for_docker/svc-gateway.jar .
 
 CMD java -jar svc-gateway.jar

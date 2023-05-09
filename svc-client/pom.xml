@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.rsww</groupId>
-    <artifactId>rsww-client</artifactId>
+    <artifactId>svc-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>client</name>
+    <name>svc-client</name>
     <description>client</description>
     <properties>
         <java.version>17</java.version>

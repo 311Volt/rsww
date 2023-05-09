@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/client-command/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/client-query/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/svc-agency/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/svc-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/svc-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/svc-hotel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/svc-tour-operator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-service/svc-travel-agency/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/svc-agency/src/main/java" charset="UTF-8" />
@@ -14,9 +19,5 @@
     <file url="file://$PROJECT_DIR$/svc-hotel/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/svc-touroperator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/svc-touroperator/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/svc-world/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/svc-world/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tour-operator/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/travel-agency/src/main/java" charset="UTF-8" />
   </component>
 </project>

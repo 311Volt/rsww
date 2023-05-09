@@ -1,4 +1,4 @@
-version: '3.8'
+version: '2.1'
 
 services:
 
@@ -31,7 +31,7 @@ services:
     volumes:
     - ../volumes/client/postgres/db:/var/lib/postgresql/data
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:5432" ]
+      test: [ "CMD-SHELL", "pg_isready" ]
       interval: 2s
       timeout: 10s
       retries: 5
@@ -64,9 +64,11 @@ services:
     networks:
       rsww_175651_default_network:
         ipv4_address: 192.168.255.40
-    #depends_on:
-    #  postgresql-client:
-    #    condition: service_healthy
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      postgresql-client:
+        condition: service_healthy
     
   # spytac o porty, voluminy lub inne ewentualne potrzebne konfiguracje
 

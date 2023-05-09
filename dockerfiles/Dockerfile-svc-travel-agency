@@ -1,0 +1,6 @@
+FROM openjdk:17-jdk-alpine
+RUN apk --no-cache add curl
+
+COPY ./execs_for_docker/svc-travel-agency.jar .
+
+CMD java -jar svc-travel-agency.jar
