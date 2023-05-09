@@ -1,0 +1,40 @@
+version: '2.1'
+services:
+
+  yetirswwrmq:
+    build: ./svc-rabbitmq
+    environment:
+      - RABBITMQ_USER=testuser
+      - RABBITMQ_PASSWORD=testpassword
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:15672" ]
+      interval: 2s
+      timeout: 10s
+      retries: 5
+    ports:
+      - "15672:15672"
+
+  yetirswwmongo:
+    build: ./svc-mongo
+    environment:
+      - MONGO_INITDB_DATABASE=yetirsww
+    ports:
+      - "27017:27017"
+
+  yetirswwtouroperator:
+    build: ./svc-touroperator
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      yetirswwrmq:
+        condition: service_healthy
+
+  yetirswwhotel:
+    build: ./svc-hotel
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      yetirswwrmq:
+        condition: service_healthy
+    ports:
+      - "1439:1439"

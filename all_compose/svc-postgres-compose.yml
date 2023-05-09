@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  postgresql-client:
+    container_name: rsww_175651_postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=client
+    volumes:
+    - ../volumes/client/postgres/db:/var/lib/postgresql/data
+
+  pgadmin:
+    container_name: rsww_175651_pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    

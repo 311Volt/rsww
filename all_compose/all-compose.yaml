@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+
+  # Daniils services / containers
+  # ------------------- Angular frontend from dockerfile ---------------------------- #
+  web:
+    container_name: rsww_175651_angular
+    build:
+      context: ../frontend
+      target: builder
+    ports:
+      - 4200:4200
+    volumes:
+      - ../frontend:/project
+      - /project/node_modules
+    networks:
+      rsww_175651_default_network:
+        ipv4_address: 192.168.255.10
+  
+  # ------------------- Postgres from image ---------------------------- #
+  postgresql-client:
+    container_name: rsww_175651_postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=client
+    volumes:
+    - ../volumes/client/postgres/db:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:5432" ]
+      interval: 2s
+      timeout: 10s
+      retries: 5
+    networks:
+      rsww_175651_default_network:
+        ipv4_address: 192.168.255.20
+
+  # ------------------- PgAdmin from image ---------------------------- #
+  pgadmin:
+    container_name: rsww_175651_pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    networks:
+      rsww_175651_default_network:
+        ipv4_address: 192.168.255.30
+
+  # ------------------- Client svc from dockerfile ---------------------------- #
+  client:
+    container_name: rsww_175651_svc_client
+    build:
+      context: ../dockerfiles
+      dockerfile: Dockerfile-svc-client
+    ports:
+      - 8089:8089
+    networks:
+      rsww_175651_default_network:
+        ipv4_address: 192.168.255.40
+    #depends_on:
+    #  postgresql-client:
+    #    condition: service_healthy
+    
+  # spytac o porty, voluminy lub inne ewentualne potrzebne konfiguracje
+
+
+# ------------------- Define docker internal-network ---------------------------- #
+
+networks:
+  rsww_175651_default_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.255.0/24
+
+
+

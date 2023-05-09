@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+ client:
+    container_name: rsww_175651_svc_client
+    build:
+      context: ../dockerfiles
+      dockerfile: Dockerfile-svc-client
