@@ -20,7 +20,6 @@
       <module name="rsww-gateway" target="17" />
       <module name="rsww-hotel" target="17" />
       <module name="rsww-tour-operator" target="17" />
-      <module name="rsww-touroperator" target="17" />
       <module name="rsww-travel-agency" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -32,12 +31,6 @@
       <module name="rsww-hotel" options="-parameters" />
       <module name="rsww-tour-operator" options="-parameters" />
       <module name="rsww-travel-agency" options="-parameters" />
-      <module name="svc-agency" options="-parameters" />
-      <module name="svc-client" options="-parameters" />
-      <module name="svc-gateway" options="-parameters" />
-      <module name="svc-hotel" options="-parameters" />
-      <module name="svc-tour-operator" options="-parameters" />
-      <module name="svc-travel-agency" options="-parameters" />
     </option>
   </component>
 </project>

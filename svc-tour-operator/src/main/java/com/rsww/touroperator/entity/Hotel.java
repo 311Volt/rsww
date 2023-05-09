@@ -10,5 +10,4 @@ public class Hotel {
     public String name;
     public double standard;
     public String country;
-    public String numOfRooms;
 }
