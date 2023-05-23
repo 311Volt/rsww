@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwworld.query.service;
 
-import com.yetistudios.rsww.rswwworld.RswwWorldApplication;
+import com.yetistudios.rsww.rswwworld.RswwHotelApplication;
 import com.yetistudios.rsww.rswwworld.command.dto.ReserveHotelRequest;
 import com.yetistudios.rsww.rswwworld.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwworld.command.repository.HotelOccupationDeltaEventRepository;
@@ -22,7 +22,7 @@ import java.util.Optional;
 @Service
 public class HotelOccupationQueryService {
 
-    private final Logger logger = LoggerFactory.getLogger(RswwWorldApplication.class);
+    private final Logger logger = LoggerFactory.getLogger(RswwHotelApplication.class);
     @Autowired
     private HotelOccupationDeltaEventRepository hotelEventRepo;
 

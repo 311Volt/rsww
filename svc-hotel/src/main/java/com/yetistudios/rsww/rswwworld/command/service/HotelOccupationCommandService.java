@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwworld.command.service;
 
-import com.yetistudios.rsww.rswwworld.RswwWorldApplication;
+import com.yetistudios.rsww.rswwworld.RswwHotelApplication;
 import com.yetistudios.rsww.rswwworld.command.dto.ReserveHotelRequest;
 import com.yetistudios.rsww.rswwworld.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwworld.command.exception.HotelDoesNotExistException;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HotelOccupationCommandService {
 
-    private final Logger logger = LoggerFactory.getLogger(RswwWorldApplication.class);
+    private final Logger logger = LoggerFactory.getLogger(RswwHotelApplication.class);
 
     @Autowired
     private HotelRepository hotelRepository;

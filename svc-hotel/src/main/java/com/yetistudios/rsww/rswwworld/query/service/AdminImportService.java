@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.rswwworld.query.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yetistudios.rsww.rswwworld.RswwWorldApplication;
+import com.yetistudios.rsww.rswwworld.RswwHotelApplication;
 import com.yetistudios.rsww.rswwworld.query.entity.Hotel;
 import com.yetistudios.rsww.rswwworld.query.repository.HotelRepository;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ import java.util.Map;
 @Profile("!test")
 public class AdminImportService {
 
-    private static final Logger logger = LoggerFactory.getLogger(RswwWorldApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(RswwHotelApplication.class);
 
     @Autowired
     private ObjectMapper objectMapper;
