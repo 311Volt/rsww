@@ -5,8 +5,7 @@ services:
 
   # Daniils services / containers
   # ------------------- Angular frontend from dockerfile ---------------------------- #
-  web:
-    container_name: rsww_175651_angular
+  rsww_175651_frontend:
     build:
       context: ../frontend
       target: builder
@@ -15,89 +14,59 @@ services:
     volumes:
       - ../frontend:/project
       - /project/node_modules
-    networks:
-      rsww_175651_default_network:
-        ipv4_address: 192.168.255.10
   
   # ------------------- Postgres from image ---------------------------- #
-  postgresql-client:
-    container_name: rsww_175651_postgres
-    image: postgres
-    user: postgres
+  rsww_175651_postgres:
+    build: ./ctx-postgres
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=client
+      - POSTGRES_DB=svc_client
     volumes:
-    - rsww_175651_vol_postgres:/var/lib/postgresql/data
+      - rsww_175651_vol_postgres:/var/lib/postgresql/data
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready" ]
       interval: 2s
       timeout: 10s
       retries: 5
-    networks:
-      rsww_175651_default_network:
-        ipv4_address: 192.168.255.20
 
   # ------------------- mongo from dockerfile ---------------------------- #
-  mongodb:
-    build:
-      context: ../dockerfiles
-      dockerfile: Dockerfile-mongodb
-    container_name: rsww_175651_mongodb
+  rsww_175651_mongodb:
+    build: ./ctx-mongodb
     ports:
       - 27017:27017
     volumes:
       - rsww_175651_vol_mongo:/data/db
-    networks:
-      rsww_175651_default_network:
-        ipv4_address: 192.168.255.25
 
   # ------------------- PgAdmin from image ---------------------------- #
-  pgadmin:
-    container_name: rsww_175651_pgadmin
-    image: dpage/pgadmin4
+  rsww_175651_pgadmin:
+    build: ./ctx-pgadmin
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "5050:80"
-    networks:
-      rsww_175651_default_network:
-        ipv4_address: 192.168.255.30
 
   # ------------------- Client svc from dockerfile ---------------------------- #
-  client:
-    container_name: rsww_175651_svc_client
-    build:
-      context: ../dockerfiles
-      dockerfile: Dockerfile-svc-client
+  rsww_175651_svc_client:
+    build: ./ctx-svc-client
     ports:
       - 8089:8089
-    networks:
-      rsww_175651_default_network:
-        ipv4_address: 192.168.255.40
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:
-      postgresql-client:
+      rsww_175651_postgres:
         condition: service_healthy
   # spytac o porty, voluminy lub inne ewentualne potrzebne konfiguracje
 
 
   # ------------------- Hotel svc from dockerfile ---------------------------- #
 
-  hotel:
-    container_name: rsww_175651_svc_hotel
-    build:
-      context: ../dockerfiles
-      dockerfile: Dockerfile-svc-hotel
-    networks:
-      rsww_175651_default_network:
-        ipv4_address: 192.168.255.50
+  rsww_175651_svc_hotel:
+    build: ./ctx-svc-hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     ports:
@@ -109,16 +78,3 @@ services:
 volumes:
   rsww_175651_vol_mongo:
   rsww_175651_vol_postgres:
-
-# ------------------- Define docker internal-network ---------------------------- #
-
-networks:
-  rsww_175651_default_network:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.168.255.0/24
-
-
-

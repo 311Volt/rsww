@@ -1,10 +1,15 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/user
-    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/svc_client
     username: postgres
     password: password
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#hibernate:
+#  temp:
+#    use_jdbc_metadata_defaults: true
   jpa:
     hibernate:
       ddl-auto: update

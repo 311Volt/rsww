@@ -2,13 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="svc-client" />
-        <module name="svc-gateway" />
         <module name="svc-agency" />
+        <module name="svc-gateway" />
+        <module name="lib-messages" />
         <module name="svc-travel-agency" />
         <module name="svc-hotel" />
         <module name="svc-tour-operator" />
@@ -25,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lib-messages" options="-parameters" />
       <module name="rsww-agency" options="-parameters" />
       <module name="rsww-client" options="-parameters" />
       <module name="rsww-gateway" options="-parameters" />

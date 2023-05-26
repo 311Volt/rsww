@@ -36,12 +36,6 @@
             <groupId>org.axonframework</groupId>
             <artifactId>axon-spring-boot-starter</artifactId>
             <version>4.7.4</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.axonframework</groupId>
-                    <artifactId>axon-server-connector</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -59,6 +53,7 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -72,6 +67,7 @@
     </build>
 
     <modules>
+        <module>lib-messages</module>
         <module>svc-agency</module>
         <module>svc-client</module>
         <module>svc-gateway</module>

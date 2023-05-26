@@ -4,4 +4,4 @@ services:
     container_name: rsww_175651_svc_client
     build:
       context: ../dockerfiles
-      dockerfile: Dockerfile-svc-client
+      dockerfile: Dockerfile

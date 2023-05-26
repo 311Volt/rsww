@@ -1,0 +1,23 @@
+version: '2.1'
+
+
+services:
+  rswwtest_postgres:
+    build: ./ctx-postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=svc_client
+    ports:
+      - "5432:5432"
+
+  rswwtest_mongo:
+    build: ./ctx-mongodb
+    ports:
+      - "27017:27017"
+
+  rswwtest_axon:
+    build: ./ctx-axonserver
+    ports:
+      - "8024:8024"
+      - "8124:8124"
