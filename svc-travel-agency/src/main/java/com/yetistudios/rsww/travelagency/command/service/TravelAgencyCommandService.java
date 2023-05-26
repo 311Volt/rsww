@@ -1,12 +1,12 @@
 package com.yetistudios.rsww.travelagency.command.service;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yetistudios.rsww.travelagency.command.command.CreateAirportCommand;
 import com.yetistudios.rsww.travelagency.command.dto.CreateAirportRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.stereotype.Service;
-import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.io.IOException;
 import java.io.InputStream;
