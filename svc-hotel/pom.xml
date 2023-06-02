@@ -9,7 +9,7 @@
 	</parent>
 	<artifactId>svc-hotel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>svc-world</name>
+	<name>svc-hotel</name>
 	<description>RSWW hotel service</description>
 	<properties>
 		<java.version>17</java.version>

@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="svc-client" />
-        <module name="svc-agency" />
+        <module name="svc-tour-operator-query" />
+        <module name="svc-saga-orchestrator" />
+        <module name="svc-payment" />
+        <module name="svc-flight" />
         <module name="svc-gateway" />
         <module name="lib-messages" />
         <module name="svc-travel-agency" />
         <module name="svc-hotel" />
-        <module name="svc-tour-operator" />
+        <module name="svc-tour-operator-cmd" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +25,9 @@
       <module name="rsww-hotel" target="17" />
       <module name="rsww-tour-operator" target="17" />
       <module name="rsww-travel-agency" target="17" />
+      <module name="svc-agency" target="17" />
+      <module name="svc-client" target="17" />
+      <module name="svc-tour-operator" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -36,9 +41,14 @@
       <module name="rsww-travel-agency" options="-parameters" />
       <module name="svc-agency" options="-parameters" />
       <module name="svc-client" options="-parameters" />
+      <module name="svc-flight" options="-parameters" />
       <module name="svc-gateway" options="-parameters" />
       <module name="svc-hotel" options="-parameters" />
+      <module name="svc-payment" options="-parameters" />
+      <module name="svc-saga-orchestrator" options="-parameters" />
       <module name="svc-tour-operator" options="-parameters" />
+      <module name="svc-tour-operator-cmd" options="-parameters" />
+      <module name="svc-tour-operator-query" options="-parameters" />
       <module name="svc-travel-agency" options="-parameters" />
     </option>
   </component>

@@ -3,12 +3,14 @@
 - [RSWW Project Architecture](#rsww-project-architecture)
 - [1. Service list](#1-service-list)
 - [2. Service responsibility overview](#2-service-responsibility-overview)
-  - [2.1. User service](#21-user-service)
-  - [2.2. Agency](#22-agency)
+  - [2.1. API Gateway](#21-api-gateway)
+  - [2.2. Travel Agency](#22-travel-agency)
   - [2.3. Tour Operator (commands)](#23-tour-operator-commands)
   - [2.4. Tour Operator (queries)](#24-tour-operator-queries)
-  - [2.5. World](#25-world)
-  - [2.6. Saga Orchestrator](#26-saga-orchestrator)
+  - [2.5. Hotel](#25-hotel)
+  - [2.6. Flight](#26-flight)
+  - [2.7. Saga Orchestrator](#27-saga-orchestrator)
+  - [2.8. Payment](#28-payment)
 - [3. Saga descriptions](#3-saga-descriptions)
   - [3.1. Booking an offer](#31-booking-an-offer)
 - [4. REST API overview](#4-rest-api-overview)
@@ -24,22 +26,23 @@
  - Agency
  - Tour Operator command
  - Tour Operator query
- - World
+ - Hotel
+ - Flight
  - Saga Orchestrator
- - RabbitMQ instance
+ - Payment Service
 
 # 2. Service responsibility overview
 
 TODO not sure if user service & agency should be merged into one
 
-## 2.1. User service
+## 2.1. API Gateway
   - database: none
   - authorization
   - takes REST calls from frontend & passes it on to the message broker
   - subscribes to certain Agency messages to create HTTP responses for clients
-  - websocket endpoints for offer status updates?
+  - websocket endpoints for offer status updates
 
-## 2.2. Agency
+## 2.2. Travel Agency
   - database: SQL
   - stores information about its clients and authenticates them
   - event-sourced entity: OfferBooking (offerid, birthdates, status)
@@ -56,23 +59,34 @@ TODO not sure if user service & agency should be merged into one
   - stores relatively recent information about offers
   - is able to quickly provide a filtered list of offers
 
-## 2.5. World
-  - database: MongoDB?
-  - listens to (& may generate) seat/room booking events
-  - maintains information about available hotel rooms & plane seats
+## 2.5. Hotel
+  - database: MongoDB
+  - listens to (& may generate) room booking events
+  - maintains information about available hotel rooms
   - notifies any external services about changed availability status
     - e.g. "hotel LCA20064 will have no vacancy from 18.06 until 21.06" is
       an event that Tour Operator may subscribe to, which may invalidate an offer
 
-## 2.6. Saga Orchestrator
+## 2.6. Flight
+  - database: MongoDB
+  - listens to (& may generate) flight seat booking events
+  - maintains information about available plane seats
+  - notifies any external services about changed availability status
+
+## 2.7. Saga Orchestrator
   - orchestrates Sagas. more in [3. Saga descriptions](#3-saga-descriptions-1)
+
+## 2.8. Payment
+  - Payment simulation. In response to a Pay command, sends back either:
+    - Payment confirmation
+    - Payment failure
 
 # 3. Saga descriptions
 
 ## 3.1. Booking an offer
   1. [Agency] Create `OfferBooking` and init status to "waiting" (rollback: don't delete, set status to "error")
-  2. [World] Try to book airplane seats
-  3. [World] Try to book hotel rooms
+  2. [Flight] Try to book airplane seats
+  3. [Hotel] Try to book hotel rooms
   4. [Tour Operator] Acknowledge offer sale
   5. [Agency] Update status to "booked" and wait 1 minute for payment confirmation
   6. [Agency] Update status to "done"
@@ -116,7 +130,7 @@ Response body:
 ### POST `/api/offers/{id}/book`
 request body: empty  
 response body: 
-```
+```json
 {
   "offerPurchaseId": "87cfh8q7nhr78a3bvcn90r3y"
 }

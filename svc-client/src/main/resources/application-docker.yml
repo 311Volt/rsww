@@ -1,6 +1,0 @@
-
-spring:
-  datasource:
-    url: jdbc:postgresql://rsww_175651_postgres:5432/client
-    username: postgres
-    password: password

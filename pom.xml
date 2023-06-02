@@ -68,12 +68,14 @@
 
     <modules>
         <module>lib-messages</module>
-        <module>svc-agency</module>
-        <module>svc-client</module>
         <module>svc-gateway</module>
-        <module>svc-hotel</module>
-        <module>svc-tour-operator</module>
         <module>svc-travel-agency</module>
+        <module>svc-tour-operator-cmd</module>
+        <module>svc-tour-operator-query</module>
+        <module>svc-hotel</module>
+        <module>svc-flight</module>
+        <module>svc-saga-orchestrator</module>
+        <module>svc-payment</module>
     </modules>
 
 </project>
