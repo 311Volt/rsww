@@ -7,10 +7,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TourOperatorApplication {
+public class TourOperatorCmdApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TourOperatorApplication.class, args);
+		SpringApplication.run(TourOperatorCmdApplication.class, args);
 	}
 
 	@Autowired
