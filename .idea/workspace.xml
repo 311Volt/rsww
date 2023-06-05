@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/TourOperatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/TourOperatorCmdApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/HotelAvailabilityDeltaEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/query/CheckHotelAvailabilityQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/config/XStreamConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelOccupationQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/rest/HotelOccupationQueryRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +59,7 @@
       <recent name="com.yetistudios.rsww.touroperator.query" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.svc-tour-operator-cmd">
+  <component name="RunManager" selected="Multirun.rsww-application">
     <configuration name="svc-flight" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.touroperator.query.RswwFlightApplication" />
       <module name="svc-flight" />
