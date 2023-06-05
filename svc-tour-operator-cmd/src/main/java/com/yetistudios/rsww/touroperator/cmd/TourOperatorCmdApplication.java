@@ -1,10 +1,11 @@
 package com.yetistudios.rsww.touroperator.cmd;
 
-import com.yetistudios.rsww.touroperator.cmd.command.exception.OfferServiceEventsErrorHandler;
+import com.yetistudios.rsww.touroperator.cmd.exception.OfferServiceEventsErrorHandler;
 import org.axonframework.config.EventProcessingConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 @SpringBootApplication
 public class TourOperatorCmdApplication {

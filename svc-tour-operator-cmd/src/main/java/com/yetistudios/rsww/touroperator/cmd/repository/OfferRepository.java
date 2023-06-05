@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.command.repository;
+package com.yetistudios.rsww.touroperator.cmd.repository;
 
 import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
 import org.springframework.data.mongodb.repository.MongoRepository;

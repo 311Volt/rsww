@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://192.168.255.25:27017/rsww_175651_touroperator?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000

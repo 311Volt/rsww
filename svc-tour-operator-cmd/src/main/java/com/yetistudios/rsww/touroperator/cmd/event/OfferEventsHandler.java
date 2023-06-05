@@ -1,6 +1,6 @@
-package com.yetistudios.rsww.touroperator.cmd.command.event;
+package com.yetistudios.rsww.touroperator.cmd.event;
 
-import com.yetistudios.rsww.touroperator.cmd.command.repository.OfferRepository;
+import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
@@ -30,6 +30,14 @@ public class OfferEventsHandler {
                 .build();
 
         offerRepository.save(offer);
+    }
+
+    @EventHandler
+    public void on(OfferDecreaseAmountEvent event){
+        offerRepository.findById(event.getOfferId()).ifPresent(offer -> {
+            offer.setNumberOfOffers(offer.getNumberOfOffers() - event.getNumberOfOffers());
+            offerRepository.save(offer);
+        });
     }
 
     @ExceptionHandler
