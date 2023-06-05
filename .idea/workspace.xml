@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/HotelAvailabilityDeltaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/query/CheckHotelAvailabilityQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/config/XStreamConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelOccupationQueryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/rest/HotelOccupationQueryRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/HotelReservationFailedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/HotelReservationSuccessfulEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/HotelOccupationCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/ReserveHotelCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/ReserveHotelCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/event/PlaneOccupationDeltaEvent.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
