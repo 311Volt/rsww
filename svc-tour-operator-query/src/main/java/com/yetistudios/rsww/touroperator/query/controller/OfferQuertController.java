@@ -8,6 +8,7 @@ import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -21,8 +22,15 @@ public class OfferQuertController {
     }
 
     @GetMapping
-    public List<Offer> getAllOffers() {
-        GetOffersQuery getOffersQuery = new GetOffersQuery();
+    public List<Offer> getAllOffers(@RequestParam(defaultValue = "") String destination, @RequestParam(defaultValue = "") String departure, @RequestParam(defaultValue = "1900-01-01") LocalDate startDate, @RequestParam(defaultValue = "1") int people, @RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int pageSize) {
+        GetOffersQuery getOffersQuery = GetOffersQuery.builder()
+                .destination(destination)
+                .departure(departure)
+                .startDate(startDate)
+                .people(people)
+                .page(page)
+                .pageSize(pageSize)
+                .build();
 
         return queryGateway.query(getOffersQuery, ResponseTypes.multipleInstancesOf(Offer.class)).join();
     }

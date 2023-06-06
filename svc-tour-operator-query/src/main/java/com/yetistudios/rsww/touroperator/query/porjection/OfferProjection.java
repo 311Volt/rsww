@@ -6,6 +6,7 @@ import com.yetistudios.rsww.touroperator.query.dto.DetailedOfferDto;
 import com.yetistudios.rsww.touroperator.query.queries.GetOfferDetailedQuery;
 import com.yetistudios.rsww.touroperator.query.queries.GetOffersQuery;
 import org.axonframework.queryhandling.QueryHandler;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -21,7 +22,8 @@ public class OfferProjection {
 
     @QueryHandler
     public List<Offer> handle(GetOffersQuery getOffersQuery){
-        List<Offer> offers =  offerRepository.findAll();
+        PageRequest pageRequest = PageRequest.of(getOffersQuery.getPage(), getOffersQuery.getPageSize());
+        List<Offer> offers =  offerRepository.findOffersByCriteria(getOffersQuery.getDestination(), getOffersQuery.getDeparture(),getOffersQuery.getStartDate(), getOffersQuery.getPeople(), pageRequest);
         return offers;
     }
 
