@@ -89,20 +89,21 @@ def create_flights(airports, year):
             start_time = midnight + dt.timedelta(minutes=random.randrange(0, 1440))
             end_time = start_time + dt.timedelta(minutes=random.randrange(60, 300))
 
-            dirOutOfCountry = random.randrange(2)
+            isReturn = bool(random.randrange(2))
             polAirport = random.choice(dep_airports)["code"]
             frnAirport = random.choice(arr_airports)["code"]
 
             out_flights.append({
                 "flightNumber": flight_num_counter,
                 "numSeats": random.randrange(30, 300),
+                "isReturn": isReturn,
                 "departure": {
-                    "airportCode": polAirport if dirOutOfCountry else frnAirport,
+                    "airportCode": frnAirport if isReturn else polAirport,
                     "date": start_time.date().isoformat(),
                     "time": start_time.time().strftime("%H:%M:%S")
                 },
                 "arrival": {
-                    "airportCode": frnAirport if dirOutOfCountry else polAirport,
+                    "airportCode": polAirport if isReturn else frnAirport,
                     "date": end_time.date().isoformat(),
                     "time": end_time.time().strftime("%H:%M:%S")
                 }

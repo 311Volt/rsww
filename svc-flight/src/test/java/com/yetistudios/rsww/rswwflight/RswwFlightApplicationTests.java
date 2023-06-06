@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.rswwagency;
+package com.yetistudios.rsww.rswwflight;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
