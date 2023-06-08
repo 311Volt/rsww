@@ -1,6 +1,6 @@
-package com.yetistudios.rsww.rswwgateway.query.repository;
+package com.yetistudios.rsww.rswwgateway.repository;
 
-import com.yetistudios.rsww.rswwgateway.query.entity.UserEntity;
+import com.yetistudios.rsww.rswwgateway.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
