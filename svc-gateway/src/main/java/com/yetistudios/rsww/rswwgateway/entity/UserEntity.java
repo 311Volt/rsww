@@ -1,9 +1,9 @@
-package com.yetistudios.rsww.rswwgateway.query.entity;
+package com.yetistudios.rsww.rswwgateway.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import lombok.Data;
+
 
 @Entity
 @Table(name = "users")
