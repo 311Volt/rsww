@@ -1,1 +1,12 @@
 
+server:
+  port: 1438
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/svc_gateway
+    username: rsww175651
+    password: jpg4ever
+  jpa:
+    hibernate:
+      ddl-auto: update

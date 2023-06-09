@@ -6,12 +6,28 @@ import jakarta.persistence.Table;
 import lombok.Builder;
 import lombok.Data;
 
-@Entity
+import java.util.List;
+
 @Data
 @Builder
-@Table(name = "flight_availability")
 public class FlightAvailability {
     @Id
     public Integer flightNumber;
     public Integer numTakenSeats;
+
+    public static FlightAvailability ofSnapshot(FlightAvailabilitySnapshot snapshot) {
+        return FlightAvailability.builder()
+                .flightNumber(snapshot.id.flightNumber)
+                .numTakenSeats(snapshot.numTakenSeats)
+                .build();
+    }
+
+
+    public void consumeEvent(FlightAvailabilityDeltaEventEntity event) {
+        numTakenSeats += event.deltaSeats;
+    }
+
+    public void consumeEvents(List<FlightAvailabilityDeltaEventEntity> events) {
+        events.forEach(this::consumeEvent);
+    }
 }

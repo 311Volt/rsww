@@ -13,7 +13,7 @@ import java.util.List;
 public interface FlightRepository extends JpaRepository<Flight, Integer> {
 
     @Query(nativeQuery = true, value = """
-        SELECT * FROM Flights f 
+        SELECT * FROM flights f 
             WHERE f.arrivalTimestamp <= :query.latestAcceptableOutboundArrival
             AND f.departureAirportCode = :query.outboundDepartureAirportCode
             AND f.arrivalAirportCode = :query.outboundArrivalAirportCode
@@ -23,7 +23,7 @@ public interface FlightRepository extends JpaRepository<Flight, Integer> {
     List<Flight> getViableOutboundFlights(@Param("query") FindBestFlightPairQuery query);
 
     @Query(nativeQuery = true, value = """
-        SELECT * FROM Flights f 
+        SELECT * FROM flights f 
             WHERE f.departureTimestamp > :query.earliestAcceptableReturnDeparture
             AND f.departureAirportCode = :query.outboundArrivalAirportCode
             AND f.arrivalAirportCode = :query.outboundDepartureAirportCode

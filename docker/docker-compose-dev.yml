@@ -5,9 +5,8 @@ services:
   rswwtest_postgres:
     build: ./ctx-postgres
     environment:
-      - POSTGRES_USER=postgres
+      - POSTGRES_USER=root
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=svc_client
     ports:
       - "5432:5432"
 
