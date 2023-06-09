@@ -4,13 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Builder;
+import lombok.Data;
 
 @Entity
-@Table(name = "airports")
+@Data
 @Builder
-public class Airport {
+@Table(name = "flight_availability")
+public class FlightAvailability {
     @Id
-    public String code;
-    public String name;
-    public boolean forDeparture;
+    public Integer flightNumber;
+    public Integer numTakenSeats;
 }

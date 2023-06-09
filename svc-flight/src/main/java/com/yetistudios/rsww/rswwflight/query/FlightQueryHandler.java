@@ -1,10 +1,13 @@
 package com.yetistudios.rsww.rswwflight.query;
 
 import com.yetistudios.rsww.messages.misc.FlightPair;
+import com.yetistudios.rsww.messages.query.CheckFlightAvailabilityQuery;
 import com.yetistudios.rsww.messages.query.FindBestFlightPairQuery;
 import com.yetistudios.rsww.rswwflight.entity.Flight;
+import com.yetistudios.rsww.rswwflight.entity.FlightAvailability;
 import com.yetistudios.rsww.rswwflight.repository.AirportRepository;
 import com.yetistudios.rsww.rswwflight.repository.FlightRepository;
+import com.yetistudios.rsww.rswwflight.service.FlightAvailabilityService;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -21,6 +24,9 @@ public class FlightQueryHandler {
     @Autowired
     private FlightRepository flightRepository;
 
+    @Autowired
+    private FlightAvailabilityService flightAvailabilityService;
+
 
     @QueryHandler
     Optional<FlightPair> handle(FindBestFlightPairQuery query) {
@@ -36,6 +42,11 @@ public class FlightQueryHandler {
                 .returnFlight(viableReturnFlights.get(0).toDocument())
                 .build()
         );
+    }
+
+    @QueryHandler
+    Boolean handle(CheckFlightAvailabilityQuery query) {
+        return flightAvailabilityService.isAvailable(query);
     }
 
 }

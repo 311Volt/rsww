@@ -1,9 +1,8 @@
 package com.yetistudios.rsww.rswwhotel.command;
 
-import com.yetistudios.rsww.messages.command.ReserveHotelCommand;
+import com.yetistudios.rsww.messages.command.BookHotelCommand;
 import com.yetistudios.rsww.messages.event.HotelReservationFailedEvent;
 import com.yetistudios.rsww.messages.event.HotelReservationSuccessfulEvent;
-import com.yetistudios.rsww.rswwhotel.command.exception.HotelDoesNotExistException;
 import com.yetistudios.rsww.rswwhotel.command.service.HotelOccupationCommandService;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventhandling.gateway.EventGateway;
@@ -20,7 +19,7 @@ public class HotelOccupationCommandHandler {
     private EventGateway eventGateway;
 
     @CommandHandler
-    void on(ReserveHotelCommand command) {
+    void on(BookHotelCommand command) {
         try {
             service.bookRooms(command);
             eventGateway.publish(

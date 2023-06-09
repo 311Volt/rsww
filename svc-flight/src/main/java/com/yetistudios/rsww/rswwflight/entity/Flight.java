@@ -11,7 +11,9 @@ import lombok.Builder;
 
 @Entity
 @Builder
-@Table(indexes = {
+@Table(
+        name = "flights",
+        indexes = {
         @Index(columnList = "departureTimestamp"),
         @Index(columnList = "arrivalTimestamp")
 })

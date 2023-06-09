@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.query.service;
 
-import com.yetistudios.rsww.messages.command.ReserveHotelCommand;
+import com.yetistudios.rsww.messages.command.BookHotelCommand;
 import com.yetistudios.rsww.messages.query.CheckHotelAvailabilityQuery;
 import com.yetistudios.rsww.rswwhotel.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwhotel.command.repository.HotelOccupationDeltaEventRepository;
@@ -100,7 +100,7 @@ public class HotelOccupationQueryService {
         return !cannotBook;
     }
 
-    public boolean checkReservationAvailability(ReserveHotelCommand reservation) {
+    public boolean checkReservationAvailability(BookHotelCommand reservation) {
         return checkHotelAvailability(CheckHotelAvailabilityQuery.builder()
                 .hotelCode(reservation.hotelCode)
                 .timestampBegin(reservation.timestampBegin)
