@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class ReserveHotelCommand {
+public class BookHotelCommand {
     public String reservationId;
     public String hotelCode;
     public long timestampBegin;

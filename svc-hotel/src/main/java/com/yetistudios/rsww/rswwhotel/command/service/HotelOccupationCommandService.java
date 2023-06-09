@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.command.service;
 
-import com.yetistudios.rsww.messages.command.ReserveHotelCommand;
+import com.yetistudios.rsww.messages.command.BookHotelCommand;
 import com.yetistudios.rsww.rswwhotel.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwhotel.command.exception.HotelDoesNotExistException;
 import com.yetistudios.rsww.rswwhotel.command.exception.HotelUnavailableException;
@@ -25,7 +25,7 @@ public class HotelOccupationCommandService {
     private HotelOccupationDeltaEventRepository eventRepository;
 
 
-    public void bookRooms(ReserveHotelCommand request) {
+    public void bookRooms(BookHotelCommand request) {
         if(!hotelRepository.existsByCode(request.hotelCode)) {
             throw new HotelDoesNotExistException();
         }

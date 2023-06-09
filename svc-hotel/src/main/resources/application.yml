@@ -6,9 +6,9 @@ spring:
 #    username: guest
 #    password: guest
   data:
-    mongo:
-      repositories:
-        enabled: false
+#    mongo:
+#      repositories:
+#        enabled: false
     mongodb:
       uri: mongodb://localhost:27017/hoteldb
 server:

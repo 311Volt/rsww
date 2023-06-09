@@ -1,1 +1,11 @@
+server:
+  port: 1440
 
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/svc_flight
+    username: rsww175651
+    password: jpg4ever
+  jpa:
+    hibernate:
+      ddl-auto: update
