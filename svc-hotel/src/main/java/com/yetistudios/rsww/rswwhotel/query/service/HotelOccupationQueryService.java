@@ -89,14 +89,14 @@ public class HotelOccupationQueryService {
             return false;
         }
 
-        Hotel hotel = hotelRepository.findByCode(query.hotelCode).get();
+        Hotel hotel = hotelRepository.findByCode(query.hotelCode).orElseThrow();
         HotelOccupationVector vec = getMaxOccupationDuring(
-                query.hotelCode, query.timestampBegin, query.timestampEnd).get();
+                query.hotelCode, query.timestampBegin, query.timestampEnd).orElseThrow();
 
         boolean cannotBook = false;
-        cannotBook |= (vec.takenSingleRooms + query.numSingleRooms > Integer.parseInt(hotel.numSingleRooms));
-        cannotBook |= (vec.takenDoubleRooms + query.numDoubleRooms > Integer.parseInt(hotel.numDoubleRooms));
-        cannotBook |= (vec.takenTripleRooms + query.numTripleRooms > Integer.parseInt(hotel.numTripleRooms));
+        cannotBook |= (vec.takenSingleRooms + query.numSingleRooms > hotel.numSingleRooms);
+        cannotBook |= (vec.takenDoubleRooms + query.numDoubleRooms > hotel.numDoubleRooms);
+        cannotBook |= (vec.takenTripleRooms + query.numTripleRooms > hotel.numTripleRooms);
         return !cannotBook;
     }
 

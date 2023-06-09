@@ -15,9 +15,9 @@ public class Hotel {
     public double longitude;
     public String airportCode;
     public String country;
-    public String numSingleRooms;
-    public String numDoubleRooms;
-    public String numTripleRooms;
+    public Integer numSingleRooms;
+    public Integer numDoubleRooms;
+    public Integer numTripleRooms;
     public HotelAgeRange ageRange0;
     public HotelAgeRange ageRange1;
     public HotelAgeRange ageRange2;

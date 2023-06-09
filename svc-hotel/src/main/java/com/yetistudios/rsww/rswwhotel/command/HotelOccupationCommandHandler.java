@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.rswwhotel.command;
 
 import com.yetistudios.rsww.messages.command.BookHotelCommand;
+import com.yetistudios.rsww.messages.command.CancelHotelBookingCommand;
 import com.yetistudios.rsww.messages.event.HotelReservationFailedEvent;
 import com.yetistudios.rsww.messages.event.HotelReservationSuccessfulEvent;
 import com.yetistudios.rsww.rswwhotel.command.service.HotelOccupationCommandService;
@@ -35,6 +36,11 @@ public class HotelOccupationCommandHandler {
                             .reason(ex.getClass().getName())
             );
         }
+    }
+
+    @CommandHandler
+    void on(CancelHotelBookingCommand command) {
+        service.cancelReservation(command);
     }
 
 }
