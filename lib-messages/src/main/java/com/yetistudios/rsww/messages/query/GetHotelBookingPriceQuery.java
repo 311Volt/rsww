@@ -8,6 +8,8 @@ import java.util.List;
 @Data
 @Builder
 public class GetHotelBookingPriceQuery {
-    public String hotelName;
+    public String hotelCode;
+    public Long timestampBegin;
+    public Long timestampEnd;
     public List<String> birthDates;
 }

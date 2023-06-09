@@ -74,9 +74,9 @@ public class HotelOccupationQueryService {
 
         HotelOccupation occupation = getInitialStateForReplay(hotelCode, beginTimestamp);
         HotelOccupationVector result = new HotelOccupationVector(occupation);
-        log.info("{} events found", remainingEvents.size());
+        log.debug("{} events found", remainingEvents.size());
         for(HotelOccupationDeltaEvent event: remainingEvents) {
-            log.info("{} consuming event: {} / {},{},{}", hotelCode, event.timestamp, event.deltaSingleRooms, event.deltaDoubleRooms, event.deltaTripleRooms);
+            log.debug("{} consuming event: {} / {},{},{}", hotelCode, event.timestamp, event.deltaSingleRooms, event.deltaDoubleRooms, event.deltaTripleRooms);
             occupation.consumeEvent(event);
             result.max(new HotelOccupationVector(occupation));
         }

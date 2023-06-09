@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.rswwflight.service;
 
 import com.yetistudios.rsww.messages.command.BookFlightCommand;
+import com.yetistudios.rsww.messages.command.CancelFlightBookingCommand;
 import com.yetistudios.rsww.messages.query.CheckFlightAvailabilityQuery;
 import com.yetistudios.rsww.rswwflight.entity.*;
 import com.yetistudios.rsww.rswwflight.exception.CannotCancelBookingException;
@@ -114,8 +115,8 @@ public class FlightAvailabilityService {
 
     }
 
-    public void cancelFlightBooking(String reservationId) {
-        var reservationEvents = eventRepository.findByReservationId(reservationId);
+    public void cancelFlightBooking(CancelFlightBookingCommand command) {
+        var reservationEvents = eventRepository.findByReservationId(command.reservationId);
         if(reservationEvents.size() != 1) {
             throw new CannotCancelBookingException("Reservation does not exist or has already been cancelled");
         }
@@ -123,8 +124,8 @@ public class FlightAvailabilityService {
         originalEvent.id.timestamp = Timestamp.from(Instant.now());
         originalEvent.deltaSeats = -originalEvent.deltaSeats;
         eventRepository.save(originalEvent);
-        log.info("Reservation {} for flight #{} has been cancelled ({} free seats)",
-                reservationId, originalEvent.id.flightNumber, -originalEvent.deltaSeats
+        log.info("Reservation {} for flight #{} has been cancelled ({} newly free seats)",
+                command.reservationId, originalEvent.id.flightNumber, -originalEvent.deltaSeats
         );
 
     }

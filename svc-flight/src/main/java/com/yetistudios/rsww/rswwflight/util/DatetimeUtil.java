@@ -17,4 +17,11 @@ public class DatetimeUtil {
     public static long dateAndTimeToUnix(String date, String time) {
         return datetimeStrToUnix(String.format("%s %s", date, time));
     }
+
+    @SneakyThrows
+    public static long dateStrToUnix(String date) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        format.setTimeZone(TimeZone.getTimeZone("UTC"));
+        return format.parse(date).getTime() / 1000L;
+    }
 }

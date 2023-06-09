@@ -35,6 +35,7 @@ public class Flight {
         return Flight.builder()
                 .flightNumber(document.flightNumber)
                 .numSeats(document.numSeats)
+                .isReturn(document.isReturn)
                 .departureAirportCode(document.departure.airportCode)
                 .departureDate(document.departure.date)
                 .departureTime(document.departure.time)

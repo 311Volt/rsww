@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @Builder
 public class GetFlightBookingPriceQuery {
-    public String flightNumber;
+    public Integer flightNumber;
     public Integer numSeats;
 }
