@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.command.event;
+package com.yetistudios.rsww.touroperator.cmd.event;
 
 import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
 import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;

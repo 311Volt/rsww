@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.command.commands;
+package com.yetistudios.rsww.touroperator.cmd.commands;
 
 import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
 import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;
@@ -14,6 +14,7 @@ import java.util.List;
 public class CreateOfferCommand {
 
     @TargetAggregateIdentifier
+    private String id;
     private String offerId;
     private Hotel hotel;
     private Double price;

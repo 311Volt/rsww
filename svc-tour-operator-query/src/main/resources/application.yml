@@ -1,1 +1,8 @@
+server:
+  port: 8099
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rsww_175651_touroperator
+      auto-index-creation: true
 

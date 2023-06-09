@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.command.exception;
+package com.yetistudios.rsww.touroperator.cmd.exception;
 
 import org.axonframework.eventhandling.EventMessage;
 import org.axonframework.eventhandling.EventMessageHandler;
