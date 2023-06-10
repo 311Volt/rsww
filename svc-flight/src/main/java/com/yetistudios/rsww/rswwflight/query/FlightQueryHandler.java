@@ -1,11 +1,9 @@
 package com.yetistudios.rsww.rswwflight.query;
 
+import com.yetistudios.rsww.common.dto.FlightDocument;
 import com.yetistudios.rsww.common.dto.FlightPair;
 import com.yetistudios.rsww.common.dto.FlightPairList;
-import com.yetistudios.rsww.common.messages.query.CheckFlightAvailabilityQuery;
-import com.yetistudios.rsww.common.messages.query.FindAllViableFlightPairsQuery;
-import com.yetistudios.rsww.common.messages.query.FindBestFlightPairQuery;
-import com.yetistudios.rsww.common.messages.query.GetFlightBookingPriceQuery;
+import com.yetistudios.rsww.common.messages.query.*;
 import com.yetistudios.rsww.rswwflight.entity.Airport;
 import com.yetistudios.rsww.rswwflight.entity.Flight;
 import com.yetistudios.rsww.rswwflight.repository.AirportRepository;
@@ -99,6 +97,11 @@ public class FlightQueryHandler {
         double hrs = Duration.between(t1, t2).toSeconds() / 3600.0;
 
         return Optional.of(query.numSeats * hrs * PRICE_PER_SEAT_PER_HOUR);
+    }
+
+    @QueryHandler
+    Optional<FlightDocument> handle(GetFlightInfoQuery query) {
+        return flightRepository.findByFlightNumber(query.flightNumber).stream().findFirst().map(Flight::toDocument);
     }
 
 }

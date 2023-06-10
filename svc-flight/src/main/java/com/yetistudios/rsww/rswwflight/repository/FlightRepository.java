@@ -12,6 +12,9 @@ import java.util.List;
 @Repository
 public interface FlightRepository extends JpaRepository<Flight, Integer> {
 
+
+    List<Flight> findByFlightNumber(Integer flightNumber);
+
     @Query(nativeQuery = true, value = """
         SELECT * FROM flights f
             WHERE f.arrival_timestamp < :#{#fpq.latestAcceptableOutboundArrival}

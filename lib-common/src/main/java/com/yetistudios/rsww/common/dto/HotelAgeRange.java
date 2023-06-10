@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.rswwhotel.query.entity;
+package com.yetistudios.rsww.common.dto;
 
 public class HotelAgeRange {
     public int lowerBound;

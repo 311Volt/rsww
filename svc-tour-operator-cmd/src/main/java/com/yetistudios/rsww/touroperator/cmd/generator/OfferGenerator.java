@@ -84,8 +84,6 @@ public class OfferGenerator {
 
         HotelRoomVector sampleOccupation = new HotelRoomVector(SUGGESTED_POPULATION, 0, 0);
 
-        log.info("avail");
-
         if(!sampleOccupation.fitsInto(hotelAvailability)) {
             throw new RuntimeException("hotel is not available");
         }
