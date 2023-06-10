@@ -38,7 +38,7 @@ export class TravelAgencyService {
         "country": "USA2"
       },
       "price": 10.0,
-      "numberOfOffers": 8,
+      "numberOfOffers": 1,
       "startDate": "2023-06-01T08:00:00",
       "endDate": "2023-06-10T12:00:00",
       "flights": [
@@ -61,7 +61,7 @@ export class TravelAgencyService {
         "country": "USA3"
       },
       "price": 10.0,
-      "numberOfOffers": 8,
+      "numberOfOffers": 2,
       "startDate": "2023-06-01T08:00:00",
       "endDate": "2023-06-10T12:00:00",
       "flights": [
@@ -84,7 +84,7 @@ export class TravelAgencyService {
         "country": "USA4"
       },
       "price": 10.0,
-      "numberOfOffers": 8,
+      "numberOfOffers": 3,
       "startDate": "2023-06-01T08:00:00",
       "endDate": "2023-06-10T12:00:00",
       "flights": [
@@ -107,7 +107,7 @@ export class TravelAgencyService {
         "country": "USA5"
       },
       "price": 10.0,
-      "numberOfOffers": 8,
+      "numberOfOffers": 44,
       "startDate": "2020-06-01T08:00:00",
       "endDate": "2020-06-10T12:00:00",
       "flights": [
@@ -130,7 +130,7 @@ export class TravelAgencyService {
         "country": "USA6"
       },
       "price": 10.0,
-      "numberOfOffers": 8,
+      "numberOfOffers": 1,
       "startDate": "2026-06-01T08:00:00",
       "endDate": "2026-06-10T12:00:00",
       "flights": [

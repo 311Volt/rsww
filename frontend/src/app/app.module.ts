@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AuthComponent } from './auth/auth.component';
 import {AppRoutingModule} from "./app-routing.module";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TravelAgencyComponent } from './travel-agency/travel-agency.component';
 import {HttpClientModule} from "@angular/common/http";
 import { OfferDetailsComponent } from './travel-agency/offer-details/offer-details.component';
@@ -17,6 +17,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatSortModule} from "@angular/material/sort";
 import {MatButtonModule} from "@angular/material/button";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -38,7 +40,10 @@ import {MatButtonModule} from "@angular/material/button";
     MatPaginatorModule,
     MatTableModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
