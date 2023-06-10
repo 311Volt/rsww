@@ -21,6 +21,7 @@ public class OfferQuertController {
         this.queryGateway = queryGateway;
     }
 
+    @CrossOrigin
     @GetMapping
     public List<Offer> getAllOffers(@RequestParam(defaultValue = "") String destination, @RequestParam(defaultValue = "") String departure, @RequestParam(defaultValue = "1900-01-01") LocalDate startDate, @RequestParam(defaultValue = "1") int people, @RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int pageSize) {
         GetOffersQuery getOffersQuery = GetOffersQuery.builder()

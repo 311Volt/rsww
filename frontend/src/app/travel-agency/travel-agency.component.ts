@@ -13,7 +13,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   templateUrl: './travel-agency.component.html',
   styleUrls: ['./travel-agency.component.css']
 })
-export class TravelAgencyComponent implements OnInit, AfterViewInit {
+export class TravelAgencyComponent implements OnInit {
 
   offersList: Offer[] = []
   dataSource: MatTableDataSource<Offer>;
@@ -25,13 +25,16 @@ export class TravelAgencyComponent implements OnInit, AfterViewInit {
   public numberOfOffers: number;
 
   constructor(private travelService: TravelAgencyService) {
-    this.offersList = this.travelService.getOffers()
-    this.dataSource = new MatTableDataSource(this.offersList);
   }
 
   ngOnInit(): void {
+    this.travelService.getOffers().subscribe(response =>{
+      this.offersList = response;
+      this.dataSource = new MatTableDataSource(this.offersList);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.filterPredicate = this.getFilterPredicate();
+    })
     this.searchFormInit();
-    this.dataSource.filterPredicate = this.getFilterPredicate();
   }
 
   searchFormInit() {
@@ -42,16 +45,12 @@ export class TravelAgencyComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-  }
-
   applyFilter() {
     const startDate = this.searchForm.get('startDate').value;
     const country = this.searchForm.get('country').value;
     const numberOfOffers = this.searchForm.get('numberOfOffers').value;
 
-    this.startDate = (startDate === null || startDate === '') ? '' : startDate.toDateString();
+    this.startDate = (startDate === null || startDate === '') ? '10.06.1023' : startDate.toDateString();
     this.country = country === null ? '' : country;
     this.numberOfOffers = numberOfOffers === null ? '' : numberOfOffers;
 
@@ -59,7 +58,6 @@ export class TravelAgencyComponent implements OnInit, AfterViewInit {
     const filterValue = this.country + '$' + this.startDate + '$' + this.numberOfOffers;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-
 
   getFilterPredicate() {
     return (row: Offer, filters: string) => {

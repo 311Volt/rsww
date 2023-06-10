@@ -1,7 +1,8 @@
 <mat-card class="example-card" style="margin-top: 16px;">
   <mat-card-header>
-    <mat-card-title>{{offer.hotel.country}}</mat-card-title>
-    <mat-card-subtitle>{{offer.hotel.name}} {{offer.hotel.standard}} stars</mat-card-subtitle>
+    <mat-card-title *ngIf="offer !== undefined">{{offer.hotel.country}}</mat-card-title>
+    <mat-card-subtitle *ngIf="offer !== undefined">{{offer.hotel.name}} {{offer.hotel.standard}}stars
+    </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
 
@@ -13,10 +14,10 @@
         <span class="list-group-item ">Price</span>
       </div>
       <div class="col-md-10">
-        <span class="list-group-item">{{offer.startDate | date: 'dd.MM.yyyy'}}</span>
-        <span class="list-group-item">{{offer.endDate | date: 'dd.MM.yyyy'}}</span>
-        <span class="list-group-item">{{offer.numberOfOffers}}</span>
-        <span class="list-group-item">{{offer.price}}</span>
+        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.startDate | date: 'dd.MM.yyyy'}}</span>
+        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.endDate | date: 'dd.MM.yyyy'}}</span>
+        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.numberOfOffers}}</span>
+        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.price}}</span>
 
       </div>
     </div>
@@ -42,8 +43,58 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
+    <form class="example-form" style="margin-top: 30px;" (ngSubmit)="bookOffer()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Number of offers</mat-label>
+        <input matInput (change)="onChangeNumberOfOffers($event)">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Single rooms number</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Double rooms number</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Triple rooms number</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Quad rooms number</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange0 !== undefined">
+        <mat-label>No. with age range (before {{offer.hotel.ageRange0.upperBound}}
+          - {{offer.hotel.ageRange0.pricePerNight}})
+        </mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange1 !== undefined">
+        <mat-label>No. with age range (before {{offer.hotel.ageRange1.upperBound}}
+          - {{offer.hotel.ageRange1.pricePerNight}})
+        </mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange2 !== undefined">
+        <mat-label>No. with age range (before {{offer.hotel.ageRange2.upperBound}}
+          - {{offer.hotel.ageRange2.pricePerNight}})
+        </mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-card-actions>
+        <button mat-stroked-button type="submit">Book</button>
+      </mat-card-actions>
+
+    </form>
+
+
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-stroked-button>Book</button>
-  </mat-card-actions>
 </mat-card>
