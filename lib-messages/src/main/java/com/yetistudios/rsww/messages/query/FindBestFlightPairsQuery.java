@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.messages.misc;
+package com.yetistudios.rsww.messages.query;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class FlightPair {
-    public FlightDocument outboundFlight;
-    public FlightDocument returnFlight;
+public class FindBestFlightPairsQuery {
+    public String dummy;
 }

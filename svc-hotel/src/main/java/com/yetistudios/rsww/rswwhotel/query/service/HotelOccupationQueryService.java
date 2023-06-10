@@ -84,7 +84,7 @@ public class HotelOccupationQueryService {
     }
 
 
-    public boolean checkHotelAvailability(CheckHotelAvailabilityQuery query) {
+    public Boolean checkHotelAvailability(CheckHotelAvailabilityQuery query) {
         if(!hotelRepository.existsByCode(query.hotelCode)) {
             return false;
         }
@@ -100,7 +100,7 @@ public class HotelOccupationQueryService {
         return !cannotBook;
     }
 
-    public boolean checkReservationAvailability(BookHotelCommand reservation) {
+    public Boolean checkReservationAvailability(BookHotelCommand reservation) {
         return checkHotelAvailability(CheckHotelAvailabilityQuery.builder()
                 .hotelCode(reservation.hotelCode)
                 .timestampBegin(reservation.timestampBegin)
