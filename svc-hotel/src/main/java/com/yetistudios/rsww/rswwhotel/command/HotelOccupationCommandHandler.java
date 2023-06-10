@@ -27,7 +27,6 @@ public class HotelOccupationCommandHandler {
                     HotelReservationSuccessfulEvent
                         .builder()
                         .reservationId(command.reservationId)
-                        .numberOfPeople(command.getNumSingleRooms() + command.getNumDoubleRooms()*2 + command.getNumTripleRooms()*3)
                         .build()
             );
         } catch(Exception ex) {
@@ -47,6 +46,7 @@ public class HotelOccupationCommandHandler {
                 HotelReservationCanceledEvent
                         .builder()
                         .reservationId(command.getReservationId())
+                        .reason("Cancel Hotel booking for " + command.getReservationId())
                         .build());
     }
 

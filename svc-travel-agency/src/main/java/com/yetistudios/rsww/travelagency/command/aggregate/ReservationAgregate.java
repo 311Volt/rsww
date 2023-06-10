@@ -22,6 +22,7 @@ public class ReservationAgregate {
     private String clientId;
     private double price;
     private String departureAirportName;
+    private int nrOfPeople;
     public int numSingleRooms;
     public int numDoubleRooms;
     public int numTripleRooms;
@@ -43,6 +44,7 @@ public class ReservationAgregate {
         this.clientId = event.getClientId();
         this.price = event.getPrice();
         this.departureAirportName = event.getDepartureAirportName();
+        this.nrOfPeople = event.getNrOfPeople();
         this.numDoubleRooms = event.getNumDoubleRooms();
         this.numSingleRooms = event.getNumSingleRooms();
         this.numTripleRooms = event.getNumTripleRooms();

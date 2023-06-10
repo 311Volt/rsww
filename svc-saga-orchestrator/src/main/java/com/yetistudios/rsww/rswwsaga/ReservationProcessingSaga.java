@@ -110,7 +110,7 @@ public class ReservationProcessingSaga {
             ReservationDto finalReservation = reservation;
             BookFlightCommand bookFlightCommand = BookFlightCommand.builder()
                     .reservationId(event.getReservationId())
-                    .flightNumber(offer.getFlights().stream().filter(flight -> flight.getDepartureAirportName() == finalReservation.getDepartureAirportName()).findFirst().get().getId())
+                    //.flightNumber(offer.getFlights().stream().filter(flight -> flight.getDepartureAirportName() == finalReservation.getDepartureAirportName()).findFirst().get().getId())
                     .build();
 
             commandGateway.send(bookFlightCommand);
@@ -127,12 +127,6 @@ public class ReservationProcessingSaga {
     }
 
     @SagaEventHandler(associationProperty = "reservationId")
-    private void handle(HotelReservationCanceledEvent event){
-        log.info("HotelReservationCanceledEvent for reservation {}", event.getReservationId());
-        cancelReservationCommand(event.getReservationId());
-    }
-
-    @SagaEventHandler(associationProperty = "reservationId")
     private void handle(PlaneReservationFailedEvent event){
         log.info("PlaneReservationFailedEvent for reservation {}", event.getReservationId());
         cancelHotelReservationCommand(event.getReservationId());
@@ -140,7 +134,7 @@ public class ReservationProcessingSaga {
 
     @SagaEventHandler(associationProperty = "reservationId")
     private void handle(PlaneReservationSuccessfulEvent event){
-        log.info("PaymentValidEvent for reservation {}", event.getReservationId());
+        log.info("PlaneReservationSuccessfulEvent for reservation {}", event.getReservationId());
         GetReservationQuery getReservationQuery = new GetReservationQuery(event.getReservationId());
 
         ReservationDto reservation = null;
@@ -155,7 +149,7 @@ public class ReservationProcessingSaga {
             DecreaseOfferAmountCommand decreaseOfferAmountCommand = DecreaseOfferAmountCommand.builder()
                     .reservationId(event.getReservationId())
                     .offerId(reservation.getOfferId())
-                    .numberOfOffers(event.getNumberOfPeople())
+                    .numberOfOffers(reservation.getNrOfPeople())
                     .build();
 
             commandGateway.send(decreaseOfferAmountCommand);
@@ -167,26 +161,12 @@ public class ReservationProcessingSaga {
     }
 
     private void cancelPlaneReservationRequest(String reservationId){
-        CancelHotelBookingCommand command = new CancelHotelBookingCommand(reservationId);
+        CancelFlightBookingCommand command = new CancelFlightBookingCommand(reservationId);
 
         commandGateway.send(command);
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ////////////////////////////////////////
 
     @SagaEventHandler(associationProperty = "reservationId")
     private void handle(OfferDecreaseAmountEvent event){
@@ -197,30 +177,59 @@ public class ReservationProcessingSaga {
         try {
             reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
         } catch (Exception e){
-            log.error("DecreaseOfferAmountCommand for reservation {}, \n Cause: {}", event.getReservationId(), e.getCause());
-            cancelHotelReservationCommand(event.getReservationId());
+            log.error("GetReservationQuery for reservation {}, \n Cause: {}", event.getReservationId(), e.getCause());
+            cancelOfferDecreaseAmountCommand(event.getReservationId());
         }
 
         try {
-            DecreaseOfferAmountCommand decreaseOfferAmountCommand = DecreaseOfferAmountCommand.builder()
-                    .offerId(reservation.getOfferId())
-                    .numberOfOffers(event.getNumberOfPeople())
+            ValidatePaymentCommand validatePaymentCommand = ValidatePaymentCommand.builder()
+                    .reservationId(event.getReservationId())
+                    .price(reservation.getPrice())
                     .build();
 
-            commandGateway.send(decreaseOfferAmountCommand);
+            commandGateway.send(validatePaymentCommand);
         } catch (Exception e){
-            log.error("DecreaseOfferAmountCommand for reservation {}, \n Cause: {}", event.getReservationId(), e.getCause());
-            //cancelHotelReservationCommand(event.getReservationId());
+            log.error("ValidatePaymentCommand for reservation {}, \n Cause: {}", event.getReservationId(), e.getCause());
+            cancelOfferDecreaseAmountCommand(event.getReservationId());
         }
 
     }
 
     private void cancelOfferDecreaseAmountCommand(String reservationId){
+        GetReservationQuery getReservationQuery = new GetReservationQuery(reservationId);
+        ReservationDto reservation = null;
+        try {
+            reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
+        } catch (Exception e){
+            log.error("GetReservationQuery for reservation {}, \n Cause: {}", reservationId, e.getCause());
+            cancelPlaneReservationRequest(reservationId);
+        }
 
-
-        IncreaseOfferAmountCommand command = new IncreaseOfferAmountCommand();
+        IncreaseOfferAmountCommand command = IncreaseOfferAmountCommand.builder()
+                .reservationId(reservationId)
+                .numberOfOffers(reservation.getNrOfPeople())
+                .build();
 
         commandGateway.send(command);
+    }
+
+    @SagaEventHandler(associationProperty = "reservationId")
+    private void handle(OfferIncreaseAmountEvent event){
+        log.info("OfferIncreaseAmountEvent for reservation {}", event.getReservationId());
+        cancelPlaneReservationRequest(event.getReservationId());
+    }
+
+    @SagaEventHandler(associationProperty = "reservationId")
+    private void handle(PaymentInvalidEvent event){
+        log.info("OfferIncreaseAmountEvent for reservation {}", event.getReservationId());
+        cancelOfferDecreaseAmountCommand(event.getReservationId());
+    }
+
+    @EndSaga
+    @SagaEventHandler(associationProperty = "reservationId")
+    private void handle(PaymentValidEvent event){
+        log.info("PaymentValidEvent for reservation {}", event.getReservationId());
+        log.info("End of saga for reservation {}", event.getReservationId());
     }
 
 }

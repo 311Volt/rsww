@@ -14,6 +14,7 @@ public class CreateReservationCommand {
     private String clientId;
     private double price;
     private String departureAirportName;
+    private int nrOfPeople;
     public int numSingleRooms;
     public int numDoubleRooms;
     public int numTripleRooms;

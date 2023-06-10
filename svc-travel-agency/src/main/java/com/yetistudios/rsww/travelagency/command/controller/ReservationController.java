@@ -30,6 +30,7 @@ public class ReservationController {
                 .numSingleRooms(order.getNumSingleRooms())
                 .numDoubleRooms(order.getNumDoubleRooms())
                 .numTripleRooms(order.getNumTripleRooms())
+                .nrOfPeople(order.getNrOfPeople())
                 .orderStatus("CREATED")
                 .build();
 

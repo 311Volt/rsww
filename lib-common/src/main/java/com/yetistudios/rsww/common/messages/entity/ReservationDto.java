@@ -15,4 +15,5 @@ public class ReservationDto {
     private String clientId;
     private String departureAirportName;
     private double price;
+    private int nrOfPeople;
 }

@@ -13,11 +13,11 @@ import java.util.List;
 @Document
 public class Offer {
     @Id
-    private String id;
-    private OfferHotel hotel;
-    private Double price;
-    private Integer numberOfOffers;
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
-    private List<OfferFlight> flights;
+    public String id;
+    public OfferHotel hotel;
+    public Double price;
+    public Integer numberOfOffers;
+    public LocalDateTime startDate;
+    public LocalDateTime endDate;
+    public List<OfferFlight> flights;
 }

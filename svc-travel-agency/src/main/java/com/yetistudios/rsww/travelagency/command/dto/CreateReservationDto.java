@@ -10,6 +10,7 @@ public class CreateReservationDto {
     private String clientId;
     private double price;
     private String departureAirportName;
+    private int nrOfPeople;
     private int numSingleRooms;
     private int numDoubleRooms;
     private int numTripleRooms;

@@ -19,4 +19,5 @@ public class Reservation {
     private String clientId;
     private String departureAirportName;
     private double price;
+    private int nrOfPeople;
 }

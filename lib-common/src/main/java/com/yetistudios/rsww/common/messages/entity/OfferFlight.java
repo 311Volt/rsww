@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @Builder
 public class OfferFlight {
-    private String id;
-    private String departureAirportName;
+    public String id;
+    public String departureAirportName;
 }
