@@ -1,8 +1,14 @@
 server:
-  port: 8099
+  port: 1444
 spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/rsww_175651_touroperator
       auto-index-creation: true
 
+
+axon:
+  serializer:
+    general: jackson
+    events: jackson
+    messages: jackson

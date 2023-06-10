@@ -1,5 +1,6 @@
 package com.yetistudios.rsww.touroperator.cmd.entity;
 
+import com.yetistudios.rsww.messages.misc.HotelSummary;
 import lombok.Builder;
 import lombok.Data;
 
@@ -10,4 +11,13 @@ public class Hotel {
     public String name;
     public double standard;
     public String country;
+
+    public static Hotel ofSummary(HotelSummary hotelSummary) {
+        return Hotel.builder()
+                .id(hotelSummary.code)
+                .name(hotelSummary.name)
+                .standard(hotelSummary.standard)
+                .country(hotelSummary.country)
+                .build();
+    }
 }

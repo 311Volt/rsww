@@ -19,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="axon-spring-native" target="1.8" />
       <module name="rsww-agency" target="17" />
       <module name="rsww-client" target="17" />
       <module name="rsww-gateway" target="17" />

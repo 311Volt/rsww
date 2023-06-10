@@ -1,5 +1,6 @@
 package com.yetistudios.rsww.touroperator.cmd.entity;
 
+import com.yetistudios.rsww.messages.misc.FlightDocument;
 import lombok.Builder;
 import lombok.Data;
 
@@ -8,4 +9,11 @@ import lombok.Data;
 public class Flight {
     private String id;
     private String departureAirportName;
+
+    public static Flight ofDocument(FlightDocument document) {
+        return Flight.builder()
+                .id(Integer.valueOf(document.flightNumber).toString())
+                .departureAirportName(document.departure.airportCode)
+                .build();
+    }
 }
