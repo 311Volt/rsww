@@ -1,8 +1,12 @@
-import {Injectable} from "@angular/core";
+import {Injectable, OnInit} from "@angular/core";
 import {Offer} from "./model/offer.model";
+import {User} from "../auth/user.model";
+import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
+
 
 @Injectable({providedIn: 'root'})
-export class TravelAgencyService {
+export class TravelAgencyService{
 
   offersList: Offer[] = []
   offersJson = {
@@ -169,24 +173,11 @@ export class TravelAgencyService {
     }
   };
 
-  constructor() {
-    for (const prop in this.offersJson) {
-      this.offersList.push(this.offersJson[prop])
-    }
+  constructor(private http: HttpClient, private router: Router) {
   }
 
-  // public initOffers() {
-  //   for (const prop in this.offersJson) {
-  //     this.offersList.push(this.offersJson[prop])
-  //   }
-  // }
-
-  public getOffers(): Offer[] {
-    return this.offersList;
-  }
-
-  public getOfferById(index: string): Offer {
-    console.log(index)
-    return this.offersList.find(offer => offer.id === index);
+  public getOffers() {
+    //return this.offersList;
+    return this.http.get<Offer[]>('http://localhost:8099/offer');
   }
 }

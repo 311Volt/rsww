@@ -42,8 +42,36 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
+    <form class="example-form" style="margin-top: 30px;">
+      <mat-form-field class="example-full-width">
+        <mat-label>Number of offers</mat-label>
+        <input matInput value="0">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Single rooms number</mat-label>
+        <input matInput value="0">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Double rooms number</mat-label>
+        <input matInput value="0">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Triple rooms number</mat-label>
+        <input matInput value="0">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Quad rooms number</mat-label>
+        <input matInput value="0">
+      </mat-form-field>
+    </form>
+
+
   </mat-card-content>
   <mat-card-actions>
-    <button mat-stroked-button>Book</button>
+    <button mat-stroked-button (click)="bookOffer()">Book</button>
   </mat-card-actions>
 </mat-card>
