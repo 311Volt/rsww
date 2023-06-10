@@ -19,7 +19,6 @@ export class OfferDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     this.offersList = this.travelService.getOffers();
     this.offer = this.offersList[0];
     const id = this.route.params.subscribe(
@@ -30,5 +29,4 @@ export class OfferDetailsComponent implements OnInit {
       }
     );
   }
-
 }

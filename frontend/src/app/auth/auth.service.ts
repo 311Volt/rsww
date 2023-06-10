@@ -22,16 +22,13 @@ export class AuthService {
   }
 
   login(email: string, password: string) {
-    // this.http.get<User>('http://localhost:8089/user/get-user/' + email)
-    //   .subscribe(response => {
-    //       if (password === response.password) {
-    //         this.user.next(new User(response.email, response.password));
-    //         this.router.navigate(['travel']);
-    //       }
-    //     })
-
-    this.user.next(new User(email, password));
-    this.router.navigate(['travel']);
+    this.http.get<User>('http://localhost:8089/user/get-user/' + email)
+      .subscribe(response => {
+          if (password === response.password) {
+            this.user.next(new User(response.email, response.password));
+            this.router.navigate(['travel']);
+          }
+        })
   }
 
   logout() {
