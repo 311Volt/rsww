@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.rswwhotel.query.service;
+package com.yetistudios.rsww.rswwhotel.restadmin.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yetistudios.rsww.rswwhotel.RswwHotelApplication;
@@ -22,8 +22,11 @@ public class AdminImportService {
     @Autowired
     private HotelRepository hotelRepository;
 
-    public void importHotels(Map<String, Hotel> hotels) {
-        hotelRepository.insert(hotels.values());
+    public void importHotel(Hotel hotel) {
+        if(hotelRepository.existsByCode(hotel.code)) {
+            hotelRepository.deleteAllByCode(hotel.code);
+        }
+        hotelRepository.save(hotel);
     }
 
 }
