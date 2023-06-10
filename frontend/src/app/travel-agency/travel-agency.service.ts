@@ -180,4 +180,10 @@ export class TravelAgencyService{
     //return this.offersList;
     return this.http.get<Offer[]>('http://localhost:8099/offer');
   }
+
+  bookOffer(offer: Offer, id: string) {
+    console.log('http://localhost:8098/offer/decrease?id=' + offer.id);
+    this.http.post<Offer>('http://localhost:8098/offer/decrease?id=' + offer.id, offer).subscribe();
+
+  }
 }

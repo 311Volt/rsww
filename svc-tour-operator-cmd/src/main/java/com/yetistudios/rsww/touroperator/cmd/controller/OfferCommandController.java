@@ -5,11 +5,7 @@ import com.yetistudios.rsww.touroperator.cmd.commands.DecreaseOfferAmountCommand
 import com.yetistudios.rsww.touroperator.cmd.dto.OfferDecreaseAmountDto;
 import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
 import org.axonframework.commandhandling.gateway.CommandGateway;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -39,6 +35,7 @@ public class OfferCommandController {
         return commandGateway.sendAndWait(createOfferCommand);
     }
 
+    @CrossOrigin
     @PostMapping("/decrease")
     public String decreaseOfferAmount(@RequestBody OfferDecreaseAmountDto offer, @RequestParam("id") String offerId){
         DecreaseOfferAmountCommand decreaseOfferAmountCommand = DecreaseOfferAmountCommand.builder()
