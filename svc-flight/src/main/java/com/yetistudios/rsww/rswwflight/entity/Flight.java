@@ -7,7 +7,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Builder
@@ -17,6 +19,8 @@ import lombok.Builder;
         @Index(columnList = "departureTimestamp"),
         @Index(columnList = "arrivalTimestamp")
 })
+@NoArgsConstructor
+@AllArgsConstructor
 public class Flight {
     @Id
     public Integer flightNumber;

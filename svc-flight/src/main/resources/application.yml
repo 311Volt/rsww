@@ -9,3 +9,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+axon:
+  serializer:
+    general: jackson
+    events: jackson
+    messages: jackson

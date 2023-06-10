@@ -14,9 +14,9 @@ public interface FlightAvailabilitySnapshotRepository
 
     @Query(nativeQuery = true, value = """
         SELECT * FROM flight_availability_snapshots snap
-            WHERE f.id.flightNumber = :prm.flightNumber
-            AND f.timestamp <= :prm.timestamp
-            ORDER BY f.timestamp DESC
+            WHERE snap.flight_number = :#{#prm.flightNumber}
+            AND snap.timestamp <= :#{#prm.timestamp}
+            ORDER BY snap.timestamp DESC
             LIMIT 1
     """)
     List<FlightAvailabilitySnapshot> getLastSnapshotBefore(@Param("prm") FlightNumAndTimestampId prm);

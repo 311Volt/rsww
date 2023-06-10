@@ -1,10 +1,11 @@
 package com.yetistudios.rsww.messages.query;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CheckFlightAvailabilityQuery {
     public Integer flightNumber;
     public Integer numSeats;
