@@ -6,14 +6,14 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Hotel {
+public class HotelBrief {
     private String id;
     public String name;
     public double standard;
     public String country;
 
-    public static Hotel ofSummary(HotelSummary hotelSummary) {
-        return Hotel.builder()
+    public static HotelBrief ofSummary(HotelSummary hotelSummary) {
+        return HotelBrief.builder()
                 .id(hotelSummary.code)
                 .name(hotelSummary.name)
                 .standard(hotelSummary.standard)

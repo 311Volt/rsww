@@ -28,9 +28,9 @@ public class OfferCommandController {
 
         CreateOfferCommand createOfferCommand = CreateOfferCommand.builder()
                 .offerId(UUID.randomUUID().toString())
-                .hotel(offer.getHotel())
+                .hotelBrief(offer.getHotelBrief())
                 .flights(offer.getFlights())
-                .price(offer.getPrice())
+                .price(offer.getSuggestedPrice())
                 .numberOfOffers(offer.getNumberOfOffers())
                 .startDate(offer.getStartDate())
                 .endDate(offer.getEndDate())

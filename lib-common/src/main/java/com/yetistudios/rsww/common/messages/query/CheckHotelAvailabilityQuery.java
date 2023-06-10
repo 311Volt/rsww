@@ -13,7 +13,4 @@ public class CheckHotelAvailabilityQuery {
     public String hotelCode;
     public long timestampBegin;
     public long timestampEnd;
-    public int numSingleRooms;
-    public int numDoubleRooms;
-    public int numTripleRooms;
 }

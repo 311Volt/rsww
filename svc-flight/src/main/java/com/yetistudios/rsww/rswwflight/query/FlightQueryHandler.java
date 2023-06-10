@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.rswwflight.query;
 
 import com.yetistudios.rsww.common.dto.FlightPair;
+import com.yetistudios.rsww.common.dto.FlightPairList;
 import com.yetistudios.rsww.common.messages.query.CheckFlightAvailabilityQuery;
 import com.yetistudios.rsww.common.messages.query.FindAllViableFlightPairsQuery;
 import com.yetistudios.rsww.common.messages.query.FindBestFlightPairQuery;
@@ -65,7 +66,7 @@ public class FlightQueryHandler {
     }
 
     @QueryHandler
-    List<FlightPair> handle(FindAllViableFlightPairsQuery query) {
+    FlightPairList handle(FindAllViableFlightPairsQuery query) {
         List<Airport> viableOutboundDepartureAirports = airportRepository.findByForDeparture(true);
 
         List<FlightPair> result = new ArrayList<>();
@@ -79,7 +80,7 @@ public class FlightQueryHandler {
             handle(singularQuery).map(result::add);
         }
 
-        return result;
+        return FlightPairList.builder().flights(result).build();
     }
 
     @QueryHandler

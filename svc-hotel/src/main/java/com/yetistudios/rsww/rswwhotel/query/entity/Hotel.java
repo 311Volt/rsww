@@ -1,5 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.query.entity;
 
+import com.yetistudios.rsww.common.dto.HotelRoomVector;
 import com.yetistudios.rsww.common.dto.HotelSummary;
 import lombok.Builder;
 import org.bson.types.ObjectId;
@@ -35,5 +36,15 @@ public class Hotel {
                 .name(name)
                 .standard(standard)
                 .build();
+    }
+
+    public HotelRoomVector getRoomVector() {
+        return new HotelRoomVector(numSingleRooms, numDoubleRooms, numTripleRooms);
+    }
+
+    public void setRoomVector(HotelRoomVector vector) {
+        numSingleRooms = vector.numSingleRooms;
+        numDoubleRooms = vector.numDoubleRooms;
+        numTripleRooms = vector.numTripleRooms;
     }
 }

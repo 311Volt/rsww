@@ -2,10 +2,11 @@ package com.yetistudios.rsww.touroperator.cmd.aggregate;
 
 import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
 import com.yetistudios.rsww.touroperator.cmd.commands.DecreaseOfferAmountCommand;
+import com.yetistudios.rsww.touroperator.cmd.entity.FlightBriefPair;
 import com.yetistudios.rsww.touroperator.cmd.event.OfferCreatedEvent;
 import com.yetistudios.rsww.touroperator.cmd.event.OfferDecreaseAmountEvent;
-import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
-import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;
+import com.yetistudios.rsww.touroperator.cmd.entity.FlightBrief;
+import com.yetistudios.rsww.touroperator.cmd.entity.HotelBrief;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
@@ -22,12 +23,12 @@ public class OfferAggregate {
     @AggregateIdentifier
     private String id;
     private String offerId;
-    private Hotel hotel;
+    private HotelBrief hotelBrief;
     private Double price;
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<FlightBriefPair> flights;
 
     @CommandHandler
     public OfferAggregate(CreateOfferCommand createOfferCommand) {
@@ -54,7 +55,7 @@ public class OfferAggregate {
     public void on(OfferCreatedEvent offerCreatedEvent){
         this.id = offerCreatedEvent.getOfferId();
         this.offerId = offerCreatedEvent.getOfferId();
-        this.hotel = offerCreatedEvent.getHotel();
+        this.hotelBrief = offerCreatedEvent.getHotelBrief();
         this.price = offerCreatedEvent.getPrice();
         this.numberOfOffers = offerCreatedEvent.getNumberOfOffers();
         this.startDate = offerCreatedEvent.getStartDate();

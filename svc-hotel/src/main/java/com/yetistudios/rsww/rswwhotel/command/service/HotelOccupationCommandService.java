@@ -35,7 +35,7 @@ public class HotelOccupationCommandService {
         }
 
         var maxOccupation = occupationQueryService.getMaxOccupationDuring(request.hotelCode, request.timestampBegin, request.timestampEnd).get();
-        log.debug(String.format("hotel %s max availability: %d, %d, %d", request.hotelCode, maxOccupation.takenSingleRooms, maxOccupation.takenDoubleRooms, maxOccupation.takenTripleRooms));
+        log.debug(String.format("hotel %s max availability: %d, %d, %d", request.hotelCode, maxOccupation.numSingleRooms, maxOccupation.numDoubleRooms, maxOccupation.numTripleRooms));
 
         HotelOccupationDeltaEvent checkInEvent = HotelOccupationDeltaEvent.builder()
                 ._id(new ObjectId())
