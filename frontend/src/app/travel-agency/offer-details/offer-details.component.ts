@@ -11,18 +11,22 @@ import {ActivatedRoute, Params, Router} from "@angular/router";
 export class OfferDetailsComponent implements OnInit {
   offersList: Offer[] = []
   offer: Offer;
-  id: number;
+  id: string;
+  displayedColumns: string[] = ['id', 'departureAirportName'];
+  dataSource: any;
 
   constructor(private travelService: TravelAgencyService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit(): void {
+
     this.offersList = this.travelService.getOffers();
     this.offer = this.offersList[0];
     const id = this.route.params.subscribe(
       (params: Params) => {
-        this.id = +params['id'];
+        this.id = params['id'];
         this.offer = this.travelService.getOfferById(this.id);
+        this.dataSource = this.offer.flights;
       }
     );
   }

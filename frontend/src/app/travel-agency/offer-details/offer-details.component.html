@@ -1,50 +1,49 @@
-<div style="background: rgba(0, 0, 0, 0.1)" class="p-3 my-3">
+<mat-card class="example-card" style="margin-top: 16px;">
+  <mat-card-header>
+    <mat-card-title>{{offer.hotel.country}}</mat-card-title>
+    <mat-card-subtitle>{{offer.hotel.name}} {{offer.hotel.standard}} stars</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
 
-  <h4>Hotel</h4>
-  <div class="row">
-    <div class="col-md-2">
-      <span class="list-group-item fw-bold">Name</span>
-      <span class="list-group-item fw-bold">Standard</span>
-      <span class="list-group-item fw-bold">Country</span>
-      <span class="list-group-item fw-bold">NumSingleRooms</span>
-      <span class="list-group-item fw-bold">NumDoubleRooms</span>
-      <span class="list-group-item fw-bold">NumTripleRooms</span>
-      <span class="list-group-item fw-bold">NumQuadRooms</span>
-      <span class="list-group-item fw-bold">Price</span>
-    </div>
-    <div class="col-md-10">
-      <span class="list-group-item">{{offer.hotel.name}}</span>
-      <span class="list-group-item">{{offer.hotel.standard}}</span>
-      <span class="list-group-item">{{offer.hotel.country}}</span>
-      <span class="list-group-item">{{offer.hotel.numSingleRooms}}</span>
-      <span class="list-group-item">{{offer.hotel.numDoubleRooms}}</span>
-      <span class="list-group-item">{{offer.hotel.numTripleRooms}}</span>
-      <span class="list-group-item">{{offer.hotel.numQuadRooms}}</span>
-      <span class="list-group-item">Up to {{offer.hotel.ageRange0.upperBound}}
-        years: {{offer.hotel.ageRange0.pricePerNight}}</span>
-      <span class="list-group-item">Up to {{offer.hotel.ageRange1.upperBound}}
-        years: {{offer.hotel.ageRange1.pricePerNight}}</span>
-      <span class="list-group-item">Up to {{offer.hotel.ageRange2.upperBound}}
-        years: {{offer.hotel.ageRange2.pricePerNight}}</span>
-    </div>
-  </div>
-  <h4>Flight to {{offer.hotel.country}}</h4>
-  <div class="row">
-    <div class="col-md-2">
-      <span class="list-group-item fw-bold">Departure</span>
-      <span class="list-group-item fw-bold">Arrival</span>
+    <div class="row" style="margin-bottom: 16px;">
+      <div class="col-md-2">
+        <span class="list-group-item ">Start date</span>
+        <span class="list-group-item ">End date</span>
+        <span class="list-group-item ">Number of offers</span>
+        <span class="list-group-item ">Price</span>
+      </div>
+      <div class="col-md-10">
+        <span class="list-group-item">{{offer.startDate | date: 'dd.MM.yyyy'}}</span>
+        <span class="list-group-item">{{offer.endDate | date: 'dd.MM.yyyy'}}</span>
+        <span class="list-group-item">{{offer.numberOfOffers}}</span>
+        <span class="list-group-item">{{offer.price}}</span>
+
+      </div>
     </div>
 
-  </div>
-  <br>
-  <h4>Flight from {{offer.hotel.country}}</h4>
-  <div class="row">
-    <div class="col-md-2">
-      <span class="list-group-item fw-bold">Departure</span>
-      <span class="list-group-item fw-bold">Arrival</span>
-    </div>
+    <mat-card-header>
+      <mat-card-subtitle>Flights:</mat-card-subtitle>
+    </mat-card-header>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-  </div>
+      <!-- Position Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> No.</th>
+        <td mat-cell *matCellDef="let element"> {{element.id  }}  </td>
+      </ng-container>
 
-  <button class="border-dark border-1 btn" style="margin-top: 16px;">Book and pay</button>
-</div>
+      <!-- Name Column -->
+      <ng-container matColumnDef="departureAirportName">
+        <th mat-header-cell *matHeaderCellDef>Departure airport name</th>
+        <td mat-cell *matCellDef="let element"> {{element.departureAirportName}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Book</button>
+  </mat-card-actions>
+</mat-card>

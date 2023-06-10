@@ -7,7 +7,7 @@ export class TravelAgencyService {
   offersList: Offer[] = []
   offersJson = {
     "offer1": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee76da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -30,7 +30,7 @@ export class TravelAgencyService {
       ]
     },
     "offer2": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee77da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -53,7 +53,7 @@ export class TravelAgencyService {
       ]
     },
     "offer3": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee78da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -76,7 +76,7 @@ export class TravelAgencyService {
       ]
     },
     "offer5": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee71da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -99,7 +99,7 @@ export class TravelAgencyService {
       ]
     },
     "offer4": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee72da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -122,7 +122,7 @@ export class TravelAgencyService {
       ]
     },
     "offer6": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee73da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -145,7 +145,7 @@ export class TravelAgencyService {
       ]
     },
     "offer7": {
-      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "id": "f50efe4c-130d-4123-8228-dd151bee445da",
       "hotel": {
         "id": "hotel456",
         "name": "Grand Hotel",
@@ -185,7 +185,8 @@ export class TravelAgencyService {
     return this.offersList;
   }
 
-  public getOfferById(index: number): Offer {
-    return this.offersList[index];
+  public getOfferById(index: string): Offer {
+    console.log(index)
+    return this.offersList.find(offer => offer.id === index);
   }
 }

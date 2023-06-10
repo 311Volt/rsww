@@ -19,6 +19,7 @@ import {MatSortModule} from "@angular/material/sort";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatNativeDateModule} from "@angular/material/core";
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

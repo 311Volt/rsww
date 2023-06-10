@@ -63,7 +63,6 @@ export class TravelAgencyComponent implements OnInit, AfterViewInit {
 
   getFilterPredicate() {
     return (row: Offer, filters: string) => {
-      // split string per '$' to array
       const filterArray = filters.split('$');
       const country = filterArray[0];
       const startDate = filterArray[1];
@@ -71,24 +70,19 @@ export class TravelAgencyComponent implements OnInit, AfterViewInit {
 
       const matchFilter = [];
 
-      // Fetch data from row
       const columnStartDateInDateFormat = new Date(row.startDate);
       const startDateInDateFormat = new Date(startDate);
       const columnCountry = row.hotel.country;
       const columnNumberOfOffers = row.numberOfOffers;
 
-      // verify fetching data by our searching values
       const customFilterStartDate = columnStartDateInDateFormat > startDateInDateFormat;
       const customFilterCountry = columnCountry.toLowerCase().includes(country);
       const customFilterNumberOfOffers = +columnNumberOfOffers > +numberOfOffers;
 
-      // push boolean values into array
       matchFilter.push(customFilterStartDate);
       matchFilter.push(customFilterCountry);
       matchFilter.push(customFilterNumberOfOffers);
 
-      // return true if all values in array is true
-      // else return false
       return matchFilter.every(Boolean);
     };
   }
