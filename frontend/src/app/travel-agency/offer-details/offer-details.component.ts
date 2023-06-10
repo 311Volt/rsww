@@ -1,5 +1,5 @@
 import {Component, Injectable, Input, OnInit} from '@angular/core';
-import {Offer} from "../offer.model";
+import {Offer} from "../model/offer.model";
 import {TravelAgencyService} from "../travel-agency.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 

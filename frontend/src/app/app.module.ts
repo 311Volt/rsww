@@ -10,6 +10,13 @@ import { TravelAgencyComponent } from './travel-agency/travel-agency.component';
 import {HttpClientModule} from "@angular/common/http";
 import { OfferDetailsComponent } from './travel-agency/offer-details/offer-details.component';
 import { OfferItemComponent } from './travel-agency/offer-item/offer-item.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatSortModule} from "@angular/material/sort";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -24,7 +31,14 @@ import { OfferItemComponent } from './travel-agency/offer-item/offer-item.compon
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

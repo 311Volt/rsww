@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {Offer} from "./offer.model";
+import {Offer} from "./model/offer.model";
 
 @Injectable({providedIn: 'root'})
 export class TravelAgencyService {
@@ -7,110 +7,165 @@ export class TravelAgencyService {
   offersList: Offer[] = []
   offersJson = {
     "offer1": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
       "hotel": {
-        "code": "LCA20064",
-        "name": "Loutsiana Hotel Apts 0",
-        "standard": 3.0,
-        "latitude": 34.986752,
-        "longitude": 33.947699,
-        "airportCode": "LCA",
-        "country": "Cypr",
-        "numSingleRooms": 12,
-        "numDoubleRooms": 33,
-        "numTripleRooms": 11,
-        "numQuadRooms": 11,
-        "ageRange0": {
-          "upperBound": 3,
-          "pricePerNight": 6.0
-        },
-        "ageRange1": {
-          "upperBound": 10,
-          "pricePerNight": 285.0
-        },
-        "ageRange2": {
-          "upperBound": 18,
-          "pricePerNight": 267.0
-        }
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA1"
       },
-      "departure": {
-        "flightNumber": 1424,
-        "departure": {
-          "airportCode": "RZE",
-          "date": "2023-01-01",
-          "time": "02:00:00"
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2023-06-01T08:00:00",
+      "endDate": "2023-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
         },
-        "arrival": {
-          "airportCode": "DBV",
-          "date": "2023-01-01",
-          "time": "05:11:00"
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
         }
-      },
-      "arrival": {
-        "flightNumber": 1425,
-        "departure": {
-          "airportCode": "KRK",
-          "date": "2023-01-01",
-          "time": "04:02:00"
-        },
-        "arrival": {
-          "airportCode": "LCA",
-          "date": "2023-01-01",
-          "time": "08:05:00"
-        }
-      }
+      ]
     },
     "offer2": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
       "hotel": {
-        "code": "LCA20064",
-        "name": "Loutsiana Hotel Apts 1",
-        "standard": 3.0,
-        "latitude": 34.986752,
-        "longitude": 33.947699,
-        "airportCode": "LCA",
-        "country": "Cypr",
-        "numSingleRooms": 12,
-        "numDoubleRooms": 33,
-        "numTripleRooms": 11,
-        "numQuadRooms": 11,
-        "ageRange0": {
-          "upperBound": 3,
-          "pricePerNight": 6.0
-        },
-        "ageRange1": {
-          "upperBound": 10,
-          "pricePerNight": 285.0
-        },
-        "ageRange2": {
-          "upperBound": 18,
-          "pricePerNight": 267.0
-        }
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA2"
       },
-      "departure": {
-        "flightNumber": 1424,
-        "departure": {
-          "airportCode": "RZE",
-          "date": "2023-01-01",
-          "time": "02:00:00"
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2023-06-01T08:00:00",
+      "endDate": "2023-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
         },
-        "arrival": {
-          "airportCode": "DBV",
-          "date": "2023-01-01",
-          "time": "05:11:00"
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
         }
+      ]
+    },
+    "offer3": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "hotel": {
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA3"
       },
-      "arrival": {
-        "flightNumber": 1425,
-        "departure": {
-          "airportCode": "KRK",
-          "date": "2023-01-01",
-          "time": "04:02:00"
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2023-06-01T08:00:00",
+      "endDate": "2023-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
         },
-        "arrival": {
-          "airportCode": "LCA",
-          "date": "2023-01-01",
-          "time": "08:05:00"
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
         }
-      }
+      ]
+    },
+    "offer5": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "hotel": {
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA4"
+      },
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2023-06-01T08:00:00",
+      "endDate": "2023-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
+        },
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
+        }
+      ]
+    },
+    "offer4": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "hotel": {
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA5"
+      },
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2020-06-01T08:00:00",
+      "endDate": "2020-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
+        },
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
+        }
+      ]
+    },
+    "offer6": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "hotel": {
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA6"
+      },
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2026-06-01T08:00:00",
+      "endDate": "2026-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
+        },
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
+        }
+      ]
+    },
+    "offer7": {
+      "id": "f50efe4c-130d-4123-8228-dd151bee75da",
+      "hotel": {
+        "id": "hotel456",
+        "name": "Grand Hotel",
+        "standard": 5.0,
+        "country": "USA7"
+      },
+      "price": 10.0,
+      "numberOfOffers": 8,
+      "startDate": "2024-06-01T08:00:00",
+      "endDate": "2024-06-10T12:00:00",
+      "flights": [
+        {
+          "id": "flight789",
+          "departureAirportName": "John F. Kennedy International Airport"
+        },
+        {
+          "id": "flight987",
+          "departureAirportName": "Los Angeles International Airport"
+        }
+      ]
     }
   };
 
