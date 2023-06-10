@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.touroperator.cmd.entity;
 
-import com.yetistudios.rsww.messages.misc.HotelSummary;
+import com.yetistudios.rsww.common.dto.HotelSummary;
 import lombok.Builder;
 import lombok.Data;
 

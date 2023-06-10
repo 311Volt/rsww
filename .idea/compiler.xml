@@ -12,7 +12,7 @@
         <module name="svc-payment" />
         <module name="svc-flight" />
         <module name="svc-gateway" />
-        <module name="lib-messages" />
+        <module name="lib-common" />
         <module name="svc-travel-agency" />
         <module name="svc-hotel" />
         <module name="svc-tour-operator-cmd" />
@@ -33,7 +33,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="lib-messages" options="-parameters" />
+      <module name="lib-common" options="-parameters" />
       <module name="rsww-agency" options="-parameters" />
       <module name="rsww-client" options="-parameters" />
       <module name="rsww-gateway" options="-parameters" />

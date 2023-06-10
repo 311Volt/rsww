@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwflight.repository;
 
-import com.yetistudios.rsww.messages.query.FindBestFlightPairQuery;
+import com.yetistudios.rsww.common.messages.query.FindBestFlightPairQuery;
 import com.yetistudios.rsww.rswwflight.entity.Flight;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

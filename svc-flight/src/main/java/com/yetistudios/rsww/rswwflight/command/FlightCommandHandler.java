@@ -1,14 +1,13 @@
 package com.yetistudios.rsww.rswwflight.command;
 
-import com.yetistudios.rsww.messages.command.BookFlightCommand;
-import com.yetistudios.rsww.messages.command.CancelFlightBookingCommand;
-import com.yetistudios.rsww.messages.event.PlaneReservationFailedEvent;
-import com.yetistudios.rsww.messages.event.PlaneReservationSuccessfulEvent;
+import com.yetistudios.rsww.common.messages.command.BookFlightCommand;
+import com.yetistudios.rsww.common.messages.command.CancelFlightBookingCommand;
+import com.yetistudios.rsww.common.messages.event.PlaneReservationFailedEvent;
+import com.yetistudios.rsww.common.messages.event.PlaneReservationSuccessfulEvent;
 import com.yetistudios.rsww.rswwflight.repository.AirportRepository;
 import com.yetistudios.rsww.rswwflight.repository.FlightRepository;
 import com.yetistudios.rsww.rswwflight.service.FlightAvailabilityService;
 import org.axonframework.commandhandling.CommandHandler;
-import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.eventhandling.gateway.EventGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.query.entity;
 
-import com.yetistudios.rsww.messages.misc.HotelSummary;
+import com.yetistudios.rsww.common.dto.HotelSummary;
 import lombok.Builder;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.index.Indexed;

@@ -1,8 +1,8 @@
 package com.yetistudios.rsww.touroperator.cmd.generator;
 
-import com.yetistudios.rsww.messages.misc.FlightPair;
-import com.yetistudios.rsww.messages.misc.HotelSummary;
-import com.yetistudios.rsww.messages.query.*;
+import com.yetistudios.rsww.common.dto.FlightPair;
+import com.yetistudios.rsww.common.dto.HotelSummary;
+import com.yetistudios.rsww.common.messages.query.*;
 import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
 import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;
 import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
@@ -18,9 +18,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 @Component
 @Slf4j

@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.touroperator.cmd.entity;
 
-import com.yetistudios.rsww.messages.misc.FlightDocument;
+import com.yetistudios.rsww.common.dto.FlightDocument;
 import lombok.Builder;
 import lombok.Data;
 

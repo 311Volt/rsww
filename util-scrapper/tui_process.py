@@ -76,6 +76,9 @@ def create_flights(airports, year):
     dep_airports = [airport for airport in airports if airport["forDeparture"]]
     arr_airports = [airport for airport in airports if not airport["forDeparture"]]
 
+    dep_airport_weights = [airport.get("volume", 1000) for airport in dep_airports]
+    print(dep_airport_weights)
+
     start_date = dt.date(year, 1, 1).toordinal()
     end_date = dt.date(year + 1, 1, 1).toordinal()
 
@@ -83,14 +86,14 @@ def create_flights(airports, year):
 
     for date_ord in range(start_date, end_date):
         midnight = dt.datetime.fromordinal(date_ord)
-        num_flights = random.randrange(20, 40)
+        num_flights = random.randrange(80, 90)
 
         for i in range(num_flights):
             start_time = midnight + dt.timedelta(minutes=random.randrange(0, 1440))
             end_time = start_time + dt.timedelta(minutes=random.randrange(60, 300))
 
             isReturn = bool(random.randrange(2))
-            polAirport = random.choice(dep_airports)["code"]
+            polAirport = random.choices(dep_airports, weights=dep_airport_weights, k=1)[0]["code"]
             frnAirport = random.choice(arr_airports)["code"]
 
             out_flights.append({
@@ -118,12 +121,14 @@ def entry():
     initialdata = loaddata("tuidata.json")
     hotels = create_hotels(initialdata)
     airports = create_airports(initialdata)
+    with open("output/airports.json") as airportsjson:
+        airports = json.load(airportsjson)
     flights = create_flights(airports, 2023)
 
     os.makedirs("output", exist_ok=True)
 
     save_table(hotels, "output/hotels.json")
-    save_table(airports, "output/airports.json")
+    # save_table(airports, "output/airports.json")
     save_table(flights, "output/flights.json")
 
 

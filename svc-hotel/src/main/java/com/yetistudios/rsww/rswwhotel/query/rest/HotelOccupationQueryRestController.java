@@ -1,10 +1,9 @@
 package com.yetistudios.rsww.rswwhotel.query.rest;
 
-import com.yetistudios.rsww.messages.misc.HotelSummary;
-import com.yetistudios.rsww.messages.query.CheckHotelAvailabilityQuery;
-import com.yetistudios.rsww.messages.query.GetRandomHotelQuery;
+import com.yetistudios.rsww.common.dto.HotelSummary;
+import com.yetistudios.rsww.common.messages.query.CheckHotelAvailabilityQuery;
+import com.yetistudios.rsww.common.messages.query.GetRandomHotelQuery;
 import com.yetistudios.rsww.rswwhotel.query.HotelMiscQueryHandler;
-import com.yetistudios.rsww.rswwhotel.query.entity.Hotel;
 import com.yetistudios.rsww.rswwhotel.query.repository.HotelRepository;
 import com.yetistudios.rsww.rswwhotel.query.service.HotelOccupationQueryService;
 import lombok.SneakyThrows;

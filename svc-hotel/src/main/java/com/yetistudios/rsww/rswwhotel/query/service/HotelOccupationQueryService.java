@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.rswwhotel.query.service;
 
-import com.yetistudios.rsww.messages.command.BookHotelCommand;
-import com.yetistudios.rsww.messages.query.CheckHotelAvailabilityQuery;
+import com.yetistudios.rsww.common.messages.command.BookHotelCommand;
+import com.yetistudios.rsww.common.messages.query.CheckHotelAvailabilityQuery;
 import com.yetistudios.rsww.rswwhotel.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwhotel.command.repository.HotelOccupationDeltaEventRepository;
 import com.yetistudios.rsww.rswwhotel.query.entity.Hotel;

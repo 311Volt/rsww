@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.query;
 
-import com.yetistudios.rsww.messages.query.GetHotelBookingPriceQuery;
+import com.yetistudios.rsww.common.messages.query.GetHotelBookingPriceQuery;
 import com.yetistudios.rsww.rswwhotel.query.entity.Hotel;
 import com.yetistudios.rsww.rswwhotel.query.repository.HotelRepository;
 import com.yetistudios.rsww.rswwhotel.query.service.HotelOccupationQueryService;

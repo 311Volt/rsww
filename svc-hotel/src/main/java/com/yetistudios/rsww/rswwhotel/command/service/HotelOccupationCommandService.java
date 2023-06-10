@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.rswwhotel.command.service;
 
-import com.yetistudios.rsww.messages.command.BookHotelCommand;
-import com.yetistudios.rsww.messages.command.CancelHotelBookingCommand;
+import com.yetistudios.rsww.common.messages.command.BookHotelCommand;
+import com.yetistudios.rsww.common.messages.command.CancelHotelBookingCommand;
 import com.yetistudios.rsww.rswwhotel.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwhotel.command.exception.HotelDoesNotExistException;
 import com.yetistudios.rsww.rswwhotel.command.exception.HotelUnavailableException;
@@ -12,8 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Slf4j
 @Service
