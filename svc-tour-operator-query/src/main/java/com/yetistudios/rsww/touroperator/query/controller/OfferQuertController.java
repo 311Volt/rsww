@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.touroperator.query.controller;
 
-import com.yetistudios.rsww.touroperator.query.entity.Offer;
+import com.yetistudios.rsww.messages.entity.Offer;
 import com.yetistudios.rsww.touroperator.query.dto.DetailedOfferDto;
 import com.yetistudios.rsww.touroperator.query.queries.GetOfferDetailedQuery;
 import com.yetistudios.rsww.touroperator.query.queries.GetOffersQuery;

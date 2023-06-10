@@ -21,7 +21,6 @@ import java.util.List;
 public class OfferAggregate {
 
     @AggregateIdentifier
-    private String id;
     private String offerId;
     private HotelBrief hotelBrief;
     private Double price;
@@ -29,6 +28,7 @@ public class OfferAggregate {
     private LocalDateTime startDate;
     private LocalDateTime endDate;
     private List<FlightBriefPair> flights;
+    private String reservationId;
 
     @CommandHandler
     public OfferAggregate(CreateOfferCommand createOfferCommand) {
@@ -53,7 +53,6 @@ public class OfferAggregate {
 
     @EventSourcingHandler
     public void on(OfferCreatedEvent offerCreatedEvent){
-        this.id = offerCreatedEvent.getOfferId();
         this.offerId = offerCreatedEvent.getOfferId();
         this.hotelBrief = offerCreatedEvent.getHotelBrief();
         this.price = offerCreatedEvent.getPrice();
@@ -65,8 +64,23 @@ public class OfferAggregate {
 
     @EventSourcingHandler
     public void on(OfferDecreaseAmountEvent offerDecreaseAmountEvent){
-        this.id = offerDecreaseAmountEvent.getId();
-        this.offerId = offerDecreaseAmountEvent.getOfferId();
         this.numberOfOffers = offerDecreaseAmountEvent.getNumberOfOffers();
+        this.reservationId = offerDecreaseAmountEvent.getReservationId();
+    }
+
+    @CommandHandler
+    public void handle(IncreaseOfferAmountCommand increaseOfferAmountCommand) {
+
+        OfferIncreaseAmountEvent offerIncreaseAmountEvent = new OfferIncreaseAmountEvent();
+
+        BeanUtils.copyProperties(increaseOfferAmountCommand,offerIncreaseAmountEvent);
+
+        AggregateLifecycle.apply(offerIncreaseAmountEvent);
+    }
+
+    @EventSourcingHandler
+    public void on(OfferIncreaseAmountEvent offerIncreaseAmountEvent){
+        this.numberOfOffers = offerIncreaseAmountEvent.getNumberOfOffers();
+        this.reservationId = offerIncreaseAmountEvent.getReservationId();
     }
 }

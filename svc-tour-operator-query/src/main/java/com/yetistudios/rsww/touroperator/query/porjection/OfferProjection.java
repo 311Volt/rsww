@@ -1,7 +1,8 @@
 package com.yetistudios.rsww.touroperator.query.porjection;
 
+import com.yetistudios.rsww.messages.query.GetOfferQuery;
 import com.yetistudios.rsww.touroperator.query.repository.OfferRepository;
-import com.yetistudios.rsww.touroperator.query.entity.Offer;
+import com.yetistudios.rsww.messages.entity.Offer;
 import com.yetistudios.rsww.touroperator.query.dto.DetailedOfferDto;
 import com.yetistudios.rsww.touroperator.query.queries.GetOfferDetailedQuery;
 import com.yetistudios.rsww.touroperator.query.queries.GetOffersQuery;
@@ -38,5 +39,9 @@ public class OfferProjection {
         }
 
         return null;
+    }
+
+    @QueryHandler Offer handle(GetOfferQuery query){
+        return offerRepository.findById(query.getOfferId()).get();
     }
 }

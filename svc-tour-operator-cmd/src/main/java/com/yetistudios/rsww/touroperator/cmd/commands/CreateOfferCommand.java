@@ -15,7 +15,6 @@ import java.util.List;
 public class CreateOfferCommand {
 
     @TargetAggregateIdentifier
-    private String id;
     private String offerId;
     private HotelBrief hotelBrief;
     private Double price;

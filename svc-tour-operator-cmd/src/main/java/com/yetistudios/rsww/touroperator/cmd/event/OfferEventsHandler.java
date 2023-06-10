@@ -1,5 +1,8 @@
 package com.yetistudios.rsww.touroperator.cmd.event;
 
+import com.yetistudios.rsww.messages.event.OfferDecreaseAmountEvent;
+import com.yetistudios.rsww.messages.event.OfferIncreaseAmountEvent;
+import com.yetistudios.rsww.touroperator.cmd.exception.OfferDoesNotExistException;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
 import org.axonframework.config.ProcessingGroup;
@@ -34,8 +37,16 @@ public class OfferEventsHandler {
 
     @EventHandler
     public void on(OfferDecreaseAmountEvent event){
-        offerRepository.findById(event.getOfferId()).ifPresent(offer -> {
+        offerRepository.findById(event.getOfferId()).ifPresentOrElse(offer -> {
             offer.setNumberOfOffers(offer.getNumberOfOffers() - event.getNumberOfOffers());
+            offerRepository.save(offer);
+        }, () -> {throw new OfferDoesNotExistException("No offer with id " + event.getOfferId());});
+    }
+
+    @EventHandler
+    public void on(OfferIncreaseAmountEvent event){
+        offerRepository.findById(event.getOfferId()).ifPresent(offer -> {
+            offer.setNumberOfOffers(offer.getNumberOfOffers() + event.getNumberOfOffers());
             offerRepository.save(offer);
         });
     }

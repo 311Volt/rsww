@@ -1,0 +1,14 @@
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\query\queries\GetOffersQuery.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\controller\OfferCommandController.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\event\OfferCreatedEvent.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\query\porjection\OfferProjection.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\TourOperatorApplication.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\entity\Flight.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\query\controller\OfferQuertController.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\repository\OfferRepository.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\aggregate\OfferAggregate.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\exception\OfferServiceEventsErrorHandler.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\commands\CreateOfferCommand.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\command\event\OfferEventsHandler.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\entity\Offer.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator\src\main\java\com\rsww\touroperator\entity\Hotel.java

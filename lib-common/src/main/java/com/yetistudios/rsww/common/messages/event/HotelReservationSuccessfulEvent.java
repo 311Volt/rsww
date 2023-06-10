@@ -11,4 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class HotelReservationSuccessfulEvent {
     public String reservationId;
+    public int numberOfPeople;
 }

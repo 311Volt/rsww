@@ -1,0 +1,16 @@
+package com.yetistudios.rsww.messages.event;
+
+import lombok.Data;
+
+@Data
+public class ReservationCreatedEvent {
+    private String reservationId;
+    private String offerId;
+    private String clientId;
+    private String departureAirportName;
+    private double price;
+    private int numSingleRooms;
+    private int numDoubleRooms;
+    private int numTripleRooms;
+    private String orderStatus;
+}

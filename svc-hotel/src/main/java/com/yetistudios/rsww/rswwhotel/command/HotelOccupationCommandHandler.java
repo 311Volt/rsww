@@ -26,7 +26,9 @@ public class HotelOccupationCommandHandler {
             eventGateway.publish(
                     HotelReservationSuccessfulEvent
                         .builder()
-                        .reservationId(command.reservationId).build()
+                        .reservationId(command.reservationId)
+                        .numberOfPeople(command.getNumSingleRooms() + command.getNumDoubleRooms()*2 + command.getNumTripleRooms()*3)
+                        .build()
             );
         } catch(Exception ex) {
             eventGateway.publish(
@@ -41,6 +43,11 @@ public class HotelOccupationCommandHandler {
     @CommandHandler
     void on(CancelHotelBookingCommand command) {
         service.cancelReservation(command);
+        eventGateway.publish(
+                HotelReservationCanceledEvent
+                        .builder()
+                        .reservationId(command.getReservationId())
+                        .build());
     }
 
 }

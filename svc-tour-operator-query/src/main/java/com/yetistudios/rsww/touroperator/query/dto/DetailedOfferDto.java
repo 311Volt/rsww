@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.touroperator.query.dto;
 
-import com.yetistudios.rsww.touroperator.query.entity.Flight;
-import com.yetistudios.rsww.touroperator.query.entity.Hotel;
+import com.yetistudios.rsww.messages.entity.OfferFlight;
+import com.yetistudios.rsww.messages.entity.OfferHotel;
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,10 +12,10 @@ import java.util.List;
 @Builder
 public class DetailedOfferDto {
     private String id;
-    private Hotel hotel;
+    private OfferHotel hotel;
     private Double price;
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<OfferFlight> flights;
 }

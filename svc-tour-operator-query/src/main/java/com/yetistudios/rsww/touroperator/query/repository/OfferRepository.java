@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.touroperator.query.repository;
 
-import com.yetistudios.rsww.touroperator.query.entity.Offer;
+import com.yetistudios.rsww.messages.entity.Offer;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
