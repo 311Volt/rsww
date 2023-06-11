@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.touroperator.query.porjection;
 
 import com.yetistudios.rsww.common.messages.query.GetOfferQuery;
+import com.yetistudios.rsww.touroperator.query.dto.OfferListDto;
 import com.yetistudios.rsww.touroperator.query.repository.OfferRepository;
 import com.yetistudios.rsww.common.messages.entity.Offer;
 import com.yetistudios.rsww.touroperator.query.dto.DetailedOfferDto;
@@ -22,7 +23,7 @@ public class OfferProjection {
     }
 
     @QueryHandler
-    public List<Offer> handle(GetOffersQuery getOffersQuery){
+    public OfferListDto handle(GetOffersQuery getOffersQuery){
         PageRequest pageRequest = PageRequest.of(getOffersQuery.getPage(), getOffersQuery.getPageSize());
         List<Offer> offers = offerRepository.findOffersByCriteria(
                 getOffersQuery.getDestination(),
@@ -31,7 +32,7 @@ public class OfferProjection {
                 getOffersQuery.getPeople(),
                 pageRequest
         );
-        return offers;
+        return new OfferListDto(offers);
     }
 
     @QueryHandler DetailedOfferDto handle(GetOfferDetailedQuery getOfferDetailedQuery){

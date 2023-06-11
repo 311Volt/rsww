@@ -3,6 +3,7 @@ package com.yetistudios.rsww.touroperator.query.controller;
 import com.yetistudios.rsww.common.messages.entity.Offer;
 import com.yetistudios.rsww.common.messages.query.GetOfferQuery;
 import com.yetistudios.rsww.common.messages.query.GetOffersQuery;
+import com.yetistudios.rsww.touroperator.query.dto.OfferListDto;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.web.bind.annotation.*;
@@ -32,12 +33,12 @@ public class OfferQuertController {
                 .pageSize(pageSize)
                 .build();
 
-        List<Offer> offers = queryGateway.query(
+        OfferListDto offers = queryGateway.query(
                 getOffersQuery,
-                ResponseTypes.multipleInstancesOf(Offer.class)
+                ResponseTypes.instanceOf(OfferListDto.class)
         ).join();
 
-        return offers;
+        return offers.getOfferList();
     }
 
     //not working TODO

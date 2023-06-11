@@ -6,9 +6,9 @@ spring:
       uri: mongodb://localhost:27017/rsww_175651_touroperator
       auto-index-creation: true
 
-#
-#axon:
-#  serializer:
-#    general: jackson
-#    events: jackson
-#    messages: jackson
+
+axon:
+  serializer:
+    general: jackson
+    events: jackson
+    messages: jackson
