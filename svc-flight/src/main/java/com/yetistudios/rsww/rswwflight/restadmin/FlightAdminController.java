@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("admin")
 public class FlightAdminController {
@@ -30,4 +32,8 @@ public class FlightAdminController {
         flightService.importFlight(flightDocument);
     }
 
+    @PostMapping("/import-flight-batch")
+    public void importFlightBatch(@RequestBody List<FlightDocument> flightDocuments) {
+        flightDocuments.forEach(flightService::importFlight);
+    }
 }
