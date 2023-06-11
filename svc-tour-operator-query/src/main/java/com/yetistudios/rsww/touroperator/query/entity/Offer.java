@@ -19,5 +19,5 @@ public class Offer {
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<FlightModel> flights;
 }
