@@ -1,9 +1,9 @@
 package com.yetistudios.rsww.touroperator.cmd.controller;
 
+import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
 import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
-import com.yetistudios.rsww.touroperator.cmd.commands.DecreaseOfferAmountCommand;
 import com.yetistudios.rsww.touroperator.cmd.dto.OfferDecreaseAmountDto;
-import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
+import com.yetistudios.rsww.common.messages.entity.Offer;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,7 @@ public class OfferCommandController {
     private CommandGateway commandGateway;
 
     @PostMapping
-    public String addOffer(@RequestBody Offer offer){
+    public String addOffer(@RequestBody Offer offer) {
 
         CreateOfferCommand createOfferCommand = CreateOfferCommand.builder()
                 .offerId(UUID.randomUUID().toString())
@@ -37,9 +37,8 @@ public class OfferCommandController {
 
     @CrossOrigin
     @PostMapping("/decrease")
-    public String decreaseOfferAmount(@RequestBody OfferDecreaseAmountDto offer, @RequestParam("id") String offerId){
+    public String decreaseOfferAmount(@RequestBody OfferDecreaseAmountDto offer, @RequestParam("id") String offerId) {
         DecreaseOfferAmountCommand decreaseOfferAmountCommand = DecreaseOfferAmountCommand.builder()
-                .id(UUID.randomUUID().toString())
                 .offerId(offerId)
                 .numberOfOffers(offer.getNumberOfOffers())
                 .build();

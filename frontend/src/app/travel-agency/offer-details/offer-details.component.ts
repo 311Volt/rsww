@@ -12,7 +12,7 @@ import {HotelModel} from "../model/hotel.model";
 export class OfferDetailsComponent implements OnInit {
   offer: Offer;
   id: string;
-  displayedColumns: string[] = ['outboundFlightAirport', 'returnFlightAirport'];
+  displayedColumns: string[] = ['id', 'departureAirportName'];
   dataSource: any;
   basePrice: number;
   hotel: HotelModel;
@@ -35,7 +35,6 @@ export class OfferDetailsComponent implements OnInit {
         this.travelService.getOffers().subscribe(response => {
           this.offer = response.find(offer => offer.id === this.id);
           this.dataSource = this.offer.flights;
-          console.log(this.dataSource)
           this.basePrice = this.offer.suggestedPrice;
           this.travelService.getHotel(this.offer.hotelBrief.id).subscribe(hotel => {
             this.hotel = hotel;

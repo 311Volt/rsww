@@ -1,0 +1,14 @@
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\query\query\FindUserByEmailQuery.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\command\aggregate\UserAggregate.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\command\command\CreateUserCommand.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\query\controller\QueryUserController.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\command\command\BaseCommand.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\command\controller\UserController.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\common\event\UserCreatedEvent.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\common\event\BaseEvent.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\query\repository\UserRepository.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\command\service\UserCommandService.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\query\entity\UserEntity.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\ClientApplication.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\command\dto\CreateUserRequest.java
+D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-client\src\main\java\com\rsww\client\query\service\QueryUserService.java

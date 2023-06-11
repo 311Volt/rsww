@@ -64,24 +64,24 @@
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range ({{hotel.ageRange0.lowerBound}} - {{hotel.ageRange0.upperBound}})
-          - {{hotel.ageRange0.pricePerNight}} $)
+        <mat-label>No. with age range (before {{hotel.ageRange0.upperBound}}
+          - {{offer.hotelBrief.ageRange0.pricePerNight}})
         </mat-label>
-        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)" name="ageRange0NumberOfPeople">
+        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range ({{hotel.ageRange1.lowerBound}} - {{hotel.ageRange1.upperBound}})
-          - {{hotel.ageRange1.pricePerNight}} $)
+        <mat-label>No. with age range (before {{hotel.ageRange1.upperBound}}
+          - {{hotel.ageRange1.pricePerNight}})
         </mat-label>
-        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)" name="ageRange1NumberOfPeople">
+        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range ({{hotel.ageRange2.lowerBound}} - {{hotel.ageRange2.upperBound}})
-          - {{hotel.ageRange2.pricePerNight}} $)
+        <mat-label>No. with age range (before {{hotel.ageRange2.upperBound}}
+          - {{hotel.ageRange2.pricePerNight}})
         </mat-label>
-        <input matInput  [(ngModel)]="ageRange2NumberOfPeople" (change)="calculateCost($event)" name="ageRange2NumberOfPeople">
+        <input matInput  [(ngModel)]="ageRange2NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
       <mat-card-actions>
         <button mat-stroked-button type="submit">Book</button>

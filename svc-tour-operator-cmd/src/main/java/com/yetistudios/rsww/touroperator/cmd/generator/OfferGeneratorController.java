@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.touroperator.cmd.generator;
 
-import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
+import com.yetistudios.rsww.common.messages.entity.Offer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

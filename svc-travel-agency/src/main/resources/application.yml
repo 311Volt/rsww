@@ -1,15 +1,10 @@
 server:
-  port: 1445
-
+  port: 9998
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/svc_travel_agency
-    username: rsww175651
-    password: jpg4ever
-  jpa:
-    hibernate:
-      ddl-auto: update
-
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rsww_175651_travelagency
+      auto-index-creation: true
 
 axon:
   serializer:
