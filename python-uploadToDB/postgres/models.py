@@ -5,8 +5,8 @@ from sqlalchemy.orm import declarative_base
 Base = declarative_base()
 
 
-class Flights(Base):
-    __tablename__ = "Flights"
+class flights(Base):
+    __tablename__ = "flights"
 
     id = Column(Integer, primary_key=True)
     flightNumber = Column(Integer)
@@ -40,6 +40,26 @@ class Flights(Base):
         
     def __str__(self):
         return f"Flight number {self.flightNumber}, departure from {self.departureAirportCode}, arrival at airport {self.arrivalAirportCode}"
+    
+
+class airports(Base):
+    __tablename__ = "airports"
+
+    id = Column(Integer, primary_key=True)
+    code = Column(String)
+    name = Column(String)
+    forDeparture = Column(Boolean)
+
+    
+    def __init__(self, code, name, forDeparture):
+        self.code = code
+        self.name = name
+        self.forDeparture = forDeparture
+    
+        
+    def __str__(self):
+        return f"Airport code {self.code}, name {self.name}, forDeparture {self.forDeparture}"
+
     
 
 '''
