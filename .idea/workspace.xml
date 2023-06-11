@@ -5,71 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/ctx-postgres/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/dev-rebuild.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/BookFlightCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/CancelFlightBookingCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/CancelHotelBookingCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/PlaneAvailabilityDeltaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/PlaneReservationFailedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/PlaneReservationSuccessfulEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/misc/DepartureOrArrivalDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/misc/FlightDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/misc/FlightPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/query/CheckFlightAvailabilityQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/query/FindBestFlightPairQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/query/GetFlightBookingPriceQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/query/GetHotelBookingPriceQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/command/FlightCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/config/XStreamConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/Airport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailabilityDeltaEventEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailabilitySnapshot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightNumAndTimestampId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/event/FlightEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/exception/CannotCancelBookingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/exception/FlightUnavailableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/exception/NoSuchFlightException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/query/FlightQueryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/AirportRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightAvailabilityDeltaEventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightAvailabilitySnapshotRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/restadmin/FlightAdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightAvailabilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/util/DatetimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelPriceQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/dto/HotelDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetFlightInfoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetHotelInfoQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/ctx-postgres/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ctx-postgres/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/ReserveHotelCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/command/BookHotelCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/BaseEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-messages/src/main/java/com/yetistudios/rsww/messages/event/YeetEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/touroperator/query/RswwFlightApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/RswwFlightApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/test/java/com/yetistudios/rsww/rswwagency/RswwFlightApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/test/java/com/yetistudios/rsww/rswwflight/RswwFlightApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/RswwGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/RswwGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/HotelOccupationCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/HotelOccupationCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/rest/HotelOccupationServiceRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/rest/HotelOccupationServiceRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/service/HotelOccupationCommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/service/HotelOccupationCommandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/HotelAgeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/HotelAgeRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/service/HotelOccupationQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/service/HotelOccupationQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-payment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-saga-orchestrator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-saga-orchestrator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util-scrapper/output/flights.json" beforeDir="false" afterPath="$PROJECT_DIR$/util-scrapper/output/flights.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util-scrapper/output/hotels.json" beforeDir="false" afterPath="$PROJECT_DIR$/util-scrapper/output/hotels.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util-scrapper/tui_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/util-scrapper/tui_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/query/FlightQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/query/FlightQueryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelMiscQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelMiscQueryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/HotelAgeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/dto/HotelAgeRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +54,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/volt/edu/rsww/docker/docker-compose-dev.yml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
@@ -183,63 +132,9 @@
       <runConfiguration name="svc-gateway" type="Application" />
       <runConfiguration name="svc-hotel" type="Application" />
       <runConfiguration name="svc-flight" type="Application" />
+      <runConfiguration name="svc-tour-operator-cmd" type="Application" />
+      <runConfiguration name="svc-tour-operator-query" type="Application" />
       <method v="2" />
-    </configuration>
-    <configuration name="RswwFlightApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-flight" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.touroperator.query.RswwFlightApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RswwGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.rswwgateway.RswwGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RswwHotelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-hotel" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.rswwhotel.RswwHotelApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RswwPaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-payment" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.rswwpayment.RswwPaymentApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RswwSagaOrchestratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-saga-orchestrator" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.rswwsaga.RswwSagaOrchestratorApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RswwTourOperatorQueryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-tour-operator-query" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.touroperator.query.RswwTourOperatorQueryApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RswwTravelAgencyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-travel-agency" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.travelagency.RswwTravelAgencyApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TourOperatorCmdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="svc-tour-operator-cmd" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yetistudios.rsww.touroperator.cmd.TourOperatorCmdApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="local-devenv" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">

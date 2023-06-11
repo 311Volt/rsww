@@ -1,8 +1,8 @@
 package com.yetistudios.rsww.rswwflight.service;
 
-import com.yetistudios.rsww.messages.command.BookFlightCommand;
-import com.yetistudios.rsww.messages.command.CancelFlightBookingCommand;
-import com.yetistudios.rsww.messages.query.CheckFlightAvailabilityQuery;
+import com.yetistudios.rsww.common.messages.command.BookFlightCommand;
+import com.yetistudios.rsww.common.messages.command.CancelFlightBookingCommand;
+import com.yetistudios.rsww.common.messages.query.CheckFlightAvailabilityQuery;
 import com.yetistudios.rsww.rswwflight.entity.*;
 import com.yetistudios.rsww.rswwflight.exception.CannotCancelBookingException;
 import com.yetistudios.rsww.rswwflight.exception.FlightUnavailableException;

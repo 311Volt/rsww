@@ -14,10 +14,10 @@ import java.util.List;
 public class Offer {
     @Id
     private String id;
-    private Hotel hotel;
-    private Double price;
+    private HotelBrief hotelBrief;
+    private Double suggestedPrice;
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<FlightBriefPair> flights;
 }

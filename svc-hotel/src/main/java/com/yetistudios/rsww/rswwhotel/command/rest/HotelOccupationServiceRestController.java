@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.command.rest;
 
-import com.yetistudios.rsww.messages.command.BookHotelCommand;
+import com.yetistudios.rsww.common.messages.command.BookHotelCommand;
 import com.yetistudios.rsww.rswwhotel.command.service.HotelOccupationCommandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

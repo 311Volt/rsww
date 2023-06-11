@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwflight.restadmin;
 
-import com.yetistudios.rsww.messages.misc.FlightDocument;
+import com.yetistudios.rsww.common.dto.FlightDocument;
 import com.yetistudios.rsww.rswwflight.entity.Airport;
 import com.yetistudios.rsww.rswwflight.repository.AirportRepository;
 import com.yetistudios.rsww.rswwflight.service.FlightService;

@@ -64,7 +64,7 @@
     </build>
 
     <modules>
-        <module>lib-messages</module>
+        <module>lib-common</module>
         <module>svc-gateway</module>
         <module>svc-travel-agency</module>
         <module>svc-tour-operator-cmd</module>

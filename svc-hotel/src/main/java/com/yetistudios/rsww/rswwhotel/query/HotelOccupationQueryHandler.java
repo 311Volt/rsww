@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.rswwhotel.query;
 
-import com.yetistudios.rsww.messages.query.CheckHotelAvailabilityQuery;
+import com.yetistudios.rsww.common.dto.HotelAvailabilityVector;
+import com.yetistudios.rsww.common.messages.query.CheckHotelAvailabilityQuery;
 import com.yetistudios.rsww.rswwhotel.query.service.HotelOccupationQueryService;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ public class HotelOccupationQueryHandler {
     HotelOccupationQueryService service;
 
     @QueryHandler
-    Boolean handle(CheckHotelAvailabilityQuery query) {
+    HotelAvailabilityVector handle(CheckHotelAvailabilityQuery query) {
         return service.checkHotelAvailability(query);
     }
 

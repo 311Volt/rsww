@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwflight.repository;
 
-import com.yetistudios.rsww.messages.query.FindBestFlightPairQuery;
+import com.yetistudios.rsww.common.messages.query.FindBestFlightPairQuery;
 import com.yetistudios.rsww.rswwflight.entity.Flight;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -11,6 +11,9 @@ import java.util.List;
 
 @Repository
 public interface FlightRepository extends JpaRepository<Flight, Integer> {
+
+
+    List<Flight> findByFlightNumber(Integer flightNumber);
 
     @Query(nativeQuery = true, value = """
         SELECT * FROM flights f

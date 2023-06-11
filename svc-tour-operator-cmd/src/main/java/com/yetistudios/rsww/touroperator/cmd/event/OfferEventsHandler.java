@@ -21,8 +21,8 @@ public class OfferEventsHandler {
     public void on(OfferCreatedEvent event){
         Offer offer = Offer.builder()
                 .id(event.getOfferId())
-                .price(event.getPrice())
-                .hotel(event.getHotel())
+                .suggestedPrice(event.getPrice())
+                .hotelBrief(event.getHotelBrief())
                 .flights(event.getFlights())
                 .numberOfOffers(event.getNumberOfOffers())
                 .startDate(event.getStartDate())
