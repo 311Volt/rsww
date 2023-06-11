@@ -9,6 +9,12 @@ def fetch_json(filename):
     with open(filename, "r") as jsonfile:
         return json.load(jsonfile)
 
+def batch(iterable, n=1):
+    l = len(iterable)
+    for ndx in range(0, l, n):
+        yield iterable[ndx:min(ndx + n, l)]
+
+
 def request_and_log(addr, json, num, total):
     response = requests.post(addr, json=json)
     status = response.status_code
@@ -22,8 +28,8 @@ def import_airports(data):
         request_and_log(ADDR_SVC_FLIGHT + "/admin/import-airport", json=airport, num=count, total=len(data))
 
 def import_flights(data):
-    for count, flight in enumerate(data):
-        request_and_log(ADDR_SVC_FLIGHT + "/admin/import-flight", json=flight, num=count, total=len(data))
+    for count, flight_batch in enumerate(batch(data, 200)):
+        request_and_log(ADDR_SVC_FLIGHT + "/admin/import-flight-batch", json=flight_batch, num=count, total=int(len(data)/200))
 
 def import_hotels(data):
     for count, hotel in enumerate(data.values()):
