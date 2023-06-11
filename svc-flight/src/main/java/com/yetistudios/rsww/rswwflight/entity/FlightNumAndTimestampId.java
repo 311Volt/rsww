@@ -7,6 +7,7 @@ import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
@@ -18,6 +19,7 @@ import java.sql.Timestamp;
 @Data
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class FlightNumAndTimestampId {
     public Integer flightNumber;
     public Timestamp timestamp;
