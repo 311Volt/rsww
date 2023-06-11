@@ -1,7 +1,7 @@
 import {AgeRangeModel} from "./age-range.model";
 
 export class HotelModel {
-  public code: string;
+  public id: string;
   public name: string;
   public standard: number;
   public latitude: number;
@@ -17,8 +17,8 @@ export class HotelModel {
   public ageRange2: AgeRangeModel;
 
 
-  constructor(code: string, name: string, standard: number, latitude: number, longitude: number, airportCode: string, country: string, numSingleRooms: number, numDoubleRooms: number, numTripleRooms: number, numQuadRooms: number, ageRange0: AgeRangeModel, ageRange1: AgeRangeModel, ageRange2: AgeRangeModel) {
-    this.code = code;
+  constructor(id: string, name: string, standard: number, latitude: number, longitude: number, airportCode: string, country: string, numSingleRooms: number, numDoubleRooms: number, numTripleRooms: number, numQuadRooms: number, ageRange0: AgeRangeModel, ageRange1: AgeRangeModel, ageRange2: AgeRangeModel) {
+    this.id = id;
     this.name = name;
     this.standard = standard;
     this.latitude = latitude;

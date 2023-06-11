@@ -1,13 +1,13 @@
 import {Time} from "@angular/common";
 
 export class FlyingModel{
-  public airportCode:string;
-  public date: string;
+  public id:string;
+  public departureAirportName: string;
   public time: string;
 
-  constructor(airportCode: string, date: string, time: string) {
-    this.airportCode = airportCode;
-    this.date = date;
+  constructor(id: string, departureAirportName: string, time: string) {
+    this.id = id;
+    this.departureAirportName = departureAirportName;
     this.time = time;
   }
 }

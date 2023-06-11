@@ -2,13 +2,15 @@ package com.yetistudios.rsww.touroperator.cmd.generator;
 
 import com.yetistudios.rsww.common.dto.*;
 import com.yetistudios.rsww.common.messages.query.*;
-import com.yetistudios.rsww.touroperator.cmd.entity.FlightBrief;
-import com.yetistudios.rsww.touroperator.cmd.entity.FlightBriefPair;
-import com.yetistudios.rsww.touroperator.cmd.entity.HotelBrief;
-import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
+import com.yetistudios.rsww.common.messages.entity.FlightBrief;
+import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
+import com.yetistudios.rsww.common.messages.entity.HotelBrief;
+import com.yetistudios.rsww.common.messages.entity.Offer;
+import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +31,8 @@ public class OfferGenerator {
 
     @Autowired
     private QueryGateway queryGateway;
+    @Autowired
+    private CommandGateway commandGateway;
 
     private final static Random random = new Random();
     private final static int MAX_CONSECUTIVE_FAILED_ATTEMPTS = 40;
@@ -186,8 +190,22 @@ public class OfferGenerator {
         List<Offer> result = new ArrayList<>();
         for(int i=0; i<numOffers; i++) {
             log.info("generating offer #{}...", i);
-            result.add(generateOffer());
+            Offer offer = generateOffer();
+            result.add(offer);
+
+            CreateOfferCommand createOfferCommand = CreateOfferCommand.builder()
+                    .offerId(UUID.randomUUID().toString())
+                    .hotelBrief(offer.getHotelBrief())
+                    .flights(offer.getFlights())
+                    .price(offer.getSuggestedPrice())
+                    .numberOfOffers(offer.getNumberOfOffers())
+                    .startDate(offer.getStartDate())
+                    .endDate(offer.getEndDate())
+                    .build();
+
+            commandGateway.send(createOfferCommand);
         }
+
         return result;
     }
 }

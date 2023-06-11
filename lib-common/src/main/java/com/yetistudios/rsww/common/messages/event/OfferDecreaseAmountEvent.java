@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OfferDecreaseAmountEvent {
-    private String id;
+    private String reservationId;
     private String offerId;
     private Integer numberOfOffers;
 }

@@ -21,9 +21,14 @@ public class UserController {
     @PostMapping(value = "/create")
     public ResponseEntity<String> createUser(@RequestBody UserEntity user) {
         try {
-            user.setId(UUID.randomUUID().toString());
-            this.userRepository.save(user);
-            return new ResponseEntity<>(HttpStatus.CREATED);
+            UserEntity userEntity = userRepository.findByEmail(user.getEmail()).orElse(null);
+            if (userEntity == null) {
+                user.setId(UUID.randomUUID().toString());
+                this.userRepository.save(user);
+                return new ResponseEntity<>(HttpStatus.CREATED);
+            } else {
+                throw new Exception();
+            }
         } catch (Exception e) {
             return new ResponseEntity<>("An error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -31,7 +36,7 @@ public class UserController {
 
     @CrossOrigin
     @GetMapping("/get-user/{email}")
-    public ResponseEntity<UserEntity> getUser(@PathVariable String email){
+    public ResponseEntity<UserEntity> getUser(@PathVariable String email) {
         UserEntity userEntity = userRepository.findByEmail(email).orElse(null);
         if (userEntity == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

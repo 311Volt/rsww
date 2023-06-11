@@ -33,6 +33,7 @@ export class TravelAgencyComponent implements OnInit {
       this.dataSource = new MatTableDataSource(this.offersList);
       this.dataSource.paginator = this.paginator;
       this.dataSource.filterPredicate = this.getFilterPredicate();
+      console.log(this.offersList)
     })
     this.searchFormInit();
   }
@@ -40,7 +41,7 @@ export class TravelAgencyComponent implements OnInit {
   searchFormInit() {
     this.searchForm = new FormGroup({
       country: new FormControl('', Validators.pattern('^[a-zA-Z ]+$')),
-      numberOfOffers: new FormControl(''),
+      numberOfOffers: new FormControl('', Validators.pattern(/^-?(0|[1-9]\d*)?$/)),
       startDate: new FormControl('')
     });
   }
@@ -70,7 +71,7 @@ export class TravelAgencyComponent implements OnInit {
 
       const columnStartDateInDateFormat = new Date(row.startDate);
       const startDateInDateFormat = new Date(startDate);
-      const columnCountry = row.hotel.country;
+      const columnCountry = row.hotelBrief.country;
       const columnNumberOfOffers = row.numberOfOffers;
 
       const customFilterStartDate = columnStartDateInDateFormat > startDateInDateFormat;

@@ -1,7 +1,5 @@
-
-
 server:
-  port: 1442
+  port: 9999
 
 axon:
   serializer:

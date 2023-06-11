@@ -1,9 +1,9 @@
 package com.yetistudios.rsww.touroperator.query.controller;
 
-import com.yetistudios.rsww.touroperator.query.entity.Offer;
-import com.yetistudios.rsww.touroperator.query.dto.DetailedOfferDto;
-import com.yetistudios.rsww.touroperator.query.queries.GetOfferDetailedQuery;
-import com.yetistudios.rsww.touroperator.query.queries.GetOffersQuery;
+import com.yetistudios.rsww.common.messages.entity.Offer;
+import com.yetistudios.rsww.common.messages.query.GetOfferQuery;
+import com.yetistudios.rsww.common.messages.query.GetOffersQuery;
+import com.yetistudios.rsww.touroperator.query.dto.OfferListDto;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.web.bind.annotation.*;
@@ -33,14 +33,20 @@ public class OfferQuertController {
                 .pageSize(pageSize)
                 .build();
 
-        return queryGateway.query(getOffersQuery, ResponseTypes.multipleInstancesOf(Offer.class)).join();
+        OfferListDto offers = queryGateway.query(
+                getOffersQuery,
+                ResponseTypes.instanceOf(OfferListDto.class)
+        ).join();
+
+        return offers.getOfferList();
     }
 
     //not working TODO
+    @CrossOrigin
     @GetMapping("/detailed")
-    public DetailedOfferDto getOffer(@RequestParam("id") String offerId) {
-        GetOfferDetailedQuery getOfferDetailedQuery = new GetOfferDetailedQuery(offerId);
+    public Offer getOffer(@RequestParam("id") String offerId) {
+        GetOfferQuery getOfferQuery = new GetOfferQuery(offerId);
 
-        return queryGateway.query(getOfferDetailedQuery, ResponseTypes.instanceOf(DetailedOfferDto.class)).join();
+        return queryGateway.query(getOfferQuery, ResponseTypes.instanceOf(Offer.class)).join();
     }
 }
