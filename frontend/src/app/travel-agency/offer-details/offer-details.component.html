@@ -12,13 +12,14 @@
         <span class="list-group-item ">End date</span>
         <span class="list-group-item ">Number of offers</span>
         <span class="list-group-item ">Price</span>
+        <span class="list-group-item ">Flight code</span>
       </div>
       <div class="col-md-10">
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.startDate | date: 'dd.MM.yyyy'}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.endDate | date: 'dd.MM.yyyy'}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.numberOfOffers}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.suggestedPrice}}</span>
-
+        <span class="list-group-item" *ngIf="chooseFlight !== undefined">{{chooseFlight}}</span>
       </div>
     </div>
 
@@ -35,6 +36,13 @@
       <ng-container matColumnDef="returnFlightAirport">
         <th mat-header-cell *matHeaderCellDef>Return Flight</th>
         <td mat-cell *matCellDef="let element"> {{element.returnFlight.departureAirportName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="choose">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-button (click)="chooseFlightCode(element.outboundFlight.departureAirportName)">Choose</button>
+        </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -13,7 +13,7 @@ import {AuthService} from "../../auth/auth.service";
 export class OfferDetailsComponent implements OnInit {
   offer: Offer;
   id: string;
-  displayedColumns: string[] = ['outboundFlightAirport', 'returnFlightAirport'];
+  displayedColumns: string[] = ['outboundFlightAirport', 'returnFlightAirport', 'choose'];
   dataSource: any;
   basePrice: number;
   hotel: HotelModel;
@@ -27,6 +27,7 @@ export class OfferDetailsComponent implements OnInit {
   tripleRoomsNumber = 0;
 
   userEmail: string;
+  chooseFlight: string = '';
 
   constructor(private travelService: TravelAgencyService, private route: ActivatedRoute, private router: Router, private userService: AuthService) {
   }
@@ -52,7 +53,7 @@ export class OfferDetailsComponent implements OnInit {
   }
 
   bookOffer() {
-    this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail);
+    this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail, this.chooseFlight);
     this.router.navigate(['travel']);
   }
 
@@ -66,5 +67,9 @@ export class OfferDetailsComponent implements OnInit {
 
   calculateCostRange1($event: Event) {
     this.offer.suggestedPrice = this.offer.suggestedPrice - (this.hotel.ageRange2.pricePerNight - this.hotel.ageRange0.pricePerNight) * +(event.target as HTMLInputElement).value;
+  }
+
+  chooseFlightCode(code:string){
+    this.chooseFlight = code;
   }
 }

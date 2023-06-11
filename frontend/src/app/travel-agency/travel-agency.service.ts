@@ -19,7 +19,8 @@ export class TravelAgencyService{
     return this.http.get<Offer[]>('http://localhost:1444/offer');
   }
 
-  bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number, numberOfTrRooms: number, userEmail: string) {
+  bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number,
+            numberOfTrRooms: number, userEmail: string, chooseFlight:string) {
 
     console.log(offer.id)
 
@@ -36,7 +37,7 @@ export class TravelAgencyService{
       offerId: offer.id,
       clientId: userEmail,
       price: offer.suggestedPrice,
-      departureAirportName: offer.flights[0].outboundFlight.departureAirportName,
+      departureAirportName: chooseFlight,
       nrOfPeople: numberOfOffers,
       numSingleRooms: numberOfSingleRooms,
       numDoubleRooms: numberOfDoubleRooms,

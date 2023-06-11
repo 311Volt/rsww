@@ -22,6 +22,7 @@ export class TravelAgencyComponent implements OnInit {
   public searchForm: FormGroup;
   public country = '';
   public startDate = '';
+  public airportCode = '';
   public numberOfOffers: number;
 
   constructor(private travelService: TravelAgencyService) {
@@ -42,6 +43,7 @@ export class TravelAgencyComponent implements OnInit {
     this.searchForm = new FormGroup({
       country: new FormControl('', Validators.pattern('^[a-zA-Z ]+$')),
       numberOfOffers: new FormControl('', Validators.pattern(/^-?(0|[1-9]\d*)?$/)),
+      airportCode: new FormControl('', Validators.pattern('^[a-zA-Z ]+$')),
       startDate: new FormControl('')
     });
   }
@@ -50,13 +52,15 @@ export class TravelAgencyComponent implements OnInit {
     const startDate = this.searchForm.get('startDate').value;
     const country = this.searchForm.get('country').value;
     const numberOfOffers = this.searchForm.get('numberOfOffers').value;
+    const airportCode = this.searchForm.get('airportCode').value;
 
     this.startDate = (startDate === null || startDate === '') ? '10.06.1023' : startDate.toDateString();
     this.country = country === null ? '' : country;
     this.numberOfOffers = numberOfOffers === null ? '' : numberOfOffers;
+    this.airportCode = airportCode === null ? '' : airportCode;
 
     // create string of our searching values and split if by '$'
-    const filterValue = this.country + '$' + this.startDate + '$' + this.numberOfOffers;
+    const filterValue = this.country + '$' + this.startDate + '$' + this.numberOfOffers + '$' + this.airportCode;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
@@ -66,6 +70,7 @@ export class TravelAgencyComponent implements OnInit {
       const country = filterArray[0];
       const startDate = filterArray[1];
       const numberOfOffers = filterArray[2];
+      const airportCode = filterArray[3];
 
       const matchFilter = [];
 
@@ -73,14 +78,22 @@ export class TravelAgencyComponent implements OnInit {
       const startDateInDateFormat = new Date(startDate);
       const columnCountry = row.hotelBrief.country;
       const columnNumberOfOffers = row.numberOfOffers;
+      const airPortCodeArrayColum = [];
+      for(let i=0; i< row.flights.length ;i++){
+        airPortCodeArrayColum[i] = row.flights[i].outboundFlight.departureAirportName.toLowerCase();
+      }
 
-      const customFilterStartDate = columnStartDateInDateFormat > startDateInDateFormat;
+      const customFilterStartDate = columnStartDateInDateFormat >= startDateInDateFormat;
       const customFilterCountry = columnCountry.toLowerCase().includes(country);
-      const customFilterNumberOfOffers = +columnNumberOfOffers > +numberOfOffers;
+      const customFilterNumberOfOffers = +columnNumberOfOffers >= +numberOfOffers;
+      let customFilterAirPortCodeArray = airPortCodeArrayColum.includes(airportCode.toLowerCase());
 
       matchFilter.push(customFilterStartDate);
       matchFilter.push(customFilterCountry);
       matchFilter.push(customFilterNumberOfOffers);
+      if (airportCode !== '') {
+        matchFilter.push(customFilterAirPortCodeArray);
+      }
 
       return matchFilter.every(Boolean);
     };
