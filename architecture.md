@@ -118,15 +118,9 @@ TODO not sure if user service & agency should be merged into one
 
 # 4. Saga descriptions
 
-## 4.1. Booking an offer
-  1. [Agency] Create `OfferBooking` and init status to "waiting" (rollback: don't delete, set status to "error")
-  2. [Flight] Try to book airplane seats
-  3. [Hotel] Try to book hotel rooms
-  4. [Tour Operator] Acknowledge offer sale
-  5. [Agency] Update status to "booked" and wait 1 minute for payment confirmation
-  6. [Agency] Update status to "done"
+## Booking an offer
 
-no more sagas are necessary imo
+![img_5.png](img_5.png)
 
 # 5. REST API overview
 
