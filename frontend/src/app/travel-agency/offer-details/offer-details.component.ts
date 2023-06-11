@@ -48,7 +48,7 @@ export class OfferDetailsComponent implements OnInit {
 
 
   bookOffer() {
-    this.travelService.bookOffer(this.offer, this.offer.id);
+    this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber);
   }
 
   calculateCost($event: Event) {
