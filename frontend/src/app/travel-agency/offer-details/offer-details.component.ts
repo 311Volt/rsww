@@ -14,6 +14,10 @@ export class OfferDetailsComponent implements OnInit{
   displayedColumns: string[] = ['id', 'departureAirportName'];
   dataSource: any;
   basePrice: number;
+
+  ageRange0NumberOfPeople: number;
+  ageRange1NumberOfPeople: number;
+  ageRange2NumberOfPeople: number;
   constructor(private travelService: TravelAgencyService, private route: ActivatedRoute, private router: Router) {
   }
 
@@ -35,7 +39,7 @@ export class OfferDetailsComponent implements OnInit{
     this.travelService.bookOffer(this.offer, this.offer.id);
   }
 
-  onChangeNumberOfOffers($event: Event) {
+  calculateCost($event: Event) {
     this.offer.price = +(event.target as HTMLInputElement).value * this.basePrice;
   }
 }

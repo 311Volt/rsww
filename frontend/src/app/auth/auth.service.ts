@@ -6,7 +6,7 @@ import {User} from "./user.model";
 
 @Injectable({providedIn: 'root'})
 export class AuthService {
-  user = new Subject<User>();
+  public user = new Subject<User>();
 
   constructor(private http: HttpClient, private router: Router) {
   }

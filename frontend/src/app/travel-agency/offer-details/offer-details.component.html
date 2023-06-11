@@ -46,7 +46,7 @@
     <form class="example-form" style="margin-top: 30px;" (ngSubmit)="bookOffer()">
       <mat-form-field class="example-full-width">
         <mat-label>Number of offers</mat-label>
-        <input matInput (change)="onChangeNumberOfOffers($event)">
+        <input matInput (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
@@ -73,21 +73,21 @@
         <mat-label>No. with age range (before {{offer.hotel.ageRange0.upperBound}}
           - {{offer.hotel.ageRange0.pricePerNight}})
         </mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange1 !== undefined">
         <mat-label>No. with age range (before {{offer.hotel.ageRange1.upperBound}}
           - {{offer.hotel.ageRange1.pricePerNight}})
         </mat-label>
-        <input matInput>
+        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange2 !== undefined">
         <mat-label>No. with age range (before {{offer.hotel.ageRange2.upperBound}}
           - {{offer.hotel.ageRange2.pricePerNight}})
         </mat-label>
-        <input matInput>
+        <input matInput  [(ngModel)]="ageRange2NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
       <mat-card-actions>
         <button mat-stroked-button type="submit">Book</button>
