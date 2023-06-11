@@ -10,7 +10,7 @@ import {HotelModel} from "./model/hotel.model";
 
 @Injectable({providedIn: 'root'})
 export class TravelAgencyService{
-  userEmail: string;
+
   constructor(private http: HttpClient, private router: Router, private authService: AuthService) {
   }
 
@@ -19,23 +19,32 @@ export class TravelAgencyService{
     return this.http.get<Offer[]>('http://localhost:1444/offer');
   }
 
-  bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number, numberOfTrRooms: number) {
-    this.authService.user.subscribe(user => {
-      this.userEmail = user.email;
-    })
+  bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number, numberOfTrRooms: number, userEmail: string) {
 
-    console.log(offer)
+    console.log(offer.id)
 
-    this.http.post<Offer>('http://localhost:9998/order', {
+    console.log(userEmail)
+    console.log(offer.suggestedPrice)
+    console.log(offer.flights[0].outboundFlight.departureAirportName)
+    console.log(numberOfOffers)
+    console.log(numberOfSingleRooms)
+    console.log(numberOfDoubleRooms)
+    console.log(numberOfTrRooms)
+
+
+    this.http.post<any>('http://localhost:9998/order', {
       offerId: offer.id,
-      clientId: this.userEmail,
+      clientId: userEmail,
       price: offer.suggestedPrice,
       departureAirportName: offer.flights[0].outboundFlight.departureAirportName,
       nrOfPeople: numberOfOffers,
       numSingleRooms: numberOfSingleRooms,
       numDoubleRooms: numberOfDoubleRooms,
-      numTripleRooms: numberOfTrRooms
-    }).subscribe();
+      numTripleRooms: numberOfTrRooms,
+      orderStatus: 'CREATED'
+    }).subscribe(res => {
+      console.log(res)
+    });
   }
 
   getHotel(code: string) {
