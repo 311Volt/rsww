@@ -1,3 +1,11 @@
+<label *ngIf="mes">
+  <input type="checkbox" class="alertCheckbox" autocomplete="off" />
+  <div class="alert info">
+    <span class="alertText">{{mes}}
+    <br class="clear"/></span>
+  </div>
+</label>
+
 <mat-card class="example-card" style="margin-top: 16px;">
   <mat-card-header>
     <mat-card-title *ngIf="offer !== undefined">{{offer.hotelBrief.country}}</mat-card-title>
@@ -49,7 +57,7 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
-    <form class="example-form" style="margin-top: 30px;" (ngSubmit)="bookOffer()">
+    <form class="example-form" style="margin-top: 30px;" (ngSubmit)="bookOffer()" #offerForm="ngForm">
       <mat-form-field class="example-full-width">
         <mat-label>Number of offers</mat-label>
         <input matInput (change)="calculateCost($event)" [(ngModel)]="numberOfOffers" name="numberOfOffers">
@@ -74,14 +82,14 @@
         <mat-label>No. with age range ({{hotel.ageRange0.lowerBound}} - {{hotel.ageRange0.upperBound}}):
            {{hotel.ageRange0.pricePerNight}}$)
         </mat-label>
-        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCostRange1($event)" name="ageRange0NumberOfPeople">
+        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)" name="ageRange0NumberOfPeople">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>No. with age range ({{hotel.ageRange1.lowerBound}} - {{hotel.ageRange1.upperBound}}):
            {{hotel.ageRange1.pricePerNight}}$)
         </mat-label>
-        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCostRange2($event)" name="ageRange1NumberOfPeople">
+        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)" name="ageRange1NumberOfPeople">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
@@ -91,7 +99,7 @@
         <input matInput  [(ngModel)]="ageRange2NumberOfPeople" name="ageRange2NumberOfPeople">
       </mat-form-field>
       <mat-card-actions>
-        <button mat-stroked-button type="submit">Book</button>
+        <button mat-stroked-button type="submit" [disabled]="offerForm.form.invalid">Book</button>
       </mat-card-actions>
 
     </form>

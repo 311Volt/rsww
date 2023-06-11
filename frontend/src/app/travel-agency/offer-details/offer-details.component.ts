@@ -17,11 +17,12 @@ export class OfferDetailsComponent implements OnInit {
   dataSource: any;
   basePrice: number;
   hotel: HotelModel;
+  mes: string;
 
   numberOfOffers = 1;
-  ageRange0NumberOfPeople: number;
-  ageRange1NumberOfPeople: number;
-  ageRange2NumberOfPeople: number;
+  ageRange0NumberOfPeople = 0;
+  ageRange1NumberOfPeople = 0;
+  ageRange2NumberOfPeople = 0;
   singleRoomsNumber = 0;
   doubleRoomsNumber = 0;
   tripleRoomsNumber = 0;
@@ -53,20 +54,37 @@ export class OfferDetailsComponent implements OnInit {
   }
 
   bookOffer() {
-    this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail, this.chooseFlight);
-    this.router.navigate(['travel']);
+    let err = false;
+    this.mes = '';
+    if (this.offer.numberOfOffers < this.numberOfOffers) {
+      this.mes += 'There aren\'t as many offers available. ';
+      err = true;
+    }
+    const all = +this.ageRange0NumberOfPeople + +this.ageRange2NumberOfPeople + +this.ageRange1NumberOfPeople;
+    if (all !== this.numberOfOffers) {
+      this.mes += 'You need to specify the age group for all. ';
+      err = true;
+    }
+    if (this.chooseFlight === '') {
+      this.mes += 'You need to choose flight code. ';
+      err = true;
+    }
+    if (err === false) {
+      this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail, this.chooseFlight);
+      this.router.navigate(['travel']);
+    }
   }
 
   calculateCost($event: Event) {
-    this.offer.suggestedPrice = +(event.target as HTMLInputElement).value * this.basePrice;
-  }
-
-  calculateCostRange2($event: Event) {
-    this.offer.suggestedPrice = this.offer.suggestedPrice - (this.hotel.ageRange2.pricePerNight - this.hotel.ageRange1.pricePerNight) * +(event.target as HTMLInputElement).value;
-  }
-
-  calculateCostRange1($event: Event) {
-    this.offer.suggestedPrice = this.offer.suggestedPrice - (this.hotel.ageRange2.pricePerNight - this.hotel.ageRange0.pricePerNight) * +(event.target as HTMLInputElement).value;
+    this.offer.suggestedPrice = (this.numberOfOffers * this.basePrice);
+    if (this.ageRange0NumberOfPeople !== 0) {
+      this.offer.suggestedPrice = this.offer.suggestedPrice - ((this.hotel.ageRange2.pricePerNight - this.hotel.ageRange0.pricePerNight) * this.ageRange0NumberOfPeople);
+      console.log(this.offer.suggestedPrice)
+    }
+    if (this.ageRange1NumberOfPeople !== 0) {
+      this.offer.suggestedPrice = this.offer.suggestedPrice - ((this.hotel.ageRange2.pricePerNight - this.hotel.ageRange1.pricePerNight) * this.ageRange1NumberOfPeople);
+      console.log(this.offer.suggestedPrice)
+    }
   }
 
   chooseFlightCode(code:string){
