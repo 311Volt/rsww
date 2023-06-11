@@ -17,6 +17,7 @@ export class OfferDetailsComponent implements OnInit {
   basePrice: number;
   hotel: HotelModel;
 
+  numberOfOffers = 1;
   ageRange0NumberOfPeople: number;
   ageRange1NumberOfPeople: number;
   ageRange2NumberOfPeople: number;

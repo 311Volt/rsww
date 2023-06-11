@@ -45,21 +45,21 @@
     <form class="example-form" style="margin-top: 30px;" (ngSubmit)="bookOffer()">
       <mat-form-field class="example-full-width">
         <mat-label>Number of offers</mat-label>
-        <input matInput (change)="calculateCost($event)">
+        <input matInput (change)="calculateCost($event)" [(ngModel)]="numberOfOffers" name="numberOfOffers">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
-        <mat-label>Single rooms number</mat-label>
+        <mat-label>Single rooms number ({{hotel.numSingleRooms}} available)</mat-label>
         <input matInput [(ngModel)]="singleRoomsNumber" name="singleRoomsNumber">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
-        <mat-label>Double rooms number</mat-label>
+        <mat-label>Double rooms number ({{hotel.numDoubleRooms}} available)</mat-label>
         <input matInput [(ngModel)]="doubleRoomsNumber" name="doubleRoomsNumber">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
-        <mat-label>Triple rooms number</mat-label>
+        <mat-label>Triple rooms number ({{hotel.numTripleRooms}} available)</mat-label>
         <input matInput [(ngModel)]="tripleRoomsNumber" name="tripleRoomsNumber">
       </mat-form-field>
 
