@@ -25,13 +25,7 @@ public class OfferProjection {
     @QueryHandler
     public OfferListDto handle(GetOffersQuery getOffersQuery){
         PageRequest pageRequest = PageRequest.of(getOffersQuery.getPage(), getOffersQuery.getPageSize());
-        List<Offer> offers = offerRepository.findOffersByCriteria(
-                getOffersQuery.getDestination(),
-                getOffersQuery.getDeparture(),
-                getOffersQuery.getStartDate(),
-                getOffersQuery.getPeople(),
-                pageRequest
-        );
+        List<Offer> offers = offerRepository.findAll();
         return new OfferListDto(offers);
     }
 

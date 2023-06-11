@@ -28,15 +28,14 @@
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
       <ng-container matColumnDef="outboundFlightAirport">
-        <th mat-header-cell *matHeaderCellDef> No.</th>
+        <th mat-header-cell *matHeaderCellDef>Outbound Flight</th>
         <td mat-cell *matCellDef="let element"> {{element.outboundFlight.departureAirportName }}  </td>
       </ng-container>
 
       <ng-container matColumnDef="returnFlightAirport">
-        <th mat-header-cell *matHeaderCellDef>Departure airport name</th>
+        <th mat-header-cell *matHeaderCellDef>Return Flight</th>
         <td mat-cell *matCellDef="let element"> {{element.returnFlight.departureAirportName}} </td>
       </ng-container>
-
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
@@ -48,40 +47,40 @@
         <input matInput (change)="calculateCost($event)" [(ngModel)]="numberOfOffers" name="numberOfOffers">
       </mat-form-field>
 
-      <mat-form-field class="example-full-width">
+      <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>Single rooms number ({{hotel.numSingleRooms}} available)</mat-label>
         <input matInput [(ngModel)]="singleRoomsNumber" name="singleRoomsNumber">
       </mat-form-field>
 
-      <mat-form-field class="example-full-width">
+      <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>Double rooms number ({{hotel.numDoubleRooms}} available)</mat-label>
         <input matInput [(ngModel)]="doubleRoomsNumber" name="doubleRoomsNumber">
       </mat-form-field>
 
-      <mat-form-field class="example-full-width">
+      <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>Triple rooms number ({{hotel.numTripleRooms}} available)</mat-label>
         <input matInput [(ngModel)]="tripleRoomsNumber" name="tripleRoomsNumber">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range (before {{hotel.ageRange0.upperBound}}
-          - {{offer.hotelBrief.ageRange0.pricePerNight}})
+        <mat-label>No. with age range ({{hotel.ageRange0.lowerBound}} - {{hotel.ageRange0.upperBound}}):
+           {{hotel.ageRange0.pricePerNight}}$)
         </mat-label>
-        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)">
+        <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)" name="ageRange0NumberOfPeople">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range (before {{hotel.ageRange1.upperBound}}
-          - {{hotel.ageRange1.pricePerNight}})
+        <mat-label>No. with age range ({{hotel.ageRange1.lowerBound}} - {{hotel.ageRange1.upperBound}}):
+           {{hotel.ageRange1.pricePerNight}}$)
         </mat-label>
-        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)">
+        <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)" name="ageRange1NumberOfPeople">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range (before {{hotel.ageRange2.upperBound}}
-          - {{hotel.ageRange2.pricePerNight}})
+        <mat-label>No. with age range ({{hotel.ageRange2.lowerBound}} - {{hotel.ageRange2.upperBound}}):
+           {{hotel.ageRange2.pricePerNight}}$)
         </mat-label>
-        <input matInput  [(ngModel)]="ageRange2NumberOfPeople" (change)="calculateCost($event)">
+        <input matInput  [(ngModel)]="ageRange2NumberOfPeople" (change)="calculateCost($event)" name="ageRange2NumberOfPeople">
       </mat-form-field>
       <mat-card-actions>
         <button mat-stroked-button type="submit">Book</button>

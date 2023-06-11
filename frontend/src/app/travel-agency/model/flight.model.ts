@@ -2,12 +2,12 @@ import {FlyingModel} from "./flying.model";
 
 export class FlightModel {
 
-  public departure: FlyingModel;
-  public arrival: FlyingModel;
+  public outboundFlight: FlyingModel;
+  public returnFlight: FlyingModel;
 
 
-  constructor(departure: FlyingModel, arrival: FlyingModel) {
-    this.departure = departure;
-    this.arrival = arrival;
+  constructor(outboundFlight: FlyingModel, returnFlight: FlyingModel) {
+    this.outboundFlight = outboundFlight;
+    this.returnFlight = returnFlight;
   }
 }
