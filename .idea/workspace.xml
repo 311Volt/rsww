@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/WebsocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/dto/OfferListDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferDecreaseAmountEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferDecreaseAmountEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferEventsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferEventsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/controller/OfferQuertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/controller/OfferQuertController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/entity/Offer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/restadmin/FlightAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/restadmin/FlightAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util-scrapper/output/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/util-scrapper/output/importer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +77,7 @@
       <recent name="com.yetistudios.rsww.touroperator.query" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.svc-gateway">
+  <component name="RunManager" selected="Multirun.rsww-application">
     <configuration name="svc-flight" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwflight.RswwFlightApplication" />
       <module name="svc-flight" />
@@ -144,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rsww-application" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
+    <configuration name="rsww-application" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="false" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
       <runConfiguration name="local-devenv" type="Docker" />
       <runConfiguration name="svc-hotel" type="Application" />
       <runConfiguration name="svc-flight" type="Application" />
@@ -153,6 +143,7 @@
       <runConfiguration name="svc-payment" type="Application" />
       <runConfiguration name="svc-travel-agency" type="Application" />
       <runConfiguration name="svc-saga-orchestrator" type="Application" />
+      <runConfiguration name="svc-gateway" type="Application" />
       <method v="2" />
     </configuration>
     <configuration name="local-devenv" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
