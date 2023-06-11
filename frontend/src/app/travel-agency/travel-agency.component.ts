@@ -40,7 +40,7 @@ export class TravelAgencyComponent implements OnInit {
   searchFormInit() {
     this.searchForm = new FormGroup({
       country: new FormControl('', Validators.pattern('^[a-zA-Z ]+$')),
-      numberOfOffers: new FormControl(''),
+      numberOfOffers: new FormControl('', Validators.pattern(/^-?(0|[1-9]\d*)?$/)),
       startDate: new FormControl('')
     });
   }

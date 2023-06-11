@@ -1,7 +1,9 @@
 package com.yetistudios.rsww.rswwhotel.query.rest;
 
+import com.yetistudios.rsww.common.dto.HotelDocument;
 import com.yetistudios.rsww.common.dto.HotelSummary;
 import com.yetistudios.rsww.common.messages.query.CheckHotelAvailabilityQuery;
+import com.yetistudios.rsww.common.messages.query.GetHotelInfoQuery;
 import com.yetistudios.rsww.common.messages.query.GetRandomHotelQuery;
 import com.yetistudios.rsww.rswwhotel.query.HotelMiscQueryHandler;
 import com.yetistudios.rsww.rswwhotel.query.repository.HotelRepository;
@@ -43,5 +45,11 @@ public class HotelOccupationQueryRestController {
     @GetMapping("/random-hotel-by")
     public HotelSummary getRandomHotel(@RequestParam("country") String country) {
         return hotelMiscQueryHandler.handle(GetRandomHotelQuery.builder().country(country).build()).orElseThrow();
+    }
+
+    @CrossOrigin
+    @GetMapping("/hotel")
+    public HotelDocument getHotel(@RequestParam("id") String hotelId) {
+        return hotelMiscQueryHandler.handle(GetHotelInfoQuery.builder().hotelCode(hotelId).build()).orElseThrow();
     }
 }

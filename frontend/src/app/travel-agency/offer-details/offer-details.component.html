@@ -51,39 +51,34 @@
 
       <mat-form-field class="example-full-width">
         <mat-label>Single rooms number</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="singleRoomsNumber">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
         <mat-label>Double rooms number</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="doubleRoomsNumber">
       </mat-form-field>
 
       <mat-form-field class="example-full-width">
         <mat-label>Triple rooms number</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="tripleRoomsNumber">
       </mat-form-field>
 
-      <mat-form-field class="example-full-width">
-        <mat-label>Quad rooms number</mat-label>
-        <input matInput>
-      </mat-form-field>
-
-      <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange0 !== undefined">
+      <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>No. with age range (before {{offer.hotel.ageRange0.upperBound}}
           - {{offer.hotel.ageRange0.pricePerNight}})
         </mat-label>
         <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
-      <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange1 !== undefined">
+      <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>No. with age range (before {{offer.hotel.ageRange1.upperBound}}
           - {{offer.hotel.ageRange1.pricePerNight}})
         </mat-label>
         <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
-      <mat-form-field class="example-full-width" *ngIf="offer.hotel.ageRange2 !== undefined">
+      <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
         <mat-label>No. with age range (before {{offer.hotel.ageRange2.upperBound}}
           - {{offer.hotel.ageRange2.pricePerNight}})
         </mat-label>
