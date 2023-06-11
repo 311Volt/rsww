@@ -41,7 +41,6 @@ public class OfferQuertController {
         return offers.getOfferList();
     }
 
-    //not working TODO
     @CrossOrigin
     @GetMapping("/detailed")
     public Offer getOffer(@RequestParam("id") String offerId) {
