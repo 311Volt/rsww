@@ -1,9 +1,9 @@
 package com.yetistudios.rsww.touroperator.cmd.controller;
 
-import com.yetistudios.rsww.messages.command.DecreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
 import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
 import com.yetistudios.rsww.touroperator.cmd.dto.OfferDecreaseAmountDto;
-import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
+import com.yetistudios.rsww.common.messages.entity.Offer;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.web.bind.annotation.*;
 

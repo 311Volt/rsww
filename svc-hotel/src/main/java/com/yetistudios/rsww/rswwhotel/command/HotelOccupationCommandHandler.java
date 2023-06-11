@@ -43,7 +43,7 @@ public class HotelOccupationCommandHandler {
     void on(CancelHotelBookingCommand command) {
         service.cancelReservation(command);
         eventGateway.publish(
-                HotelReservationCanceledEvent
+                HotelReservationFailedEvent
                         .builder()
                         .reservationId(command.getReservationId())
                         .reason("Cancel Hotel booking for " + command.getReservationId())

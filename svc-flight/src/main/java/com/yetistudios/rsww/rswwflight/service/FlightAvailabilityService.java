@@ -112,7 +112,6 @@ public class FlightAvailabilityService {
             saveSnapshot(getCurrentAvailabilityOf(command.flightNumber).orElseThrow());
             log.info("snapshot saved for flight {}", command.flightNumber);
         }
-
     }
 
     public void cancelFlightBooking(CancelFlightBookingCommand command) {

@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.entity;
+package com.yetistudios.rsww.common.messages.entity;
 
 import com.yetistudios.rsww.common.dto.FlightDocument;
 import lombok.Builder;

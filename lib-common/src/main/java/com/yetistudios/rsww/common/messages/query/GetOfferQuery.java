@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.messages.query;
+package com.yetistudios.rsww.common.messages.query;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -3,8 +3,10 @@ package com.yetistudios.rsww.rswwflight.entity;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -13,6 +15,8 @@ import java.util.List;
 @Entity
 @Table(name = "flight_availability_snapshots")
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class FlightAvailabilitySnapshot {
     @EmbeddedId
     public FlightNumAndTimestampId id;

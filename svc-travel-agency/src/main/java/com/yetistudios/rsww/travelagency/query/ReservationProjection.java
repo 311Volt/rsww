@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.travelagency.query;
 
-import com.yetistudios.rsww.messages.entity.ReservationDto;
-import com.yetistudios.rsww.messages.query.GetReservationQuery;
+import com.yetistudios.rsww.common.dto.ReservationDto;
+import com.yetistudios.rsww.common.messages.query.GetReservationQuery;
 import com.yetistudios.rsww.travelagency.common.entity.Reservation;
 import com.yetistudios.rsww.travelagency.common.repository.ReservationRepository;
 import org.axonframework.queryhandling.QueryHandler;

@@ -1,10 +1,10 @@
 package com.yetistudios.rsww.touroperator.cmd.event;
 
-import com.yetistudios.rsww.messages.event.OfferDecreaseAmountEvent;
-import com.yetistudios.rsww.messages.event.OfferIncreaseAmountEvent;
+import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
+import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
 import com.yetistudios.rsww.touroperator.cmd.exception.OfferDoesNotExistException;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
-import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
+import com.yetistudios.rsww.common.messages.entity.Offer;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.axonframework.messaging.interceptors.ExceptionHandler;

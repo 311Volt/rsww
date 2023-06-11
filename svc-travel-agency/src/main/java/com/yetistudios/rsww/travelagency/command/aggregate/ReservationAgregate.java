@@ -1,9 +1,9 @@
 package com.yetistudios.rsww.travelagency.command.aggregate;
 
-import com.yetistudios.rsww.messages.command.CancelReservationCommand;
-import com.yetistudios.rsww.messages.event.ReservationCanceledEvent;
+import com.yetistudios.rsww.common.messages.command.CancelReservationCommand;
+import com.yetistudios.rsww.common.messages.event.ReservationCanceledEvent;
+import com.yetistudios.rsww.common.messages.event.ReservationCreatedEvent;
 import com.yetistudios.rsww.travelagency.command.command.CreateReservationCommand;
-import com.yetistudios.rsww.messages.event.ReservationCreatedEvent;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;

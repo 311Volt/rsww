@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.query.queries;
+package com.yetistudios.rsww.common.messages.query;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

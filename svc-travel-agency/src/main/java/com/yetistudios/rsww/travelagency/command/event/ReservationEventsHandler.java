@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.travelagency.command.event;
 
-import com.yetistudios.rsww.messages.event.ReservationCanceledEvent;
-import com.yetistudios.rsww.messages.event.ReservationCreatedEvent;
+import com.yetistudios.rsww.common.messages.event.ReservationCanceledEvent;
+import com.yetistudios.rsww.common.messages.event.ReservationCreatedEvent;
 import com.yetistudios.rsww.travelagency.common.entity.Reservation;
 import com.yetistudios.rsww.travelagency.common.repository.ReservationRepository;
 import org.axonframework.eventhandling.EventHandler;

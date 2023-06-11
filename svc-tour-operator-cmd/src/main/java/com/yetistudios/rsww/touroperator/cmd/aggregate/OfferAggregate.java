@@ -1,12 +1,13 @@
 package com.yetistudios.rsww.touroperator.cmd.aggregate;
 
+import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.command.IncreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
+import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
 import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
-import com.yetistudios.rsww.touroperator.cmd.commands.DecreaseOfferAmountCommand;
-import com.yetistudios.rsww.touroperator.cmd.entity.FlightBriefPair;
+import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
 import com.yetistudios.rsww.touroperator.cmd.event.OfferCreatedEvent;
-import com.yetistudios.rsww.touroperator.cmd.event.OfferDecreaseAmountEvent;
-import com.yetistudios.rsww.touroperator.cmd.entity.FlightBrief;
-import com.yetistudios.rsww.touroperator.cmd.entity.HotelBrief;
+import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
@@ -40,7 +41,7 @@ public class OfferAggregate {
     }
 
     @CommandHandler
-    public OfferAggregate(DecreaseOfferAmountCommand decreaseOfferAmountCommand) {
+    public void handle(DecreaseOfferAmountCommand decreaseOfferAmountCommand) {
 
         OfferDecreaseAmountEvent offerDecreaseAmountEvent = new OfferDecreaseAmountEvent();
 

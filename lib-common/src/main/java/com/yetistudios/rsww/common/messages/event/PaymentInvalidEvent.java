@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.messages.event;
+package com.yetistudios.rsww.common.messages.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

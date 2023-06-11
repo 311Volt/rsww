@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.common.messages.query;
+package com.yetistudios.rsww.common.messages.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,8 +7,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class GetReservationQuery {
+@AllArgsConstructor
+public class ReturnPlaneReservationFailedEvent {
     public String reservationId;
+    public String reason;
 }

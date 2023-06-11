@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.messages.entity;
+package com.yetistudios.rsww.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.messages.command;
+package com.yetistudios.rsww.common.messages.command;
 
 import lombok.Builder;
 import lombok.Data;
@@ -8,4 +8,5 @@ import lombok.Data;
 public class ValidatePaymentCommand {
     private String reservationId;
     private double price;
+    private String clientId;
 }

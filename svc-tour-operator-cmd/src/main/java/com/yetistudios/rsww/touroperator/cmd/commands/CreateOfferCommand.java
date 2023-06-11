@@ -1,8 +1,7 @@
 package com.yetistudios.rsww.touroperator.cmd.commands;
 
-import com.yetistudios.rsww.touroperator.cmd.entity.FlightBrief;
-import com.yetistudios.rsww.touroperator.cmd.entity.FlightBriefPair;
-import com.yetistudios.rsww.touroperator.cmd.entity.HotelBrief;
+import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
+import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import lombok.Builder;
 import lombok.Data;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
