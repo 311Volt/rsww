@@ -14,12 +14,12 @@ public class TourOperatorCmdApplication {
 		SpringApplication.run(TourOperatorCmdApplication.class, args);
 	}
 
-	/*
+
 	@Autowired
 	public void configure(EventProcessingConfigurer configurer){
 		configurer.registerListenerInvocationErrorHandler(
 				"offer",
 				configuration -> new OfferServiceEventsErrorHandler()
 		);
-	}*/
+	}
 }

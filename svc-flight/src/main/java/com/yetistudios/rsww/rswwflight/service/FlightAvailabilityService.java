@@ -116,16 +116,16 @@ public class FlightAvailabilityService {
 
     public void cancelFlightBooking(CancelFlightBookingCommand command) {
         var reservationEvents = eventRepository.findByReservationId(command.reservationId);
-        if(reservationEvents.size() != 1) {
+        if(reservationEvents.size() < 1) {
             throw new CannotCancelBookingException("Reservation does not exist or has already been cancelled");
         }
-        var originalEvent = reservationEvents.stream().findFirst().orElseThrow();
-        originalEvent.id.timestamp = Timestamp.from(Instant.now());
-        originalEvent.deltaSeats = -originalEvent.deltaSeats;
-        eventRepository.save(originalEvent);
-        log.info("Reservation {} for flight #{} has been cancelled ({} newly free seats)",
-                command.reservationId, originalEvent.id.flightNumber, -originalEvent.deltaSeats
-        );
-
+        for (var originalEvent: reservationEvents) {
+            originalEvent.id.timestamp = Timestamp.from(Instant.now());
+            originalEvent.deltaSeats = -originalEvent.deltaSeats;
+            eventRepository.save(originalEvent);
+            log.info("Reservation {} for flight #{} has been cancelled ({} newly free seats)",
+                    command.reservationId, originalEvent.id.flightNumber, -originalEvent.deltaSeats
+            );
+        }
     }
 }

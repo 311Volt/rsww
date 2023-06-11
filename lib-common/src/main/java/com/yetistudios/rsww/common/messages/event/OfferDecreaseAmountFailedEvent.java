@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PaymentInvalidEvent {
-    private String reservationId;
+public class OfferDecreaseAmountFailedEvent {
+    public String reservationId;
+    public String reason;
 }

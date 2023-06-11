@@ -35,7 +35,7 @@ public class ReservationProcessingSaga {
         log.info("\nReservationCreatedEvent for reservation #{}", event.getReservationId());
         GetOfferQuery getOfferQuery = new GetOfferQuery(event.getOfferId());
 
-        Offer offer = null;
+        Offer offer;
         try {
             offer = queryGateway.query(getOfferQuery, ResponseTypes.instanceOf(Offer.class)).join();
         } catch (Exception e){
@@ -87,7 +87,7 @@ public class ReservationProcessingSaga {
         log.info("\nHotelReservationSuccessfulEvent for reservation #{}", event.getReservationId());
         GetReservationQuery getReservationQuery = new GetReservationQuery(event.getReservationId());
 
-        ReservationDto reservation = null;
+        ReservationDto reservation;
         try {
             reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
         } catch (Exception e){
@@ -98,7 +98,7 @@ public class ReservationProcessingSaga {
 
         GetOfferQuery getOfferQuery = new GetOfferQuery(reservation.getOfferId());
 
-        Offer offer = null;
+        Offer offer;
         try {
             offer = queryGateway.query(getOfferQuery, ResponseTypes.instanceOf(Offer.class)).join();
         } catch (Exception e){
@@ -145,7 +145,7 @@ public class ReservationProcessingSaga {
         log.info("\nPlaneReservationSuccessfulEvent for reservation #{}", event.getReservationId());
         GetReservationQuery getReservationQuery = new GetReservationQuery(event.getReservationId());
 
-        ReservationDto reservation = null;
+        ReservationDto reservation;
         try {
             reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
         } catch (Exception e){
@@ -156,7 +156,7 @@ public class ReservationProcessingSaga {
 
         GetOfferQuery getOfferQuery = new GetOfferQuery(reservation.getOfferId());
 
-        Offer offer = null;
+        Offer offer;
         try {
             offer = queryGateway.query(getOfferQuery, ResponseTypes.instanceOf(Offer.class)).join();
         } catch (Exception e){
@@ -197,7 +197,7 @@ public class ReservationProcessingSaga {
         log.info("\nReturnPlaneReservationSuccessfulEvent for reservation #{}", event.getReservationId());
         GetReservationQuery getReservationQuery = new GetReservationQuery(event.getReservationId());
 
-        ReservationDto reservation = null;
+        ReservationDto reservation;
         try {
             reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
         } catch (Exception e){
@@ -218,7 +218,6 @@ public class ReservationProcessingSaga {
             log.error("DecreaseOfferAmountCommand for reservation #{}, \n Cause: #{}", event.getReservationId(), e.getCause());
             cancelPlaneReservationRequest(event.getReservationId());
         }
-
     }
 
     private void cancelPlaneReservationRequest(String reservationId){
@@ -227,14 +226,18 @@ public class ReservationProcessingSaga {
         commandGateway.send(command);
     }
 
-
+    @SagaEventHandler(associationProperty = "reservationId")
+    private void handle(OfferDecreaseAmountFailedEvent event){
+        log.info("OfferDecreaseAmountFailedEvent for reservation #{}", event.getReservationId());
+        cancelPlaneReservationRequest(event.getReservationId());
+    }
 
     @SagaEventHandler(associationProperty = "reservationId")
-    private void handle(OfferDecreaseAmountEvent event){
+    private void handle(OfferDecreaseAmountSuccessfulEvent event){
         log.info("\nOfferDecreaseAmountEvent for reservation #{}", event.getReservationId());
         GetReservationQuery getReservationQuery = new GetReservationQuery(event.getReservationId());
 
-        ReservationDto reservation = null;
+        ReservationDto reservation;
         try {
             reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
         } catch (Exception e){
@@ -247,6 +250,7 @@ public class ReservationProcessingSaga {
             ValidatePaymentCommand validatePaymentCommand = ValidatePaymentCommand.builder()
                     .reservationId(event.getReservationId())
                     .price(reservation.getPrice())
+                    .clientId(reservation.getClientId())
                     .build();
 
             commandGateway.send(validatePaymentCommand);
@@ -257,9 +261,10 @@ public class ReservationProcessingSaga {
 
     }
 
+
     private void cancelOfferDecreaseAmountCommand(String reservationId){
         GetReservationQuery getReservationQuery = new GetReservationQuery(reservationId);
-        ReservationDto reservation = null;
+        ReservationDto reservation;
         try {
             reservation = queryGateway.query(getReservationQuery, ResponseTypes.instanceOf(ReservationDto.class)).join();
         } catch (Exception e){

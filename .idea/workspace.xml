@@ -5,100 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/BookReturnFlightCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/ReturnPlaneReservationFailedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/ReturnPlaneReservationSuccessfulEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/config/DataSourceAutoConfigConditional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/config/MongoAutoConfigConditional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/config/XStreamConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferDecreaseAmountFailedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferDecreaseAmountSuccessfulEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/exception/OfferAmountIsInsufficientException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/CancelReservationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/CancelReservationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/DecreaseOfferAmountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/DecreaseOfferAmountCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/IncreaseOfferAmountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/IncreaseOfferAmountCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/ValidatePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/ValidatePaymentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/OfferFlight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/OfferHotel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/ReservationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/dto/ReservationDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/HotelReservationCanceledEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferDecreaseAmountEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferDecreaseAmountEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferIncreaseAmountEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferIncreaseAmountEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/PaymentInvalidEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/PaymentInvalidEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/PaymentValidEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/PaymentValidEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/ReservationCanceledEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/ReservationCanceledEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/ReservationCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/ReservationCreatedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetOfferQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetOfferQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetReservationQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetReservationQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/command/FlightCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/command/FlightCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailability.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailabilityDeltaEventEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailabilityDeltaEventEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailabilitySnapshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightAvailabilitySnapshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightNumAndTimestampId.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/entity/FlightNumAndTimestampId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightAvailabilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightAvailabilityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/HotelOccupationCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/command/HotelOccupationCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/commands/CreateOfferCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/commands/CreateOfferCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/controller/OfferCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/controller/OfferCommandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/entity/FlightBrief.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/FlightBrief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/entity/FlightBriefPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/FlightBriefPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/entity/HotelBrief.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/entity/HotelBrief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/entity/Offer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/TourOperatorCmdApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/TourOperatorCmdApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferEventsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferEventsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGeneratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGeneratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/repository/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/repository/OfferRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/controller/OfferQuertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/controller/OfferQuertController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/dto/DetailedOfferDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/dto/DetailedOfferDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/queries/GetOffersQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetOffersQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/repository/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/repository/OfferRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/svc-tour-operator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/application-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/TourOperatorApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/aggregate/OfferAggregate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/commands/CreateOfferCommand$CreateOfferCommandBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/commands/CreateOfferCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/controller/OfferCommandController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/event/OfferCreatedEvent$OfferCreatedEventBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/event/OfferCreatedEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/event/OfferEventsHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/exception/OfferServiceEventsErrorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/command/repository/OfferRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/entity/Flight$FlightBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/entity/Flight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/entity/Hotel$HotelBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/entity/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/entity/Offer$OfferBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/entity/Offer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/query/controller/OfferQuertController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/query/porjection/OfferProjection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/classes/com/rsww/touroperator/query/queries/GetOffersQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/svc-tour-operator-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator/target/test-classes/com/rsww/touroperator/TourOperatorApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/command/aggregate/ReservationAgregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/command/aggregate/ReservationAgregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/command/event/ReservationEventsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/command/event/ReservationEventsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/query/ReservationProjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/query/ReservationProjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/exception/OfferDoesNotExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/exception/OfferDoesNotExistException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +190,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="saga" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -282,44 +212,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/controller/OfferQuertController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/BookHotelCommand.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightAvailabilityService.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
           <line>190</line>
           <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>196</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/command/FlightCommandHandler.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>125</line>
-          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
@@ -327,9 +222,19 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="54" />
+          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
+          <line>217</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
+          <line>300</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

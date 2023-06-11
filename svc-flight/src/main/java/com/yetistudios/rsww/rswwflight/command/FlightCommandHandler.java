@@ -55,7 +55,8 @@ public class FlightCommandHandler {
     @CommandHandler
     public void on(CancelFlightBookingCommand command) {
         flightAvailabilityService.cancelFlightBooking(command);
-        eventGateway.publish(new PlaneReservationFailedEvent(command.reservationId,"Cancel Flight booking for " + command.getReservationId()));
+        if(!command.getReservationId().isEmpty())
+            eventGateway.publish(new PlaneReservationFailedEvent(command.reservationId,"Cancel Flight booking for " + command.getReservationId()));
     }
 
 }
