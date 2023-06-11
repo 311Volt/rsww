@@ -1,7 +1,7 @@
 <mat-card class="example-card" style="margin-top: 16px;">
   <mat-card-header>
-    <mat-card-title *ngIf="offer !== undefined">{{offer.hotel.country}}</mat-card-title>
-    <mat-card-subtitle *ngIf="offer !== undefined">{{offer.hotel.name}} {{offer.hotel.standard}}stars
+    <mat-card-title *ngIf="offer !== undefined">{{offer.hotelBrief.country}}</mat-card-title>
+    <mat-card-subtitle *ngIf="offer !== undefined">{{offer.hotelBrief.name}} {{offer.hotelBrief.standard}}stars
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
@@ -17,7 +17,7 @@
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.startDate | date: 'dd.MM.yyyy'}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.endDate | date: 'dd.MM.yyyy'}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.numberOfOffers}}</span>
-        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.price}}</span>
+        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.suggestedPrice}}</span>
 
       </div>
     </div>
@@ -65,22 +65,22 @@
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range (before {{offer.hotel.ageRange0.upperBound}}
-          - {{offer.hotel.ageRange0.pricePerNight}})
+        <mat-label>No. with age range (before {{hotel.ageRange0.upperBound}}
+          - {{offer.hotelBrief.ageRange0.pricePerNight}})
         </mat-label>
         <input matInput [(ngModel)]="ageRange0NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range (before {{offer.hotel.ageRange1.upperBound}}
-          - {{offer.hotel.ageRange1.pricePerNight}})
+        <mat-label>No. with age range (before {{hotel.ageRange1.upperBound}}
+          - {{hotel.ageRange1.pricePerNight}})
         </mat-label>
         <input matInput  [(ngModel)]="ageRange1NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>
 
       <mat-form-field class="example-full-width" *ngIf="hotel !== undefined">
-        <mat-label>No. with age range (before {{offer.hotel.ageRange2.upperBound}}
-          - {{offer.hotel.ageRange2.pricePerNight}})
+        <mat-label>No. with age range (before {{hotel.ageRange2.upperBound}}
+          - {{hotel.ageRange2.pricePerNight}})
         </mat-label>
         <input matInput  [(ngModel)]="ageRange2NumberOfPeople" (change)="calculateCost($event)">
       </mat-form-field>

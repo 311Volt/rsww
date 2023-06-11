@@ -27,12 +27,12 @@ export class TravelAgencyService{
     this.http.post<Offer>('http://localhost:8098/order', {
       offerId: offer.id,
       clientId: this.userEmail,
-      price: offer.price,
+      price: offer.suggestedPrice,
       //departureAirportName: offer.flights,
       nrOfPeople: offer.numberOfOffers,
-      numSingleRooms: offer.hotel.numSingleRooms,
-      numDoubleRooms: offer.hotel.numDoubleRooms,
-      numTripleRooms: offer.hotel.numTripleRooms
+      numSingleRooms: offer.hotelBrief.numSingleRooms,
+      numDoubleRooms: offer.hotelBrief.numDoubleRooms,
+      numTripleRooms: offer.hotelBrief.numTripleRooms
     }).subscribe();
 
   }

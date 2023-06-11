@@ -34,8 +34,8 @@ export class OfferDetailsComponent implements OnInit {
         this.travelService.getOffers().subscribe(response => {
           this.offer = response.find(offer => offer.id === this.id);
           this.dataSource = this.offer.flights;
-          this.basePrice = this.offer.price;
-          this.travelService.getHotel(this.offer.hotel.code).subscribe(hotel => {
+          this.basePrice = this.offer.suggestedPrice;
+          this.travelService.getHotel(this.offer.hotelBrief.id).subscribe(hotel => {
             this.hotel = hotel;
           });
           console.log('done')
@@ -50,6 +50,6 @@ export class OfferDetailsComponent implements OnInit {
   }
 
   calculateCost($event: Event) {
-    this.offer.price = +(event.target as HTMLInputElement).value * this.basePrice;
+    this.offer.suggestedPrice = +(event.target as HTMLInputElement).value * this.basePrice;
   }
 }
