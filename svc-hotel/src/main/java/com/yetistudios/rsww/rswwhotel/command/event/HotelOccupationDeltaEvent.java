@@ -18,6 +18,10 @@ public class HotelOccupationDeltaEvent {
 
     @Indexed
     public String hotelCode;
+
+    @Indexed
+    public String reservationId;
+
     public int deltaSingleRooms;
     public int deltaDoubleRooms;
     public int deltaTripleRooms;

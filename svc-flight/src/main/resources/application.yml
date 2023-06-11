@@ -4,8 +4,14 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/svc_flight
-    username: rsww175651
-    password: jpg4ever
+    username: root
+    password: password
   jpa:
     hibernate:
       ddl-auto: update
+
+axon:
+  serializer:
+    general: jackson
+    events: jackson
+    messages: jackson

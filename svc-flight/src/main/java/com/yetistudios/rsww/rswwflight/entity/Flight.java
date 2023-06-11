@@ -1,13 +1,15 @@
 package com.yetistudios.rsww.rswwflight.entity;
 
-import com.yetistudios.rsww.messages.misc.DepartureOrArrivalDocument;
-import com.yetistudios.rsww.messages.misc.FlightDocument;
-import com.yetistudios.rsww.rswwflight.util.DatetimeUtil;
+import com.yetistudios.rsww.common.dto.DepartureOrArrivalDocument;
+import com.yetistudios.rsww.common.dto.FlightDocument;
+import com.yetistudios.rsww.common.util.DatetimeUtil;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Builder
@@ -17,6 +19,8 @@ import lombok.Builder;
         @Index(columnList = "departureTimestamp"),
         @Index(columnList = "arrivalTimestamp")
 })
+@NoArgsConstructor
+@AllArgsConstructor
 public class Flight {
     @Id
     public Integer flightNumber;

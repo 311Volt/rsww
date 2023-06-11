@@ -13,9 +13,9 @@ public interface FlightAvailabilityDeltaEventRepository
 
     @Query(nativeQuery = true, value = """
         SELECT * FROM flight_booking_events ev
-            WHERE ev.id.flightNumber = prm.flightNumber
-            AND ev.id.timestamp > prm.timestamp
-            ORDER BY ev.id.timestamp ASC
+            WHERE ev.flight_number = :#{#prm.flightNumber}
+            AND ev.timestamp > :#{#prm.timestamp}
+            ORDER BY ev.timestamp ASC
     """)
     List<FlightAvailabilityDeltaEventEntity> findAllEventsAfter(@Param("prm") FlightNumAndTimestampId prm);
 

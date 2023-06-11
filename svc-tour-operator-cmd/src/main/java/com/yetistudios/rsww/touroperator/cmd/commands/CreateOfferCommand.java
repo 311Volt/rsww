@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.touroperator.cmd.commands;
 
-import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
-import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;
+import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
+import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import lombok.Builder;
 import lombok.Data;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
@@ -14,13 +14,12 @@ import java.util.List;
 public class CreateOfferCommand {
 
     @TargetAggregateIdentifier
-    private String id;
     private String offerId;
-    private Hotel hotel;
+    private HotelBrief hotelBrief;
     private Double price;
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<FlightBriefPair> flights;
 
 }

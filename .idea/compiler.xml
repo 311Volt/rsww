@@ -9,19 +9,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="svc-tour-operator-query" />
         <module name="svc-saga-orchestrator" />
+        <module name="rsww-gateway" />
         <module name="svc-payment" />
         <module name="svc-flight" />
         <module name="svc-gateway" />
-        <module name="lib-messages" />
+        <module name="lib-common" />
         <module name="svc-travel-agency" />
         <module name="svc-hotel" />
         <module name="svc-tour-operator-cmd" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="axon-spring-native" target="1.8" />
+      <module name="lib-messages" target="17" />
       <module name="rsww-agency" target="17" />
       <module name="rsww-client" target="17" />
-      <module name="rsww-gateway" target="17" />
       <module name="rsww-hotel" target="17" />
       <module name="rsww-tour-operator" target="17" />
       <module name="rsww-travel-agency" target="17" />
@@ -32,7 +34,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="lib-messages" options="-parameters" />
+      <module name="lib-common" options="-parameters" />
       <module name="rsww-agency" options="-parameters" />
       <module name="rsww-client" options="-parameters" />
       <module name="rsww-gateway" options="-parameters" />

@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.query;
 
-import com.yetistudios.rsww.messages.query.GetHotelBookingPriceQuery;
+import com.yetistudios.rsww.common.messages.query.GetHotelBookingPriceQuery;
 import com.yetistudios.rsww.rswwhotel.query.entity.Hotel;
 import com.yetistudios.rsww.rswwhotel.query.repository.HotelRepository;
 import com.yetistudios.rsww.rswwhotel.query.service.HotelOccupationQueryService;
@@ -33,7 +33,7 @@ public class HotelPriceQueryHandler {
     }
 
 
-    public double priceForPerson(Hotel hotel, int nights, String birthDate) {
+    public Double priceForPerson(Hotel hotel, int nights, String birthDate) {
         Instant instBirthDate = Instant.ofEpochSecond(dateStrToUnix(birthDate));
         int age = (int) (Duration.between(instBirthDate, Instant.now()).toDays() / 365);
         if(hotel.ageRange0.containsAge(age)) {
@@ -43,7 +43,7 @@ public class HotelPriceQueryHandler {
         } else if(hotel.ageRange2.containsAge(age)) {
             return nights * hotel.ageRange2.pricePerNight;
         }
-        return 0;
+        return 0.0;
     }
 
     @QueryHandler

@@ -1,12 +1,13 @@
 package com.yetistudios.rsww.rswwhotel.query.service;
 
-import com.yetistudios.rsww.messages.command.BookHotelCommand;
-import com.yetistudios.rsww.messages.query.CheckHotelAvailabilityQuery;
+import com.yetistudios.rsww.common.dto.HotelAvailabilityVector;
+import com.yetistudios.rsww.common.messages.command.BookHotelCommand;
+import com.yetistudios.rsww.common.messages.query.CheckHotelAvailabilityQuery;
 import com.yetistudios.rsww.rswwhotel.command.event.HotelOccupationDeltaEvent;
 import com.yetistudios.rsww.rswwhotel.command.repository.HotelOccupationDeltaEventRepository;
 import com.yetistudios.rsww.rswwhotel.query.entity.Hotel;
 import com.yetistudios.rsww.rswwhotel.query.entity.HotelOccupation;
-import com.yetistudios.rsww.rswwhotel.query.entity.HotelOccupationVector;
+import com.yetistudios.rsww.common.dto.HotelRoomVector;
 import com.yetistudios.rsww.rswwhotel.query.repository.HotelRepository;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -63,7 +64,7 @@ public class HotelOccupationQueryService {
     }
 
     @SneakyThrows
-    public Optional<HotelOccupationVector> getMaxOccupationDuring(String hotelCode, Long beginTimestamp, Long endTimestamp) {
+    public Optional<HotelRoomVector> getMaxOccupationDuring(String hotelCode, Long beginTimestamp, Long endTimestamp) {
 
         if(!hotelRepository.existsByCode(hotelCode)) {
             return Optional.empty();
@@ -73,42 +74,44 @@ public class HotelOccupationQueryService {
         var remainingEvents = getEventsBetween(hotelCode, beginTimestamp, endTimestamp);
 
         HotelOccupation occupation = getInitialStateForReplay(hotelCode, beginTimestamp);
-        HotelOccupationVector result = new HotelOccupationVector(occupation);
+        HotelRoomVector result = occupation.toVector();
         log.debug("{} events found", remainingEvents.size());
         for(HotelOccupationDeltaEvent event: remainingEvents) {
             log.debug("{} consuming event: {} / {},{},{}", hotelCode, event.timestamp, event.deltaSingleRooms, event.deltaDoubleRooms, event.deltaTripleRooms);
             occupation.consumeEvent(event);
-            result.max(new HotelOccupationVector(occupation));
+            result.max(occupation.toVector());
         }
         return Optional.of(result);
     }
 
 
-    public boolean checkHotelAvailability(CheckHotelAvailabilityQuery query) {
+    public HotelAvailabilityVector checkHotelAvailability(CheckHotelAvailabilityQuery query) {
         if(!hotelRepository.existsByCode(query.hotelCode)) {
-            return false;
+            return new HotelAvailabilityVector(0, 0, 0);
         }
 
-        Hotel hotel = hotelRepository.findByCode(query.hotelCode).get();
-        HotelOccupationVector vec = getMaxOccupationDuring(
-                query.hotelCode, query.timestampBegin, query.timestampEnd).get();
+        Hotel hotel = hotelRepository.findByCode(query.hotelCode).orElseThrow();
+        HotelRoomVector vec = getMaxOccupationDuring(
+                query.hotelCode, query.timestampBegin, query.timestampEnd).orElseThrow();
 
-        boolean cannotBook = false;
-        cannotBook |= (vec.takenSingleRooms + query.numSingleRooms > Integer.parseInt(hotel.numSingleRooms));
-        cannotBook |= (vec.takenDoubleRooms + query.numDoubleRooms > Integer.parseInt(hotel.numDoubleRooms));
-        cannotBook |= (vec.takenTripleRooms + query.numTripleRooms > Integer.parseInt(hotel.numTripleRooms));
-        return !cannotBook;
+        return new HotelAvailabilityVector(
+                hotel.numSingleRooms - vec.numSingleRooms,
+                hotel.numDoubleRooms - vec.numDoubleRooms,
+                hotel.numTripleRooms - vec.numTripleRooms
+        );
     }
 
-    public boolean checkReservationAvailability(BookHotelCommand reservation) {
-        return checkHotelAvailability(CheckHotelAvailabilityQuery.builder()
-                .hotelCode(reservation.hotelCode)
-                .timestampBegin(reservation.timestampBegin)
-                .timestampEnd(reservation.timestampEnd)
-                .numSingleRooms(reservation.numSingleRooms)
-                .numDoubleRooms(reservation.numDoubleRooms)
-                .numTripleRooms(reservation.numTripleRooms)
-                .build());
+    public Boolean checkReservationAvailability(BookHotelCommand reservation) {
+        int availability = checkHotelAvailability(
+                CheckHotelAvailabilityQuery
+                        .builder()
+                        .hotelCode(reservation.hotelCode)
+                        .timestampBegin(reservation.timestampBegin)
+                        .timestampEnd(reservation.timestampEnd)
+                        .build())
+                .compareTo(reservation.getVec());
+
+        return availability >= 0;
     }
 
 

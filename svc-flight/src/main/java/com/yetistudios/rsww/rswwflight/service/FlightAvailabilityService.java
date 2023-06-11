@@ -1,8 +1,8 @@
 package com.yetistudios.rsww.rswwflight.service;
 
-import com.yetistudios.rsww.messages.command.BookFlightCommand;
-import com.yetistudios.rsww.messages.command.CancelFlightBookingCommand;
-import com.yetistudios.rsww.messages.query.CheckFlightAvailabilityQuery;
+import com.yetistudios.rsww.common.messages.command.BookFlightCommand;
+import com.yetistudios.rsww.common.messages.command.CancelFlightBookingCommand;
+import com.yetistudios.rsww.common.messages.query.CheckFlightAvailabilityQuery;
 import com.yetistudios.rsww.rswwflight.entity.*;
 import com.yetistudios.rsww.rswwflight.exception.CannotCancelBookingException;
 import com.yetistudios.rsww.rswwflight.exception.FlightUnavailableException;
@@ -112,21 +112,20 @@ public class FlightAvailabilityService {
             saveSnapshot(getCurrentAvailabilityOf(command.flightNumber).orElseThrow());
             log.info("snapshot saved for flight {}", command.flightNumber);
         }
-
     }
 
     public void cancelFlightBooking(CancelFlightBookingCommand command) {
         var reservationEvents = eventRepository.findByReservationId(command.reservationId);
-        if(reservationEvents.size() != 1) {
+        if(reservationEvents.size() < 1) {
             throw new CannotCancelBookingException("Reservation does not exist or has already been cancelled");
         }
-        var originalEvent = reservationEvents.stream().findFirst().orElseThrow();
-        originalEvent.id.timestamp = Timestamp.from(Instant.now());
-        originalEvent.deltaSeats = -originalEvent.deltaSeats;
-        eventRepository.save(originalEvent);
-        log.info("Reservation {} for flight #{} has been cancelled ({} newly free seats)",
-                command.reservationId, originalEvent.id.flightNumber, -originalEvent.deltaSeats
-        );
-
+        for (var originalEvent: reservationEvents) {
+            originalEvent.id.timestamp = Timestamp.from(Instant.now());
+            originalEvent.deltaSeats = -originalEvent.deltaSeats;
+            eventRepository.save(originalEvent);
+            log.info("Reservation {} for flight #{} has been cancelled ({} newly free seats)",
+                    command.reservationId, originalEvent.id.flightNumber, -originalEvent.deltaSeats
+            );
+        }
     }
 }

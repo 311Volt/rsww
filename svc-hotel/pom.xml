@@ -21,10 +21,15 @@
 		</dependency>
 		<dependency>
 			<groupId>com.yetistudios.rsww</groupId>
-			<artifactId>lib-messages</artifactId>
+			<artifactId>lib-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.axonframework.experimental</groupId>-->
+<!--			<artifactId>axon-spring-native</artifactId>-->
+<!--			<version>0.1.0</version>-->
+<!--		</dependency>-->
 
 		<!--		<dependency>-->
 <!--			<groupId>org.springframework.boot</groupId>-->
@@ -58,5 +63,31 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+
+	<profiles>
+		<profile>
+			<id>native</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.graalvm.buildtools</groupId>
+						<artifactId>native-maven-plugin</artifactId>
+						<extensions>true</extensions>
+						<executions>
+							<execution>
+								<id>build-native</id>
+								<goals>
+									<goal>compile-no-fork</goal>
+								</goals>
+								<phase>package</phase>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>

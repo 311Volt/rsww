@@ -2,6 +2,7 @@
     {
         "code": "KTW",
         "name": "Katowice",
+        "volume": 4843650,
         "forDeparture": true
     },
     {
@@ -12,6 +13,7 @@
     {
         "code": "WAW",
         "name": "Warszawa-Chopina",
+        "volume": 18844591,
         "forDeparture": true
     },
     {
@@ -32,6 +34,7 @@
     {
         "code": "POZ",
         "name": "Pozna\u0144",
+        "volume": 2372184,
         "forDeparture": true
     },
     {
@@ -67,6 +70,7 @@
     {
         "code": "WRO",
         "name": "Wroc\u0142aw",
+        "volume": 3543398,
         "forDeparture": true
     },
     {
@@ -127,6 +131,7 @@
     {
         "code": "RZE",
         "name": "Rzesz\u00f3w",
+        "volume": 769252,
         "forDeparture": true
     },
     {
@@ -152,6 +157,7 @@
     {
         "code": "GDN",
         "name": "Gda\u0144sk",
+        "volume": 5361134,
         "forDeparture": true
     },
     {
@@ -162,6 +168,7 @@
     {
         "code": "RDO",
         "name": "Warszawa-Radom",
+        "volume": 3600,
         "forDeparture": true
     },
     {
@@ -172,6 +179,7 @@
     {
         "code": "KRK",
         "name": "Krak\u00f3w",
+        "volume": 8402859,
         "forDeparture": true
     },
     {

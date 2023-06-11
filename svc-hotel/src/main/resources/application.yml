@@ -13,3 +13,10 @@ spring:
       uri: mongodb://localhost:27017/hoteldb
 server:
   port: 1439
+
+
+axon:
+  serializer:
+    general: jackson
+    events: jackson
+    messages: jackson

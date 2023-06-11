@@ -1,7 +1,7 @@
 package com.yetistudios.rsww.touroperator.cmd.event;
 
-import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
-import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;
+import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
+import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,10 +16,10 @@ import java.util.List;
 @AllArgsConstructor
 public class OfferCreatedEvent {
     private String offerId;
-    private Hotel hotel;
+    private HotelBrief hotelBrief;
     private Double price;
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<FlightBriefPair> flights;
 }

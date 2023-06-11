@@ -1,5 +1,6 @@
 package com.yetistudios.rsww.rswwhotel.query.entity;
 
+import com.yetistudios.rsww.common.dto.HotelRoomVector;
 import com.yetistudios.rsww.rswwhotel.command.event.HotelOccupationDeltaEvent;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,6 +16,14 @@ public class HotelOccupation implements Cloneable {
 
     public static HotelOccupation initial(String hotelCode) {
         return HotelOccupation.builder().hotelCode(hotelCode).build();
+    }
+
+    public HotelRoomVector toVector() {
+        return HotelRoomVector.builder()
+                .numSingleRooms(takenSingleRooms)
+                .numDoubleRooms(takenDoubleRooms)
+                .numTripleRooms(takenTripleRooms)
+                .build();
     }
 
     public void consumeEvent(HotelOccupationDeltaEvent event) {

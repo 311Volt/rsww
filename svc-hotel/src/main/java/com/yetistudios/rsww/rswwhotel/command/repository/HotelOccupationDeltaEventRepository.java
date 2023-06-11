@@ -9,6 +9,8 @@ import java.util.List;
 
 @Repository
 public interface HotelOccupationDeltaEventRepository extends MongoRepository<HotelOccupationDeltaEvent, ObjectId> {
-    public List<HotelOccupationDeltaEvent> findByTimestampLessThan(Long timestamp);
-    public List<HotelOccupationDeltaEvent> findByTimestampBetween(Long start, Long end);
+    List<HotelOccupationDeltaEvent> findByTimestampLessThan(Long timestamp);
+    List<HotelOccupationDeltaEvent> findByTimestampBetween(Long start, Long end);
+    List<HotelOccupationDeltaEvent> findByReservationId(String reservationId);
+    void deleteAllByReservationId(String reservationId);
 }

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Offer} from "../offer.model";
+import {Offer} from "../model/offer.model";
 
 @Component({
   selector: 'app-offer-item',

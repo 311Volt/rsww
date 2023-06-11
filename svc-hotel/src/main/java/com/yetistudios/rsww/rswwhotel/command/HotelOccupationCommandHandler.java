@@ -1,8 +1,9 @@
 package com.yetistudios.rsww.rswwhotel.command;
 
-import com.yetistudios.rsww.messages.command.BookHotelCommand;
-import com.yetistudios.rsww.messages.event.HotelReservationFailedEvent;
-import com.yetistudios.rsww.messages.event.HotelReservationSuccessfulEvent;
+import com.yetistudios.rsww.common.messages.command.BookHotelCommand;
+import com.yetistudios.rsww.common.messages.command.CancelHotelBookingCommand;
+import com.yetistudios.rsww.common.messages.event.HotelReservationFailedEvent;
+import com.yetistudios.rsww.common.messages.event.HotelReservationSuccessfulEvent;
 import com.yetistudios.rsww.rswwhotel.command.service.HotelOccupationCommandService;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventhandling.gateway.EventGateway;
@@ -25,7 +26,8 @@ public class HotelOccupationCommandHandler {
             eventGateway.publish(
                     HotelReservationSuccessfulEvent
                         .builder()
-                        .reservationId(command.reservationId).build()
+                        .reservationId(command.reservationId)
+                        .build()
             );
         } catch(Exception ex) {
             eventGateway.publish(
@@ -35,6 +37,17 @@ public class HotelOccupationCommandHandler {
                             .reason(ex.getClass().getName())
             );
         }
+    }
+
+    @CommandHandler
+    void on(CancelHotelBookingCommand command) {
+        service.cancelReservation(command);
+        eventGateway.publish(
+                HotelReservationFailedEvent
+                        .builder()
+                        .reservationId(command.getReservationId())
+                        .reason("Cancel Hotel booking for " + command.getReservationId())
+                        .build());
     }
 
 }

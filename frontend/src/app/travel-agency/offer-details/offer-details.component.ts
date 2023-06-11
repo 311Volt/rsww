@@ -1,7 +1,8 @@
-import {Component, Injectable, Input, OnInit} from '@angular/core';
-import {Offer} from "../offer.model";
+import {Component, Injectable, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Offer} from "../model/offer.model";
 import {TravelAgencyService} from "../travel-agency.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
+import {HotelModel} from "../model/hotel.model";
 
 @Component({
   selector: 'app-offer-details',
@@ -9,22 +10,48 @@ import {ActivatedRoute, Params, Router} from "@angular/router";
   styleUrls: ['./offer-details.component.css']
 })
 export class OfferDetailsComponent implements OnInit {
-  offersList: Offer[] = []
   offer: Offer;
-  id: number;
+  id: string;
+  displayedColumns: string[] = ['outboundFlightAirport', 'returnFlightAirport'];
+  dataSource: any;
+  basePrice: number;
+  hotel: HotelModel;
+
+  numberOfOffers = 1;
+  ageRange0NumberOfPeople: number;
+  ageRange1NumberOfPeople: number;
+  ageRange2NumberOfPeople: number;
+  singleRoomsNumber = 0;
+  doubleRoomsNumber = 0;
+  tripleRoomsNumber = 0;
 
   constructor(private travelService: TravelAgencyService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit(): void {
-    this.offersList = this.travelService.getOffers();
-    this.offer = this.offersList[0];
     const id = this.route.params.subscribe(
       (params: Params) => {
-        this.id = +params['id'];
-        this.offer = this.travelService.getOfferById(this.id);
+        this.id = params['id'];
+        this.travelService.getOffers().subscribe(response => {
+          this.offer = response.find(offer => offer.id === this.id);
+          this.dataSource = this.offer.flights;
+          this.basePrice = this.offer.suggestedPrice;
+          this.travelService.getHotel(this.offer.hotelBrief.id).subscribe(hotel => {
+            this.hotel = hotel;
+            console.log(hotel)
+          });
+
+        })
       }
     );
   }
 
+
+  bookOffer() {
+    this.travelService.bookOffer(this.offer, this.offer.id);
+  }
+
+  calculateCost($event: Event) {
+    this.offer.suggestedPrice = +(event.target as HTMLInputElement).value * this.basePrice;
+  }
 }

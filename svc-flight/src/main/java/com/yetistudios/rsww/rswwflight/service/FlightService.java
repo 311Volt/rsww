@@ -1,6 +1,6 @@
 package com.yetistudios.rsww.rswwflight.service;
 
-import com.yetistudios.rsww.messages.misc.FlightDocument;
+import com.yetistudios.rsww.common.dto.FlightDocument;
 import com.yetistudios.rsww.rswwflight.entity.Flight;
 import com.yetistudios.rsww.rswwflight.repository.FlightRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,11 +1,13 @@
 package com.yetistudios.rsww.touroperator.cmd.aggregate;
 
+import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.command.IncreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
+import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
 import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
-import com.yetistudios.rsww.touroperator.cmd.commands.DecreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
 import com.yetistudios.rsww.touroperator.cmd.event.OfferCreatedEvent;
-import com.yetistudios.rsww.touroperator.cmd.event.OfferDecreaseAmountEvent;
-import com.yetistudios.rsww.touroperator.cmd.entity.Flight;
-import com.yetistudios.rsww.touroperator.cmd.entity.Hotel;
+import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
@@ -20,14 +22,14 @@ import java.util.List;
 public class OfferAggregate {
 
     @AggregateIdentifier
-    private String id;
     private String offerId;
-    private Hotel hotel;
+    private HotelBrief hotelBrief;
     private Double price;
     private Integer numberOfOffers;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private List<Flight> flights;
+    private List<FlightBriefPair> flights;
+    private String reservationId;
 
     @CommandHandler
     public OfferAggregate(CreateOfferCommand createOfferCommand) {
@@ -39,7 +41,7 @@ public class OfferAggregate {
     }
 
     @CommandHandler
-    public OfferAggregate(DecreaseOfferAmountCommand decreaseOfferAmountCommand) {
+    public void handle(DecreaseOfferAmountCommand decreaseOfferAmountCommand) {
 
         OfferDecreaseAmountEvent offerDecreaseAmountEvent = new OfferDecreaseAmountEvent();
 
@@ -52,9 +54,8 @@ public class OfferAggregate {
 
     @EventSourcingHandler
     public void on(OfferCreatedEvent offerCreatedEvent){
-        this.id = offerCreatedEvent.getOfferId();
         this.offerId = offerCreatedEvent.getOfferId();
-        this.hotel = offerCreatedEvent.getHotel();
+        this.hotelBrief = offerCreatedEvent.getHotelBrief();
         this.price = offerCreatedEvent.getPrice();
         this.numberOfOffers = offerCreatedEvent.getNumberOfOffers();
         this.startDate = offerCreatedEvent.getStartDate();
@@ -64,8 +65,23 @@ public class OfferAggregate {
 
     @EventSourcingHandler
     public void on(OfferDecreaseAmountEvent offerDecreaseAmountEvent){
-        this.id = offerDecreaseAmountEvent.getId();
-        this.offerId = offerDecreaseAmountEvent.getOfferId();
         this.numberOfOffers = offerDecreaseAmountEvent.getNumberOfOffers();
+        this.reservationId = offerDecreaseAmountEvent.getReservationId();
+    }
+
+    @CommandHandler
+    public void handle(IncreaseOfferAmountCommand increaseOfferAmountCommand) {
+
+        OfferIncreaseAmountEvent offerIncreaseAmountEvent = new OfferIncreaseAmountEvent();
+
+        BeanUtils.copyProperties(increaseOfferAmountCommand,offerIncreaseAmountEvent);
+
+        AggregateLifecycle.apply(offerIncreaseAmountEvent);
+    }
+
+    @EventSourcingHandler
+    public void on(OfferIncreaseAmountEvent offerIncreaseAmountEvent){
+        this.numberOfOffers = offerIncreaseAmountEvent.getNumberOfOffers();
+        this.reservationId = offerIncreaseAmountEvent.getReservationId();
     }
 }
