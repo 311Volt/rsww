@@ -35,19 +35,6 @@ public class OfferProjection {
         return new OfferListDto(offers);
     }
 
-    @QueryHandler DetailedOfferDto handle(GetOfferDetailedQuery getOfferDetailedQuery){
-        Optional<Offer> offerOptional = offerRepository.findById(getOfferDetailedQuery.getOfferId());
-        if(offerOptional.isPresent()){
-            Offer offer = offerOptional.get();
-
-            DetailedOfferDto detailedOffer = DetailedOfferDto.builder()
-
-                    .build();
-        }
-
-        return null;
-    }
-
     @QueryHandler Offer handle(GetOfferQuery query){
         return offerRepository.findById(query.getOfferId()).get();
     }

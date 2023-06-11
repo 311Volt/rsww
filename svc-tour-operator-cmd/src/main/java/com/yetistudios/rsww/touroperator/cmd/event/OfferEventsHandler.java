@@ -49,7 +49,7 @@ public class OfferEventsHandler {
                     eventGateway.publish(new OfferDecreaseAmountSuccessfulEvent(event.getReservationId()));
                 }
             } else {
-                throw new OfferAmountIsInsufficientException("Insufficient amount of offer " + event.getOfferId() + " exists: " + offer.getNumberOfOffers() + " expected: " + event.getOfferId(), event.getReservationId());
+                throw new OfferAmountIsInsufficientException("Insufficient amount of offer " + event.getOfferId() + " exists: " + offer.getNumberOfOffers() + " expected: " + event.getNumberOfOffers(), event.getReservationId());
             }
 
         },
