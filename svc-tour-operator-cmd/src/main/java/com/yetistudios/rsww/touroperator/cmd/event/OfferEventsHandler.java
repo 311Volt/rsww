@@ -1,5 +1,6 @@
 package com.yetistudios.rsww.touroperator.cmd.event;
 
+import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import com.yetistudios.rsww.touroperator.cmd.entity.Offer;
 import org.axonframework.config.ProcessingGroup;

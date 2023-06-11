@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.event;
+package com.yetistudios.rsww.common.messages.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

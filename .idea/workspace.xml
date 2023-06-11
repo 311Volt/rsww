@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/dto/HotelDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetFlightInfoQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/query/GetHotelInfoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/WebsocketConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/query/FlightQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/query/FlightQueryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/repository/FlightRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelMiscQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/HotelMiscQueryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/java/com/yetistudios/rsww/rswwhotel/query/entity/HotelAgeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/dto/HotelAgeRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/aggregate/OfferAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferDecreaseAmountEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/event/OfferDecreaseAmountEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferEventsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/event/OfferEventsHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2PY4e9RACeX0i84bWltYJqRUdi6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,7 +69,7 @@
       <recent name="com.yetistudios.rsww.touroperator.query" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.svc-tour-operator-cmd">
+  <component name="RunManager" selected="Application.svc-gateway">
     <configuration name="svc-flight" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwflight.RswwFlightApplication" />
       <module name="svc-flight" />
