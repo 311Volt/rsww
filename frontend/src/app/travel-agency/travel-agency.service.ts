@@ -19,7 +19,7 @@ export class TravelAgencyService{
     return this.http.get<Offer[]>('http://localhost:1444/offer');
   }
 
-  bookOffer(offer: Offer, id: string) {
+  bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number, numberOfTrRooms: number) {
     this.authService.user.subscribe(user => {
       this.userEmail = user.email;
     })
@@ -31,10 +31,10 @@ export class TravelAgencyService{
       clientId: this.userEmail,
       price: offer.suggestedPrice,
       departureAirportName: offer.flights[0].outboundFlight.departureAirportName,
-      nrOfPeople: offer.numberOfOffers,
-      numSingleRooms: offer.hotelBrief.numSingleRooms,
-      numDoubleRooms: offer.hotelBrief.numDoubleRooms,
-      numTripleRooms: offer.hotelBrief.numTripleRooms
+      nrOfPeople: numberOfOffers,
+      numSingleRooms: numberOfSingleRooms,
+      numDoubleRooms: numberOfDoubleRooms,
+      numTripleRooms: numberOfTrRooms
     }).subscribe();
   }
 
