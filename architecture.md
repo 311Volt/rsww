@@ -126,37 +126,53 @@
 
 # 5. REST API overview
 
-HTTP communication only happens between the frontend and the User service.
+HTTP communication only happens between the frontend and the API Gateway.
 All other services communicate using the message broker.
 
 ## Endpoints
 
-### POST `/api/offers/list`
+### POST `/api/admin/generate-offers`
 Request body:
 ```json
 {
-  "filters": {
-    "maxPrice": 3300,
-    "countries": ["Grecja", "Bułgaria"],
-    "page": 1,
-    "offersPerPage": 20
+  "amount": 20
+}
+```
+
+###GetMapping `/api/hotel/{id}`
+
+response body:
+```json
+{
+  "code": "HER41014",
+  "name": "Pela Maria Hotel",
+  "standard": 3.0,
+  "latitude": 35.312658,
+  "longitude": 25.397243,
+  "airportCode": "HER",
+  "country": "Grecja",
+  "numSingleRooms": 12,
+  "numDoubleRooms": 35,
+  "numTripleRooms": 15,
+  "ageRange0": {
+    "lowerBound": 0,
+    "upperBound": 4,
+    "pricePerNight": 81.0
+  },
+  "ageRange1": {
+    "lowerBound": 4,
+    "upperBound": 18,
+    "pricePerNight": 348.0
+  },
+  "ageRange2": {
+    "lowerBound": 18,
+    "upperBound": 200,
+    "pricePerNight": 255.0
   }
 }
 ```
 
-Response body:
-```javascript
-{
-  "offers": [
-    {
-      "hotelCode": "DS3",
-      "hotelStandard": 1437.0,
-      /* ... */
-    }
-    /* etc... */
-  ]
-}
-```
+
 
 ### POST `/api/offers/{id}/book`
 request body: empty  
@@ -177,39 +193,42 @@ status: 200 (payment confirmed), 404 (no such offer purchase)
 
 ## 6.1. Events
 
-| Name                               | Sender          | Receiver            | Description                                               |
-|------------------------------------|-----------------|---------------------|-----------------------------------------------------------|
-| HotelReservationFailedEvent        | Hotel Service   | Saga Service        | Information about failed hotel reservation                |
-| HotelReservationSuccessfulEvent    | Hotel Service   | Saga Service        | Information about succesful hotel reservation             |
-| OfferCreatedEvent                  | Tour Operator   | Tour Operator       | Has information about newly created offer                 |
-| OfferDecreaseAmountEvent           | Tour Operator   | Tour Operator, Saga | Demand to lower ammount of Offers                         |
-| OfferDecreaseAmountFailedEvent     | Tour Operator   | Saga                | Information about failed lowering of ammount of Offers    |
-| OfferDecreaseAmountSuccessfulEvent | Tour Operator   | Saga                | Information about succesful lowering of ammount of Offers |
-| OfferIncreaseAmountEvent           | Tour Operator   | Tour Operator, Saga | Demand to increase ammount of Offers                      |
-| PaymentInvalidEvent                | Payment Service | Saga                | Information about failed payment validation               |
-| PaymentValidEvent                  | Payment Service | Saga                | Information about succesful payment validation            |
-| PlaneReservationFailedEvent        | Flight Service  | Saga                | Information about failed flight reservation               |
-| PlaneReservationSuccessfulEvent    | Flight Service  | Saga                | Information about succesful return flight reservation     |
-| ReturnPlaneReservationFailedEvent  | Flight Service  | Saga                | Information about failed flight reservation               |
-| ReturnPlaneReservationFailedEvent  | Flight Service  | Saga                | Information about failed return flight reservation        |
-| ReservationCanceledEvent           | Travel Agency   | Travel Agency, Saga | Demand to cancel reservation                              |
-| ReservationCreatedEvent            | Travel Agency   | Travel Agency, Saga | Demand to create reservation                              |
+| Name                               | Sender          | Receiver                     | Description                                               |
+|------------------------------------|-----------------|------------------------------|-----------------------------------------------------------|
+| HotelReservationFailedEvent        | Hotel Service   | Saga Service                 | Information about failed hotel reservation                |
+| HotelReservationSuccessfulEvent    | Hotel Service   | Saga Service                 | Information about succesful hotel reservation             |
+| OfferCreatedEvent                  | Tour Operator   | Tour Operator                | Has information about newly created offer                 |
+| OfferDecreaseAmountEvent           | Tour Operator   | Tour Operator, Saga          | Demand to lower ammount of Offers                         |
+| OfferDecreaseAmountFailedEvent     | Tour Operator   | Saga                         | Information about failed lowering of ammount of Offers    |
+| OfferDecreaseAmountSuccessfulEvent | Tour Operator   | Saga                         | Information about succesful lowering of ammount of Offers |
+| OfferIncreaseAmountEvent           | Tour Operator   | Tour Operator, Saga          | Demand to increase ammount of Offers                      |
+| PaymentInvalidEvent                | Payment Service | Saga                         | Information about failed payment validation               |
+| PaymentValidEvent                  | Payment Service | Saga                         | Information about succesful payment validation            |
+| PlaneReservationFailedEvent        | Flight Service  | Saga                         | Information about failed flight reservation               |
+| PlaneReservationSuccessfulEvent    | Flight Service  | Saga                         | Information about succesful return flight reservation     |
+| ReturnPlaneReservationFailedEvent  | Flight Service  | Saga                         | Information about failed flight reservation               |
+| ReturnPlaneReservationFailedEvent  | Flight Service  | Saga                         | Information about failed return flight reservation        |
+| ReservationCanceledEvent           | Travel Agency   | Travel Agency, Saga          | Demand to cancel reservation                              |
+| ReservationCreatedEvent            | Travel Agency   | Travel Agency, Saga          | Demand to create reservation                              |
+| UpdateOfferEvent                   | Travel Agency   | Travel Agency,  Gateway API  | Demand to update offer                                    | 
 
 ## 6.2. Commands
 
-| Name                       | Sender               | Receiver         | Description                                     |
-|----------------------------|----------------------|------------------|-------------------------------------------------|
-| BookFlightCommand          | Flight Service, Saga | Flight Service   | Demand to book flight                           |
-| BookReturnFlightCommand    | Saga                 | Flight Service   | Demand to book return flight                    |
-| CancelFlightBookingCommand | Saga                 | Flight Service   | Demand to cancel flight booking for reservation |
-| BookHotelCommand           | Saga                 | Hotel Service    | Demand to book hotel                            |
-| CancelHotelBookingCommand  | Saga                 | Hotel Service    | Demand to cancel hotel booking                  |
-| CancelReservationCommand   | Saga                 | Travel Agency    | Demand to cancel reservation                    |
-| CreateReservationCommand   | Gateway API          | Travel Agency    | Demand to create reservation                    |
-| CreateOfferCommand         | Gateway API          | Tour Operator    | Demand to create new offer                      |
-| DecreaseOfferAmountCommand | Gateway API, Saga    | Tour Operator    | Demand to lower ammount of Offers               |
-| IncreaseOfferAmountCommand | Saga                 | Tour Operator    | Demand to increase ammount of Offers            |
-| ValidatePaymentCommand     | Saga                 | Payment Service  | Demand to validate payment for offer            |
+| Name                       | Sender               | Receiver        | Description                                     |
+|----------------------------|----------------------|-----------------|-------------------------------------------------|
+| BookFlightCommand          | Flight Service, Saga | Flight Service  | Demand to book flight                           |
+| BookReturnFlightCommand    | Saga                 | Flight Service  | Demand to book return flight                    |
+| CancelFlightBookingCommand | Saga                 | Flight Service  | Demand to cancel flight booking for reservation |
+| BookHotelCommand           | Saga                 | Hotel Service   | Demand to book hotel                            |
+| CancelHotelBookingCommand  | Saga                 | Hotel Service   | Demand to cancel hotel booking                  |
+| CancelReservationCommand   | Saga                 | Travel Agency   | Demand to cancel reservation                    |
+| CreateReservationCommand   | Gateway API          | Travel Agency   | Demand to create reservation                    |
+| CreateOfferCommand         | Gateway API          | Tour Operator   | Demand to create new offer                      |
+| DecreaseOfferAmountCommand | Gateway API, Saga    | Tour Operator   | Demand to lower ammount of Offers               |
+| IncreaseOfferAmountCommand | Saga                 | Tour Operator   | Demand to increase ammount of Offers            |
+| ValidatePaymentCommand     | Saga                 | Payment Service | Demand to validate payment for offer            |
+| AdminGenerateOffersCommand | Gateway              | Tour Operator   | Demand to generate offers                       |
+| UpdateOfferCommand         | Gateway              | Tour Operator   | Demand to update offers                         |
 
 ## 6.3. Queries
 
@@ -227,3 +246,4 @@ status: 200 (payment confirmed), 404 (no such offer purchase)
 | GetOffersQuery                | Gateway Api                   | Tour Operator  | Information about list of filtered offers                       |
 | GetRandomHotelQuery           | Tour Operator                 | Hotel Service  | Information about random hotel                                  |
 | GetReservationQuery           | Gateway API, Saga             | Travel Agency  | Information about reservation                                   |
+| GetOfferHistoriesQuery        | Gateway Api                   | Tour Operator  | Information about history of changes on offers                  |
