@@ -31,7 +31,7 @@
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.startDate | date: 'dd.MM.yyyy'}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.endDate | date: 'dd.MM.yyyy'}}</span>
         <span class="list-group-item" *ngIf="offer !== undefined">{{offer.numberOfOffers}}</span>
-        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.suggestedPrice}}</span>
+        <span class="list-group-item" *ngIf="offer !== undefined">{{offer.suggestedPrice.toFixed(2)}}</span>
         <span class="list-group-item" *ngIf="chooseFlight !== undefined">{{chooseFlight}}</span>
       </div>
     </div>

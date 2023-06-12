@@ -1,28 +1,36 @@
 package com.yetistudios.rsww.touroperator.cmd.event;
 
+import com.yetistudios.rsww.common.messages.entity.UpdateOfferHistory;
 import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
 import com.yetistudios.rsww.common.messages.event.*;
 import com.yetistudios.rsww.touroperator.cmd.exception.OfferAmountIsInsufficientException;
 import com.yetistudios.rsww.touroperator.cmd.exception.OfferDoesNotExistException;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import com.yetistudios.rsww.common.messages.entity.Offer;
+import com.yetistudios.rsww.touroperator.cmd.repository.UpdateOfferHistoryRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.axonframework.eventhandling.gateway.EventGateway;
 import org.axonframework.messaging.interceptors.ExceptionHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.UUID;
+
 @Component
+@Slf4j
 @ProcessingGroup("offer")
 public class OfferEventsHandler {
-
-    public OfferEventsHandler(OfferRepository offerRepository, EventGateway eventGateway) {
-        this.offerRepository = offerRepository;
-        this.eventGateway = eventGateway;
-    }
-
+    @Autowired
     private OfferRepository offerRepository;
 
+    @Autowired
+    private UpdateOfferHistoryRepository updateOfferHistoryRepository;
+
+    @Autowired
     private EventGateway eventGateway;
 
     @EventHandler
@@ -65,6 +73,35 @@ public class OfferEventsHandler {
             offerRepository.save(offer);
         });
     }
+
+    @EventHandler
+    public void on(UpdateOfferEvent event){
+        offerRepository.findById(event.getOfferId()).ifPresentOrElse(offer -> {
+            UpdateOfferEvent oldOffer = UpdateOfferEvent.builder()
+                    .offerId(offer.getId())
+                    .price(offer.getSuggestedPrice())
+                    .numberOfOffers(offer.getNumberOfOffers())
+                    .flights(new ArrayList<>(offer.getFlights()))
+                    .build();
+
+            offer.setNumberOfOffers(event.getNumberOfOffers());
+            offer.setSuggestedPrice(event.getPrice());
+            offer.setFlights(event.getFlights());
+
+            offerRepository.save(offer);
+
+            UpdateOfferHistory updateOfferHistory = UpdateOfferHistory.builder()
+                    .newValues(event)
+                    .oldValues(oldOffer)
+                    .id(UUID.randomUUID().toString())
+                    .timeOfUpdate(LocalDateTime.now())
+                    .build();
+            updateOfferHistoryRepository.insert(updateOfferHistory);
+        }, () -> {
+            log.error("Non existing offer was attempted to be updated");
+        });
+    }
+
 
     @ExceptionHandler
     public void handle(OfferAmountIsInsufficientException exception) throws RuntimeException {

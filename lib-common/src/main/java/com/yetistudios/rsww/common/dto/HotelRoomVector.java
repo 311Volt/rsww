@@ -75,7 +75,7 @@ public class HotelRoomVector implements Comparable<HotelRoomVector> {
 
     @Override
     public String toString() {
-        return String.format("({},{},{})", numSingleRooms, numDoubleRooms, numTripleRooms);
+        return String.format("(%d,%d,%d)", numSingleRooms, numDoubleRooms, numTripleRooms);
     }
 
     public boolean fitsInto(HotelRoomVector vec) {
