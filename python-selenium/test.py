@@ -41,9 +41,33 @@ class rswwTester(unittest.TestCase):
         homePage.emailElement = "testAccount@test.net"
         homePage.passwordElement = "testPassword"
         homePage.btns[0].click()
-        print(driver.page_source)
-        assert 
+        self.driver.implicitly_wait(10)
+        nav = "Logout" in self.driver.page_source
+        assert nav
 
+
+    def testFilterCountry(self):
+        self.testLogin()
+        td_element = self.driver.find_elements(By.CSS_SELECTOR, ".mat-cell")[0]
+        beforeFilter = td_element.accessible_name
+        filterElement = self.driver.find_elements(By.CSS_SELECTOR, ".mat-input-element")[0]
+        filterElement.clear()
+        filterElement.send_keys("Grecja")
+        td_element = self.driver.find_elements(By.CSS_SELECTOR, ".mat-cell")[0]
+        afterFilter = td_element.accessible_name
+        assert not (afterFilter == beforeFilter)
+
+
+    def testDateFilter(self):
+        self.testLogin()
+        matPaginator = self.driver.find_element(By.CSS_SELECTOR, ".mat-paginator-range-label")
+        beforeFilter = matPaginator.text
+        filterElement = self.driver.find_elements(By.CSS_SELECTOR, ".mat-input-element")[3]
+        filterElement.clear()
+        filterElement.send_keys("07/22/2023")
+        matPaginator = self.driver.find_element(By.CSS_SELECTOR, ".mat-paginator-range-label")
+        afterFilter = matPaginator.text
+        assert not (afterFilter == beforeFilter)
 
     def tearDown(self):
         self.driver.close()

@@ -1,12 +1,13 @@
 from locators import *
 from elements import searchElement
 
+
 class emailInputElement(searchElement):
     locator = HomePageLocators.emailInput
 
+
 class passwordInputElement(searchElement):
     locator = HomePageLocators.passwordInput
-
 
 
 class BasePage(object):
