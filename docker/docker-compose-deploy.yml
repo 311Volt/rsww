@@ -6,9 +6,9 @@ services:
   broker_axon:
     image: localhost:5000/rsww_175651-broker_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_gateway:
     image: localhost:5000/rsww_175651-svc_gateway
@@ -17,72 +17,72 @@ services:
     ports:
       - "17565:1438"
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_hotel:
     image: localhost:5000/rsww_175651-svc_hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_flight:
     image: localhost:5000/rsww_175651-svc_flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_payment:
     image: localhost:5000/rsww_175651-svc_payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_saga_orchestrator:
     image: localhost:5000/rsww_175651-svc_saga_orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_tour_operator_cmd:
     image: localhost:5000/rsww_175651-svc_tour_operator_cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_tour_operator_query:
     image: localhost:5000/rsww_175651-svc_tour_operator_query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
   svc_travel_agency:
     image: localhost:5000/rsww_175651-svc_travel_agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - rsww_175651_net_internal
 
 networks:
   net_mongo:
@@ -91,6 +91,5 @@ networks:
   net_postgres:
     external: true
     name: admin-postgres_default
-  rsww_175651_net_internal:
-    name: rsww_175651_net_internal
+  net_internal:
     driver: overlay
