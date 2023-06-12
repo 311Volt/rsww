@@ -18,5 +18,5 @@ public class CreateReservationCommand {
     public int numSingleRooms;
     public int numDoubleRooms;
     public int numTripleRooms;
-    private String orderStatus;
+    private boolean paid;
 }

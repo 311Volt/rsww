@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.travelagency.common.entity;
+package com.yetistudios.rsww.common.messages.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,4 +20,5 @@ public class Reservation {
     private String departureAirportName;
     private double price;
     private int nrOfPeople;
+    private boolean paid;
 }

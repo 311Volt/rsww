@@ -28,7 +28,7 @@ public class CreateReservationDtoForwarder {
                 .numDoubleRooms(order.getNumDoubleRooms())
                 .numTripleRooms(order.getNumTripleRooms())
                 .nrOfPeople(order.getNrOfPeople())
-                .orderStatus("CREATED")
+                .paid(order.isPaid())
                 .build();
 
         commandGateway.sendAndWait(createReservationCommand);
