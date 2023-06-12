@@ -4,6 +4,7 @@ import {TravelAgencyService} from "../travel-agency.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {HotelModel} from "../model/hotel.model";
 import {AuthService} from "../../auth/auth.service";
+import {ResponseSocketModel} from "../model/responseSocket.model";
 
 declare var SockJS;
 declare var Stomp;
@@ -33,22 +34,42 @@ export class OfferDetailsComponent implements OnInit {
   userEmail: string;
   chooseFlight: string = '';
   mess = ''
+  public msg = [];
 
   constructor(private travelService: TravelAgencyService, private route: ActivatedRoute, private router: Router, private userService: AuthService) {
-    this.initializeWebSocketConnection();
   }
 
   public stompClient;
-  initializeWebSocketConnection() {
-    const serverUrl = `/rsww`;
-    const ws = new SockJS(serverUrl);
+  public stompClient1;
+
+  initializeWebSocketConnection(id: string) {
+    const ws = new SockJS('http://localhost:1438/rsww');
     this.stompClient = Stomp.over(ws);
     const that = this;
     // tslint:disable-next-line:only-arrow-functions
-    this.stompClient.connect({}, function(frame) {
-      that.stompClient.subscribe('//req7topic/purchase/' + this.offer.id, (message) => {
+    this.stompClient.connect({}, function (frame) {
+      that.stompClient.subscribe('/req7topic/purchase/' + id, (message) => {
         if (message.body) {
-          this.mess = message.body;
+          let responseSocketModel = JSON.parse(message.body);
+          let model = responseSocketModel as ResponseSocketModel;
+          that.mess = responseSocketModel.numberOfOffers + ' reservations done';
+          that.offer.numberOfOffers = that.offer.numberOfOffers - responseSocketModel.numberOfOffers;
+        }
+      });
+    });
+
+
+    const ws1 = new SockJS('http://localhost:1438/rsww');
+    this.stompClient1 = Stomp.over(ws1);
+    // tslint:disable-next-line:only-arrow-functions
+    this.stompClient1.connect({}, function (frame) {
+      that.stompClient1.subscribe('/req7topic/updateOffer/' + id, (message) => {
+        if (message.body) {
+          let newOffer = JSON.parse(message.body);
+          that.offer.suggestedPrice = newOffer.price;
+          that.offer.numberOfOffers = newOffer.numberOfOffers;
+          that.offer.flights = newOffer.flights;
+          that.mess = 'Offer was updated. New price:' + newOffer.price + ' and new number of offers: ' + newOffer.numberOfOffers;
         }
       });
     });
@@ -61,6 +82,7 @@ export class OfferDetailsComponent implements OnInit {
         this.travelService.getOffers().subscribe(response => {
           this.offer = response.find(offer => offer.id === this.id);
           this.dataSource = this.offer.flights;
+          this.initializeWebSocketConnection(this.id);
           this.basePrice = this.offer.suggestedPrice;
           this.travelService.getHotel(this.offer.hotelBrief.id).subscribe(hotel => {
             this.hotel = hotel;
@@ -93,6 +115,7 @@ export class OfferDetailsComponent implements OnInit {
     if (err === false) {
       this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail, this.chooseFlight);
       this.router.navigate(['travel']);
+      this.travelService.getOffers()
     }
   }
 
@@ -108,7 +131,7 @@ export class OfferDetailsComponent implements OnInit {
     }
   }
 
-  chooseFlightCode(code:string){
+  chooseFlightCode(code: string) {
     this.chooseFlight = code;
   }
 }

@@ -135,8 +135,9 @@ Request body:
 }
 ```
 
-###GetMapping `/api/hotel/{id}`
 
+### GET `/api/hotel/{id}`
+request body: empty
 response body:
 ```json
 {
@@ -169,21 +170,232 @@ response body:
 ```
 
 
+### GET `/api/hotel/{id}/availability?startDate=&endDate=`
+request body: empty
+response body:
+{
+"numSingleRooms": 12,
+"numDoubleRooms": 35,
+"numTripleRooms": 15,
+"valid": true,
+"nonZero": true
+}
 
-### POST `/api/offers/{id}/book`
-request body: empty  
-response body: 
+### POST `/api/offer`
+request body:
 ```json
 {
-  "offerPurchaseId": "87cfh8q7nhr78a3bvcn90r3y"
+    "hotelBrief": {
+        "id": "HER41014",
+        "name": "Pela Maria Hotel",
+        "standard": 5.0,
+        "country": "G"
+    },
+    "suggestedPrice": 110.0,
+    "numberOfOffers": 10,
+    "startDate": "2023-06-03T08:00:00",
+    "endDate": "2023-06-07T12:00:00",
+    "flights": [
+        {
+            "outboundFlight": {
+                "id": "flight789",
+                "departureAirportName": "John F. Kennedy International Airport"
+            },
+            "returnFlight": {
+                "id": "flight790",
+                "departureAirportName": "John F. Kennedy International Airport"
+            }
+        }
+    ]
 }
 ```
-status: 200 (booked), 404 (no such offer) or 400 (offer unavailable)
+response body: String
 
-### POST `/api/offer-purchases/{id}/pay`
-request body: empty  
-response body: empty  
-status: 200 (payment confirmed), 404 (no such offer purchase)
+### POST `/api/offer/{id}/decrease`
+request body:
+```json
+{
+    "numberOfOffers": 1
+}
+```
+response body: String
+
+### PUT `/api/offer`
+request body:
+```json
+{
+    "id": "9d99ad66-6753-47d1-a8b7-7eda4d3f0f15",
+    "suggestedPrice": 1500.00,
+    "numberOfOffers": 13,
+    "flights": [
+        {
+            "outboundFlight": {
+                "id": "17486",
+                "departureAirportName": "KTW"
+            },
+            "returnFlight": {
+                "id": "20294",
+                "departureAirportName": "BUD"
+            }
+        }
+    ]
+}
+```
+response body: String
+
+### GET `/api/offer/offers?destination=&departure=&startDate=&people=&page=&pageSize=`
+request body: empty
+response body: 
+```json
+[
+    {
+        "id": "9d99ad66-6753-47d1-a8b7-7eda4d3f0f15",
+        "hotelBrief": {
+            "id": "BUD21047",
+            "name": "Roombach Hotel Budapest Center",
+            "standard": 3.0,
+            "country": "Węgry"
+        },
+        "suggestedPrice": 1500.0,
+        "numberOfOffers": 3,
+        "startDate": "2023-07-19T16:00:00",
+        "endDate": "2023-07-24T16:00:00",
+        "flights": [
+            {
+                "outboundFlight": {
+                    "id": "17486",
+                    "departureAirportName": "KTW"
+                },
+                "returnFlight": {
+                    "id": "20294",
+                    "departureAirportName": "BUD"
+                }
+            }
+        ]
+    }
+]
+```
+
+### GET `/api/offer/{id}/`
+request body: empty
+response body:
+```json
+{
+    "id": "9d99ad66-6753-47d1-a8b7-7eda4d3f0f15",
+    "hotelBrief": {
+        "id": "BUD21047",
+        "name": "Roombach Hotel Budapest Center",
+        "standard": 3.0,
+        "country": "Węgry"
+    },
+    "suggestedPrice": 1500.0,
+    "numberOfOffers": 3,
+    "startDate": "2023-07-19T16:00:00",
+    "endDate": "2023-07-24T16:00:00",
+    "flights": [
+        {
+            "outboundFlight": {
+                "id": "17486",
+                "departureAirportName": "KTW"
+            },
+            "returnFlight": {
+                "id": "20294",
+                "departureAirportName": "BUD"
+            }
+        }
+    ]
+}
+```
+
+### GET `/api/offer/{id}/`
+request body: empty
+response body:
+```json
+[
+    {
+        "id": "844a3167-d805-4c78-bb49-7255612394f5",
+        "oldValues": {
+            "offerId": "9d99ad66-6753-47d1-a8b7-7eda4d3f0f15",
+            "price": 1000.0,
+            "numberOfOffers": 13,
+            "flights": [
+                {
+                    "outboundFlight": {
+                        "id": "17486",
+                        "departureAirportName": "WAW"
+                    },
+                    "returnFlight": {
+                        "id": "20294",
+                        "departureAirportName": "BUD"
+                    }
+                }
+            ]
+        },
+        "newValues": {
+            "offerId": "9d99ad66-6753-47d1-a8b7-7eda4d3f0f15",
+            "price": 1500.0,
+            "numberOfOffers": 1,
+            "flights": [
+                {
+                    "outboundFlight": {
+                        "id": "17486",
+                        "departureAirportName": "KTW"
+                    },
+                    "returnFlight": {
+                        "id": "20294",
+                        "departureAirportName": "BUD"
+                    }
+                }
+            ]
+        },
+        "timeOfUpdate": "2023-06-12T16:53:30.291"
+    }
+]
+```
+
+### POST `/api/order`
+request body:
+```json
+{
+    "offerId": "b0f46008-b438-4631-8e8f-45863c9ecfb1",
+    "clientId": "testId",
+    "price": "1600",
+    "departureAirportName": "WAW",
+    "nrOfPeople": 1,
+    "numSingleRooms": 1,
+    "numDoubleRooms": 0,
+    "numTripleRooms": 0,
+    "orderStatus": "CREATED"
+}
+```
+request response:
+```json
+{
+    "result": "Order created",
+    "orderId": "f24f5e51-db47-4d77-bd83-5d4f55826e40"
+}
+```
+
+### POST `/api/user/create`
+request body:
+```json
+{
+  "email": "123",
+  "password": "123"
+}
+```
+request response: String
+
+### GET `/api/user/get-user/{email}`
+request body: empty
+request response:
+```json
+{
+  "id": "123",
+  "email": "123",
+  "password": "123"
+}
+```
 
 # 6. Messages overview
 

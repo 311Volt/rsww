@@ -16,25 +16,15 @@ export class TravelAgencyService{
 
   public getOffers() {
     //return this.offersList;
-    return this.http.get<Offer[]>(`/api/offer/offers`);
+    return this.http.get<Offer[]>('http://localhost:1438/api/offer/offers');
   }
 
   bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number,
             numberOfTrRooms: number, userEmail: string, chooseFlight:string) {
 
-    console.log(offer.id)
-
-    console.log(userEmail)
-    console.log(offer.suggestedPrice)
-    console.log(offer.flights[0].outboundFlight.departureAirportName)
-    console.log(numberOfOffers)
-    console.log(numberOfSingleRooms)
-    console.log(numberOfDoubleRooms)
-    console.log(numberOfTrRooms)
-
-
-    this.http.post<any>(`/api/order`, {
+    this.http.post<any>('http://localhost:1438/api/order', {
       offerId: offer.id,
+      paid: true,
       clientId: userEmail,
       price: offer.suggestedPrice,
       departureAirportName: chooseFlight,
@@ -49,6 +39,6 @@ export class TravelAgencyService{
   }
 
   getHotel(code: string) {
-    return this.http.get<HotelModel>(`/api/hotel/` + code);
+    return this.http.get<HotelModel>('http://localhost:1438/api/hotel/' + code);
   }
 }

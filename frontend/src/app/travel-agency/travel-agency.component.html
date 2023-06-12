@@ -88,3 +88,33 @@
   </div>
 
 </div>
+
+<div style="margin: 16px;">
+  <div class="content" *ngIf="table1">
+    <div *ngFor="let row of table1">
+      {{row.destination}} - popularity {{row.popularity}}
+    </div>
+  </div>
+
+
+  <div class="content" *ngIf="table2" style="margin-top: 16px;">
+    <div *ngFor="let row of table2">
+      {{row.airportName}} - popularity {{row.popularity}}
+    </div>
+  </div>
+
+
+  <div class="content" *ngIf="table3" style="margin-top: 16px;">
+    <div *ngFor="let row of table3">
+      {{row.hotelName}} - popularity {{row.popularity}}
+    </div>
+  </div>
+
+
+  <div class="content" *ngIf="table4" style="margin-top: 16px;">
+    <div *ngFor="let row of table4">
+      {{row.roomType}} - popularity {{row.popularity}}
+    </div>
+  </div>
+</div>
+

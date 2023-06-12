@@ -31,80 +31,51 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
-
+    ports:
+      - "17565:1438"
+      -
   svc_hotel:
     image: localhost:5000/rsww_175651-svc_hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
   svc_flight:
     image: localhost:5000/rsww_175651-svc_flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
   svc_payment:
     image: localhost:5000/rsww_175651-svc_payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
   svc_saga_orchestrator:
     image: localhost:5000/rsww_175651-svc_saga_orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
   svc_tour_operator_cmd:
     image: localhost:5000/rsww_175651-svc_tour_operator_cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
   svc_tour_operator_query:
     image: localhost:5000/rsww_175651-svc_tour_operator_query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
   svc_travel_agency:
     image: localhost:5000/rsww_175651-svc_travel_agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+
 
 networks:
   net_mongo:

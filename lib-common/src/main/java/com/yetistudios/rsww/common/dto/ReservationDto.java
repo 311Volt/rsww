@@ -16,4 +16,5 @@ public class ReservationDto {
     private String departureAirportName;
     private double price;
     private int nrOfPeople;
+    private boolean paid;
 }

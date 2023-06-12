@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" afterDir="false" />
@@ -16,6 +17,14 @@
       <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" afterDir="false" />
+=======
+    <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="requirement 8 and 9">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/PayForReservationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/PayForReservationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,14 +37,17 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="documentation" />
+=======
+        <entry key="$PROJECT_DIR$" value="documentation-last" />
+>>>>>>> origin/master
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,7 +205,25 @@
       <option name="project" value="LOCAL" />
       <updated>1686522721566</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="2" />
+=======
+    <task id="LOCAL-00002" summary="requirement 8 and 9">
+      <created>1686556530647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686556530647</updated>
+    </task>
+    <task id="LOCAL-00003" summary="last documentation update">
+      <created>1686583557743</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686583557743</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -224,30 +254,67 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="documentation" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="documentation" />
+=======
+    <MESSAGE value="requirement 8 and 9" />
+    <MESSAGE value="last documentation update" />
+    <option name="LAST_COMMIT_MESSAGE" value="last documentation update" />
+>>>>>>> origin/master
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>190</line>
+          <line>191</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>138</line>
+          <line>139</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>217</line>
+          <line>218</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java</url>
           <line>19</line>
           <option name="timeStamp" value="75" />
+=======
+          <url>file://$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
+          <line>294</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
+          <line>267</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/command/aggregate/ReservationAgregate.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="99" />
+>>>>>>> origin/master
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
