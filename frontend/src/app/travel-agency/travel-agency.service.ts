@@ -24,6 +24,7 @@ export class TravelAgencyService{
 
     this.http.post<any>('http://localhost:1438/api/order', {
       offerId: offer.id,
+      paid: true,
       clientId: userEmail,
       price: offer.suggestedPrice,
       departureAirportName: chooseFlight,
