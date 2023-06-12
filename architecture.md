@@ -84,7 +84,7 @@
   - notifies any external services about changed availability status
 
 ## 2.8. Saga Orchestrator
-  - orchestrates Sagas. more in [3. Saga descriptions](#3-saga-descriptions-1)
+  - orchestrates Sagas. more in [4. Saga descriptions](#4-saga-descriptions)
 
 ## 2.9. Payment
   - Payment simulation. In response to a Pay command, sends back either:
@@ -100,21 +100,21 @@
 
 ## 3.2. Hotels DB (Mongo)
 
-![img.png](img.png)
+![img.png](architecture-img/img_6.png)
 
-![img_1.png](img_1.png)
+![img_1.png](architecture-img/img_1.png)
 
 ## 3.3. Reservations DB (Mongo)
 
-![img_2.png](img_2.png)
+![img_2.png](architecture-img/img_2.png)
 
 ## 3.4. Flights DB (PostgreSQL)
 
-![img_3.png](img_3.png)
+![img_3.png](architecture-img/img_3.png)
 
 ## 3.5. Users DB (PostgreSQL)
 
-![img_4.png](img_4.png)
+![img_4.png](architecture-img/img_4.png)
 
 # 4. Saga descriptions
 
@@ -122,7 +122,7 @@
 
 ## 4.1. Booking an offer
 
-![img_5.png](img_5.png)
+![img_5.png](architecture-img/img_5.png)
 
 # 5. REST API overview
 

@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="documentation">
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/entity/AirportsPopularityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/entity/DestinationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/entity/HotelPopularityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/entity/RoomTypesPopularityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/repository/AirportPopularityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/repository/DestinationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/repository/HotelPopularityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/repository/RoomTypesPopularityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/architecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-img/img_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-img/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-img/img_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-img/img_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-img/img_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/architecture-img/img_5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util-ws-test/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/util-ws-test/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +41,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="documentation" />
+        <entry key="$PROJECT_DIR$" value="command-event-documentation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,6 +86,7 @@
       <recent name="D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator-query\src\main\java\com\yetistudios\rsww\touroperator\query" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\architecture-img" />
       <recent name="$PROJECT_DIR$/docker" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -77,7 +94,7 @@
       <recent name="com.yetistudios.rsww.touroperator.query" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.svc-gateway">
+  <component name="RunManager" selected="Application.svc-flight">
     <configuration name="svc-flight" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwflight.RswwFlightApplication" />
       <module name="svc-flight" />
@@ -234,11 +251,6 @@
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
           <line>217</line>
           <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
