@@ -2,10 +2,12 @@ package com.yetistudios.rsww.touroperator.cmd.aggregate;
 
 import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
 import com.yetistudios.rsww.common.messages.command.IncreaseOfferAmountCommand;
+import com.yetistudios.rsww.common.messages.command.UpdateOfferCommand;
 import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
 import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
 import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
 import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
+import com.yetistudios.rsww.common.messages.event.UpdateOfferEvent;
 import com.yetistudios.rsww.touroperator.cmd.event.OfferCreatedEvent;
 import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import org.axonframework.commandhandling.CommandHandler;
@@ -42,7 +44,6 @@ public class OfferAggregate {
 
     @CommandHandler
     public void handle(DecreaseOfferAmountCommand decreaseOfferAmountCommand) {
-
         OfferDecreaseAmountEvent offerDecreaseAmountEvent = new OfferDecreaseAmountEvent();
 
         BeanUtils.copyProperties(decreaseOfferAmountCommand,offerDecreaseAmountEvent);
@@ -83,5 +84,21 @@ public class OfferAggregate {
     public void on(OfferIncreaseAmountEvent offerIncreaseAmountEvent){
         this.numberOfOffers = offerIncreaseAmountEvent.getNumberOfOffers();
         this.reservationId = offerIncreaseAmountEvent.getReservationId();
+    }
+
+    @CommandHandler
+    public void handle(UpdateOfferCommand command){
+        UpdateOfferEvent event = new UpdateOfferEvent();
+
+        BeanUtils.copyProperties(command,event);
+
+        AggregateLifecycle.apply(event);
+    }
+
+    @EventSourcingHandler
+    public void on(UpdateOfferEvent event){
+        this.price = event.getPrice();
+        this.numberOfOffers = event.getNumberOfOffers();
+        this.flights = event.getFlights();
     }
 }

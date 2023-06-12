@@ -4,6 +4,7 @@ import com.yetistudios.rsww.common.messages.entity.Offer;
 import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
 import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
 import com.yetistudios.rsww.common.messages.event.ReservationCreatedEvent;
+import com.yetistudios.rsww.common.messages.event.UpdateOfferEvent;
 import com.yetistudios.rsww.common.messages.query.GetOfferQuery;
 import com.yetistudios.rsww.rswwgateway.entity.AirportsPopularityEntity;
 import com.yetistudios.rsww.rswwgateway.entity.DestinationEntity;
@@ -133,6 +134,10 @@ public class Req7Service {
         roomTypesPopularityRepository.saveAll(roomTypesPopularities);
 
         simpMessagingTemplate.convertAndSend("/req7topic/popularRoomTypes", roomTypesPopularities);
+    }
 
+    @EventHandler
+    public void handle(UpdateOfferEvent event){
+        simpMessagingTemplate.convertAndSend("/req7topic/updateOffer/" + event.getOfferId(), event);
     }
 }
