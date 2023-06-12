@@ -115,3 +115,10 @@ networks:
     name: admin-postgres_default
   net_internal:
     driver: overlay
+    name: rsww_175651_net
+    ipam:
+      driver: default
+      config:
+        - subnet: "10.10.0.0/16"
+          gateway: "10.10.0.1"
+
