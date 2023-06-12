@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {AfterViewChecked, AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {Offer} from "./model/offer.model";
 import {TravelAgencyService} from "./travel-agency.service";
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
@@ -34,7 +34,6 @@ export class TravelAgencyComponent implements OnInit {
       this.dataSource = new MatTableDataSource(this.offersList);
       this.dataSource.paginator = this.paginator;
       this.dataSource.filterPredicate = this.getFilterPredicate();
-      console.log(this.offersList)
     })
     this.searchFormInit();
   }

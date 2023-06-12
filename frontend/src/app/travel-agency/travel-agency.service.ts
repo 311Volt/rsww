@@ -22,17 +22,6 @@ export class TravelAgencyService{
   bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number,
             numberOfTrRooms: number, userEmail: string, chooseFlight:string) {
 
-    console.log(offer.id)
-
-    console.log(userEmail)
-    console.log(offer.suggestedPrice)
-    console.log(offer.flights[0].outboundFlight.departureAirportName)
-    console.log(numberOfOffers)
-    console.log(numberOfSingleRooms)
-    console.log(numberOfDoubleRooms)
-    console.log(numberOfTrRooms)
-
-
     this.http.post<any>('http://localhost:1438/api/order', {
       offerId: offer.id,
       clientId: userEmail,
