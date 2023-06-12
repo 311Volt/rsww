@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.rswwgateway.websocket;
 
 import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
+import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
@@ -17,6 +18,12 @@ public class Req7Service {
 
     @EventHandler
     public void handle(OfferDecreaseAmountEvent event) {
+        simpMessagingTemplate.convertAndSend("/req7topic/purchase/" + event.getOfferId(), event);
+    }
+
+    @EventHandler
+    public void handle(OfferIncreaseAmountEvent event) {
+        event.setNumberOfOffers(-event.getNumberOfOffers());
         simpMessagingTemplate.convertAndSend("/req7topic/purchase/" + event.getOfferId(), event);
     }
 
