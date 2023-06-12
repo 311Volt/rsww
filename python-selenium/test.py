@@ -10,15 +10,23 @@ from datetime import date, datetime, timedelta
 
 URI = "http://localhost:4200/"
 
-driver = webdriver.Chrome()
-
-
 
 class rswwTester(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.get(URI)
+
+    
+    def loginFunc(self):
+        homePage = HomePage(self.driver)
+        if not homePage.checkLogin():
+            homePage.btns[1].click()
+        homePage.emailElement = "testAccount@test.net"
+        homePage.passwordElement = "testPassword"
+        sleep(1)
+        homePage.btns[0].click()
+        sleep(2)
 
 
     def testAccountCreation(self):
@@ -29,38 +37,33 @@ class rswwTester(unittest.TestCase):
 
         homePage.emailElement = "testAccount@test.net"
         homePage.passwordElement = "testPassword"
+        sleep(1)
 
         self.driver.implicitly_wait(2)
         homePage.btns[0].click()
+        sleep(1)
         assert self.driver.find_element(By.CSS_SELECTOR, ".text-muted")
 
 
     def testLogin(self):
-        homePage = HomePage(self.driver)
-        if not homePage.checkLogin():
-            homePage.btns[1].click()
-        homePage.emailElement = "testAccount@test.net"
-        homePage.passwordElement = "testPassword"
-        homePage.btns[0].click()
-        self.driver.implicitly_wait(10)
+        self.loginFunc()
         nav = "Logout" in self.driver.page_source
         assert nav
 
 
     def testFilterCountry(self):
-        self.testLogin()
-        td_element = self.driver.find_elements(By.CSS_SELECTOR, ".mat-cell")[0]
-        beforeFilter = td_element.accessible_name
+        self.loginFunc()
         filterElement = self.driver.find_elements(By.CSS_SELECTOR, ".mat-input-element")[0]
         filterElement.clear()
         filterElement.send_keys("Grecja")
+        sleep(2)
         td_element = self.driver.find_elements(By.CSS_SELECTOR, ".mat-cell")[0]
         afterFilter = td_element.accessible_name
-        assert not (afterFilter == beforeFilter)
+        assert  afterFilter == "Grecja"
 
 
     def testDateFilter(self):
-        self.testLogin()
+        self.loginFunc()
         tourDates = self.driver.find_elements(By.CSS_SELECTOR, ".cdk-column-departure")
         tourDateFilter = tourDates[2].accessible_name
         filterElement = self.driver.find_elements(By.CSS_SELECTOR, ".mat-input-element")[3]
@@ -72,18 +75,47 @@ class rswwTester(unittest.TestCase):
         temp = dateObj.strftime(format)
         filterElement.clear()
         filterElement.send_keys(temp)
+        sleep(3)
 
         testExpression = self.driver.find_element(By.CSS_SELECTOR, ".mat-paginator-range-label").text
 
         if(testExpression == "0 of 0"):
             assert True
         else:
-            tourDates = self.driver.find_elements(By.CSS_SELECTOR, ".cdk-column-departure")
-            tourDateFilter = tourDates[2].accessible_name
+            tourDates = self.driver.find_elements(By.CSS_SELECTOR, ".mat-column-departure")
+            tourDateFilter = tourDates[1].accessible_name
             dateObj = dateObj + timedelta(days=-1)
             temp = dateObj.strftime(format)
         assert not (tourDateFilter == temp) or testExpression == "0 of 0"
         
+
+    def testPurhcase(self):
+        self.testLogin()
+        btn = self.driver.find_elements(By.CSS_SELECTOR, ".mat-focus-indicator")[1]
+        btn.click()
+        sleep(3)
+        btn = self.driver.find_elements(By.CSS_SELECTOR, ".mat-button-base")[0]
+        numberOfOffers = self.driver.find_element(By.NAME, "numberOfOffers")
+        numberOfOffers.clear()
+        numberOfOffers.send_keys("2")
+        singleRoomsNumber = self.driver.find_element(By.NAME, "singleRoomsNumber")
+        singleRoomsNumber.clear()
+        singleRoomsNumber.send_keys("1")
+        doubleRoomsNumber = self.driver.find_element(By.NAME, "doubleRoomsNumber")
+        doubleRoomsNumber.clear()
+        doubleRoomsNumber.send_keys("1")
+        ageRange1NumberOfPeople = self.driver.find_element(By.NAME, "ageRange1NumberOfPeople")
+        ageRange1NumberOfPeople.clear()
+        ageRange1NumberOfPeople.send_keys("1")
+        ageRange2NumberOfPeople = self.driver.find_element(By.NAME, "ageRange2NumberOfPeople")
+        ageRange2NumberOfPeople.clear()
+        ageRange2NumberOfPeople.send_keys("1")
+        sleep(5)
+        btn = self.driver.find_element(By.CSS_SELECTOR, ".mat-stroked-button")
+        btn.click()
+        assert True
+
+
 
     def tearDown(self):
         self.driver.close()
