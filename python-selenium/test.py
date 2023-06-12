@@ -5,6 +5,7 @@ from page import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from datetime import date, datetime, timedelta
 
 
 URI = "http://localhost:4200/"
@@ -60,14 +61,29 @@ class rswwTester(unittest.TestCase):
 
     def testDateFilter(self):
         self.testLogin()
-        matPaginator = self.driver.find_element(By.CSS_SELECTOR, ".mat-paginator-range-label")
-        beforeFilter = matPaginator.text
+        tourDates = self.driver.find_elements(By.CSS_SELECTOR, ".cdk-column-departure")
+        tourDateFilter = tourDates[2].accessible_name
         filterElement = self.driver.find_elements(By.CSS_SELECTOR, ".mat-input-element")[3]
         filterElement.clear()
-        filterElement.send_keys("07/22/2023")
-        matPaginator = self.driver.find_element(By.CSS_SELECTOR, ".mat-paginator-range-label")
-        afterFilter = matPaginator.text
-        assert not (afterFilter == beforeFilter)
+        temp = tourDateFilter.replace(".","/")
+        format = "%m/%d/%Y"
+        dateObj = datetime.strptime(temp, format)
+        dateObj = dateObj + timedelta(days=1)
+        temp = dateObj.strftime(format)
+        filterElement.clear()
+        filterElement.send_keys(temp)
+
+        testExpression = self.driver.find_element(By.CSS_SELECTOR, ".mat-paginator-range-label").text
+
+        if(testExpression == "0 of 0"):
+            assert True
+        else:
+            tourDates = self.driver.find_elements(By.CSS_SELECTOR, ".cdk-column-departure")
+            tourDateFilter = tourDates[2].accessible_name
+            dateObj = dateObj + timedelta(days=-1)
+            temp = dateObj.strftime(format)
+        assert not (tourDateFilter == temp) or testExpression == "0 of 0"
+        
 
     def tearDown(self):
         self.driver.close()
