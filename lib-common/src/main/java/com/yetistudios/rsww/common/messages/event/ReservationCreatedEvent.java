@@ -13,5 +13,5 @@ public class ReservationCreatedEvent {
     private int numSingleRooms;
     private int numDoubleRooms;
     private int numTripleRooms;
-    private String orderStatus;
+    private boolean paid;
 }

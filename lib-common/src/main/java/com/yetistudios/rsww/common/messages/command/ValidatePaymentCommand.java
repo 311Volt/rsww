@@ -9,4 +9,5 @@ public class ValidatePaymentCommand {
     private String reservationId;
     private double price;
     private String clientId;
+    private boolean paid;
 }
