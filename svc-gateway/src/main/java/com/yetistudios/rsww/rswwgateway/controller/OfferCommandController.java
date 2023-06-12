@@ -3,6 +3,7 @@ package com.yetistudios.rsww.rswwgateway.controller;
 import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
 import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
 import com.yetistudios.rsww.common.dto.OfferDecreaseAmountDto;
+import com.yetistudios.rsww.common.messages.command.UpdateOfferCommand;
 import com.yetistudios.rsww.common.messages.entity.Offer;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.web.bind.annotation.*;
@@ -44,4 +45,19 @@ public class OfferCommandController {
                 .build();
         return commandGateway.sendAndWait(decreaseOfferAmountCommand);
     }
+
+    @PutMapping
+    public String updateOffer(@RequestBody Offer offer) {
+
+        UpdateOfferCommand createOfferCommand = UpdateOfferCommand.builder()
+                .offerId(offer.getId())
+                .flights(offer.getFlights())
+                .price(offer.getSuggestedPrice())
+                .numberOfOffers(offer.getNumberOfOffers())
+                .build();
+
+        return commandGateway.sendAndWait(createOfferCommand);
+    }
+
+
 }

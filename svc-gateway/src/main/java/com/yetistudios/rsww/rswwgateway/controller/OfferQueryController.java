@@ -1,6 +1,9 @@
 package com.yetistudios.rsww.rswwgateway.controller;
 
+import com.yetistudios.rsww.common.dto.ListUpdateOfferHistory;
 import com.yetistudios.rsww.common.messages.entity.Offer;
+import com.yetistudios.rsww.common.messages.entity.UpdateOfferHistory;
+import com.yetistudios.rsww.common.messages.query.GetOfferHistoriesQuery;
 import com.yetistudios.rsww.common.messages.query.GetOfferQuery;
 import com.yetistudios.rsww.common.messages.query.GetOffersQuery;
 import com.yetistudios.rsww.common.dto.OfferListDto;
@@ -45,5 +48,13 @@ public class OfferQueryController {
         GetOfferQuery getOfferQuery = new GetOfferQuery(offerId);
 
         return queryGateway.query(getOfferQuery, ResponseTypes.instanceOf(Offer.class)).join();
+    }
+
+    @CrossOrigin
+    @GetMapping("/histories")
+    public List<UpdateOfferHistory> getUpdateOfferHistories() {
+        GetOfferHistoriesQuery query = new GetOfferHistoriesQuery();
+        ListUpdateOfferHistory updateOfferHistory = queryGateway.query(query, ResponseTypes.instanceOf(ListUpdateOfferHistory.class)).join();
+        return updateOfferHistory.getUpdateOfferHistoryList();
     }
 }
