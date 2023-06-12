@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.rswwflight.restadmin;
+package com.yetistudios.rsww.rswwflight.admin;
 
 import com.yetistudios.rsww.common.dto.FlightDocument;
 import com.yetistudios.rsww.rswwflight.entity.Airport;

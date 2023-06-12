@@ -1,0 +1,4 @@
+
+axon:
+  axonserver:
+    servers: ${AXON_ADDR:broker_axon}:${AXON_PORT:8124}

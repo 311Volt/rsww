@@ -4,99 +4,94 @@ version: '3.8'
 services:
 
   broker_axon:
-    build: ./ctx-axonserver
-
-  frontend:
-    build: ../frontend
+    image: localhost:5000/rsww_175651-broker_axon
+    container_name: rsww_175651_axon
+    networks:
+      - net_internal
+      - net_postgres
+      - net_mongo
 
   svc_gateway:
-    build: ./ctx-svc-gateway
+    image: localhost:5000/rsww_175651-svc_gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - AXON_ADDR=rsww_175651_axon
     ports:
-      - "17565:17565"
-#      - "1438:1438"
+      - "17565:1438"
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_hotel:
-    build: ./ctx-svc-hotel
+    image: localhost:5000/rsww_175651-svc_hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1439:1439"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_flight:
-    build: ./ctx-svc-flight
+    image: localhost:5000/rsww_175651-svc_flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1440:1440"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_payment:
-    build: ./ctx-svc-payment
+    image: localhost:5000/rsww_175651-svc_payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1441:1441"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_saga_orchestrator:
-    build: ./ctx-svc-saga-orchestrator
+    image: localhost:5000/rsww_175651-svc_saga_orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1442:1442"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_tour_operator_cmd:
-    build: ./ctx-svc-tour-operator-cmd
+    image: localhost:5000/rsww_175651-svc_tour_operator_cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1443:1443"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_tour_operator_query:
-    build: ./ctx-svc-tour-operator-query
+    image: localhost:5000/rsww_175651-svc_tour_operator_query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1444:1444"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
   svc_travel_agency:
-    build: ./ctx-svc-travel-agency
+    image: localhost:5000/rsww_175651-svc_travel_agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1445:1445"
+      - AXON_ADDR=rsww_175651_axon
     networks:
+      - net_internal
       - net_postgres
       - net_mongo
-      - net_internal
 
 networks:
   net_mongo:
@@ -106,3 +101,4 @@ networks:
     external: true
     name: admin-postgres_default
   net_internal:
+    driver: overlay
