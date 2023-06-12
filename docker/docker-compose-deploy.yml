@@ -4,10 +4,10 @@ version: '3.8'
 services:
 
   broker_axon:
-    build: ./ctx-axonserver
+    image: rsww_175651-broker_axon
 
   svc_gateway:
-    build: ./ctx-svc-gateway
+    image: rsww_175651-svc_gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     ports:
@@ -19,7 +19,7 @@ services:
       - net_internal
 
   svc_hotel:
-    build: ./ctx-svc-hotel
+    image: rsww_175651-svc_hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
@@ -30,7 +30,7 @@ services:
       - net_internal
 
   svc_flight:
-    build: ./ctx-svc-flight
+    image: rsww_175651-svc_flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
@@ -41,7 +41,7 @@ services:
       - net_internal
 
   svc_payment:
-    build: ./ctx-svc-payment
+    image: rsww_175651-svc_payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
@@ -52,7 +52,7 @@ services:
       - net_internal
 
   svc_saga_orchestrator:
-    build: ./ctx-svc-saga-orchestrator
+    image: rsww_175651-svc_saga_orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
@@ -63,7 +63,7 @@ services:
       - net_internal
 
   svc_tour_operator_cmd:
-    build: ./ctx-svc-tour-operator-cmd
+    image: rsww_175651-svc_tour_operator_cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
@@ -74,7 +74,7 @@ services:
       - net_internal
 
   svc_tour_operator_query:
-    build: ./ctx-svc-tour-operator-query
+    image: rsww_175651-svc_tour_operator_query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
@@ -85,7 +85,7 @@ services:
       - net_internal
 
   svc_travel_agency:
-    build: ./ctx-svc-travel-agency
+    image: rsww_175651-svc_travel_agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     #    ports:
