@@ -18,7 +18,7 @@ function connect() {
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/req7topic/purchase/exampleOfferId', function (greeting) {
+        stompClient.subscribe('/req7topic/popularDestinations', function (greeting) {
             showGreeting(greeting.body);
         });
     });
