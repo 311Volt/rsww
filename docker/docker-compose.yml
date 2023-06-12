@@ -9,7 +9,7 @@ services:
       - "8088:8088"
     depends_on:
       - frontend
-      - svc_gateway
+      - svcgateway
     networks:
       - net_internal
 
@@ -21,8 +21,6 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready" ]
@@ -32,31 +30,31 @@ services:
 
   rsww_mongo:
     build: ./ctx-mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=student
+      - MONGO_INITDB_DATABASE=rsww175651
     ports:
       - "27017:27017"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
 
   axonserver:
     build: ./ctx-axonserver
     hostname: axonserver
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
 
   frontend:
     build: ../frontend
+    environment:
+      - RSWW_BACKEND_ADDR=http://localhost:1438
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     ports:
       - "4200:4200"
 
-  svc_gateway:
+  svcgateway:
     build: ./ctx-svc-gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -66,14 +64,12 @@ services:
     ports:
       - "1438:1438"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
-  svc_hotel:
+  svchotel:
     build: ./ctx-svc-hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -83,11 +79,9 @@ services:
     ports:
       - "1439:1439"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
 
-  svc_flight:
+  svcflight:
     build: ./ctx-svc-flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -97,14 +91,12 @@ services:
     ports:
       - "1440:1440"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
-  svc_payment:
+  svcpayment:
     build: ./ctx-svc-payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -114,14 +106,12 @@ services:
     ports:
       - "1441:1441"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
-  svc_saga_orchestrator:
+  svcsagaorchestrator:
     build: ./ctx-svc-saga-orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -131,14 +121,12 @@ services:
     ports:
       - "1442:1442"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
-  svc_tour_operator_cmd:
+  svctouroperatorcmd:
     build: ./ctx-svc-tour-operator-cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -148,14 +136,12 @@ services:
     ports:
       - "1443:1443"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
-  svc_tour_operator_query:
+  svctouroperatorquery:
     build: ./ctx-svc-tour-operator-query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -165,14 +151,12 @@ services:
     ports:
       - "1444:1444"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
-  svc_travel_agency:
+  svctravelagency:
     build: ./ctx-svc-travel-agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
@@ -182,18 +166,12 @@ services:
     ports:
       - "1445:1445"
     networks:
-      - net_postgres
-      - net_mongo
       - net_internal
     depends_on:
       rsww_postgres:
         condition: service_healthy
 
 networks:
-  net_mongo:
-    name: admin-mongodb_default
-  net_postgres:
-    name: admin-postgres_default
   net_internal:
     name: rsww_175651_net
     ipam:

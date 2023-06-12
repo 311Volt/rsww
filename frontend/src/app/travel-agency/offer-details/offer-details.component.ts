@@ -4,7 +4,6 @@ import {TravelAgencyService} from "../travel-agency.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {HotelModel} from "../model/hotel.model";
 import {AuthService} from "../../auth/auth.service";
-import { RswwConfig } from 'src/app/config';
 
 declare var SockJS;
 declare var Stomp;
@@ -41,7 +40,7 @@ export class OfferDetailsComponent implements OnInit {
 
   public stompClient;
   initializeWebSocketConnection() {
-    const serverUrl = `${RswwConfig.backendAddress}/rsww`;
+    const serverUrl = `/rsww`;
     const ws = new SockJS(serverUrl);
     this.stompClient = Stomp.over(ws);
     const that = this;

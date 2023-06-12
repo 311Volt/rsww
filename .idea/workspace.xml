@@ -5,37 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="documentation">
-      <change afterPath="$PROJECT_DIR$/docker/ctx-nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/sockjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/stomp.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/architecture.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/ctx-postgres/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ctx-postgres/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose-deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/push-all-to-registry.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/push-all-to-registry.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/travel-agency/offer-details/offer-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/travel-agency/offer-details/offer-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/config.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/travel-agency/offer-details/offer-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/travel-agency/offer-details/offer-details.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/travel-agency/travel-agency.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/travel-agency/travel-agency.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/RswwFlightApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/RswwFlightApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/RswwGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/RswwGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/AdminImportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/AdminImportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/admin/AdminImportCommandHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/admin/AdminImportCommandHandlers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-payment/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-payment/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util-scrapper/output/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/util-scrapper/output/importer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
