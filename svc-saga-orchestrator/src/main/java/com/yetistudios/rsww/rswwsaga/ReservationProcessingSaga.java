@@ -276,6 +276,7 @@ ReservationProcessingSaga {
         }
 
         IncreaseOfferAmountCommand command = IncreaseOfferAmountCommand.builder()
+                .offerId(reservation.getOfferId())
                 .reservationId(reservationId)
                 .numberOfOffers(reservation.getNrOfPeople())
                 .build();

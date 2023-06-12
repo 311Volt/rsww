@@ -60,8 +60,8 @@ public class ReservationController {
     }
 
     @CrossOrigin
-    @PutMapping("/{id}")
-    public String payForReservation(@PathVariable("id") String id) {
+    @PostMapping("/pay")
+    public String payForReservation(@RequestParam("id") String id) {
         PayForReservationCommand command = PayForReservationCommand.builder()
                 .reservationId(id)
                 .build();
