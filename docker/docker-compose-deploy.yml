@@ -5,6 +5,10 @@ services:
 
   broker_axon:
     image: localhost:5000/rsww_175651-broker_axon
+    networks:
+      - net_postgres
+      - net_mongo
+      - net_internal
 
   svc_gateway:
     image: localhost:5000/rsww_175651-svc_gateway
