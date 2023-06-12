@@ -1,24 +1,23 @@
-package com.yetistudios.rsww.travelagency.command.controller;
+package com.yetistudios.rsww.touroperator.cmd.commands;
 
-import com.yetistudios.rsww.travelagency.command.command.CreateReservationCommand;
-import com.yetistudios.rsww.travelagency.command.dto.CreateReservationDto;
+import com.yetistudios.rsww.common.dto.CreateReservationDto;
+import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
+import com.yetistudios.rsww.common.messages.command.CreateReservationCommand;
+import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.commandhandling.gateway.CommandGateway;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
-@RestController
-@RequestMapping(value = "/order")
-public class ReservationController {
+@Component
+public class CreateReservationDtoForwarder {
+
+    @Autowired
     private CommandGateway commandGateway;
 
-    public ReservationController(CommandGateway commandGateway) {
-        this.commandGateway = commandGateway;
-    }
-
-    @CrossOrigin
-    @PostMapping
-    public String createOrder(@RequestBody CreateReservationDto order){
+    @CommandHandler
+    public void on(CreateReservationDto order) {
         CreateReservationCommand createReservationCommand = CreateReservationCommand.builder()
                 .reservationId(UUID.randomUUID().toString())
                 .clientId(order.getClientId())
@@ -33,6 +32,6 @@ public class ReservationController {
                 .build();
 
         commandGateway.sendAndWait(createReservationCommand);
-        return "Order Created";
     }
+
 }

@@ -6,7 +6,7 @@ import com.yetistudios.rsww.common.messages.entity.FlightBrief;
 import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
 import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import com.yetistudios.rsww.common.messages.entity.Offer;
-import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
+import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

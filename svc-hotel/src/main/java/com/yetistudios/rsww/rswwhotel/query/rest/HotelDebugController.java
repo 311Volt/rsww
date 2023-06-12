@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("hotel-availability")
-public class HotelOccupationQueryRestController {
+public class HotelDebugController {
     @Autowired
     private HotelOccupationQueryService queryService;
 

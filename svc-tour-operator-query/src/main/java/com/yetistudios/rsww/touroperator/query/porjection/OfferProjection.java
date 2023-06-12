@@ -1,18 +1,15 @@
 package com.yetistudios.rsww.touroperator.query.porjection;
 
 import com.yetistudios.rsww.common.messages.query.GetOfferQuery;
-import com.yetistudios.rsww.touroperator.query.dto.OfferListDto;
+import com.yetistudios.rsww.common.dto.OfferListDto;
 import com.yetistudios.rsww.touroperator.query.repository.OfferRepository;
 import com.yetistudios.rsww.common.messages.entity.Offer;
-import com.yetistudios.rsww.touroperator.query.dto.DetailedOfferDto;
-import com.yetistudios.rsww.touroperator.query.queries.GetOfferDetailedQuery;
 import com.yetistudios.rsww.common.messages.query.GetOffersQuery;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Optional;
 
 @Component
 public class OfferProjection {
