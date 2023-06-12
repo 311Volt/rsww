@@ -5,6 +5,9 @@ import {ActivatedRoute, Params, Router} from "@angular/router";
 import {HotelModel} from "../model/hotel.model";
 import {AuthService} from "../../auth/auth.service";
 
+declare var SockJS;
+declare var Stomp;
+
 @Component({
   selector: 'app-offer-details',
   templateUrl: './offer-details.component.html',
@@ -29,8 +32,26 @@ export class OfferDetailsComponent implements OnInit {
 
   userEmail: string;
   chooseFlight: string = '';
+  mess = ''
 
   constructor(private travelService: TravelAgencyService, private route: ActivatedRoute, private router: Router, private userService: AuthService) {
+    this.initializeWebSocketConnection();
+  }
+
+  public stompClient;
+  initializeWebSocketConnection() {
+    const serverUrl = 'http://localhost:1438/rsww';
+    const ws = new SockJS(serverUrl);
+    this.stompClient = Stomp.over(ws);
+    const that = this;
+    // tslint:disable-next-line:only-arrow-functions
+    this.stompClient.connect({}, function(frame) {
+      that.stompClient.subscribe('//req7topic/purchase/' + this.offer.id, (message) => {
+        if (message.body) {
+          this.mess = message.body;
+        }
+      });
+    });
   }
 
   ngOnInit(): void {
@@ -50,7 +71,7 @@ export class OfferDetailsComponent implements OnInit {
     );
     this.userService.user.subscribe(user => {
       this.userEmail = user.email;
-    })
+    });
   }
 
   bookOffer() {
