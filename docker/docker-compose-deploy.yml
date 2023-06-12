@@ -8,96 +8,81 @@ services:
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_gateway:
     image: localhost:5000/rsww_175651-svc_gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     ports:
-      - "17565:17565"
-    #      - "1438:1438"
+      - "17565:1438"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_hotel:
     image: localhost:5000/rsww_175651-svc_hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1439:1439"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_flight:
     image: localhost:5000/rsww_175651-svc_flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1440:1440"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_payment:
     image: localhost:5000/rsww_175651-svc_payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1441:1441"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_saga_orchestrator:
     image: localhost:5000/rsww_175651-svc_saga_orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1442:1442"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_tour_operator_cmd:
     image: localhost:5000/rsww_175651-svc_tour_operator_cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1443:1443"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_tour_operator_query:
     image: localhost:5000/rsww_175651-svc_tour_operator_query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1444:1444"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
   svc_travel_agency:
     image: localhost:5000/rsww_175651-svc_travel_agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    #    ports:
-    #      - "1445:1445"
     networks:
       - net_postgres
       - net_mongo
-      - net_internal
+      - rsww_175651_net_internal
 
 networks:
   net_mongo:
@@ -106,6 +91,6 @@ networks:
   net_postgres:
     external: true
     name: admin-postgres_default
-  net_internal:
+  rsww_175651_net_internal:
     name: rsww_175651_net_internal
     driver: overlay
