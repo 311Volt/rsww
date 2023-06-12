@@ -20,7 +20,8 @@ import java.time.ZoneOffset;
 
 @Saga
 @Slf4j
-public class ReservationProcessingSaga {
+public class
+ReservationProcessingSaga {
 
     @Autowired
     private transient CommandGateway commandGateway;
@@ -251,6 +252,7 @@ public class ReservationProcessingSaga {
                     .reservationId(event.getReservationId())
                     .price(reservation.getPrice())
                     .clientId(reservation.getClientId())
+                    .paid(reservation.isPaid())
                     .build();
 
             commandGateway.send(validatePaymentCommand);

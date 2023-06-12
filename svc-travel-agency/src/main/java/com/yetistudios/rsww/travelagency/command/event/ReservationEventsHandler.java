@@ -1,8 +1,9 @@
 package com.yetistudios.rsww.travelagency.command.event;
 
+import com.yetistudios.rsww.common.messages.event.PayForReservationEvent;
 import com.yetistudios.rsww.common.messages.event.ReservationCanceledEvent;
 import com.yetistudios.rsww.common.messages.event.ReservationCreatedEvent;
-import com.yetistudios.rsww.travelagency.common.entity.Reservation;
+import com.yetistudios.rsww.common.messages.entity.Reservation;
 import com.yetistudios.rsww.travelagency.common.repository.ReservationRepository;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.BeanUtils;
@@ -30,5 +31,14 @@ public class ReservationEventsHandler {
         Reservation reservation = reservationRepository.findById(event.getReservationId()).get();
 
         reservationRepository.delete(reservation);
+    }
+
+    @EventHandler
+    public void on(PayForReservationEvent event){
+        Reservation reservation = reservationRepository.findById(event.getReservationId()).get();
+
+        reservation.setPaid(true);
+
+        reservationRepository.save(reservation);
     }
 }
