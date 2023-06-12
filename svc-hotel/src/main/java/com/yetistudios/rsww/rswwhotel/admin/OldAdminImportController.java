@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("admin")
 @Profile("!test")
-public class AdminImportController {
+public class OldAdminImportController {
 
     @Autowired
     private AdminImportService adminImportService;
