@@ -5,7 +5,6 @@ services:
 
   broker_axon:
     image: localhost:5000/rsww_175651-broker_axon
-    container_name: broker_axon
     networks:
       - net_internal
       - net_postgres
