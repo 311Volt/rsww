@@ -6,7 +6,9 @@ services:
   rproxy:
     image: localhost:5000/rsww_175651-rproxy
     ports:
-      - "17565:80"
+      - "17565:8088"
+    networks:
+      - net_internal
 
   axonserver:
     image: localhost:5000/rsww_175651-axonserver
@@ -17,6 +19,8 @@ services:
 
   frontend:
     image: localhost:5000/rsww_175651-frontend
+    environment:
+      - RSWW_BACKEND_ADDR=routed
     networks:
       - net_internal
       - net_postgres
@@ -26,7 +30,7 @@ services:
     image: localhost:5000/rsww_175651-svc_gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -36,7 +40,7 @@ services:
     image: localhost:5000/rsww_175651-svc_hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -46,7 +50,7 @@ services:
     image: localhost:5000/rsww_175651-svc_flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -56,7 +60,7 @@ services:
     image: localhost:5000/rsww_175651-svc_payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -66,7 +70,7 @@ services:
     image: localhost:5000/rsww_175651-svc_saga_orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -76,7 +80,7 @@ services:
     image: localhost:5000/rsww_175651-svc_tour_operator_cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -86,7 +90,7 @@ services:
     image: localhost:5000/rsww_175651-svc_tour_operator_query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
@@ -96,7 +100,7 @@ services:
     image: localhost:5000/rsww_175651-svc_travel_agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     networks:
       - net_internal
       - net_postgres
