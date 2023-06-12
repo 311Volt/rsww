@@ -5,4 +5,4 @@ spring:
     password: ${PSQL_PWD:student}
 axon:
   axonserver:
-    servers: ${AXON_ADDR:broker_axon}:${AXON_PORT:8124}
+    servers: ${RSWW_AXONSERVERS:broker_axon}

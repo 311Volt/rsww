@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/svc_gateway
+    url: jdbc:postgresql://localhost:5432/rsww_175651_svc_gateway
     username: rsww175651
     password: jpg4ever
   jpa:
@@ -15,3 +15,5 @@ axon:
     general: jackson
     events: jackson
     messages: jackson
+  axonserver:
+    servers: 192.168.0.75:8124

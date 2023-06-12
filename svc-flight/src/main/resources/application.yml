@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/svc_flight
+    url: jdbc:postgresql://localhost:5432/rsww_175651_svc_flight
     username: root
     password: password
   jpa:

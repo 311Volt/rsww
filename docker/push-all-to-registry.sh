@@ -6,7 +6,9 @@ function push_img() {
 	docker push "localhost:5000/$1"
 }
 
-push_img rsww_175651-broker_axon
+
+push_img rsww_175651-rproxy
+push_img rsww_175651-axonserver
 push_img rsww_175651-frontend
 push_img rsww_175651-svc_travel_agency
 push_img rsww_175651-svc_flight

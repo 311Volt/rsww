@@ -6,6 +6,7 @@ import {Router} from "@angular/router";
 import {AuthService} from "../auth/auth.service";
 import {of} from "rxjs";
 import {HotelModel} from "./model/hotel.model";
+import { RswwConfig } from "../config";
 
 
 @Injectable({providedIn: 'root'})
@@ -16,7 +17,7 @@ export class TravelAgencyService{
 
   public getOffers() {
     //return this.offersList;
-    return this.http.get<Offer[]>('http://localhost:1438/api/offer/offers');
+    return this.http.get<Offer[]>(`${RswwConfig.backendAddress}/api/offer/offers`);
   }
 
   bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number,
@@ -33,7 +34,7 @@ export class TravelAgencyService{
     console.log(numberOfTrRooms)
 
 
-    this.http.post<any>('http://localhost:1438/api/order', {
+    this.http.post<any>(`${RswwConfig.backendAddress}/api/order`, {
       offerId: offer.id,
       clientId: userEmail,
       price: offer.suggestedPrice,
@@ -49,6 +50,6 @@ export class TravelAgencyService{
   }
 
   getHotel(code: string) {
-    return this.http.get<HotelModel>('http://localhost:1438/api/hotel/' + code);
+    return this.http.get<HotelModel>(`${RswwConfig.backendAddress}/api/hotel/` + code);
   }
 }

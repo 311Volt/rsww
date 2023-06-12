@@ -8,5 +8,5 @@ RUN npm install -g @angular/cli@13
 COPY package.json package-lock.json ./
 RUN npm ci
 
-COPY src *.* ./
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+COPY . .
+CMD ["ng", "serve", "--prod", "--host", "0.0.0.0", "--disable-host-check"]
