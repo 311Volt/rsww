@@ -3,93 +3,93 @@ version: '3.8'
 
 services:
 
-  rsww_175651_axon:
+  broker_axon:
     build: ./ctx-axonserver
 
-  rsww_175651_svc_gateway:
+  svc_gateway:
     build: ./ctx-svc-gateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     ports:
       - "17565:17565"
-#      - "1438:1438"
+    #      - "1438:1438"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_hotel:
+  svc_hotel:
     build: ./ctx-svc-hotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1439:1439"
+    #    ports:
+    #      - "1439:1439"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_flight:
+  svc_flight:
     build: ./ctx-svc-flight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1440:1440"
+    #    ports:
+    #      - "1440:1440"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_payment:
+  svc_payment:
     build: ./ctx-svc-payment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1441:1441"
+    #    ports:
+    #      - "1441:1441"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_saga_orchestrator:
+  svc_saga_orchestrator:
     build: ./ctx-svc-saga-orchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1442:1442"
+    #    ports:
+    #      - "1442:1442"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_tour_operator_cmd:
+  svc_tour_operator_cmd:
     build: ./ctx-svc-tour-operator-cmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1443:1443"
+    #    ports:
+    #      - "1443:1443"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_tour_operator_query:
+  svc_tour_operator_query:
     build: ./ctx-svc-tour-operator-query
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1444:1444"
+    #    ports:
+    #      - "1444:1444"
     networks:
       - net_postgres
       - net_mongo
       - net_internal
 
-  rsww_175651_svc_travel_agency:
+  svc_travel_agency:
     build: ./ctx-svc-travel-agency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-#    ports:
-#      - "1445:1445"
+    #    ports:
+    #      - "1445:1445"
     networks:
       - net_postgres
       - net_mongo

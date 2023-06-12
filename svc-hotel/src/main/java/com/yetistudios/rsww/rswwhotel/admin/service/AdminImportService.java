@@ -1,16 +1,12 @@
-package com.yetistudios.rsww.rswwhotel.restadmin.service;
+package com.yetistudios.rsww.rswwhotel.admin.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yetistudios.rsww.rswwhotel.RswwHotelApplication;
+import com.yetistudios.rsww.common.dto.HotelDocument;
 import com.yetistudios.rsww.rswwhotel.query.entity.Hotel;
 import com.yetistudios.rsww.rswwhotel.query.repository.HotelRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-
-import java.util.Map;
 
 @Service
 @Profile("!test")
@@ -22,7 +18,8 @@ public class AdminImportService {
     @Autowired
     private HotelRepository hotelRepository;
 
-    public void importHotel(Hotel hotel) {
+    public void importHotel(HotelDocument hotelDocument) {
+        Hotel hotel = Hotel.ofDocument(hotelDocument);
         if(hotelRepository.existsByCode(hotel.code)) {
             hotelRepository.deleteAllByCode(hotel.code);
         }
