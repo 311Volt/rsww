@@ -14,5 +14,5 @@ public class CreateReservationDto {
     private int numSingleRooms;
     private int numDoubleRooms;
     private int numTripleRooms;
-    private String orderStatus;
+    private boolean paid;
 }
