@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.cmd.dto;
+package com.yetistudios.rsww.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OfferDecreaseAmountDto {
-    private Integer numberOfOffers;
+public class CreateOrderResult {
+
+    public String result;
+    public String orderId;
+
 }

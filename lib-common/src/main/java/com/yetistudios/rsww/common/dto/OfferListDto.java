@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.touroperator.query.dto;
+package com.yetistudios.rsww.common.dto;
 
 import com.yetistudios.rsww.common.messages.entity.Offer;
 import lombok.AllArgsConstructor;

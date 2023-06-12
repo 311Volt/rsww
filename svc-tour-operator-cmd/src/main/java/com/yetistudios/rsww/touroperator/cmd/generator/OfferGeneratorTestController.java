@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("admin")
-public class OfferGeneratorController {
+public class OfferGeneratorTestController {
 
     @Autowired
     private OfferGenerator offerGenerator;

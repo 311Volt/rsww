@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.travelagency.command.command;
+package com.yetistudios.rsww.common.messages.command;
 
 import lombok.Builder;
 import lombok.Data;

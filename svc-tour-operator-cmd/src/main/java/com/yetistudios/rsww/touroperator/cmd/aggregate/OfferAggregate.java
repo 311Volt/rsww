@@ -4,7 +4,7 @@ import com.yetistudios.rsww.common.messages.command.DecreaseOfferAmountCommand;
 import com.yetistudios.rsww.common.messages.command.IncreaseOfferAmountCommand;
 import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
 import com.yetistudios.rsww.common.messages.event.OfferIncreaseAmountEvent;
-import com.yetistudios.rsww.touroperator.cmd.commands.CreateOfferCommand;
+import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
 import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
 import com.yetistudios.rsww.touroperator.cmd.event.OfferCreatedEvent;
 import com.yetistudios.rsww.common.messages.entity.HotelBrief;

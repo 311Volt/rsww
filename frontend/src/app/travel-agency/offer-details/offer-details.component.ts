@@ -61,7 +61,7 @@ export class OfferDetailsComponent implements OnInit {
       err = true;
     }
     const all = +this.ageRange0NumberOfPeople + +this.ageRange2NumberOfPeople + +this.ageRange1NumberOfPeople;
-    if (all !== this.numberOfOffers) {
+    if (all != this.numberOfOffers) {
       this.mes += 'You need to specify the age group for all. ';
       err = true;
     }

@@ -1,4 +1,4 @@
-package com.yetistudios.rsww.travelagency.command.dto;
+package com.yetistudios.rsww.common.dto;
 
 import lombok.Builder;
 import lombok.Data;
