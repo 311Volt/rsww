@@ -53,7 +53,7 @@ export class TravelAgencyComponent implements OnInit {
     const numberOfOffers = this.searchForm.get('numberOfOffers').value;
     const airportCode = this.searchForm.get('airportCode').value;
 
-    this.startDate = (startDate === null || startDate === '') ? '10.06.1023' : startDate.toDateString();
+    this.startDate = (startDate === null || startDate === '') ? '10.06.2023' : startDate.toDateString();
     this.country = country === null ? '' : country;
     this.numberOfOffers = numberOfOffers === null ? '' : numberOfOffers;
     this.airportCode = airportCode === null ? '' : airportCode;

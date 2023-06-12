@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${PSQL_ADDR:admin-postgres_db}:${PSQL_PORT:5432}/rsww_175651_svc_flight
+    username: ${PSQL_USER:postgres}
+    password: ${PSQL_PWD:student}
+axon:
+  axonserver:
+    servers: ${RSWW_AXONSERVERS:broker_axon}

@@ -1,0 +1,4 @@
+
+axon:
+  axonserver:
+    servers: ${RSWW_AXONSERVERS:broker_axon}
