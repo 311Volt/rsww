@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import date, datetime, timedelta
+from selenium.webdriver.common.keys import Keys
 
 
 URI = "http://localhost:4200/"
@@ -91,10 +92,11 @@ class rswwTester(unittest.TestCase):
 
     def testPurhcase(self):
         self.testLogin()
-        btn = self.driver.find_elements(By.CSS_SELECTOR, ".mat-focus-indicator")[1]
+        btn = self.driver.find_elements(By.CSS_SELECTOR, ".mat-focus-indicator")[5]
         btn.click()
         sleep(3)
         btn = self.driver.find_elements(By.CSS_SELECTOR, ".mat-button-base")[0]
+        btn.click()
         numberOfOffers = self.driver.find_element(By.NAME, "numberOfOffers")
         numberOfOffers.clear()
         numberOfOffers.send_keys("2")
@@ -112,8 +114,9 @@ class rswwTester(unittest.TestCase):
         ageRange2NumberOfPeople.send_keys("1")
         sleep(5)
         btn = self.driver.find_element(By.CSS_SELECTOR, ".mat-stroked-button")
-        btn.click()
-        assert True
+        btn.send_keys(Keys.ENTER)
+        sleep(3)
+        assert "Logout" in self.driver.page_source
 
 
 
