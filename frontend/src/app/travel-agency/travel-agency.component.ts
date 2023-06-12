@@ -64,7 +64,6 @@ export class TravelAgencyComponent implements OnInit {
     this.stompClient1 = Stomp.over(ws1);
     this.stompClient1.connect({}, function (frame) {
       that.stompClient1.subscribe('/req7topic/popularAirports', (message) => {
-        console.log("222222222")
         if (message.body) {
           let responseModel = []
           responseModel = JSON.parse(message.body);
@@ -77,7 +76,6 @@ export class TravelAgencyComponent implements OnInit {
     this.stompClient2 = Stomp.over(ws2);
     this.stompClient2.connect({}, function (frame) {
       that.stompClient2.subscribe('/req7topic/popularHotels', (message) => {
-        console.log("3333333333333")
         if (message.body) {
           let responseModel = []
           responseModel = JSON.parse(message.body);
@@ -90,7 +88,6 @@ export class TravelAgencyComponent implements OnInit {
     this.stompClient3 = Stomp.over(ws3);
     this.stompClient3.connect({}, function (frame) {
       that.stompClient3.subscribe('/req7topic/popularRoomTypes', (message) => {
-        console.log("444444444444")
         if (message.body) {
           let responseModel = []
           responseModel = JSON.parse(message.body);
@@ -159,16 +156,6 @@ export class TravelAgencyComponent implements OnInit {
       const customFilterCountry = columnCountry.toLowerCase().includes(country);
       const customFilterNumberOfOffers = +columnNumberOfOffers >= +numberOfOffers;
       let customFilterAirPortCodeArray = airPortCodeArrayColum.includes(airportCode.toLowerCase());
-
-      console.log(country)
-      console.log(startDate)
-      console.log(numberOfOffers)
-      console.log(customFilterAirPortCodeArray)
-
-      console.log(customFilterStartDate)
-      console.log(customFilterCountry)
-      console.log(customFilterNumberOfOffers)
-      console.log(customFilterAirPortCodeArray)
 
       matchFilter.push(customFilterStartDate);
       matchFilter.push(customFilterCountry);

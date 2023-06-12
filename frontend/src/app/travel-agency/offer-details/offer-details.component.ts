@@ -40,17 +40,36 @@ export class OfferDetailsComponent implements OnInit {
   }
 
   public stompClient;
-  initializeWebSocketConnection(id:string) {
+  public stompClient1;
+
+  initializeWebSocketConnection(id: string) {
     const ws = new SockJS('http://localhost:1438/rsww');
     this.stompClient = Stomp.over(ws);
     const that = this;
     // tslint:disable-next-line:only-arrow-functions
-    this.stompClient.connect({}, function(frame) {
+    this.stompClient.connect({}, function (frame) {
       that.stompClient.subscribe('/req7topic/purchase/' + id, (message) => {
         if (message.body) {
           let responseSocketModel = JSON.parse(message.body);
           let model = responseSocketModel as ResponseSocketModel;
-          that.mess = that.offer.numberOfOffers + ' reservations done';
+          that.mess = responseSocketModel.numberOfOffers + ' reservations done';
+          that.offer.numberOfOffers = that.offer.numberOfOffers - responseSocketModel.numberOfOffers;
+        }
+      });
+    });
+
+
+    const ws1 = new SockJS('http://localhost:1438/rsww');
+    this.stompClient1 = Stomp.over(ws1);
+    // tslint:disable-next-line:only-arrow-functions
+    this.stompClient1.connect({}, function (frame) {
+      that.stompClient1.subscribe('/req7topic/updateOffer/' + id, (message) => {
+        if (message.body) {
+          let newOffer = JSON.parse(message.body);
+          that.offer.suggestedPrice = newOffer.price;
+          that.offer.numberOfOffers = newOffer.numberOfOffers;
+          that.offer.flights = newOffer.flights;
+          that.mess = 'Offer was updated. New price:' + newOffer.price + ' and new number of offers: ' + newOffer.numberOfOffers;
         }
       });
     });
@@ -112,7 +131,7 @@ export class OfferDetailsComponent implements OnInit {
     }
   }
 
-  chooseFlightCode(code:string){
+  chooseFlightCode(code: string) {
     this.chooseFlight = code;
   }
 }
