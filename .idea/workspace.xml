@@ -4,27 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="documentation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/travel-agency/offer-details/offer-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/travel-agency/offer-details/offer-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/travel-agency/travel-agency.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/travel-agency/travel-agency.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/admin/AdminImportCommandHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/admin/AdminImportCommandHandlers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" afterDir="false" />
-=======
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="requirement 8 and 9">
+      <change afterPath="$PROJECT_DIR$/.run/local-devenv.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/rsww-application.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-flight.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-gateway.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-hotel.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-payment.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-saga-orchestrator.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-tour-operator-cmd.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-tour-operator-query.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/svc-travel-agency.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/util/RandomUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/PayForReservationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/PayForReservationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" afterDir="false" />
->>>>>>> origin/master
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose-deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/WebsocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/WebsocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGeneratorCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGeneratorCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +46,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-<<<<<<< HEAD
-        <entry key="$PROJECT_DIR$" value="documentation" />
-=======
-        <entry key="$PROJECT_DIR$" value="documentation-last" />
->>>>>>> origin/master
+        <entry key="$PROJECT_DIR$" value="command-event-documentation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,20 +68,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Studia/Uczelnia_Magisterka_semestr_1/RSWW/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/config&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Studia/Uczelnia_Magisterka_semestr_1/RSWW/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/config",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.yetistudios.rsww.rswwpayment" />
@@ -91,88 +91,21 @@
       <recent name="D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\svc-tour-operator-query\src\main\java\com\yetistudios\rsww\touroperator\query" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Studia\Uczelnia_Magisterka_semestr_1\RSWW\architecture-img" />
       <recent name="$PROJECT_DIR$/docker" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.yetistudios.rsww.rswwflight" />
       <recent name="com.yetistudios.rsww.touroperator.query" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yetistudios.rsww.touroperator.query.repository" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.svc-gateway">
-    <configuration name="svc-flight" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwflight.RswwFlightApplication" />
-      <module name="svc-flight" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-gateway" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwgateway.RswwGatewayApplication" />
-      <module name="svc-gateway" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-hotel" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwhotel.RswwHotelApplication" />
-      <module name="svc-hotel" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-payment" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwpayment.RswwPaymentApplication" />
-      <module name="svc-payment" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-saga-orchestrator" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwsaga.RswwSagaOrchestratorApplication" />
-      <module name="svc-saga-orchestrator" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-tour-operator-cmd" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.touroperator.cmd.TourOperatorCmdApplication" />
-      <module name="svc-tour-operator-cmd" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-tour-operator-query" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.touroperator.query.RswwTourOperatorQueryApplication" />
-      <module name="svc-tour-operator-query" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svc-travel-agency" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.travelagency.RswwTravelAgencyApplication" />
-      <module name="svc-travel-agency" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rsww-application" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="false" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
-      <runConfiguration name="local-devenv" type="Docker" />
-      <runConfiguration name="svc-hotel" type="Application" />
-      <runConfiguration name="svc-flight" type="Application" />
-      <runConfiguration name="svc-tour-operator-cmd" type="Application" />
-      <runConfiguration name="svc-tour-operator-query" type="Application" />
-      <runConfiguration name="svc-payment" type="Application" />
-      <runConfiguration name="svc-travel-agency" type="Application" />
-      <runConfiguration name="svc-saga-orchestrator" type="Application" />
-      <runConfiguration name="svc-gateway" type="Application" />
-      <method v="2" />
-    </configuration>
-    <configuration name="local-devenv" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+  <component name="RunManager" selected="Application.svc-tour-operator-cmd">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker/docker-compose-dev.yml" />
-        </settings>
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
@@ -205,9 +138,6 @@
       <option name="project" value="LOCAL" />
       <updated>1686522721566</updated>
     </task>
-<<<<<<< HEAD
-    <option name="localTasksCounter" value="2" />
-=======
     <task id="LOCAL-00002" summary="requirement 8 and 9">
       <created>1686556530647</created>
       <option name="number" value="00002" />
@@ -215,15 +145,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686556530647</updated>
     </task>
-    <task id="LOCAL-00003" summary="last documentation update">
-      <created>1686583557743</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1686583557743</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
->>>>>>> origin/master
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -254,67 +176,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="documentation" />
-<<<<<<< HEAD
-    <option name="LAST_COMMIT_MESSAGE" value="documentation" />
-=======
     <MESSAGE value="requirement 8 and 9" />
-    <MESSAGE value="last documentation update" />
-    <option name="LAST_COMMIT_MESSAGE" value="last documentation update" />
->>>>>>> origin/master
+    <option name="LAST_COMMIT_MESSAGE" value="requirement 8 and 9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>191</line>
+          <line>190</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>139</line>
+          <line>138</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>218</line>
+          <line>217</line>
           <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-<<<<<<< HEAD
-          <url>file://$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="75" />
-=======
-          <url>file://$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>294</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
-          <line>267</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-travel-agency/src/main/java/com/yetistudios/rsww/travelagency/command/aggregate/ReservationAgregate.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="99" />
->>>>>>> origin/master
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

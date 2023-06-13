@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="svc-tour-operator-query" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.touroperator.query.RswwTourOperatorQueryApplication" />
+    <module name="svc-tour-operator-query" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

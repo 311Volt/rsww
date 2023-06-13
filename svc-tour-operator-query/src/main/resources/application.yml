@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/rsww_175651_touroperator
+      uri: mongodb://localhost:27017/rsww_175651_touroperator_query
       auto-index-creation: true
 
 

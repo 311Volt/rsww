@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="rsww-application" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="false" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
+    <runConfiguration name="local-devenv" type="Docker" />
+    <runConfiguration name="svc-hotel" type="Application" />
+    <runConfiguration name="svc-flight" type="Application" />
+    <runConfiguration name="svc-tour-operator-cmd" type="Application" />
+    <runConfiguration name="svc-tour-operator-query" type="Application" />
+    <runConfiguration name="svc-payment" type="Application" />
+    <runConfiguration name="svc-travel-agency" type="Application" />
+    <runConfiguration name="svc-saga-orchestrator" type="Application" />
+    <runConfiguration name="svc-gateway" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="svc-flight" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.yetistudios.rsww.rswwflight.RswwFlightApplication" />
+    <module name="svc-flight" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

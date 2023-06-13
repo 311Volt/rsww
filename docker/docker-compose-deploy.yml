@@ -33,7 +33,7 @@ services:
       - RSWW_AXONSERVERS=axonserver
     ports:
       - "17565:1438"
-      -
+
   svc_hotel:
     image: localhost:5000/rsww_175651-svc_hotel
     environment:

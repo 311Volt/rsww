@@ -1,12 +1,16 @@
 package com.yetistudios.rsww.touroperator.cmd.generator;
 
-import com.yetistudios.rsww.common.dto.*;
-import com.yetistudios.rsww.common.messages.query.*;
+import com.yetistudios.rsww.common.dto.FlightPairList;
+import com.yetistudios.rsww.common.dto.HotelAvailabilityVector;
+import com.yetistudios.rsww.common.dto.HotelRoomVector;
+import com.yetistudios.rsww.common.dto.HotelSummary;
+import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
 import com.yetistudios.rsww.common.messages.entity.FlightBrief;
 import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
 import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import com.yetistudios.rsww.common.messages.entity.Offer;
-import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
+import com.yetistudios.rsww.common.messages.query.*;
+import com.yetistudios.rsww.common.util.RandomUtil;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +23,10 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @Component
@@ -33,18 +40,21 @@ public class OfferGenerator {
     private QueryGateway queryGateway;
     @Autowired
     private CommandGateway commandGateway;
-
-    private final static Random random = new Random();
     private final static int MAX_CONSECUTIVE_FAILED_ATTEMPTS = 40;
     private final static int SUGGESTED_POPULATION = 2;
 
     @SneakyThrows
     public Offer tryGenerateOffer() {
 
-        int durationDays = random.nextInt(3, 8);
+        int durationDays = 3;
+        try {
+            durationDays = RandomUtil.randomInt(5, 8);
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         LocalDateTime base = LocalDateTime.of(2023, 6, 1, 16, 0);
-        LocalDateTime t1 = base.plus(random.nextInt(120), ChronoUnit.DAYS);
+        LocalDateTime t1 = base.plus(RandomUtil.randomInt(120), ChronoUnit.DAYS);
         LocalDateTime t2 = t1.plus(durationDays, ChronoUnit.DAYS);
 
         Long t1unix = t1.toEpochSecond(ZoneOffset.UTC);
@@ -190,11 +200,12 @@ public class OfferGenerator {
         List<Offer> result = new ArrayList<>();
         for(int i=0; i<numOffers; i++) {
             log.info("generating offer #{}...", i);
+
             Offer offer = generateOffer();
             result.add(offer);
 
             CreateOfferCommand createOfferCommand = CreateOfferCommand.builder()
-                    .offerId(UUID.randomUUID().toString())
+                    .offerId(offer.getId())
                     .hotelBrief(offer.getHotelBrief())
                     .flights(offer.getFlights())
                     .price(offer.getSuggestedPrice())
