@@ -20,6 +20,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatCardModule} from "@angular/material/card";
+import { ReservationsComponent } from './reservations/reservations.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatCardModule} from "@angular/material/card";
     AuthComponent,
     TravelAgencyComponent,
     OfferDetailsComponent,
-    OfferItemComponent
+    OfferItemComponent,
+    ReservationsComponent
   ],
   imports: [
     BrowserModule,

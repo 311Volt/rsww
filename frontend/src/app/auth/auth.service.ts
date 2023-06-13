@@ -7,6 +7,7 @@ import {User} from "./user.model";
 @Injectable({providedIn: 'root'})
 export class AuthService {
   public user = new Subject<User>();
+  userId = '';
 
   constructor(private http: HttpClient, private router: Router) {
   }
@@ -21,11 +22,16 @@ export class AuthService {
       )
   }
 
+  getUserId() {
+    return this.userId;
+  }
+
   login(email: string, password: string) {
     this.http.get<User>('/api/user/get-user/' + email)
       .subscribe(response => {
           if (password === response.password) {
-            this.user.next(new User(response.email, response.password));
+            this.user.next(new User(response.id, response.email, response.password));
+            this.userId = response.id;
             this.router.navigate(['travel']);
           }
         })

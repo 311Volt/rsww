@@ -25,7 +25,7 @@ export class TravelAgencyService{
     this.http.post<any>('/api/order', {
       offerId: offer.id,
       paid: true,
-      clientId: userEmail,
+      clientId: this.authService.getUserId(),
       price: offer.suggestedPrice,
       departureAirportName: chooseFlight,
       nrOfPeople: numberOfOffers,
@@ -40,5 +40,22 @@ export class TravelAgencyService{
 
   getHotel(code: string) {
     return this.http.get<HotelModel>('/api/hotel/' + code);
+  }
+
+  makeReservation(offer: Offer, id: string, numberOfOffers: number, singleRoomsNumber: number, doubleRoomsNumber: number,
+                  tripleRoomsNumber: number, userEmail: string, chooseFlight: string) {
+    this.http.post<any>('http://localhost:1438/api/order', {
+      offerId: offer.id,
+      clientId: this.authService.getUserId(),
+      price: offer.suggestedPrice,
+      departureAirportName: chooseFlight,
+      nrOfPeople: numberOfOffers,
+      numSingleRooms: singleRoomsNumber,
+      numDoubleRooms: doubleRoomsNumber,
+      numTripleRooms: tripleRoomsNumber,
+      orderStatus: 'CREATED'
+    }).subscribe(res => {
+      console.log(res)
+    });
   }
 }
