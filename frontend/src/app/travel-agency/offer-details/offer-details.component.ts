@@ -112,6 +112,10 @@ export class OfferDetailsComponent implements OnInit {
       this.mes += 'You need to choose flight code. ';
       err = true;
     }
+    if (this.userEmail === '') {
+      this.mes += 'You need to login. ';
+      err = true;
+    }
     if (err === false) {
       this.travelService.bookOffer(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail, this.chooseFlight);
       this.router.navigate(['travel']);
@@ -133,5 +137,32 @@ export class OfferDetailsComponent implements OnInit {
 
   chooseFlightCode(code: string) {
     this.chooseFlight = code;
+  }
+
+  makeReservation() {
+    let err = false;
+    this.mes = '';
+    if (this.offer.numberOfOffers < this.numberOfOffers) {
+      this.mes += 'There aren\'t as many offers available. ';
+      err = true;
+    }
+    const all = +this.ageRange0NumberOfPeople + +this.ageRange2NumberOfPeople + +this.ageRange1NumberOfPeople;
+    if (all != this.numberOfOffers) {
+      this.mes += 'You need to specify the age group for all. ';
+      err = true;
+    }
+    if (this.chooseFlight === '') {
+      this.mes += 'You need to choose flight code. ';
+      err = true;
+    }
+    if (this.userEmail === '') {
+      this.mes += 'You need to login. ';
+      err = true;
+    }
+    if (err === false) {
+      this.travelService.makeReservation(this.offer, this.offer.id, this.numberOfOffers, this.singleRoomsNumber, this.doubleRoomsNumber, this.tripleRoomsNumber, this.userEmail, this.chooseFlight);
+      this.router.navigate(['travel']);
+      this.travelService.getOffers();
+    }
   }
 }

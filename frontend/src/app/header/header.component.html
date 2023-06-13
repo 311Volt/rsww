@@ -7,6 +7,7 @@
         <a class="nav-item nav-link" routerLink="/auth" style="cursor: pointer;" *ngIf="!isAuthenticated">Authenticate</a>
         <a class="nav-item nav-link" (click)="onLogout()" style="cursor: pointer;" *ngIf="isAuthenticated">Logout</a>
         <a class="nav-item nav-link" (click)="onFetchData()" style="cursor: pointer;" *ngIf="isAuthenticated">Fetch data</a>
+        <a class="nav-item nav-link" routerLink="/reservations" style="cursor: pointer;" *ngIf="isAuthenticated">Reservations</a>
       </div>
     </div>
   </div>
