@@ -47,7 +47,7 @@ export class TravelAgencyComponent implements OnInit {
   }
 
   initializeWebSocketConnection() {
-    const ws0 = new SockJS('http://localhost:1438/rsww');
+    const ws0 = new SockJS('/wsrsww');
     this.stompClient0 = Stomp.over(ws0);
     const that = this;
     // tslint:disable-next-line:only-arrow-functions
@@ -60,7 +60,7 @@ export class TravelAgencyComponent implements OnInit {
         }
       });
     });
-    const ws1 = new SockJS('http://localhost:1438/rsww');
+    const ws1 = new SockJS('/wsrsww');
     this.stompClient1 = Stomp.over(ws1);
     this.stompClient1.connect({}, function (frame) {
       that.stompClient1.subscribe('/req7topic/popularAirports', (message) => {
@@ -72,7 +72,7 @@ export class TravelAgencyComponent implements OnInit {
       });
     });
 
-    const ws2 = new SockJS('http://localhost:1438/rsww');
+    const ws2 = new SockJS('/wsrsww');
     this.stompClient2 = Stomp.over(ws2);
     this.stompClient2.connect({}, function (frame) {
       that.stompClient2.subscribe('/req7topic/popularHotels', (message) => {
@@ -84,7 +84,7 @@ export class TravelAgencyComponent implements OnInit {
       });
     });
 
-    const ws3 = new SockJS('http://localhost:1438/rsww');
+    const ws3 = new SockJS('/wsrsww');
     this.stompClient3 = Stomp.over(ws3);
     this.stompClient3.connect({}, function (frame) {
       that.stompClient3.subscribe('/req7topic/popularRoomTypes', (message) => {

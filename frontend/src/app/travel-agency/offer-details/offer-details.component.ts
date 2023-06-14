@@ -43,7 +43,7 @@ export class OfferDetailsComponent implements OnInit {
   public stompClient1;
 
   initializeWebSocketConnection(id: string) {
-    const ws = new SockJS('http://localhost:1438/rsww');
+    const ws = new SockJS('/wsrsww');
     this.stompClient = Stomp.over(ws);
     const that = this;
     // tslint:disable-next-line:only-arrow-functions
@@ -59,7 +59,7 @@ export class OfferDetailsComponent implements OnInit {
     });
 
 
-    const ws1 = new SockJS('http://localhost:1438/rsww');
+    const ws1 = new SockJS('/wsrsww');
     this.stompClient1 = Stomp.over(ws1);
     // tslint:disable-next-line:only-arrow-functions
     this.stompClient1.connect({}, function (frame) {

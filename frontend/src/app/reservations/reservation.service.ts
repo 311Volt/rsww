@@ -16,14 +16,14 @@ export class ReservationService{
   public getOffersReserved() {
     //return this.offersList;
     console.log(this.authService.getUserId())
-    return this.http.get<ReservationModel[]>('http://localhost:1438/api/order/' + this.authService.getUserId());
+    return this.http.get<ReservationModel[]>('/api/order/' + this.authService.getUserId());
   }
 
   buyReservation(id: string) {
 
 
     console.log('Buy reservation')
-    this.http.post<ReservationModel[]>('http://localhost:1438/api/order/pay?id=' + id, null).subscribe(res => {
+    this.http.post<ReservationModel[]>('/api/order/pay?id=' + id, null).subscribe(res => {
       this.router.navigate(['travel']);
     });
   }

@@ -15,7 +15,7 @@ export class AuthService {
   signUp(email: string, password: string) {
 
     console.log(email);
-    this.http.post<any>('http://localhost:1438/api/user/create', {email: email, password: password})
+    this.http.post<any>('/api/user/create', {email: email, password: password})
       .subscribe(
         () => {
         }
@@ -27,7 +27,7 @@ export class AuthService {
   }
 
   login(email: string, password: string) {
-    this.http.get<User>('http://localhost:1438/api/user/get-user/' + email)
+    this.http.get<User>('/api/user/get-user/' + email)
       .subscribe(response => {
           if (password === response.password) {
             this.user.next(new User(response.id, response.email, response.password));

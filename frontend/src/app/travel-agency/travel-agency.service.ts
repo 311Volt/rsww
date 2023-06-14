@@ -16,13 +16,13 @@ export class TravelAgencyService{
 
   public getOffers() {
     //return this.offersList;
-    return this.http.get<Offer[]>('http://localhost:1438/api/offer/offers');
+    return this.http.get<Offer[]>('/api/offer/offers');
   }
 
   bookOffer(offer: Offer, id: string, numberOfOffers: number, numberOfSingleRooms: number, numberOfDoubleRooms: number,
             numberOfTrRooms: number, userEmail: string, chooseFlight:string) {
 
-    this.http.post<any>('http://localhost:1438/api/order', {
+    this.http.post<any>('/api/order', {
       offerId: offer.id,
       paid: true,
       clientId: this.authService.getUserId(),
@@ -39,12 +39,12 @@ export class TravelAgencyService{
   }
 
   getHotel(code: string) {
-    return this.http.get<HotelModel>('http://localhost:1438/api/hotel/' + code);
+    return this.http.get<HotelModel>('/api/hotel/' + code);
   }
 
   makeReservation(offer: Offer, id: string, numberOfOffers: number, singleRoomsNumber: number, doubleRoomsNumber: number,
                   tripleRoomsNumber: number, userEmail: string, chooseFlight: string) {
-    this.http.post<any>('http://localhost:1438/api/order', {
+    this.http.post<any>('/api/order', {
       offerId: offer.id,
       clientId: this.authService.getUserId(),
       price: offer.suggestedPrice,
