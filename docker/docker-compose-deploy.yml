@@ -3,95 +3,79 @@ version: '3.8'
 
 services:
 
-  broker_axon:
-    image: localhost:5000/rsww_175651-broker_axon
-    container_name: rsww_175651_axon
+  rproxy:
+    image: localhost:5000/rsww_175651-rproxy
+    ports:
+      - "17565:8088"
+    networks:
+      - net_internal
+
+  axonserver:
+    image: localhost:5000/rsww_175651-axonserver
     networks:
       - net_internal
       - net_postgres
       - net_mongo
 
-  svc_gateway:
-    image: localhost:5000/rsww_175651-svc_gateway
+  frontend:
+    image: localhost:5000/rsww_175651-frontend
+    environment:
+      - RSWW_BACKEND_ADDR=routed
+    networks:
+      - net_internal
+      - net_postgres
+      - net_mongo
+
+  svcgateway:
+    image: localhost:5000/rsww_175651-svcgateway
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
+      - RSWW_AXONSERVERS=axonserver
     ports:
       - "17565:1438"
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
 
-  svc_hotel:
-    image: localhost:5000/rsww_175651-svc_hotel
+  svchotel:
+    image: localhost:5000/rsww_175651-svchotel
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
 
-  svc_flight:
-    image: localhost:5000/rsww_175651-svc_flight
+  svcflight:
+    image: localhost:5000/rsww_175651-svcflight
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
 
-  svc_payment:
-    image: localhost:5000/rsww_175651-svc_payment
+  svcpayment:
+    image: localhost:5000/rsww_175651-svcpayment
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
 
-  svc_saga_orchestrator:
-    image: localhost:5000/rsww_175651-svc_saga_orchestrator
+  svcsagaorchestrator:
+    image: localhost:5000/rsww_175651-svcsagaorchestrator
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
 
-  svc_tour_operator_cmd:
-    image: localhost:5000/rsww_175651-svc_tour_operator_cmd
+  svctouroperatorcmd:
+    image: localhost:5000/rsww_175651-svctouroperatorcmd
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
 
-  svc_tour_operator_query:
-    image: localhost:5000/rsww_175651-svc_tour_operator_query
+  svctouroperatorquery:
+    image: localhost:5000/rsww_175651-svctouroperatorquery
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
 
-  svc_travel_agency:
-    image: localhost:5000/rsww_175651-svc_travel_agency
+  svctravelagency:
+    image: localhost:5000/rsww_175651-svctravelagency
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - RSWW_AXONSERVERS=broker_axon:8124
-    networks:
-      - net_internal
-      - net_postgres
-      - net_mongo
+      - RSWW_AXONSERVERS=axonserver
+
 
 networks:
   net_mongo:
@@ -102,3 +86,10 @@ networks:
     name: admin-postgres_default
   net_internal:
     driver: overlay
+    name: rsww_175651_net
+    ipam:
+      driver: default
+      config:
+        - subnet: "10.10.0.0/16"
+          gateway: "10.10.0.1"
+

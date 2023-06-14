@@ -6,13 +6,14 @@ function push_img() {
 	docker push "localhost:5000/$1"
 }
 
-push_img rsww_175651-broker_axon
+push_img rsww_175651-axonserver
+push_img rsww_175651-rproxy
 push_img rsww_175651-frontend
-push_img rsww_175651-svc_travel_agency
-push_img rsww_175651-svc_flight
-push_img rsww_175651-svc_tour_operator_cmd
-push_img rsww_175651-svc_gateway
-push_img rsww_175651-svc_payment
-push_img rsww_175651-svc_tour_operator_query
-push_img rsww_175651-svc_hotel
-push_img rsww_175651-svc_saga_orchestrator
+push_img rsww_175651-svctravelagency
+push_img rsww_175651-svcflight
+push_img rsww_175651-svctouroperatorcmd
+push_img rsww_175651-svcgateway
+push_img rsww_175651-svcpayment
+push_img rsww_175651-svctouroperatorquery
+push_img rsww_175651-svchotel
+push_img rsww_175651-svcsagaorchestrator
