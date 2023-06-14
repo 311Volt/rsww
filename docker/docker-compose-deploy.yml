@@ -31,8 +31,6 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - RSWW_AXONSERVERS=axonserver
-    ports:
-      - "17565:1438"
 
   svchotel:
     image: localhost:5000/rsww_175651-svchotel
