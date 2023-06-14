@@ -7,6 +7,7 @@ import com.yetistudios.rsww.common.messages.entity.FlightBriefPair;
 import com.yetistudios.rsww.common.messages.entity.HotelBrief;
 import com.yetistudios.rsww.common.messages.entity.Offer;
 import com.yetistudios.rsww.common.messages.command.CreateOfferCommand;
+import com.yetistudios.rsww.common.util.RandomUtil;
 import com.yetistudios.rsww.touroperator.cmd.repository.OfferRepository;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -33,18 +34,16 @@ public class OfferGenerator {
     private QueryGateway queryGateway;
     @Autowired
     private CommandGateway commandGateway;
-
-    private final static Random random = new Random();
     private final static int MAX_CONSECUTIVE_FAILED_ATTEMPTS = 40;
     private final static int SUGGESTED_POPULATION = 2;
 
     @SneakyThrows
     public Offer tryGenerateOffer() {
 
-        int durationDays = random.nextInt(3, 8);
+        int durationDays = RandomUtil.randomInt(3, 8);
 
         LocalDateTime base = LocalDateTime.of(2023, 6, 1, 16, 0);
-        LocalDateTime t1 = base.plus(random.nextInt(120), ChronoUnit.DAYS);
+        LocalDateTime t1 = base.plus(RandomUtil.randomInt(120), ChronoUnit.DAYS);
         LocalDateTime t2 = t1.plus(durationDays, ChronoUnit.DAYS);
 
         Long t1unix = t1.toEpochSecond(ZoneOffset.UTC);

@@ -1,18 +1,18 @@
 
-CREATE USER rsww175651 WITH PASSWORD 'jpg4ever';
+CREATE USER postgres WITH PASSWORD 'student';
 
-CREATE DATABASE svc_client;
-GRANT ALL PRIVILEGES ON DATABASE svc_client TO rsww175651;
-ALTER DATABASE svc_client OWNER TO rsww175651;
+CREATE DATABASE rsww_175651_svc_client;
+GRANT ALL PRIVILEGES ON DATABASE rsww_175651_svc_client TO postgres;
+ALTER DATABASE rsww_175651_svc_client OWNER TO postgres;
 
-CREATE DATABASE svc_flight;
-GRANT ALL PRIVILEGES ON DATABASE svc_flight TO rsww175651;
-ALTER DATABASE svc_flight OWNER TO rsww175651;
+CREATE DATABASE rsww_175651_svc_flight;
+GRANT ALL PRIVILEGES ON DATABASE rsww_175651_svc_flight TO postgres;
+ALTER DATABASE rsww_175651_svc_flight OWNER TO postgres;
 
-CREATE DATABASE svc_gateway;
-GRANT ALL PRIVILEGES ON DATABASE svc_gateway TO rsww175651;
-ALTER DATABASE svc_gateway OWNER TO rsww175651;
+CREATE DATABASE rsww_175651_svc_gateway;
+GRANT ALL PRIVILEGES ON DATABASE rsww_175651_svc_gateway TO postgres;
+ALTER DATABASE rsww_175651_svc_gateway OWNER TO postgres;
 
-CREATE DATABASE svc_travel_agency;
-GRANT ALL PRIVILEGES ON DATABASE svc_travel_agency TO rsww175651;
-ALTER DATABASE svc_travel_agency OWNER TO rsww175651;
+CREATE DATABASE rsww_175651_svc_travel_agency;
+GRANT ALL PRIVILEGES ON DATABASE rsww_175651_svc_travel_agency TO postgres;
+ALTER DATABASE rsww_175651_svc_travel_agency OWNER TO postgres;

@@ -1,8 +1,9 @@
 import requests
 import json
 import http.client
+import os
 
-ADDR_GATEWAY = os.getenv(RSWW_SERVICE_ADDR, "http://localhost:1440")
+ADDR_GATEWAY = os.getenv('RSWW_SERVICE_ADDR', "http://localhost:1438")
 
 def fetch_json(filename):
     with open(filename, "r") as jsonfile:
@@ -24,15 +25,15 @@ def request_and_log(addr, json, num, total):
     
 def import_airports(data):
     for count, airport in enumerate(data):
-        request_and_log(ADDR_SVC_FLIGHT + "/admin/import/airport", json=airport, num=count, total=len(data))
+        request_and_log(ADDR_GATEWAY + "/api/admin/import/airport", json=airport, num=count, total=len(data))
 
 def import_flights(data):
     for count, flight_batch in enumerate(batch(data, 200)):
-        request_and_log(ADDR_SVC_FLIGHT + "/admin/import/flight-batch", json=flight_batch, num=count, total=int(len(data)/200))
+        request_and_log(ADDR_GATEWAY + "/api/admin/import/flight-batch", json=flight_batch, num=count, total=int(len(data)/200))
 
 def import_hotels(data):
     for count, hotel in enumerate(data.values()):
-        request_and_log(ADDR_SVC_HOTEL + "/admin/import/hotel", json=hotel, num=count, total=len(data))
+        request_and_log(ADDR_GATEWAY + "/api/admin/import/hotel", json=hotel, num=count, total=len(data))
 
 
 import_hotels(fetch_json("hotels.json"))

@@ -3,6 +3,7 @@ package com.yetistudios.rsww.rswwflight.service;
 import com.yetistudios.rsww.common.messages.command.BookFlightCommand;
 import com.yetistudios.rsww.common.messages.command.CancelFlightBookingCommand;
 import com.yetistudios.rsww.common.messages.query.CheckFlightAvailabilityQuery;
+import com.yetistudios.rsww.common.util.RandomUtil;
 import com.yetistudios.rsww.rswwflight.entity.*;
 import com.yetistudios.rsww.rswwflight.exception.CannotCancelBookingException;
 import com.yetistudios.rsww.rswwflight.exception.FlightUnavailableException;
@@ -31,8 +32,6 @@ public class FlightAvailabilityService {
 
     @Autowired
     private FlightAvailabilitySnapshotRepository snapshotRepository;
-
-    private static final Random random = new Random();
 
 
     public FlightAvailabilitySnapshot getBestSnapshotFor(Integer flightNumber) {
@@ -108,7 +107,7 @@ public class FlightAvailabilityService {
         eventRepository.save(event);
         log.info("{} seats have been reserved for flight #{}", command.numSeats, command.flightNumber);
 
-        if(random.nextInt(100) == 0) { // xDDDDDD
+        if(RandomUtil.randomInt(100) == 0) { // xDDDDDD
             saveSnapshot(getCurrentAvailabilityOf(command.flightNumber).orElseThrow());
             log.info("snapshot saved for flight {}", command.flightNumber);
         }

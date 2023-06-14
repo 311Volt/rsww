@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/rsww_175651_travelagency
+      uri: mongodb://root:student@localhost:27017/rsww_175651_travel_agency?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000&authSource=admin
       auto-index-creation: true
 
 axon:

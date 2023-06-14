@@ -1,6 +1,7 @@
 package com.yetistudios.rsww.rswwgateway.websocket;
 
 import com.yetistudios.rsww.common.messages.event.OfferDecreaseAmountEvent;
+import com.yetistudios.rsww.common.util.RandomUtil;
 import org.axonframework.eventhandling.gateway.EventGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +27,7 @@ public class TestController {
                 new OfferDecreaseAmountEvent(
                         UUID.randomUUID().toString(),
                         "exampleOfferId",
-                        random.nextInt(1, 10)
+                        RandomUtil.randomInt(1, 10)
                 )
         );
     }

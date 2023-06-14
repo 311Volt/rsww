@@ -10,7 +10,7 @@ spring:
 #      repositories:
 #        enabled: false
     mongodb:
-      uri: mongodb://localhost:27017/hoteldb
+      uri: mongodb://root:student@localhost:27017/rsww_175651_svc_hotel?serverSelectionTimeoutMS=15000&connectTimeoutMS=15000&authSource=admin
 server:
   port: 1439
 

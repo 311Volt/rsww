@@ -5,7 +5,9 @@ import com.yetistudios.rsww.common.messages.command.ImportFlightBatchCommand;
 import com.yetistudios.rsww.common.messages.command.ImportFlightCommand;
 import org.axonframework.commandhandling.CommandHandler;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AdminImportCommandHandlers {
 
     @Autowired

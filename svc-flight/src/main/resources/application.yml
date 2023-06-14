@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/svc_flight
-    username: root
-    password: password
+    url: jdbc:postgresql://localhost:5432/rsww_175651_svc_flight
+    username: postgres
+    password: student
   jpa:
     hibernate:
       ddl-auto: update

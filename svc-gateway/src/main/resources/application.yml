@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/svc_gateway
-    username: rsww175651
-    password: jpg4ever
+    url: jdbc:postgresql://localhost:5432/rsww_175651_svc_gateway
+    username: postgres
+    password: student
   jpa:
     hibernate:
       ddl-auto: update

@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223d70c0-0df0-41c9-aac0-19856b6494f0" name="Changes" comment="requirement 8 and 9">
+      <change afterPath="$PROJECT_DIR$/docker/ctx-nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ctx-nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/util/RandomUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/PayForReservationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-common/src/main/java/com/yetistudios/rsww/common/messages/command/PayForReservationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-payment/src/main/java/com/yetistudios/rsww/rswwpayment/PaymentCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/ctx-postgres/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ctx-postgres/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/admin/AdminImportCommandHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/admin/AdminImportCommandHandlers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightAvailabilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/java/com/yetistudios/rsww/rswwflight/service/FlightAvailabilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-flight/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/AdminImportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/controller/AdminImportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-hotel/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-hotel/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/java/com/yetistudios/rsww/touroperator/cmd/generator/OfferGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-cmd/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-tour-operator-query/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/svc-travel-agency/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util-scrapper/output/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/util-scrapper/output/importer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,11 +281,6 @@
           <url>file://$PROJECT_DIR$/svc-gateway/src/main/java/com/yetistudios/rsww/rswwgateway/websocket/Req7Service.java</url>
           <line>140</line>
           <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/svc-tour-operator-query/src/main/java/com/yetistudios/rsww/touroperator/query/porjection/OfferProjection.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/svc-saga-orchestrator/src/main/java/com/yetistudios/rsww/rswwsaga/ReservationProcessingSaga.java</url>
